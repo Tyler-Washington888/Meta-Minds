@@ -34,12 +34,12 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 ### Goals
 
 - RESTful JSON API built with Ruby on Rails with full CRUD
--Full CRUD interactive front end built with React
--Forms to input new posts and comments
--Display all user posts and comments 
--Implement Auth for users
--Fully responsive styling with two media queries
--Clean, organized, structured code
+- Full CRUD interactive front end built with React
+- Forms to input new posts and comments
+- Display all user posts and comments 
+- Implement Auth for users
+- Fully responsive styling with two media queries
+- Clean, organized, structured code
 
 <br>
 
