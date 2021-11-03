@@ -25,9 +25,7 @@
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+> The Meta Minds MVP is a full CRUD, full stack application with a Rails back end and React front end. It is fully responsive, styled with CSS and Styled Components.
 
 <br>
 
@@ -39,7 +37,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 - Display all user posts and comments 
 - Implement Auth for users
 - Fully responsive styling with two media queries
-- Clean, organized, structured code
+- Clean, organized, and structured code
 
 <br>
 
@@ -49,8 +47,8 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | Javascript library for building user interfaces |
+|   React Router   | Library for routing, enabling navigation between components|
 | React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
 |     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
 |  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
