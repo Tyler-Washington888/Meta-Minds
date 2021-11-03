@@ -1,7 +1,7 @@
 # Meta-Minds
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**Meta-Minds** is a blog app that allows users to create and discover ideas related to the Metaverse. _
 
 
 <br>
