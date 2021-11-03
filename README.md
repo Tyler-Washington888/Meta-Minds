@@ -44,7 +44,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954492/Meta-Minds/Screen_Shot_2021-11-03_at_11.43.40_AM_ndstr6.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954651/Meta-Minds/Screen_Shot_2021-11-03_at_11.43.40_AM_ndstr6.png)
 
 - Desktop Landing
 
