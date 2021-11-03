@@ -25,7 +25,7 @@
 
 ## MVP
 
-> The Meta Minds MVP is a full CRUD, full stack application with a Rails back end and React front end. It is fully responsive, styled with CSS and Styled Components.
+- The Meta Minds MVP is a full CRUD, full stack application with a Rails back end and React front end. It is fully responsive, styled with CSS and Styled Components.
 
 <br>
 
@@ -62,7 +62,7 @@
 
 [Link to Wireframes](https://www.figma.com/file/CT10ITn6qskLHAbIXvlNJA/Meta-Minds-team-library?node-id=0%3A1)
 
--Desktop Landing 
+- Desktop Landing 
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954651/Meta-Minds/Screen_Shot_2021-11-03_at_11.43.40_AM_ndstr6.png)
 
@@ -89,7 +89,6 @@
 - Create Post Screen
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954493/Meta-Minds/Screen_Shot_2021-11-03_at_11.46.12_AM_idifvh.png)
-
 
 - Post Screen  
 
