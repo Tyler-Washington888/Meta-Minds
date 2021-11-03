@@ -62,25 +62,21 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954957/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.39_AM_npetxo.png)
 
-- Tablet Resource Index
-
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635952674/Screen_Shot_2021-11-03_at_10.39.52_AM_d4jamv.png)
-
 - Mobile Resource Index
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635955172/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.57_AM_xwpm8c.png)
 
 -HEre 
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635952674/Screen_Shot_2021-11-03_at_10.39.52_AM_d4jamv.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954493/Meta-Minds/Screen_Shot_2021-11-03_at_11.46.12_AM_idifvh.png)
 
 -Here 
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635952687/Screen_Shot_2021-11-03_at_10.40.03_AM_eur4gn.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954493/Meta-Minds/Screen_Shot_2021-11-03_at_11.46.12_AM_idifvh.png)
 
 -Here 
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635952699/Screen_Shot_2021-11-03_at_10.40.21_AM_ppyv0u.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635955458/Meta-Minds/Screen_Shot_2021-11-03_at_11.46.37_AM_gcnkrv.png)
 
 
 #### Component Tree
