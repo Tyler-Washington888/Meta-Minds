@@ -33,11 +33,13 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- RESTful JSON API built with Ruby on Rails with full CRUD
+-Full CRUD interactive front end built with React
+-Forms to input new posts and comments
+-Display all user posts and comments 
+-Implement Auth for users
+-Fully responsive styling with two media queries
+-Clean, organized, structured code
 
 <br>
 
@@ -61,34 +63,36 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
+-Desktop Landing 
+
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954651/Meta-Minds/Screen_Shot_2021-11-03_at_11.43.40_AM_ndstr6.png)
 
-- Desktop Landing
+- Latest Blogs Screen
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954765/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.17_AM_eazih9.png)
 
-- Desktop Hero
+- Sign In Screeen 
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954838/Meta-Minds/Screen_Shot_2021-11-03_at_11.43.59_AM_meteox.png)
 
-- Resource Index
+- Sign Up Screen 
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954892/Meta-Minds/Screen_Shot_2021-11-03_at_11.44.19_AM_pbjubs.png)
 
-- Resource Show
+- Mana Blogs Screen
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954957/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.39_AM_npetxo.png)
 
-- Mobile Resource Index
+- User Posts Screen
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635955172/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.57_AM_xwpm8c.png)
 
--HEre 
+- Create Post Screen
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954493/Meta-Minds/Screen_Shot_2021-11-03_at_11.46.12_AM_idifvh.png)
 
 
--Here 
+- Post Screen  
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635955458/Meta-Minds/Screen_Shot_2021-11-03_at_11.46.37_AM_gcnkrv.png)
 
