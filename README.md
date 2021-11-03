@@ -68,7 +68,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 - Mobile Resource Index
 
-![Dummy Link]()
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635955172/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.57_AM_xwpm8c.png)
 
 -HEre 
 
