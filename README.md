@@ -48,25 +48,27 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 - Desktop Landing
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635952616/Screen_Shot_2021-11-03_at_10.30.49_AM_etqdpp.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954765/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.17_AM_eazih9.png)
 
 - Desktop Hero
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635952629/Screen_Shot_2021-11-03_at_10.30.57_AM_eckezk.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954838/Meta-Minds/Screen_Shot_2021-11-03_at_11.43.59_AM_meteox.png)
 
 - Resource Index
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635952642/Screen_Shot_2021-11-03_at_10.31.19_AM_gevrlm.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954892/Meta-Minds/Screen_Shot_2021-11-03_at_11.44.19_AM_pbjubs.png)
 
 - Resource Show
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635952661/Screen_Shot_2021-11-03_at_10.39.19_AM_mzbejj.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954957/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.39_AM_npetxo.png)
 
 - Tablet Resource Index
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635952674/Screen_Shot_2021-11-03_at_10.39.52_AM_d4jamv.png)
 
 - Mobile Resource Index
+
+![Dummy Link]()
 
 -HEre 
 
