@@ -35,4 +35,4 @@ puts "#{Post.count} posts created"
   )
 end
 
-puts "#{Comment.count} comments created"
+puts "#{Comment.count} comments  created"
