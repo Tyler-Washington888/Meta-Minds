@@ -1,0 +1,41 @@
+
+.landing-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636137936/Meta-Minds/nvkCN6_spihuq.jpg");
+  height:850px;
+}
+
+.meta-minds-name{
+  font-family: 'Press Start 2P';
+  font-size: 40px;
+}
+img{
+  height: 300px;
+  width: 300px;
+}
+.meta-minds-name{
+  font-family: 'Press Start 2P';
+  font-size: 70px;
+}
+.meta-minds-call-to-action-div-one {
+  margin-top: -40px;
+  margin-bottom: 20px;
+  font-family: 'Press Start 2P';
+  font-size: 18px;
+}
+.meta-minds-call-to-action-div-two {
+  margin-bottom: 50px;
+  font-family: 'Press Start 2P';
+  font-size: 15px;
+}
+.meta-minds--explore-button {
+  background-color: transparent;
+  border-color: #cee1e9;
+  height: 50px;
+  width: 200px;
+  border-radius: 12px;
+  font-size: 15px;
+}
+

@@ -1,0 +1,30 @@
+.header-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636137936/Meta-Minds/nvkCN6_spihuq.jpg");
+  height: 140px;
+}
+
+.header-div-app-title{
+  font-family: 'Press Start 2P';
+  font-size: 70px;
+  padding: 25px;
+  font-size: 20px;
+}
+.header-div-categories-and-user-auth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.header-div-category {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-div-user {
+  display: flex;
+  flex-direction: row;
+}
+

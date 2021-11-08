@@ -1,0 +1,15 @@
+.header-image-div {
+  border: 6px solid ;
+  height: 500px;
+  width: 100%;
+}
+
+.main-component-div{
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636137936/Meta-Minds/nvkCN6_spihuq.jpg");
+  height: 1100px;
+}
+
+.all-posts {
+  display: flex;
+  flex-direction: row;
+}
