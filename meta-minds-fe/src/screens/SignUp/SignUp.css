@@ -1,0 +1,106 @@
+.sign-up-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636137936/Meta-Minds/nvkCN6_spihuq.jpg");
+  height: calc(100% + 20px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.meta-minds-logo-div{
+  position: relative;
+  top: 0%;
+  margin-bottom: 1%;
+}
+.meta-minds-logo{
+  height: 200px;
+  width:  200px;
+}
+.copyright-text{
+  font-size: 7px;
+  position: relative;
+  bottom: 20px;
+  left: 2px;
+}
+.sign-up-form{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+  border-radius: 12px;
+  padding: 30px;
+  height: 380px;
+  width: 350px;
+  position: relative;
+  bottom: 2%;
+}
+.sign-in-header-text {
+  font-size: 40px;
+  position: relative;
+  bottom: 10px;
+  font-weight: bold;
+}
+
+.sign-in-label-and-input-div {
+    margin-top: 15px;
+}
+.input-text-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.user-input-box {
+  width: 80%;
+  height: 30px;
+  border-radius: 4px;
+  border-style: hidden;
+  background-color: whitesmoke;
+  outline: none;
+  box-shadow: 0px 1px 1px 1px rgba(0,4,4,0.4);
+  background-color: #B8DDED;
+  padding-left: 15px;
+}
+.sign-up-button{
+  position: relative;
+  top: 15px;
+  height: 40px;
+  width: 95%;
+  background-color: transparent;
+  border-style: hidden;
+  font-size: 20px;
+  border-radius: 6px; 
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+  background-color:transparent;
+}
+.sign-up-button:hover{
+  background-color: #0ACCE5;
+  opacity: 80%;
+}
+
+.sign-in-div{
+  font-size: 25px;
+  margin-top: 40px;
+}
+.have-account-text{
+  font-size: 25px;
+  position: relative;
+  bottom: 40%;
+}
+.go-to-sign-in-button {
+  position: relative;
+  bottom: 10px;
+  height: 40px;
+  width: 330px;
+  background-color: transparent;
+  border-style: hidden;
+  font-size: 20px;
+  border-radius: 6px; 
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+  background-color:transparent;
+}
+.go-to-sign-in-button:hover{
+  background-color: #0ACCE5;
+  opacity: 80%;
+}
