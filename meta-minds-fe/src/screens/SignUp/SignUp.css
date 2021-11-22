@@ -35,14 +35,14 @@
   position: relative;
   bottom: 2%;
 }
-.sign-in-header-text {
+.sign-up-header-text {
   font-size: 40px;
   position: relative;
   bottom: 10px;
   font-weight: bold;
 }
 
-.sign-in-label-and-input-div {
+.sign-up-label-and-input-div {
     margin-top: 15px;
 }
 .input-text-title {
@@ -57,7 +57,7 @@
   background-color: whitesmoke;
   outline: none;
   box-shadow: 0px 1px 1px 1px rgba(0,4,4,0.4);
-  background-color: #B8DDED;
+  background-color: white;
   padding-left: 15px;
 }
 .sign-up-button{
@@ -78,7 +78,7 @@
   opacity: 80%;
 }
 
-.sign-in-div{
+.link-to-sign-in-div{
   font-size: 25px;
   margin-top: 40px;
 }
@@ -87,7 +87,7 @@
   position: relative;
   bottom: 40%;
 }
-.go-to-sign-in-button {
+.link-to-sign-in-button {
   position: relative;
   bottom: 10px;
   height: 40px;
@@ -100,7 +100,7 @@
   box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
   background-color:transparent;
 }
-.go-to-sign-in-button:hover{
+.link-to-sign-in-button:hover{
   background-color: #0ACCE5;
   opacity: 80%;
 }

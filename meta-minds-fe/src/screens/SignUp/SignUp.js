@@ -31,8 +31,8 @@ export default function SignUp(props) {
           handleRegister(formData);
         }}
       >
-        <div class='sign-in-header-text'>Sign-In</div>
-        <label class='sign-in-label-and-input-div'>
+        <div class='sign-up-header-text'>Sign-Up</div>
+        <label class='sign-up-label-and-input-div'>
           <div class='input-text-title'>Username</div>
           <input
             class='user-input-box'
@@ -43,7 +43,7 @@ export default function SignUp(props) {
           />
         </label>
         <br />
-        <label class='sign-in-label-and-input'>
+        <label class='sign-up-label-and-input'>
           <div class='input-text-title'>Email</div>
           <input
             class='user-input-box'
@@ -54,7 +54,7 @@ export default function SignUp(props) {
           />
         </label>
         <br />
-        <label class='sign-in-label-and-input' >
+        <label class='sign-up-label-and-input' >
           <div class='input-text-title'>Password</div>
           <input
             class='user-input-box'
@@ -67,9 +67,9 @@ export default function SignUp(props) {
         <br />
         <Link to='/explore'><button class='sign-up-button'>Sign-Up</button></Link>
       </form>
-      <div class='sign-in-div'>
+      <div class='link-to-sign-in-div'>
         <div class='have-account-text'>Have an Account?</div>
-        <Link to='/sign-in'><button class='go-to-sign-in-button'>Sign-In</button></Link>
+        <Link to='/sign-in'><button class='link-to-sign-in-button'>Sign-In</button></Link>
       </div>
     </div>
   );

@@ -1,96 +1,83 @@
 
-
-.blah {
+.sign-in-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636137936/Meta-Minds/nvkCN6_spihuq.jpg");
-  height: calc(100% + 30px);
+  height: calc(100% + 20px);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
 }
-
-.met-logossa {
-   height: 250px;
-   max-width: 250px;
-   margin-top: -170px;
-}
-.copyrightssa{
-  font-size: 10px;
+.meta-minds-logo-div{
+  padding-top: 15px;
   position: relative;
-  bottom: 37px;
+  top: 0%;
+  margin-bottom: 1%;
+}
+.meta-minds-logo{
+  height: 200px;
+  width:  200px;
+}
+.copyright-text{
+  font-size: 7px;
+  position: relative;
+  bottom: 20px;
   left: 2px;
 }
-
-.forms {
-  margin-top: -20px;
+.sing-in-form{
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
   border-radius: 12px;
   padding: 30px;
-  height: 310px;
+  padding-bottom: 0px;
+  height: 320px;
   width: 350px;
+  position: relative;
+  bottom: 2%;
 }
-.SignIn {
+.sign-in-header-text {
   font-size: 40px;
-  margin-top: -5px;
-  text-align: center;
+  position: relative;
+  bottom: 55px;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
-.username{
-  display: flex;
-  flex-direction: column;
+.sign-in-label-and-input-div {
+  margin-top: 0px;
+  position: relative;
+  bottom:26%;
+}
+.input-text-title {
   font-size: 25px;
-  margin-top: -5px;
   margin-bottom: 10px;
-  text-align: center;
 }
-
-.password{
-  display: flex;
-  flex-direction: column;
-}
-
-.sign-in-button{
-position: relative;
-top: 30px;
-margin-top: -20px;
-  margin-bottom: 30px;
-  border-style: hidden;
-  height: 40px;
-  font-size: 20px;
-  border-radius: 6px;
-  box-shadow: 0px 3px 8px 1px rgba(0,4,4,0.4);
-  background-color: transparent;
-}
-.sign-in-button:hover {
-  background-color: #0ACCE5;
-  opacity: 80%;
-}
-.no-account{
-  font-size: 25px;
-  margin-top: 40px;
-}
-.class-input{
+.user-input-box {
+  width: 80%;
   height: 30px;
   border-radius: 4px;
   border-style: hidden;
-  /* box-shadow: 0 2px 8px 2px rgba(0,4,4,0.4); */
-  padding-left: 20px;
   background-color: whitesmoke;
   outline: none;
   box-shadow: 0px 1px 1px 1px rgba(0,4,4,0.4);
-  background-color: #B8DDED;
+  background-color: white;
+  padding-left: 15px;
 }
-
-.sign-in-buttons{
+.password{
+  margin-bottom: -16px;
+}
+.new-to-site-text{
+  font-size: 25px;
+  margin-top: 40px;
+}
+.sign-in-button {
   position: relative;
-  top: 30px;
-  margin-top: -20px;
+  bottom: 40px;
+  margin-top: -70px;
     height: 40px;
-    width: 350px;
+    width: 95%;
     background-color: transparent;
    border-style: hidden;
     font-size: 20px;
@@ -99,8 +86,31 @@ margin-top: -20px;
     box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     background-color:transparent;
   }
-
-  .sign-in-buttons:hover {
+  .sign-in-button:hover {
+    background-color: #0ACCE5;
+    opacity: 80%;
+  }
+  .link-to-sign-up-div{
+    position: relative;
+    bottom: 2%;
+  }
+  .new-to-site-text{
+    margin-bottom: 30px;
+  }
+  .link-to-sign-up-button {
+    position: relative;
+    bottom: 10px;
+    height: 40px;
+    width: 330px;
+    background-color: transparent;
+    border-style: hidden;
+    font-size: 20px;
+    border-radius: 6px; 
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+    background-color:transparent;
+  }
+  .link-to-sign-up-button:hover{
     background-color: #0ACCE5;
     opacity: 80%;
   }
