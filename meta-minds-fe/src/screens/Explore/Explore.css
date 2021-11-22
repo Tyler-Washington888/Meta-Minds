@@ -3,13 +3,12 @@
   display: flex;
   flex-direction: column;
 }
-.explore-image {
+.explore-images {
   border-right: none;
   border-left: none ;
   height: 305px;
   width: 100%;
   object-fit: cover;
-  z-index: 2;
   margin-bottom: -5px;
   padding-left: -3px;
   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
@@ -296,10 +295,6 @@ transition: .5s ease;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
-.github-logo:hover {
-  background-color: #0ACCE5;
-  opacity: 70%;
- }
 
  .met-logo-div {
    display: flex;
@@ -307,8 +302,4 @@ transition: .5s ease;
    margin-bottom: -340px;
  }
 
- .linkedin-logo:hover {
-  background-color: #0ACCE5;
-  opacity: 70%;
- }
-
+ 

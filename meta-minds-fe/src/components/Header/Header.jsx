@@ -82,7 +82,7 @@ function Header(props) {
             )}
           </div>
           {filteredData.length != 0 && newFilter != [] ? (
-            <div class='dataResult'>
+            <div class='Resultss'>
               {filteredData.slice(0, 15).map((data) => {
                 return (
                   <div class='rolie'>
@@ -96,8 +96,8 @@ function Header(props) {
               })}
             </div>
           ) : (wordEntered.length > 0 && newFilter.length == 0 ? (
-            <div class='dataResults'>
-              <div class='roliesssss'>
+            <div class='RESULT'>
+              <div class='SRH'>
                 <img class='searchs-iconsssss' src='https://res.cloudinary.com/tylerwashington98/image/upload/v1637339580/Meta-Minds/icons8-search-24_mqt63w.png'></img>
                 <h2 class="sorry">Sorry, we couldn't find any matches</h2>
                 <h3 class="try">Try searching for a different keyword</h3>

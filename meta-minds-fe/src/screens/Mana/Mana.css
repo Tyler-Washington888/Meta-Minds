@@ -136,10 +136,6 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
-.github-logot:hover {
-  background-color: #0ACCE5;
-  opacity: 70%;
- }
 
  .met-logo-divst {
    display: flex;
@@ -147,7 +143,4 @@
    margin-bottom: -340px;
  }
 
- .linkedin-logot:hover {
-  background-color: #0ACCE5;
-  opacity: 70%;
- }
+ 

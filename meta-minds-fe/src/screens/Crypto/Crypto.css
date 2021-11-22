@@ -136,18 +136,9 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
-.github-logots:hover {
-  background-color: #0ACCE5;
-  opacity: 70%;
- }
-s
  .met-logo-divsts {
    display: flex;
    flex-direction: column;
    margin-bottom: -340px;
  }
 
- .linkedin-logots:hover {
-  background-color: #0ACCE5;
-  opacity: 70%;
- }

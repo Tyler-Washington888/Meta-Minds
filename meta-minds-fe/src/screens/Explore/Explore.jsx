@@ -32,8 +32,8 @@ function Explore(props) {
   };
 
   return (
-    <div class="explore-page">
-      <img class="explore-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636154827/Meta-Minds/meta_vmqfci.jpg" alt="banner image"></img>
+    <div>
+      <img class="explore-images" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636154827/Meta-Minds/meta_vmqfci.jpg" alt="banner image"></img>
       <div class="latest-and-all-posts">
         <div class="latest-post-div">
           <img class="latest-post-image" src={newestMetaPost.image} alt={newestMetaPost.title}></img>

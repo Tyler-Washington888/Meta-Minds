@@ -136,18 +136,9 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
-.github-logotsu:hover {
-  background-color: #0ACCE5;
-  opacity: 70%;
- }
-s
  .met-logo-divstsu {
    display: flex;
    flex-direction: column;
    margin-bottom: -340px;
  }
 
- .linkedin-logotsu:hover {
-  background-color: #0ACCE5;
-  opacity: 70%;
- }

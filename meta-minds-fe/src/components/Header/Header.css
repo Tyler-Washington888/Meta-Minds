@@ -78,7 +78,7 @@ border-style: 5px ridge;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   padding-left: 50px;
-  z-index: 1000;
+  z-index: 10;
   outline-width: 0;
 }
 
@@ -98,7 +98,7 @@ border-style: 5px ridge;
   border-style:solid;
   font-size: 15px;
   padding-left: 50px;
-  z-index: 1000;
+  z-index: 10;
   outline-width: 0;
 }
 
@@ -108,7 +108,7 @@ border-style: 5px ridge;
   left: 35px;
   height: 20px;
   width: 20px;
-  z-index: 4000;
+  z-index: 11;
 }
 .searchs-icon {
   position: relative;
@@ -116,7 +116,7 @@ border-style: 5px ridge;
   left: 0px;
   height: 20px;
   width: 20px;
-  z-index: 10109;
+  z-index: 11;
 }
 
 .closbtn {
@@ -125,7 +125,7 @@ border-style: 5px ridge;
   left: 525px;
   height: 25px;
   width: 25px;
-  z-index: 1010;
+  z-index: 11;
 }
 
 .yoodiv {
@@ -135,9 +135,9 @@ border-style: 5px ridge;
   left: 35px;
   height: 20px;
   width: 20px;
-  z-index: 4000;
+  z-index: 12;
 }
-.dataResult {
+.Resultss {
   margin-top: -20px;
   margin-left: 20px; 
   background-color: white;
@@ -148,9 +148,13 @@ border-style: 5px ridge;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  z-index: 4000;
+  z-index: 9;
+  height: 500px; 
+  width: 580px; 
 }
-.dataResults {
+.RESULT {
+  height: 500px; 
+  width: 580px; 
   margin-top: -30px;
   margin-left: 20px; 
   background-color: white;
@@ -161,7 +165,7 @@ border-style: 5px ridge;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  
+  z-index: 9;
 }
 
 .searchs-iconsssss{
@@ -183,7 +187,7 @@ border-style: 5px ridge;
   justify-content: center;
   align-items: center;
   margin: 50px;
-   z-index: 4000;
+   z-index: 10;
 }
 
 .rolie {
@@ -197,7 +201,7 @@ padding-top: 80px;
   align-content: center;
   min-height: 80px;
   margin-bottom: 10px;
-  z-index: 4000;
+  z-index: 10;
 }
 
 .rolie:hover {
