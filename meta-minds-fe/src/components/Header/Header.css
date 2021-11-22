@@ -271,7 +271,7 @@ text-align: left;
   display: flex; 
   flex-direction: row;
   position: relative;
-  right: 360px;
+  right: 346px;
   top: 82px;
   font-size: 20px;
   margin-top: 22px;
@@ -279,7 +279,7 @@ text-align: left;
 }
 .header-div-sign-in {
   width: 100px;
-  margin-right: 50px;
+  margin-right: 30px;
   text-decoration: none;
   color: black;
 }
