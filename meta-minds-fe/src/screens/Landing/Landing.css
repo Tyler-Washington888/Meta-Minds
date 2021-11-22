@@ -3,39 +3,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636137936/Meta-Minds/nvkCN6_spihuq.jpg");
-  height:850px;
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636675187/Meta-Minds/nvkCN6_spihuq.jpg");
+  height: 1200px;
+  margin-top: -150px;
+}
+.meta-minds-name {
+  font-family: 'Press Start 2P';
+  font-size: 80px;
 }
 
-.meta-minds-name{
-  font-family: 'Press Start 2P';
-  font-size: 40px;
-}
 img{
-  height: 300px;
-  width: 300px;
-}
-.meta-minds-name{
-  font-family: 'Press Start 2P';
-  font-size: 70px;
+  margin-top: -40px;
+  margin-bottom: -40px;
+  height: 500px;
+  width: 500px;
 }
 .meta-minds-call-to-action-div-one {
   margin-top: -40px;
   margin-bottom: 20px;
   font-family: 'Press Start 2P';
-  font-size: 18px;
+  font-size: 30px;
 }
 .meta-minds-call-to-action-div-two {
   margin-bottom: 50px;
   font-family: 'Press Start 2P';
-  font-size: 15px;
+  font-size: 27px;
 }
 .meta-minds--explore-button {
   background-color: transparent;
   border-color: #cee1e9;
-  height: 50px;
-  width: 200px;
+  height: 80px;
+  width: 400px;
   border-radius: 12px;
-  font-size: 15px;
+  font-size: 25px;
 }
 

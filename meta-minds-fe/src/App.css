@@ -1,11 +1,26 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  margin-bottom: -10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dataResult{
+  height: 320px; 
+  width: 580px; 
+  z-index: 80000;
 }
+
+.dataResults{
+  height: 320px; 
+  width: 580px; 
+  z-index: 80000;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -27,6 +42,8 @@
 .App-link {
   color: #61dafb;
 }
+
+
 
 @keyframes App-logo-spin {
   from {

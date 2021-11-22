@@ -21,8 +21,8 @@ export default function YourPosts(props) {
       <div className="all-posts">
         {allPosts.map(post => {
           return (
-            <div key={post.id}>
-              <img src={post.image} alt={post.tile} />
+            <div className="userPosts" key={post.id}>
+              {/* <img src={post.image} alt={post.tile} /> */}
               <div>
                 <h4>{post.title}</h4>
                 <h4>{post.category}</h4>

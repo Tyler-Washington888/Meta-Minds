@@ -1,0 +1,49 @@
+.footer-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: transparent;
+  opacity: 40px;
+  margin-top: -250px;
+  margin-bottom: -150px;
+  position: sticky;
+  bottom: 0px;
+  height: 250px;
+  width: 100%;
+  box-shadow: 0 1px 8px 0 rgba(0,0,0,0.4);
+  z-index: 6;
+  overflow: hidden;
+}
+.met-logo  {
+  position: sticky;
+  bottom: 0px;
+  margin-top: -300px;
+  margin-bottom: -430px;
+  height: 200px; 
+  width: 200px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.copyright {
+  font-size: 8px;
+  padding-left: 35px;
+}
+
+.linkedin-logo {
+  position: relative;
+  top: 200px;
+  height: 80px;
+  width: 80px;
+  margin-right: 0px;
+}
+.github-logo {
+  position: relative;
+  top: 200px;
+  height: 80px;
+  width: 80px;
+}
+
+
+

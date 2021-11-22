@@ -1,0 +1,153 @@
+
+.explore-imagest {
+  border-right: none;
+  border-left: none ;
+  height: 305px;
+  width: 100%;
+  object-fit:cover;
+  object-position: center -300px;
+  z-index: 90;
+  margin-bottom: -5px;
+  padding-left: -3px;
+  box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+  filter: 30%;
+}
+
+.latest-and-all-postsst{
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636137936/Meta-Minds/nvkCN6_spihuq.jpg");
+  height: calc( 100% + 100px );
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+  z-index: 1;
+}
+.brot{
+  margin-bottom: 420px;
+}
+
+.single-postst {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px;
+  width: 100%;
+  margin-right: 20px;
+  border-style: solid 4px;
+  border-color: yellowgreen;
+  box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3)
+}
+
+.single-postst:hover {
+  background-color: #F1F1F1;
+  opacity: 90%;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+}
+
+.single-postst:hover > .single-post-imagest{
+  margin-right: 15px;
+  transition: .5s ease;
+}
+
+.single-postst:hover > .yot {
+  padding-left: 10px;
+  transition: .5s ease;
+}
+
+.yot {
+  display: flex;
+  flex-direction: row;
+  min-width: 500px;
+  margin-left: 50px;
+  margin-top: 0px;
+}
+
+
+.single-post-imagest {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 150px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  margin-right: 8px;
+}
+.single-post-titlest{
+  font-size: 25px;
+  margin-left: 150px;
+  margin-top: 55px;
+}
+.single-post-datest {
+ font-size: 25px;
+}
+
+
+.footer-divst {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: transparent;
+  opacity: 40px;
+  margin-top: -250px;
+  margin-bottom: -50px;
+  height: 250px;
+  width: 100%;
+  z-index: 6;
+  overflow: hidden;
+}
+.met-logost  {
+  position: sticky;
+  bottom: 0px;
+  margin-top: -300px;
+  margin-bottom: -400px;
+  height: 250px; 
+  width: 250px;
+  margin-right: 50px;
+  margin-left: 50px;
+  overflow: hidden;
+}
+
+.copyrightst {
+  font-size: 8px;
+  padding-left: 35px;
+}
+
+.linkedin-logost {
+  height: 80px;
+  width: 80px;
+  margin-right: 0px;
+  z-index: 6;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 15px;
+}
+.github-logost {
+  padding: 20px;
+  border-radius: 15px;
+  height: 80px;
+  width: 80px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+.github-logot:hover {
+  background-color: #0ACCE5;
+  opacity: 70%;
+ }
+
+ .met-logo-divst {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: -340px;
+ }
+
+ .linkedin-logot:hover {
+  background-color: #0ACCE5;
+  opacity: 70%;
+ }
