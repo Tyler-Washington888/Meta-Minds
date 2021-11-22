@@ -24,7 +24,6 @@ export default function SignUp(props) {
         handleRegister(formData);
       }}
     >
-      <h3>Register</h3>
       <label>
         Username:
         <input

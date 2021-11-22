@@ -38,9 +38,12 @@ function Header(props) {
           <NavLink to='/explore' activeStyle={{
             borderBottom: "4px ridge white",
           }} className='header-div-catergories-text meta'>Latest</NavLink>
+
           <NavLink to='/meta' activeStyle={{
             borderBottom: "4px ridge white",
           }} className='header-div-catergories-text meta'>Meta</NavLink>
+
+
           <NavLink to='/mana' activeStyle={{
             borderBottom: "4px ridge white",
           }} className='header-div-catergories-text meta'>Mana</NavLink>
