@@ -4,18 +4,19 @@ import "./Meta.css";
 
 function Meta(props) {
   const { posts } = props;
-  // const [newestMetaPost, setNewestMetaPost] = useState([]);
   const [allPosts, setAllPosts] = useState([]);
   const { DateTime } = require("luxon");
 
 
-  useEffect(() => {
-    const metaPosts = posts.filter(post => post.category == 'Meta');
-    const latestPosts = metaPosts.sort((b, a) => a.id - b.id);
-    // setNewestMetaPost(latestMetaPost);
+  useEffect(async () => {
+    const metaPosts = await posts.filter((post) => {
+      return post.category == 'Meta'
+    });
+    const latestPosts = await metaPosts.sort((b, a) => {
+      return a.id - b.id;
+    });
     setAllPosts(latestPosts);
-    // loopWithSlice(0, postsPerLoad);
-  }, [])
+  }, [posts])
 
   return (
     <div>

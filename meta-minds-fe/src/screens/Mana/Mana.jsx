@@ -9,11 +9,26 @@ function Mana(props) {
   const { DateTime } = require("luxon");
 
 
-  useEffect(() => {
-    const metaPosts = posts.filter(post => post.category == 'Mana');
-    const latestPosts = metaPosts.sort((b, a) => a.id - b.id);
+  useEffect(async () => {
+    const metaPosts = await posts.filter((post) => {
+      return post.category == 'Mana';
+    });
+    const latestPosts = metaPosts.sort((b, a) => {
+      return a.id - b.id
+    });
     setAllPosts(latestPosts);
-  }, [])
+  }, [posts])
+
+
+  useEffect(async () => {
+    const metaPosts = await posts.filter((post) => {
+      return post.category == 'Meta'
+    });
+    const latestPosts = await metaPosts.sort((b, a) => {
+      return a.id - b.id;
+    });
+    setAllPosts(latestPosts);
+  }, [posts])
 
   return (
     <div>
