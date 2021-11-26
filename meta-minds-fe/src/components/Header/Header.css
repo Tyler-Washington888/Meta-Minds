@@ -11,14 +11,14 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-
 }
+
 .header-div-app-title{
   font-family: 'Press Start 2P';
   font-size: 25px;
   padding: 25px;
   padding-top: 30px;
-  margin-left: -380px;
+  margin-left: -320px;
   text-decoration: none;
   color: black;
 }
@@ -45,18 +45,18 @@ border-style: 5px ridge;
 }
 
 .header-div-content-margin-right {
-  padding-right: 50px;
+  padding-right: 30px;
   display: flex;
   flex-direction: column;
   justify-content: start; 
+  align-items: flex-start;
 }
 .header-div-search-bar-div {
   padding: 25px;
   padding-top: 20px;
-  padding-right: 40px;
+  padding-right: 0px;
   position: relative;
-  right: 32px;
-  
+  right: -20px;
 }
 .search-bar-div-search{
   display: flex;
@@ -80,6 +80,8 @@ border-style: 5px ridge;
 
 .header-div-search-bars {
   background-color: white;
+  position: relative;
+  right: 37px;
   height: 40px;
   width: 528px;
   border-width: 0px;
@@ -128,7 +130,7 @@ border-style: 5px ridge;
   z-index: 40;
   position: relative;
   top: -30px;
-  left: 35px;
+  left: -3px;
   height: 20px;
   width: 20px;
   z-index: 12;
@@ -147,6 +149,8 @@ border-style: 5px ridge;
   z-index: 9;
   height: 500px; 
   width: 580px; 
+  position: relative;
+  right: 37px;
 }
 .RESULT {
   height: 500px; 
@@ -162,6 +166,8 @@ border-style: 5px ridge;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   z-index: 9;
+  position: relative;
+  right: 37px;
 }
 
 .searchs-iconsssss{
@@ -195,8 +201,8 @@ padding-top: 80px;
   justify-content: center;
   align-items: start;
   align-content: center;
-  min-height: 100px;
-  margin-bottom: -10px;
+  min-height: 90px;
+  margin-bottom: -5px;
   z-index: 10;
 }
 
@@ -235,10 +241,10 @@ text-align: left;
   flex-direction: column;  
   justify-content: center;
   position: relative;
-  right: 500px;
+  right: 390px;
  top: -105px;
   height: 400px;
-  width: 1000px;
+  width: 400px;
 }
 
 .header-div-user-welcome {
@@ -267,7 +273,7 @@ text-align: left;
   display: flex; 
   flex-direction: row;
   position: relative;
-  right: 350px;
+  right: 230px;
   top: 108px;
   font-size: 20px;
   margin-top: 0px;

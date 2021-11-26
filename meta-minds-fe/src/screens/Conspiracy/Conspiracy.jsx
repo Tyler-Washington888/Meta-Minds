@@ -10,11 +10,9 @@ function Conspiracy(props) {
 
 
   useEffect(() => {
-    const metaPosts = posts.filter(post => post.category == 'Conspiracy');
+    const metaPosts = posts.filter(post => post.category == 'Film');
     const latestPosts = metaPosts.sort((b, a) => a.id - b.id);
-    // setNewestMetaPost(latestMetaPost);
     setAllPosts(latestPosts);
-    // loopWithSlice(0, postsPerLoad);
   }, [])
 
   return (

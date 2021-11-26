@@ -65,7 +65,7 @@ export default function SignUp(props) {
           />
         </label>
         <br />
-        <Link to='/explore'><button class='sign-up-button'>Sign-Up</button></Link>
+        <button class='sign-up-button'>Sign-Up</button>
       </form>
       <div class='link-to-sign-in-div'>
         <div class='have-account-text'>Have an Account?</div>

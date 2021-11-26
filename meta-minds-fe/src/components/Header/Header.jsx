@@ -38,12 +38,9 @@ function Header(props) {
           <NavLink to='/explore' activeStyle={{
             borderBottom: "4px ridge white",
           }} className='header-div-catergories-text meta'>Latest</NavLink>
-
           <NavLink to='/meta' activeStyle={{
             borderBottom: "4px ridge white",
           }} className='header-div-catergories-text meta'>Meta</NavLink>
-
-
           <NavLink to='/mana' activeStyle={{
             borderBottom: "4px ridge white",
           }} className='header-div-catergories-text meta'>Mana</NavLink>
@@ -52,7 +49,7 @@ function Header(props) {
           }} className='header-div-catergories-text meta'>Crypto</NavLink>
           <NavLink to='/conspiracy' activeStyle={{
             borderBottom: "4px ridge white",
-          }} className='header-div-catergories-text meta'>Conspiracy</NavLink>
+          }} className='header-div-catergories-text meta'>Film</NavLink>
         </div>
       </div>
       <div className='header-div-content-margin-right'>

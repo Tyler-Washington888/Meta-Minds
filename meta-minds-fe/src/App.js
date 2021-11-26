@@ -44,6 +44,7 @@ function App() {
     handleVerify();
   }, []);
 
+
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
     setCurrentUser(userData);

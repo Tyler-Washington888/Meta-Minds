@@ -55,7 +55,7 @@ function SignIn(props) {
           />
         </label>
         <br />
-        <Link to='/explore'><button class='sign-in-button'>Sign In</button></Link>
+        <button class='sign-in-button'>Sign In</button>
       </form>
       <div class='link-to-sign-up-div'>
         <h1 class="new-to-site-text">New to Meta Minds?</h1>

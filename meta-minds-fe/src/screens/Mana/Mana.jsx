@@ -22,12 +22,12 @@ function Mana(props) {
         <div class='brot'>
           {allPosts.map(post => {
             return (
-              <div class="single-postst" key={post.id}>
+              <div class="single-postst" key={post?.id}>
                 <div class='yot'>
                   <h6 class="single-post-datest">{DateTime.now(post.created_at).toLocaleString(DateTime.DATE_MED)}</h6>
-                  <h4 class="single-post-titlest">{post.title}</h4>
+                  <h4 class="single-post-titlest">{post?.title}</h4>
                 </div>
-                <img class="single-post-imagest" src={post.image} alt={post.tile} />
+                <img class="single-post-imagest" src={post?.image} alt={post?.tile} />
               </div>
             )
           })}
