@@ -11,7 +11,7 @@ function Mana(props) {
 
   useEffect(async () => {
     const metaPosts = await posts.filter((post) => {
-      return post.category == 'Mana';
+      return post.category === 'Mana';
     });
     const latestPosts = metaPosts.sort((b, a) => {
       return a.id - b.id
@@ -19,16 +19,6 @@ function Mana(props) {
     setAllPosts(latestPosts);
   }, [posts])
 
-
-  useEffect(async () => {
-    const metaPosts = await posts.filter((post) => {
-      return post.category == 'Meta'
-    });
-    const latestPosts = await metaPosts.sort((b, a) => {
-      return a.id - b.id;
-    });
-    setAllPosts(latestPosts);
-  }, [posts])
 
   return (
     <div>
@@ -47,16 +37,16 @@ function Mana(props) {
             )
           })}
         </div>
-        <div className='footer-div'>
+        <div class="footer-div-meta-screen">
           <a href="https://github.com/Tyler-Washington888">
-            <img className="github-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637090175/Meta-Minds/icons8-linkedin-100_dvm7wk.png" alt="Meta Minds Logo"></img>
+            <img class="linkedin-logo-meta-screen" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637090175/Meta-Minds/icons8-linkedin-100_dvm7wk.png" alt="Meta Minds Logo"></img>
           </a>
-          <div class="met-logo-div">
-            <img className="met-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="Meta Minds Logo"></img>
-            <h2 className='copyright'>copyright 2021</h2>
+          <div class="footer-meta-logo-div-meta-screen">
+            <img className="footer-meta-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="Meta Minds Logo"></img>
+            <h2 className='copyrights-meta-screen'>copyright 2021</h2>
           </div>
           <a href="https://www.linkedin.com/in/tyler-washington-4a8429176">
-            <img className="linkedin-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637090155/Meta-Minds/icons8-github-48_fzk9g1.png" alt="Meta Minds Logo"></img>
+            <img className="github-logo-meta-screen" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637090155/Meta-Minds/icons8-github-48_fzk9g1.png" alt="Meta Minds Logo"></img>
           </a>
         </div>
       </div>
