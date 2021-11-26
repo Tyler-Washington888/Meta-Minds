@@ -1,23 +1,31 @@
-import React from 'react'
-import "./Crypto.css";
 import { useEffect, useState } from 'react';
+import "./Crypto.css";
 
 function Crypto(props) {
   const { posts } = props;
-  // const [newestMetaPost, setNewestMetaPost] = useState([]);
   const [allPosts, setAllPosts] = useState([]);
   const { DateTime } = require("luxon");
 
 
-  useEffect(() => {
-    const metaPosts = posts.filter(post => post.category == 'Crypto');
-    const latestPosts = metaPosts.sort((b, a) => a.id - b.id);
-    // setNewestMetaPost(latestMetaPost);
+  useEffect(async () => {
+    const metaPosts = await posts.filter((post) => {
+      return post.category == 'Crypto'
+    });
+    const latestPosts = await metaPosts.sort((b, a) => {
+      return a.id - b.id
+    });
     setAllPosts(latestPosts);
-    // loopWithSlice(0, postsPerLoad);
-  }, [])
-  console.log('1234343')
+  }, [posts])
 
+  useEffect(async () => {
+    const metaPosts = await posts.filter((post) => {
+      return post.category == 'Mana';
+    });
+    const latestPosts = metaPosts.sort((b, a) => {
+      return a.id - b.id
+    });
+    setAllPosts(latestPosts);
+  }, [posts])
   return (
     <div>
       <img class="explore-imagests" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637134484/Meta-Minds/axie_infinity_z8nqbw.jpg" alt="banner image"></img>
