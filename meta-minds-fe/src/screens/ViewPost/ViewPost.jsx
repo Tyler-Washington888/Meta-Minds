@@ -52,6 +52,7 @@ export default function ViewPost(props) {
 
 
   const handleDelete = async (event) => {
+    event.preventDefault()
     const updated = await deletePost(post_id);
     history.push(`/explore`)
   };
@@ -74,7 +75,7 @@ export default function ViewPost(props) {
             <div className="view-post-created-name">{user[0]?.username}</div>
           </div>
           {isOpen && (
-            (currentUser ? (
+            (currentUser && currentUser.id === post.user_id ? (
               <div className="view-post-show-options-dropdown">
                 <Link className="edit-post-div-link" to={`/update-post/${post?.id}`} key={post?.id}><div className="edit-post-div">
                   <img className="edit-post-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638767523/Meta-Minds/icons8-edit-30_c4n4wb.png"></img>
@@ -97,7 +98,7 @@ export default function ViewPost(props) {
                 </div>
                 <div className="modal-decision-div">
                   <button onClick={() => setFinalDelete(!finalDetete)} className="modal-cancel-button">Cancel</button>
-                  <button className="modal-delete-button">Delete</button>
+                  <button onClick={handleDelete} className="modal-delete-button">Delete</button>
                 </div>
               </div>
             </div>

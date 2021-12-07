@@ -132,7 +132,10 @@ function Header(props) {
       )
       )
       }
-    </div >
+      {wordEntered.length !== 0 ? (
+        <div className="page-overlay"></div>
+      ) : (<div></div>)}
+    </div>
   )
 }
 export default Header;
