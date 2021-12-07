@@ -335,13 +335,15 @@ text-align: left;
 }
 .each-similar-post-div{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 85%;
+  flex-wrap: wrap ;
+  width: 90%;
 }
 
 .each-similar-post{
   display: flex;
+  list-style: none;
+  flex: 0 0 33.333333%;
+  margin-right: 0%;
   flex-direction: column;
 }
 
@@ -372,6 +374,9 @@ text-align: left;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   height: 110px;
+  width: 360px;
+  position: relative;
+  left: 35px;
 }
 
 .each-similar-post-cretated-at-and-category-div{
