@@ -29,7 +29,7 @@ function Meta(props) {
             return (
               <Link to={`/view-post/${post.id}`} key={post.id} className="each-meta-post-inner-div-link"><div className="each-meta-post-inner-div" key={post.id}>
                 <div className="each-meta-post-date-and-title-div">
-                  <h6 className="each-meta-post-date">{DateTime.now(post.created_at).toLocaleString(DateTime.DATE_MED)}</h6>
+                  <h6 className="each-meta-post-date">{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
                   <h4 className="each-meta-post-title">{post.title}</h4>
                 </div>
                 <img className="each-meta-post-image" src={post.image} alt={post.tile} />

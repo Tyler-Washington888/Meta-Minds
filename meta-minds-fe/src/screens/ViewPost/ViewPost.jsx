@@ -39,16 +39,14 @@ export default function ViewPost(props) {
     fetchUser();
   }, [post]);
 
-  useEffect(async () => {
-    const similarPosts = await posts.filter((eachPost) => {
-      return eachPost.category === post.category && eachPost.id !== post.id;
-    })
-    const newestSimPosts = await similarPosts.sort((b, a) => {
-      return a.id - b.id;
-    })
-    const firstTwoPosts = await newestSimPosts.slice(0, 3)
-    setSimPosts(firstTwoPosts)
-  }, [post_id])
+  const similarPosts = posts.filter((eachPost) => {
+    return eachPost.category === post.category && eachPost.id !== post.id;
+  })
+  const newestSimPosts = similarPosts.sort((b, a) => {
+    return a.id - b.id;
+  })
+  const firstTwoPosts = newestSimPosts.slice(0, 3)
+
 
   const handleDelete = async (event) => {
     event.preventDefault()
@@ -74,7 +72,7 @@ export default function ViewPost(props) {
         <div className="view-post-upper-details-div" >
           <div className="view-post-upper-details-div-left">
             <div className="view-post-created-at-and-category">
-              <div className="view-post-created-at">{DateTime.now().toLocaleString(DateTime.DATE_MED)}</div>
+              <div className="view-post-created-at">{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
               <Link to={`/${post?.category}`} className="single-post-category-link"><div className="view-post-category">{post?.category}</div></Link>
             </div>
             <div className="view-post-title">{post?.title}</div>
@@ -136,14 +134,14 @@ export default function ViewPost(props) {
         <div className="similar-posts-div">
           <div className="similar-posts-title">Similar Posts</div>
           <div className="each-similar-post-div">
-            {simPosts.map((simPost) => {
+            {firstTwoPosts.map((simPost) => {
               return (
                 <div className="each-similar-post">
                   <Link to={`/view-post/${simPost?.id}`} key={simPost?.id} className="single-post-title-link"><img className="each-similar-post-image" src={simPost?.image} alt="similar-post"></img></Link>
                   <div className="each-similar-post-details-div">
                     <div className="each-similar-post-details-div-text">
                       <div className="each-similar-post-cretated-at-and-category-div">
-                        <h5 className="each-similar-post-cretated-at-text">{DateTime.now().toLocaleString(DateTime.DATE_MED)}</h5>
+                        <h5 className="each-similar-post-cretated-at-text">{DateTime.fromISO(`${simPost?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h5>
                         <Link to={`/${simPost?.category}`} className="single-post-category-link"><div className="each-similar-post-catgeory-text">{simPost?.category}</div></Link>
                       </div>
                       <Link to={`/view-post/${simPost?.id}`} key={simPost?.id} className="single-post-title-link"><h1 className="each-similar-post-title">{simPost?.title}</h1></Link>

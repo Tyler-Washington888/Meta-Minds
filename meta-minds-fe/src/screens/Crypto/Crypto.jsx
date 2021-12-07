@@ -28,7 +28,7 @@ function Crypto(props) {
             return (
               <Link to={`/view-post/${post.id}`} key={post.id} className="crypto-all-posts-inner-div-link"><div className="crypto-all-posts-inner-div" key={post.id}>
                 <div className="crypto-all-posts-date-and-title-div">
-                  <h6 className="crypto-all-posts-date">{DateTime.now(post.created_at).toLocaleString(DateTime.DATE_MED)}</h6>
+                  <h6 className="crypto-all-posts-date">{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
                   <h4 className="crypto-all-posts-title">{post.title}</h4>
                 </div>
                 <img className="crypto-all-posts-image" src={post.image} alt={post.tile} />

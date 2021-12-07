@@ -47,7 +47,7 @@ function Explore(props) {
             <div className="latest-post-details-background-div"></div>
             <div className="latest-post-details-text-div">
               <h4 className="latest-post-details-date-and-category-text-div">
-                <h6 className="latest-post-details-date text"> {DateTime.now().toLocaleString(DateTime.DATE_MED)}</h6>
+                <h6 className="latest-post-details-date text"> {DateTime.fromISO(`${newPost?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
                 <img className="meta-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="Meta-Minds-Logo"></img>
                 <Link to={`/${newPost?.category}`} className="single-post-category-link"><h1 className="latest-post-details-category text">{newPost?.category}</h1></Link>
               </h4>
@@ -64,7 +64,7 @@ function Explore(props) {
                 <div className="single-post-detail-div">
                   <Link to={`/view-post/${post.id}`} key={post.id} className="single-post-title-link"><h4 className="single-post-title">{post.title}</h4></Link>
                   <div className="single-post-date-and-category-div">
-                    <h6 className="single-post-date">{DateTime.now(post.created_at).toLocaleString(DateTime.DATE_MED)}</h6>
+                    <h6 className="single-post-date">{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
                     <Link to={`/${post.category}`} className="single-post-category-link"><h4 class="single-post-category">{post.category}</h4></Link>
                   </div>
                 </div>

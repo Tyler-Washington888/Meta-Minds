@@ -35,7 +35,7 @@ export default function YourPosts(props) {
             return (
               <Link to={`/view-post/${post.id}`} key={post.id} className="user-post-inner-div-link"><div className="user-post-inner-div" key={post?.id}>
                 <div className="user-post-date-and-title-div">
-                  <h6 className="user-post-date">{DateTime.now(post.created_at).toLocaleString(DateTime.DATE_MED)}</h6>
+                  <h6 className="user-post-date">{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
                   <h4 className="user-post-title">{post?.title}</h4>
                 </div>
                 <img className="user-post-image" src={post?.image} alt={post?.tile} />
