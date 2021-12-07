@@ -16,6 +16,7 @@ export default function ViewPost(props) {
   const [simPosts, setSimPosts] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [finalDetete, setFinalDelete] = useState(false);
+  const [copied, setCopied] = useState(false);
   const history = useHistory();
   const { DateTime } = require("luxon");
 
@@ -49,13 +50,22 @@ export default function ViewPost(props) {
     setSimPosts(firstTwoPosts)
   }, [post_id])
 
-
-
   const handleDelete = async (event) => {
     event.preventDefault()
     const updated = await deletePost(post_id);
     history.push(`/explore`)
   };
+
+  function copy() {
+    setIsOpen(!isOpen)
+    const el = document.createElement("input");
+    el.value = window.location.href;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+    setCopied(true);
+  }
 
   return (
     <div>
@@ -85,9 +95,26 @@ export default function ViewPost(props) {
                   <img className="delete-post-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638767542/Meta-Minds/icons8-delete-48_ujlv7r.png" ></img>
                   <div className="delete-post-text">Delete Post</div>
                 </div>
+                <div onClick={copy} className="copy-post-url-div">
+                  <img className="copy-link-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638893598/Meta-Minds/icons8-link-50_jaqddt.png" ></img>
+                  <div className="copy-link-text">Copy Post</div>
+                </div>
               </div>) : (
-              <div>yo</div>
+              <div className="view-post-show-options-dropdown-two">
+                <div className="copy-post-url-div">
+                  <img className="copy-link-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638893598/Meta-Minds/icons8-link-50_jaqddt.png" ></img>
+                  <div className="copy-link-text">Copy Post</div>
+                </div>
+              </div>
             )))}
+          {copied && (
+            <div className="clipboard-div">
+              <img className="task-complete-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638902968/Meta-Minds/icons8-task-completed-48_tteo9y.png"></img>
+              <div className="Link-to-text">Link copied to clipboard</div>
+              <a className="href-text" href={`/view-post/${post.id}`}>View Post</a>
+              <img onClick={() => setCopied(false)} className="exit-clipboard-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637356989/Meta-Minds/icons8-xbox-x-30_b6ugfl.png"></img>
+            </div>
+          )}
           {finalDetete && (
             <div>
               <div className="modal-page"></div>
@@ -117,7 +144,7 @@ export default function ViewPost(props) {
                     <div className="each-similar-post-details-div-text">
                       <div className="each-similar-post-cretated-at-and-category-div">
                         <h5 className="each-similar-post-cretated-at-text">{DateTime.now().toLocaleString(DateTime.DATE_MED)}</h5>
-                        <Link to={`/${simPost.category}`} className="single-post-category-link"><div className="each-similar-post-catgeory-text">{simPost?.category}</div></Link>
+                        <Link to={`/${simPost?.category}`} className="single-post-category-link"><div className="each-similar-post-catgeory-text">{simPost?.category}</div></Link>
                       </div>
                       <Link to={`/view-post/${simPost?.id}`} key={simPost?.id} className="single-post-title-link"><h1 className="each-similar-post-title">{simPost?.title}</h1></Link>
                     </div>

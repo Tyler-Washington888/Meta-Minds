@@ -108,28 +108,48 @@ text-align: left;
 
 }
 
+
+
+/* options dropdown */
 .view-post-show-options-dropdown{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   background-color: rgb(255, 250, 250);
   margin-left: 20px;
   margin-top: -35px;
-  height: 85px;
-  min-width: 150px;
+  height: 120px;
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+}
+.view-post-show-options-dropdown-two{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgb(255, 250, 250);
+  margin-left: 20px;
+  margin-top: -35px;
+  height: 40px;
+  min-width: 160px;
   border-radius: 6px;
   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
 }
 
 .edit-post-div{
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 0px;
-  padding: 5px;
-  height: 60%;
-  padding:10px;
-  text-decoration: none;
+  flex-direction: row; 
+  text-decoration: none; 
+  justify-content: center;
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  min-height: 40px;
+  min-width: 160px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
 }
+
 
 .edit-post-div:hover {
   background-color:  rgb(177, 174, 174);
@@ -144,24 +164,28 @@ text-align: left;
   height: 25px;
   width: 25px;
   position: relative;
-  top: 38px;
-  left: 5px;
-  margin-right: 15px;
+  top: 50px;
+  right: 7px;
+  margin-right: 10px;
 }
 
 .edit-post-text{
-  position: relative;
-  top: 2px;
   font-size: 15px;
   font-weight: normal;
+  position: relative;
+  top: 12px;
 }
 
 .delete-post-div{
   display: flex;
-  flex-direction: row;
-  height: 60%;
-  padding:8px;
-  margin-bottom: -2px;
+  flex-direction: row; 
+  text-decoration: none; 
+  justify-content: center;
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  min-height: 40px;
+  min-width: 160px;
 }
 
 .delete-post-div:hover {
@@ -173,15 +197,16 @@ text-align: left;
   height: 25px;
   width: 25px;
   position: relative;
-  top: 40px;
-  left: 5px;
-  margin-right: 15px;
+  top: 47px;
+  right: 0px;
+  margin-right: 10px;
 }
 .delete-post-text{
-  position: relative;
-  top: 5px;
   font-size: 15px;
   font-weight:normal;
+  position: relative;
+ left: 7px;
+ top: 8px;
 }
 
 .view-post-final-delete-div{
@@ -194,7 +219,42 @@ text-align: left;
   min-width: 150px;
   border-radius: 6px;
   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-}s
+}
+
+.copy-post-url-div {
+  display: flex;
+  flex-direction: row; 
+  text-decoration: none; 
+  justify-content: center;
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  min-height: 40px;
+  min-width: 160px;
+}
+
+.copy-post-url-div:hover {
+  background-color:  rgb(177, 174, 174);
+  opacity: 50%;
+}
+
+.copy-link-icon{
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: 46px;
+  right: 3px;
+  margin-right: 10px;
+}
+.copy-link-text{
+  font-size: 15px;
+  font-weight:normal;
+  position: relative;
+ left: 3px;
+ top: 8px;
+}
+
+
 
 
 
@@ -208,6 +268,9 @@ text-align: left;
   right: 11px;
   margin-top: -330px;
 }
+
+
+
 
 
 
@@ -311,8 +374,6 @@ text-align: left;
 .each-similar-post-details-div-text{
   margin-top: -10px;
 }
-
-
 .modal-page{
   position: fixed;
   left: 0;
@@ -320,7 +381,7 @@ text-align: left;
   top: 0;
   bottom: 0;
   background-color: rgb(32, 32, 32); 
-  opacity: 70%;  
+  opacity: 30%;  
   z-index: 100;
   display: flex;
   align-items: center;
@@ -391,5 +452,47 @@ color: rgb(22, 21, 21);
   background-color: white;
   color: rgb(22, 21, 21);
  }
+
+/* clipboard */
+
+.clipboard-div{
+  display: flex;
+  flex: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+  border-radius: 6px;
+  position: fixed;
+  bottom: 220px;
+  right: 60px;
+  height: 40px;
+  z-index: 40;
+}
+
+.task-complete-icon{
+  height: 30px;
+  width: 30px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.Link-to-text{
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.href-text{
+font-size: 20px;
+text-decoration: none;
+font-weight: bolder;
+color: #0401a5;
+margin-right: 15px;
+}
+.exit-clipboard-icon{
+  height: 25px;
+  width: 25px;padding-right: 10px;
+}
+
 
 
