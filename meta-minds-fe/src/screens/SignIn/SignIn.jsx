@@ -44,7 +44,7 @@ function SignIn(props) {
           />
         </label>
         <br />
-        <label class='sign-in-label-and-input-div password'>
+        <label class='sign-in-label-and-input-div'>
           <div class='input-text-title'>Password</div>
           <input
             class='user-input-box'

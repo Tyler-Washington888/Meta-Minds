@@ -1,11 +1,10 @@
 
-.explore-images {
+.meta-banner-image {
   border-right: none;
   border-left: none ;
   height: 305px;
   width: 100%;
   object-fit:cover;
-  /* object-position: center -100px; */
   z-index: 90;
   margin-bottom: -5px;
   padding-left: -3px;
@@ -13,26 +12,27 @@
   filter: 30%;
 }
 
-.latest-and-all-postss{
+.meta-posts-div{
   display: flex;
   flex-direction: column;
   padding: 5%;
-  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636137936/Meta-Minds/nvkCN6_spihuq.jpg");
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636675187/Meta-Minds/nvkCN6_spihuq.jpg");
   height: calc( 100% + 100px );
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -40px;
   z-index: 1;
 }
-.bro{
+.each-meta-post-outer-div{
   margin-bottom: 420px;
 }
 
-.single-posts {
+.each-meta-post-inner-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-radius: 12px;
   height: 180px;
   width: 100%;
   margin-right: 20px;
@@ -40,25 +40,30 @@
   border-color: yellowgreen;
   box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3)
 }
-
-.single-posts:hover {
-  background-color: #F1F1F1;
-  opacity: 90%;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+.each-meta-post-inner-div-link {
+  text-decoration: none;
+  color: black;
 }
 
-.single-posts:hover > .single-post-images{
+.each-meta-post-inner-div:hover {
+  background-color: #57dff1;
+  opacity: 90%;
+  border-radius: 12px;
+  box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.4);
+  border-style: hidden;
+}
+
+.each-meta-post-inner-div:hover > .each-meta-post-image{
   margin-right: 15px;
   transition: .5s ease;
 }
 
-.single-posts:hover > .yo {
+.each-meta-post-inner-div:hover > .each-meta-post-date-and-title-div {
   padding-left: 10px;
   transition: .5s ease;
 }
 
-.yo {
+.each-meta-post-date-and-title-div {
   display: flex;
   flex-direction: row;
   min-width: 500px;
@@ -67,7 +72,7 @@
 }
 
 
-.single-post-images {
+.each-meta-post-image {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
@@ -78,12 +83,12 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   margin-right: 8px;
 }
-.single-post-titles{
+.each-meta-post-title{
   font-size: 25px;
   margin-left: 150px;
   margin-top: 55px;
 }
-.single-post-dates {
+.each-meta-post-date {
  font-size: 25px;
 }
 

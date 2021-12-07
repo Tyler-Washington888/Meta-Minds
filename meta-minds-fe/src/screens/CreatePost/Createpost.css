@@ -1,0 +1,22 @@
+.latest-and-all-posts-main-divs{
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636675187/Meta-Minds/nvkCN6_spihuq.jpg");
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+  z-index: 1;
+  height: calc( 100% + 300px);
+  overflow-y: hidden;
+}
+
+.create-post-form{
+  padding-bottom: 1000px;
+}
+.create-post-title{
+  
+}
+.create-post-footer-div{
+  margin-top: 100px;
+
+}

@@ -1,11 +1,11 @@
 
-.crypto-banner-image {
+.film-banner-image {
   border-right: none;
   border-left: none ;
   height: 305px;
   width: 100%;
   object-fit:cover;
-  object-position: center -200px;
+  object-position: center -100px;
   z-index: 90;
   margin-bottom: -5px;
   padding-left: -3px;
@@ -13,7 +13,7 @@
   filter: 30%;
 }
 
-.crypto-all-posts-div{
+.film-posts-div{
   display: flex;
   flex-direction: column;
   padding: 5%;
@@ -24,11 +24,11 @@
   margin-top: -40px;
   z-index: 1;
 }
-.crypto-all-posts-outer-div{
+.each-post-outer-div{
   margin-bottom: 420px;
 }
 
-.crypto-all-posts-inner-div {
+.each-post-inner-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -41,7 +41,13 @@
   box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3)
 }
 
-.crypto-all-posts-inner-div:hover {
+.each-post-inner-div-link{
+  text-decoration: none;
+  color: black;
+
+}
+
+.each-post-inner-div:hover {
   background-color: #57dff1;
   opacity: 90%;
   border-radius: 12px;
@@ -49,17 +55,17 @@
   border-style: hidden;
 }
 
-.crypto-all-posts-inner-div:hover > .crypto-all-posts-image{
+.each-post-inner-div:hover > .each-post-image{
   margin-right: 15px;
   transition: .5s ease;
 }
 
-.crypto-all-posts-inner-div:hover > .crypto-all-posts-date-and-title-div {
+.each-post-inner-div:hover > .each-post-date-and-title-div {
   padding-left: 10px;
   transition: .5s ease;
 }
 
-.crypto-all-posts-date-and-title-div {
+.each-post-date-and-title-div {
   display: flex;
   flex-direction: row;
   min-width: 500px;
@@ -68,7 +74,7 @@
 }
 
 
-.crypto-all-posts-image {
+.each-post-image {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
@@ -79,17 +85,12 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   margin-right: 8px;
 }
-.crypto-all-posts-title{
+.each-post-title{
   font-size: 25px;
   margin-left: 150px;
   margin-top: 55px;
 }
-.crypto-all-posts-date {
+.each-post-date {
  font-size: 25px;
-}
-
-.crypto-all-posts-inner-div-link {
-  text-decoration: none;
-  color:black
 }
 

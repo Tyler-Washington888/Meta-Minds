@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
+import Footer from '../../components/Footer/Footer';
 import "./Crypto.css";
+import { Link } from "react-router-dom";
 
 function Crypto(props) {
   const { posts } = props;
@@ -17,44 +19,24 @@ function Crypto(props) {
     setAllPosts(latestPosts);
   }, [posts])
 
-  useEffect(async () => {
-    const metaPosts = await posts.filter((post) => {
-      return post.category == 'Mana';
-    });
-    const latestPosts = metaPosts.sort((b, a) => {
-      return a.id - b.id
-    });
-    setAllPosts(latestPosts);
-  }, [posts])
   return (
     <div>
-      <img class="explore-imagests" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637134484/Meta-Minds/axie_infinity_z8nqbw.jpg" alt="banner image"></img>
-      <div class="latest-and-all-postssts">
-        <div class='brots'>
+      <img className="crypto-banner-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637134484/Meta-Minds/axie_infinity_z8nqbw.jpg" alt="crypto-banner-image"></img>
+      <div className="crypto-all-posts-div">
+        <div className="crypto-all-posts-outer-div">
           {allPosts.map(post => {
             return (
-              <div class="single-poststs" key={post.id}>
-                <div class='yots'>
-                  <h6 class="single-post-datests">{DateTime.now(post.created_at).toLocaleString(DateTime.DATE_MED)}</h6>
-                  <h4 class="single-post-titlests">{post.title}</h4>
+              <Link to={`/view-post/${post.id}`} key={post.id} className="crypto-all-posts-inner-div-link"><div className="crypto-all-posts-inner-div" key={post.id}>
+                <div className="crypto-all-posts-date-and-title-div">
+                  <h6 className="crypto-all-posts-date">{DateTime.now(post.created_at).toLocaleString(DateTime.DATE_MED)}</h6>
+                  <h4 className="crypto-all-posts-title">{post.title}</h4>
                 </div>
-                <img class="single-post-imagests" src={post.image} alt={post.tile} />
-              </div>
+                <img className="crypto-all-posts-image" src={post.image} alt={post.tile} />
+              </div></Link>
             )
           })}
         </div>
-        <div class="footer-div-meta-screen">
-          <a href="https://github.com/Tyler-Washington888">
-            <img class="linkedin-logo-meta-screen" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637090175/Meta-Minds/icons8-linkedin-100_dvm7wk.png" alt="Meta Minds Logo"></img>
-          </a>
-          <div class="footer-meta-logo-div-meta-screen">
-            <img className="footer-meta-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="Meta Minds Logo"></img>
-            <h2 className='copyrights-meta-screen'>copyright 2021</h2>
-          </div>
-          <a href="https://www.linkedin.com/in/tyler-washington-4a8429176">
-            <img className="github-logo-meta-screen" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637090155/Meta-Minds/icons8-github-48_fzk9g1.png" alt="Meta Minds Logo"></img>
-          </a>
-        </div>
+        <Footer />
       </div>
     </div >
   )

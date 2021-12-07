@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams, Redirect, useHistory } from 'react-router-dom';
-import { getPost, updatePost, deletePost } from '../../Services/Posts';
+import { getPost, updatePost, deletePost } from '../../services/Posts.js';
 
-export default function UpdatePost(props) {
+function UpdatePost(props) {
   const [formData, setFormData] = useState({
     image: '',
     category: '',
@@ -18,7 +18,6 @@ export default function UpdatePost(props) {
 
   useEffect(() => {
     const fetchPost = async () => {
-      console.log('form:', post_id)
       const formData = await getPost(post_id);
       setFormData(formData);
     };
@@ -48,7 +47,6 @@ export default function UpdatePost(props) {
     event.preventDefault();
     const updated = await deletePost(post_id);
     history.push(`/explore`)
-
   };
 
   return (
@@ -90,3 +88,6 @@ export default function UpdatePost(props) {
 
 
 }
+
+export default UpdatePost;
+

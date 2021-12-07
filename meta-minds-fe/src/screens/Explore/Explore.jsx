@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Footer from '../../components/Footer/Footer';
+import { Link } from "react-router-dom";
 import "./Explore.css";
 const postsPerLoad = 6;
 let arrayForHoldingPosts = [];
@@ -20,14 +22,14 @@ function Explore(props) {
     setNewPost(latestMetaPost[0]);
     arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerLoad);
-  }, [posts])
+  }, [])
 
   const loopWithSlice = (start, end) => {
     const metaPosts = posts.filter(post => post.category === 'Meta');
     const latestMetaPost = metaPosts.sort((b, a) => a.id - b.id)[0];
     const filteredMetaPosts = posts.filter(post => post.id !== latestMetaPost.id);
     const slicedPosts = filteredMetaPosts.reverse().slice(start, end);
-    arrayForHoldingPosts = [...arrayForHoldingPosts, ...slicedPosts];
+    arrayForHoldingPosts = [...arrayForHoldingPosts, ...slicedPosts]
     setAllPosts(arrayForHoldingPosts);
   };
   const handleShowMorePosts = () => {
@@ -37,33 +39,33 @@ function Explore(props) {
 
   return (
     <div >
-      <img class="explore-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636154827/Meta-Minds/meta_vmqfci.jpg" alt="banner image"></img>
-      <div class="latest-and-all-posts-main-div">
-        <div class="latest-post-div">
-          <img class="latest-post-image" src={newPost?.image} alt={newPost?.title} ></img>
-          <div class="latest-post-details-div">
-            <div class="latest-post-details-background-div"></div>
-            <div class="latest-post-details-text-div">
-              <h4 class="latest-post-details-date-and-category-text-div">
-                <h6 class="latest-post-details-date text"> {DateTime.now().toLocaleString(DateTime.DATE_MED)}</h6>
-                <img class="meta-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="Meta Minds Logo"></img>
-                <h1 class="latest-post-details-category text">{newPost?.category}</h1>
+      <img className="explore-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636154827/Meta-Minds/meta_vmqfci.jpg" alt="banner-mage"></img>
+      <div className="latest-and-all-posts-main-div">
+        <div className="latest-post-div">
+          <Link to={`/view-post/${newPost?.id}`} key={newPost?.id} className="single-post-title-link-image"><img className="latest-posts-image" src={newPost?.image} alt={newPost?.title} ></img></Link>
+          <div className="latest-post-details-div">
+            <div className="latest-post-details-background-div"></div>
+            <div className="latest-post-details-text-div">
+              <h4 className="latest-post-details-date-and-category-text-div">
+                <h6 className="latest-post-details-date text"> {DateTime.now().toLocaleString(DateTime.DATE_MED)}</h6>
+                <img className="meta-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="Meta-Minds-Logo"></img>
+                <Link to={`/${newPost?.category}`} className="single-post-category-link"><h1 className="latest-post-details-category text">{newPost?.category}</h1></Link>
               </h4>
-              <p class="latest-post-details-title text">{newPost?.title}</p>
-              <p class="latest-post-details-subtitle text subtitle">{newPost?.subtitle}</p>
+              <Link to={`/view-post/${newPost?.id}`} key={newPost?.id} className="single-post-title-link"><p className="latest-post-details-title text">{newPost?.title}</p></Link>
+              <p className="latest-post-details-subtitle text subtitle">{newPost?.subtitle}</p>
             </div>
           </div>
         </div>
-        <div class="all-posts-div">
+        <div className="all-posts-div">
           {allPosts.map((post) => {
             return (
-              <div class="single-post" key={post.id}>
-                <img class="single-post-image" src={post.image} alt={post.tile} />
-                <div class="single-post-detail-div">
-                  <h4 class="single-post-title">{post.title}</h4>
-                  <div class="single-post-date-and-category-div">
-                    <h6 class="single-post-date">{DateTime.now(post.created_at).toLocaleString(DateTime.DATE_MED)}</h6>
-                    <h4 class="single-post-category">{post.category}</h4>
+              <div className="single-post" key={post.id}>
+                <Link to={`/view-post/${post.id}`} key={post.id} className="single-post-title-link"><img className="single-post-image" src={post.image} alt={post.tile} /></Link>
+                <div className="single-post-detail-div">
+                  <Link to={`/view-post/${post.id}`} key={post.id} className="single-post-title-link"><h4 className="single-post-title">{post.title}</h4></Link>
+                  <div className="single-post-date-and-category-div">
+                    <h6 className="single-post-date">{DateTime.now(post.created_at).toLocaleString(DateTime.DATE_MED)}</h6>
+                    <Link to={`/${post.category}`} className="single-post-category-link"><h4 class="single-post-category">{post.category}</h4></Link>
                   </div>
                 </div>
               </div>
@@ -71,22 +73,11 @@ function Explore(props) {
           })}
         </div>
         <div>
-          <button class="load-more-button" onClick={handleShowMorePosts}>Load More</button>
+          {arrayForHoldingPosts.length < posts.length - 1 ? (<button className="load-more-button" onClick={handleShowMorePosts}>Load More</button>) : (<button className="load-more-button-disabled" disabled='true'>No More</button>)}
         </div>
-        <div class="footer-div-explore">
-          <a href="https://github.com/Tyler-Washington888">
-            <img class="linkedin-logo-explore" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637090175/Meta-Minds/icons8-linkedin-100_dvm7wk.png" alt="Meta Minds Logo"></img>
-          </a>
-          <div class="footer-meta-logo-divs">
-            <img className="footer-meta-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="Meta Minds Logo"></img>
-            <h2 className='copyrights'>copyright 2021</h2>
-          </div>
-          <a href="https://www.linkedin.com/in/tyler-washington-4a8429176">
-            <img className="github-logo-explore" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637090155/Meta-Minds/icons8-github-48_fzk9g1.png" alt="Meta Minds Logo"></img>
-          </a>
-        </div>
+        <Footer />
       </div>
-    </div>
+    </div >
   )
 }
 

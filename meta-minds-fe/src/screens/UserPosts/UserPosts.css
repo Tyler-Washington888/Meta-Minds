@@ -1,3 +1,112 @@
-.all-posts {
-  margin-top: -500px;
+
+.user-post-and-button-div{
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636675187/Meta-Minds/nvkCN6_spihuq.jpg");
+  height: calc( 100% + 100px );
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+  z-index: 1;
+}
+
+.user-post--banner-image {
+  border-right: none;
+  border-left: none ;
+  height: 305px;
+  width: 100%;
+  object-fit:cover;
+  object-position: center -300px;
+  z-index: 90;
+  margin-bottom: -5px;
+  padding-left: -3px;
+  box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+  filter: 30%;
+}
+.create-post-button { 
+  height: 60px;
+  width: 180px;
+  background-color: transparent;
+  font-size: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-style: hidden;
+  border-radius: 12px;
+}
+.create-post-button:hover {
+  background-color: #57dff1;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.4);
+  border-style: hidden;
+}
+.create-post-button-link{
+  text-decoration: none;
+  color: black;
+  font-size: 17px ;
+}
+
+.user-post-outer-div{
+  margin-top: 30px;
+  margin-bottom: 420px;
+}
+
+.user-post-inner-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px;
+  width: 100%;
+  margin-right: 20px;
+  box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3)
+}
+.user-post-inner-div-link{
+  text-decoration: none;
+  color: black;
+}
+
+.user-post-inner-div:hover {
+  background-color: #57dff1;
+  border-radius: 12px;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.4);
+  border-style: hidden;
+}
+
+.user-post-inner-div:hover > .user-post-image{
+  margin-right: 15px;
+  transition: .5s ease;
+}
+
+.user-post-inner-div:hover > .user-post-date-and-title-div {
+  padding-left: 10px;
+  transition: .5s ease;
+}
+
+.user-post-date-and-title-div {
+  display: flex;
+  flex-direction: row;
+  min-width: 500px;
+  margin-left: 50px;
+  margin-top: 0px;
+}
+
+
+
+.user-post-title{
+  font-size: 25px;
+  margin-left: 150px;
+  margin-top: 55px;
+}
+.user-post-date {
+ font-size: 25px;
+}
+.user-post-image {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 150px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  margin-right: 8px;
 }
