@@ -9,8 +9,25 @@
   height: calc( 100% + 300px);
   overflow-y: hidden;
 }
+.create-post-input-text{
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.create-post-user-input-box{
+  position: relative;
+  right: 30px;
+  height: 35px;
+  width: 800px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-width: 0;
+}
 
 .create-post-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-bottom: 1000px;
 }
 .create-post-title{
@@ -19,4 +36,19 @@
 .create-post-footer-div{
   margin-top: 100px;
 
+}
+
+.create-post-label-and-input-div{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 360px;
+}
+
+.edits {
+  background-color: tomato;
+  background-color: transparent;
+  position: relative;
+  border-radius: 12px;
+  
 }

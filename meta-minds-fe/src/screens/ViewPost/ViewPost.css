@@ -333,12 +333,13 @@ text-align: left;
   text-align: start;
   font-weight: bold;
 }
+
+
 .each-similar-post-div{
   display: flex;
   flex-wrap: wrap ;
   width: 90%;
 }
-
 .each-similar-post{
   display: flex;
   list-style: none;
@@ -346,7 +347,6 @@ text-align: left;
   margin-right: 0%;
   flex-direction: column;
 }
-
 .each-similar-post-image{
   height: 300px;
   width: 360px;
@@ -356,13 +356,11 @@ text-align: left;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
 }
-
 .each-similar-post-image:hover{
   transform: translateY(-10px);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
-
 .each-similar-post-details-div{
   display: flex;
   flex-direction: column;
@@ -378,7 +376,6 @@ text-align: left;
   position: relative;
   left: 35px;
 }
-
 .each-similar-post-cretated-at-and-category-div{
   display: flex;
   flex-direction: row ;

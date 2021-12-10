@@ -1,27 +1,36 @@
+import "./Createpost.css";
 import { useState } from 'react';
 import { createPost } from '../../services/Posts.js'
 import { useHistory } from 'react-router';
-import Footer from '../../components/Footer/Footer';
-import "./Createpost.css";
+import { CKEditor } from '@ckeditor/ckeditor5-react'
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
+
 
 function CreatePosts(props) {
-  const [formData, setFormData] = useState({
-    image: '',
-    category: '',
-    title: '',
-    subtitle: '',
-    content: '',
-  });
-  const { image, category, title, subtitle, content } = formData;
   const { currentUser } = props;
   const history = useHistory()
+  const [image, setImage] = useState('')
+  const [category, setCategory] = useState('')
+  const [title, setTitle] = useState('')
+  const [subtitle, setSubtitle] = useState('')
+  const [content, setContent] = useState('')
 
   const handleChange = (e) => {
     const { value, name } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+    switch (name) {
+      case 'image':
+        setImage(value)
+        break
+      case 'category':
+        setCategory(value)
+        break
+      case 'title':
+        setTitle(value)
+        break
+      case "subtitle":
+        setSubtitle(value)
+        break
+    }
   };
 
   return (
@@ -31,11 +40,16 @@ function CreatePosts(props) {
         <form class="create-post-form"
           onSubmit={(e) => {
             e.preventDefault();
-            createPost(formData);
+            createPost({
+              image: image,
+              category: category,
+              title: title,
+              subtitle: subtitle,
+              content: content
+            });
             history.push(`/user-posts/${currentUser?.id}`)
           }}
-        >
-          <h1 class="create-post-header-text">Create Post</h1>
+        >  <h1 class="create-post-header-text">Create Post</h1>
           <label class="create-post-label-and-input-div">
             <div class="create-post-input-text">Image URL</div>
             <input
@@ -78,18 +92,20 @@ function CreatePosts(props) {
           <br />
           <label class="create-post-label-and-input-div">
             <div class="create-post-input-text">Content</div>
-            <input
-              class="create-post-user-input-box"
-              type='text'
-              value={content}
-              name={'content'}
-              onChange={handleChange} />
+            <div className="edits">
+              <CKEditor
+                editor={ClassicEditor}
+                onChange={(event, editor) => {
+                  const data = editor.getData()
+                  setContent(data)
+                }}
+              />
+            </div>
           </label>
-          <br />
           <button>Submit</button>
         </form>
       </div>
-    </div>
+    </div >
   );
 }
 

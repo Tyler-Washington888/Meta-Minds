@@ -36,7 +36,7 @@ function App() {
       setPosts(allPosts);
     }
     fetchPosts();
-  }, [])
+  }, [posts.length])
 
   useEffect(() => {
     const fecthUsers = async () => {

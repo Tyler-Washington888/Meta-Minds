@@ -22,7 +22,7 @@ function Explore(props) {
     setNewPost(latestMetaPost[0]);
     arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerLoad);
-  }, [])
+  }, [posts])
 
   const loopWithSlice = (start, end) => {
     const metaPosts = posts.filter(post => post.category === 'Meta');
@@ -56,25 +56,28 @@ function Explore(props) {
             </div>
           </div>
         </div>
+        {/* New Post Div*/}
         <div className="all-posts-div">
           {allPosts.map((post) => {
             return (
               <div className="single-post" key={post.id}>
                 <Link to={`/view-post/${post.id}`} key={post.id} className="single-post-title-link"><img className="single-post-image" src={post.image} alt={post.tile} /></Link>
                 <div className="single-post-detail-div">
-                  <Link to={`/view-post/${post.id}`} key={post.id} className="single-post-title-link"><h4 className="single-post-title">{post.title}</h4></Link>
                   <div className="single-post-date-and-category-div">
                     <h6 className="single-post-date">{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
                     <Link to={`/${post.category}`} className="single-post-category-link"><h4 class="single-post-category">{post.category}</h4></Link>
                   </div>
+                  <Link to={`/view-post/${post.id}`} key={post.id} className="single-post-title-link"><h4 className="single-post-title">{post.title}</h4></Link>
                 </div>
               </div>
             )
           })}
         </div>
+        {/* Load More Button */}
         <div>
           {arrayForHoldingPosts.length < posts.length - 1 ? (<button className="load-more-button" onClick={handleShowMorePosts}>Load More</button>) : (<button className="load-more-button-disabled" disabled='true'>No More</button>)}
         </div>
+        {/* Footer Div */}
         <Footer />
       </div>
     </div >

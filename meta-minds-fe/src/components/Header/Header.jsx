@@ -115,7 +115,7 @@ function Header(props) {
       </div>
       {currentUser && wordEntered.length == 0 ? (
         <div className="header-div-user">
-          <p className="header-div-user-welcome">Welcome, {currentUser.username}</p>
+          <p className="header-div-user-welcome">Welcome, <span className="welcome-text">{currentUser.username}</span></p>
           <div className="header-div-your-posts-and-logout-div">
             <NavLink className="header-div-your-posts" activeStyle={{
               borderBottom: "4px ridge white",

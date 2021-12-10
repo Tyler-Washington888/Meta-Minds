@@ -166,6 +166,7 @@ transition: .5s ease;
 .single-post-detail-div{
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
   width: 360px;
   margin-top: 40px;
@@ -174,26 +175,27 @@ transition: .5s ease;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
-  height: 100px;
+  height: 110px;
+  width: 360px;
   position: relative;
   left: 54px;
 }
 .single-post-date-and-category-div {
   display: flex;
   flex-direction: row ;
-  position: relative;
-  bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
 }
 .single-post-date {
   margin-right: 40px;
+  font-size: 12px;
  
 }
 .single-post-category{
   color: #000000;
-  font-style: bold;
+  font-weight: bold;
   padding: 5px;
-  position: relative;
-  bottom: 5px;
 }
 .single-post-category:hover{
   color: #292929;
@@ -203,12 +205,11 @@ transition: .5s ease;
   color: #000000;
 }
 .single-post-title{
-  margin-top: 20px;
-  max-width: 290px;
-  text-align: center;
+  margin-top: -10px;
+  max-width: 260px;
   font-size: 15px;
-  text-align-last: center ;
-  margin-bottom: 40px;
+  text-align-last: center;
+  font-weight: bolder;
 }
 .single-post-title:hover{
   text-decoration: underline;

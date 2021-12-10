@@ -236,24 +236,22 @@ border-style: 5px ridge;
 .header-div-user {
   display: flex;
   flex-direction: column;  
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
-  right: 390px;
+  right: 515px;
  top: 58px;
   height: 98px;
-  width: 300px;
+  width: 500px;
 }
 .header-div-user-welcome {
-  width: 800px;
-  position: relative;
-  right: 131px;
+  text-align: end;
+  min-width: 500px;
 }
+
 .header-div-your-posts-and-logout-div {
   display: flex;
   flex-direction: row;
-  position: relative;
-  top: 1px;
-  left: 150px;
+  justify-content: flex-end;
   height: 75px;
 }
 .header-div-your-posts {
