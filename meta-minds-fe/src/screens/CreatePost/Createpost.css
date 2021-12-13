@@ -1,54 +1,110 @@
 .latest-and-all-posts-main-divs{
-  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636675187/Meta-Minds/nvkCN6_spihuq.jpg");
-  display: flex;
-  flex-direction: column;
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
   padding-top: 5%;
   z-index: 1;
   height: calc( 100% + 300px);
   overflow-y: hidden;
 }
+.inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title{
+  display: flex;
+  flex-direction: row;
+  
+}
+.yoo{
+  position: relative;
+  left: 7px;
+}
+
+
+.create-post-header-text{
+  margin-bottom: 20px;
+}
 .create-post-input-text{
-  text-align: left;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 20px;
   font-size: 20px;
+  font-weight: 400;
+  outline-width: 0;
 }
 .create-post-user-input-box{
-  position: relative;
-  right: 30px;
-  height: 35px;
-  width: 800px;
-  border-radius: 6px;
+  height: 45px;
+  width: 450px;
+  border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   border-width: 0;
+  font-size: 15px;
+  padding-left: 10px;
+  outline-width: 0;
+}
+.image {
+  position: relative;
+  left: -25px;
+}
+.images {
+  position: relative;
+  left: 25px;
+}
+.huh {
+  position: relative;
+  left: -29px;
+}
+.yo{
+  position: relative;
+  left:-33px;
+}
+.bruh{
+  position: relative;
+  left: 18px;
+ width: 465px;
+ background-color: white;
+ border-radius: 12px;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+ height: 45px;
+ top: 30px;
+}
+.category{
+  position: relative;
+  bottom: 23px;
+  height: 45px;
+  width: 460px;
+  border-radius: 12px;
+  border-width: 0;
+  padding-left: 10px;
+  font-size: 15px;
+  background-color: transparent;
+  outline-width: 0;
 }
 
 .create-post-form{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-bottom: 1000px;
 }
-.create-post-title{
-  
-}
+
 .create-post-footer-div{
   margin-top: 100px;
-
 }
-
 .create-post-label-and-input-div{
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-left: 360px;
 }
-
-.edits {
-  background-color: tomato;
-  background-color: transparent;
-  position: relative;
-  border-radius: 12px;
-  
+.option{
+  padding-right: 10px;
+  font-size: 15px;
+  outline-width: 0;
+  color: green
+}
+.submit-button{
+  margin-bottom: 400px;
 }

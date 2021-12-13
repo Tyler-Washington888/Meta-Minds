@@ -1,0 +1,35 @@
+
+
+:root {
+  --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
+  --ck-border-radius: 12px;
+  --ck-drop-shadow: 0 1px 2px 1px var(--ck-color-shadow-drop);
+}
+
+.ck-editor__editable_inline {
+  min-height: 300px;
+  max-height: 900px;
+  outline-width: 0;
+  
+}
+
+.ck-editor{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-radius: 12px;
+  margin-bottom: 120px;
+}
+
+.bottom {
+  margin-bottom: 120px;
+  width: 67.9%;
+  position: relative;
+  left: 230px;
+}
+
+
+.submit-button{
+
+}
+
+

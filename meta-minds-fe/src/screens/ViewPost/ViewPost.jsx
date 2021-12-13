@@ -69,6 +69,7 @@ export default function ViewPost(props) {
   return (
     <div>
       <img className="view-post-image" src={post?.image} alt="banner-mage"></img>
+      {/* Post Details Div */}
       <div className="view-post-full-details-div">
         <div className="view-post-upper-details-div" >
           <div className="view-post-upper-details-div-left">

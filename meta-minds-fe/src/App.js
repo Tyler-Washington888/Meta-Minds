@@ -22,7 +22,6 @@ import {
   removeToken,
   verifyUser,
 } from './services/auth';
-import ScrollToTop from "./components/ScrollToTop.jsx";
 
 function App() {
   const [posts, setPosts] = useState([])
@@ -75,64 +74,62 @@ function App() {
 
   return (
     <div className="App">
-      <ScrollToTop >
-        <Switch>
-          <Route path='/create-post'>
-            <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-              <CreatePost currentUser={currentUser} />
-            </Layout>
-          </Route>
-          <Route path='/update-post/:post_id'>
-            <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-              <UpdatePost users={users} currentUser={currentUser} />
-            </Layout>
-          </Route>
-          <Route path='/view-post/:post_id'>
-            <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-              <ViewPost users={users} currentUser={currentUser} posts={posts} />
-            </Layout>
-          </Route>
-          <Route path='/user-posts/:id'>
-            <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-              <UserPosts currentUser={currentUser} posts={posts} />
-            </Layout>
-          </Route>
-          <Route path='/explore'>
-            <Layout className='' currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-              <Explore posts={posts} />
-            </Layout >
-          </Route>
-          <Route path='/meta'>
-            <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-              <Meta currentUser={currentUser} posts={posts} />
-            </Layout>
-          </Route>
-          <Route path='/mana'>
-            <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-              <Mana currentUser={currentUser} posts={posts} />
-            </Layout>
-          </Route>
-          <Route path='/crypto'>
-            <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-              <Crypto currentUser={currentUser} posts={posts} />
-            </Layout>
-          </Route>
-          <Route path='/film'>
-            <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-              <Film currentUser={currentUser} posts={posts} />
-            </Layout>
-          </Route>
-          <Route path="/sign-in">
-            <SignIn handleLogin={handleLogin} />
-          </Route>
-          <Route path='/sign-up'>
-            <SignUp handleRegister={handleRegister} />
-          </Route>
-          <Route path="/">
-            <Landing />
-          </Route>
-        </Switch>
-      </ScrollToTop>
+      <Switch>
+        <Route path='/create-post'>
+          <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
+            <CreatePost currentUser={currentUser} />
+          </Layout>
+        </Route>
+        <Route path='/update-post/:post_id'>
+          <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
+            <UpdatePost users={users} currentUser={currentUser} />
+          </Layout>
+        </Route>
+        <Route path='/view-post/:post_id'>
+          <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
+            <ViewPost users={users} currentUser={currentUser} posts={posts} />
+          </Layout>
+        </Route>
+        <Route path='/user-posts/:id'>
+          <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
+            <UserPosts currentUser={currentUser} posts={posts} />
+          </Layout>
+        </Route>
+        <Route path='/explore'>
+          <Layout className='' currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
+            <Explore posts={posts} />
+          </Layout >
+        </Route>
+        <Route path='/meta'>
+          <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
+            <Meta currentUser={currentUser} posts={posts} />
+          </Layout>
+        </Route>
+        <Route path='/mana'>
+          <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
+            <Mana currentUser={currentUser} posts={posts} />
+          </Layout>
+        </Route>
+        <Route path='/crypto'>
+          <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
+            <Crypto currentUser={currentUser} posts={posts} />
+          </Layout>
+        </Route>
+        <Route path='/film'>
+          <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
+            <Film currentUser={currentUser} posts={posts} />
+          </Layout>
+        </Route>
+        <Route path="/sign-in">
+          <SignIn handleLogin={handleLogin} />
+        </Route>
+        <Route path='/sign-up'>
+          <SignUp handleRegister={handleRegister} />
+        </Route>
+        <Route path="/">
+          <Landing />
+        </Route>
+      </Switch>
     </div >
   );
 }

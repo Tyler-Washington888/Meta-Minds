@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1636675187/Meta-Minds/nvkCN6_spihuq.jpg");
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
   height: 200px;
   width: 100%;
 }
@@ -244,8 +244,10 @@ border-style: 5px ridge;
   width: 500px;
 }
 .header-div-user-welcome {
+  color: rgb(32, 32, 32);
   text-align: end;
   min-width: 500px;
+  font-weight:400;
 }
 
 .header-div-your-posts-and-logout-div {
@@ -270,7 +272,6 @@ border-style: 5px ridge;
   text-decoration: none;
   color: black;
 }
-
 .header-div-non-user {
   display: flex; 
   flex-direction: row;
@@ -293,7 +294,6 @@ border-style: 5px ridge;
   color: black;
   
 }
-
 .page-overlay {
   position: fixed;
   left: 0;
