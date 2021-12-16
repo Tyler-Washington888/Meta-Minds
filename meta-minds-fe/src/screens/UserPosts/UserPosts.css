@@ -25,10 +25,10 @@
   filter: 30%;
 }
 .create-post-button { 
-  height: 60px;
-  width: 180px;
+  width: 150px;
+  height: 50px;
   background-color: transparent;
-  font-size: 15px;
+  font-size: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   border-style: hidden;
   border-radius: 12px;

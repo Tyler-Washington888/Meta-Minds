@@ -1,4 +1,12 @@
-.latest-and-all-posts-main-divs{
+.create-post-image{
+  border-right: none;
+  border-left: none ;
+  object-fit: cover;
+  height: 305px;
+  width: 100%;
+  box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+}
+.create-post-page{
   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,12 +17,90 @@
   height: calc( 100% + 300px);
   overflow-y: hidden;
 }
-.inputs{
+.create-post-form{
   display: flex;
   flex-direction: column;
+}
+.create-post-header-text{
+  margin-bottom: 50px;
+}
+.post-details-top-div{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+.post-details-top-left{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 40px;
+}
+.create-post-label-and-input-div{
+  display: flex;
+  flex-direction: column;
+}
+.category-div{
+  width: 462px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  height: 45px;
+  top: 30px;
+  background-color: white;
+ }
+ .image-upload-div{
+   position: relative;
+   top: 10px;
+ }
+
+.image-upload-icon{
+position: relative;
+top: 125px;
+height: 70px;
+width: 70px;
+}
+.create-post-close-icon {
+  position: relative;
+  bottom: -180px;
+  left: 475px;
+  height: 50px;
+  width: 50px;
+  z-index: 114;
+  border-radius: 12px;
+}
+.loading-image-text{
+  position: relative;
+  top: 110px;
+  font-size: larger;
+}
+.image-div{
+  position: relative;
+  height: 300px;
+  width: 462px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+.image-divs{
+  position: relative;
+  top: 40px;
+  height: 300px;
+  width: 462px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+#file-inputs{
+  display: none;
+}
+
+
+
+
+
+
 
 .Title{
   display: flex;
@@ -27,9 +113,7 @@
 }
 
 
-.create-post-header-text{
-  margin-bottom: 20px;
-}
+
 .create-post-input-text{
   margin-top: 15px;
   text-align: center;
@@ -49,31 +133,18 @@
   outline-width: 0;
 }
 .image {
+  background-color: indigo;
   position: relative;
   left: -25px;
 }
-.images {
-  position: relative;
-  left: 25px;
-}
-.huh {
-  position: relative;
-  left: -29px;
-}
+
+
 .yo{
   position: relative;
   left:-33px;
 }
-.bruh{
-  position: relative;
-  left: 18px;
- width: 465px;
- background-color: white;
- border-radius: 12px;
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
- height: 45px;
- top: 30px;
-}
+
+
 .category{
   position: relative;
   bottom: 23px;
@@ -87,17 +158,9 @@
   outline-width: 0;
 }
 
-.create-post-form{
-  display: flex;
-  flex-direction: column;
-}
 
 .create-post-footer-div{
   margin-top: 100px;
-}
-.create-post-label-and-input-div{
-  display: flex;
-  flex-direction: column;
 }
 .option{
   padding-right: 10px;
@@ -106,5 +169,29 @@
   color: green
 }
 .submit-button{
+  width: 150px;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  background-color: transparent;
   margin-bottom: 400px;
+  position: relative;
+  left: 635px;
+  bottom: 50px;
+  background-color: #0ACCE5;
 }
+
+.submit-button-disabled{
+  width: 150px;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  background-color: transparent;
+  margin-bottom: 400px;
+  position: relative;
+  left: 635px;
+  bottom: 50px;
+}
+

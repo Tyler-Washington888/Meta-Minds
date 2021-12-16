@@ -10,21 +10,22 @@ import { config } from './editorConfig'
 
 
 
+
 function CreatePosts(props) {
   const { currentUser } = props;
   const history = useHistory()
+  const [loading, setLoading] = useState(false)
   const [image, setImage] = useState('')
   const [category, setCategory] = useState('')
   const [title, setTitle] = useState('')
   const [subtitle, setSubtitle] = useState('')
   const [content, setContent] = useState('')
 
+  ClassicEditor.defaultConfig = config
+
   const handleChange = (e) => {
     const { value, name } = e.target;
     switch (name) {
-      case 'image':
-        setImage(value)
-        break
       case 'category':
         setCategory(value)
         break
@@ -37,13 +38,33 @@ function CreatePosts(props) {
     }
   };
 
-  const config = {
-    placeholder: 'Type some text...'
-  };
+  const uploadImage = async (e) => {
+    const files = e.target.files;
+    const data = new FormData();
+    data.append("file", files[0]);
+    data.append("upload_preset", "tydye33");
+    setLoading(true);
+    const res = await fetch(
+      "https://api.cloudinary.com/v1_1/tylerwashington98/image/upload",
+      {
+        method: "Post",
+        body: data,
+      }
+    )
+    const file = await res.json();
+    console.log(file.secure_url)
+    if (file.secure_url == undefined) {
+      setImage('');
+    } else {
+      setImage(file.secure_url);
+    }
+    setLoading(false);
+  }
   return (
-    <div >
-      <img class="explore-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="banner image"></img>
-      <div class="latest-and-all-posts-main-divs">
+    <div>
+      <img class="create-post-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner-Image"></img>
+      {image !== "" ? (<img className="create-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div></div>)}
+      <div class="create-post-page">
         <form class="create-post-form"
           onSubmit={(e) => {
             e.preventDefault();
@@ -55,23 +76,11 @@ function CreatePosts(props) {
               content: content
             });
             history.push(`/user-posts/${currentUser?.id}`)
-          }}
-        >  <h1 class="create-post-header-text">Create Post</h1>
-
-          <div className="inputs">
-            <div className="Title yoo">
-              <label class="create-post-label-and-input-div image huh yo">
-                <div class="create-post-input-text"></div>
-                <input
-                  class="create-post-user-input-box"
-                  type='text'
-                  placeholder="Image URL"
-                  name={'image'}
-                  value={image}
-                  onChange={handleChange} />
-              </label>
-              <br />
-              <label class="create-post-label-and-input-div images huh bruh">
+          }}>
+          <h1 class="create-post-header-text">Create Post</h1>
+          <div className="post-details-top-div">
+            <div className="post-details-top-left">
+              <label class="create-post-label-and-input-div category-div">
                 <div class="create-post-input-text"></div>
                 <select name="category" className="category" onChange={handleChange}>
                   <option value="">Category</option>
@@ -81,10 +90,8 @@ function CreatePosts(props) {
                   <option value="Film">Film</option>
                 </select>
               </label>
-            </div>
-            <br />
-            <div className="Title">
-              <label class="create-post-label-and-input-div image">
+              <br />
+              <label class="create-post-label-and-input-div title-div">
                 <div class="create-post-input-text"></div>
                 <input
                   class="create-post-user-input-box"
@@ -95,7 +102,7 @@ function CreatePosts(props) {
                   onChange={handleChange} />
               </label>
               <br />
-              <label class="create-post-label-and-input-div images">
+              <label class="create-post-label-and-input-div subtitle-div">
                 <div class="create-post-input-text"></div>
                 <input
                   class="create-post-user-input-box"
@@ -105,6 +112,28 @@ function CreatePosts(props) {
                   name={'subtitle'}
                   onChange={handleChange} />
               </label>
+            </div>
+            <div className="image-upload-div">
+              <label class="create-post-label-and-input-div image-div">
+                <div>
+                  {loading ? (
+                    <h5 className="loading-image-text">Loading Image...</h5>
+                  ) : (image === '' ? (
+                    <div></div>
+                  ) : (<img className="image-divs" src={image} alt="new-post" />)
+                  )}
+                </div>
+                <label for="file-inputs">
+                  {loading && image === '' || image !== '' ? (<div></div>) : (<img className="image-upload-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" />)}
+                </label>
+                <input
+                  id="file-inputs"
+                  type='file'
+                  accept='image/*'
+                  onChange={uploadImage}
+                />
+              </label>
+              <br />
             </div>
           </div>
           <br />
@@ -120,7 +149,10 @@ function CreatePosts(props) {
               }}
             />
           </label>
-          <button className="submit-button">Submit</button>
+          {image.length === 0 || category === "" || title.length === 0 || subtitle.length === 0 || content.length === 0 ? (
+            <button className="submit-button-disabled" disabled='true'>Submit</button>) : (
+            <button className="submit-button">Submit</button>
+          )}
         </form>
         <Footer />
       </div>
