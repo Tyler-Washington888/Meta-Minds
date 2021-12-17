@@ -21,7 +21,7 @@ export default function YourPosts(props) {
     })
     setNewestPost(mostRecentPost[0])
     setAllPosts(userPosts)
-  }, [posts, currentUser,])
+  }, [posts])
 
   return (
     <div>

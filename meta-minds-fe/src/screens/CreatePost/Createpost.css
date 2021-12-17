@@ -133,7 +133,6 @@ width: 70px;
   outline-width: 0;
 }
 .image {
-  background-color: indigo;
   position: relative;
   left: -25px;
 }
@@ -143,8 +142,6 @@ width: 70px;
   position: relative;
   left:-33px;
 }
-
-
 .category{
   position: relative;
   bottom: 23px;
@@ -157,8 +154,6 @@ width: 70px;
   background-color: transparent;
   outline-width: 0;
 }
-
-
 .create-post-footer-div{
   margin-top: 100px;
 }
@@ -166,7 +161,6 @@ width: 70px;
   padding-right: 10px;
   font-size: 15px;
   outline-width: 0;
-  color: green
 }
 .submit-button{
   width: 150px;
@@ -179,9 +173,10 @@ width: 70px;
   position: relative;
   left: 635px;
   bottom: 50px;
+}
+.submit-button:hover{
   background-color: #0ACCE5;
 }
-
 .submit-button-disabled{
   width: 150px;
   height: 50px;
