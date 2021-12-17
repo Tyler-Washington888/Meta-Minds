@@ -5,13 +5,23 @@
   --ck-color-toolbar-border: 	white;
   --ck-border-radius: 12px;
   --ck-drop-shadow: 0 1px 2px 1px var(--ck-color-shadow-drop);
+  --ck-color-link-default: #0ACCE5;
 }
 
 .ck-editor__editable_inline {
   min-height: 350px;
   max-height: 900px;
   outline-width: 0;
-  
+}
+
+.--ck-color-link-default{
+  color: #0ACCE5;
+  text-decoration: none;
+}
+
+a {
+  color: #0f45da;
+  text-decoration: none;
 }
 
 .ck-editor{
@@ -29,8 +39,5 @@
 }
 
 
-.submit-button{
-
-}
 
 
