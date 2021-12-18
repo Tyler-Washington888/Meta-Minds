@@ -22,17 +22,24 @@ function Explore(props) {
   useEffect(async () => {
     setNewPost(latestMetaPost[0]);
     arrayForHoldingPosts = [];
+
     loopWithSlice(0, postsPerLoad);
   }, [posts])
+
 
   const loopWithSlice = (start, end) => {
     const metaPosts = posts.filter(post => post.category === 'Meta');
     const latestMetaPost = metaPosts.sort((b, a) => a.id - b.id)[0];
     const filteredMetaPosts = posts.filter(post => post.id !== latestMetaPost.id);
-    const slicedPosts = filteredMetaPosts.reverse().slice(start, end);
+    const orderedPosts = filteredMetaPosts.sort((b, a) => {
+      return b.id - a.id
+    })
+    console.log(orderedPosts)
+    const slicedPosts = orderedPosts.reverse().slice(start, end);
     arrayForHoldingPosts = [...arrayForHoldingPosts, ...slicedPosts]
     setAllPosts(arrayForHoldingPosts);
   };
+
   const handleShowMorePosts = () => {
     loopWithSlice(nextPosts, nextPosts + postsPerLoad);
     setNextPosts(nextPosts + postsPerLoad);
