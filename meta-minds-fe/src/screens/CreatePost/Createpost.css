@@ -62,8 +62,8 @@ width: 70px;
 }
 .create-post-close-icon {
   position: relative;
-  bottom: -180px;
-  left: 475px;
+  bottom: 1300px;
+  left: 1175px;
   height: 50px;
   width: 50px;
   z-index: 114;

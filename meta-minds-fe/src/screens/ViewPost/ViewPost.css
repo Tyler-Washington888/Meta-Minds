@@ -30,7 +30,7 @@
   width: 605px;
   margin-bottom: 10px;
   position: relative;
-  right: 190px;
+  right: 204px;
 }
 .view-post-upper-details-div-left{
   /* background-color: khaki; */
@@ -115,6 +115,24 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 .view-post-created-name{
   margin-top: 2px;
 }
+
+.comment-div{
+  margin-top: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  height: 35px;
+  width: 620px;
+  border-width: 0px;
+  border-radius: 12px;
+  font-size: 15px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline-width: 0;
+  position: relative;
+  right: 180px;
+}
+
 
 
 
@@ -244,6 +262,10 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   right: 3px;
   margin-right: 10px;
 }
+
+.margin{
+  margin-bottom: 200px;
+}
 .copy-link-text{
   font-size: 15px;
   font-weight:normal;
@@ -310,7 +332,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   line-height: 2.0;
   position: relative;
   right: 18px;
-  margin-top: -330px;
+  margin-top: -350px;
 }
 
 
@@ -533,7 +555,7 @@ color: rgb(22, 21, 21);
 font-size: 20px;
 text-decoration: none;
 font-weight: bolder;
-color: #0ACCE5;
+color: #0b2bb9;
 margin-right: 15px;
 }
 

@@ -3,9 +3,6 @@ import "./Header.css"
 import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
-
-
-
 function Header(props) {
   const { currentUser, handleLogout, posts } = props
   const [filteredData, setFilteredData] = useState([]);
@@ -16,9 +13,9 @@ function Header(props) {
   const handleFilter = (event) => {
     const searchTitle = event.target.value
     setWordEntered(searchTitle)
-    const newFilter = posts.reverse().filter((post) => {
-      return post.title.toLowerCase().includes(searchTitle.toLowerCase())
 
+    const newFilter = posts.filter((post) => {
+      return post.title.toLowerCase().includes(searchTitle.toLowerCase())
     });
     if (searchTitle === "") {
       setFilteredData([]);
@@ -26,7 +23,6 @@ function Header(props) {
       setFilteredData(newFilter)
     }
   };
-
 
   const clearInput = () => {
     setFilteredData([]);

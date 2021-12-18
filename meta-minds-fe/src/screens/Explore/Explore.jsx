@@ -12,13 +12,14 @@ function Explore(props) {
   const [newPost, setNewPost] = useState([]);
   const { DateTime } = require("luxon");
 
+  const metaPosts = posts.filter((post) => {
+    return post.category === 'Meta'
+  })
+  const latestMetaPost = metaPosts.sort((b, a) => {
+    return a.id - b.id
+  })
+
   useEffect(async () => {
-    const metaPosts = await posts.filter((post) => {
-      return post.category === 'Meta'
-    })
-    const latestMetaPost = await metaPosts.sort((b, a) => {
-      return a.id - b.id
-    })
     setNewPost(latestMetaPost[0]);
     arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerLoad);

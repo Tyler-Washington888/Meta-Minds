@@ -5,6 +5,9 @@ import { CKEditor } from '@ckeditor/ckeditor5-react'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import Footer from '../../components/Footer/Footer';
 import "./UpdatePost.css";
+import { config } from './editorConfig'
+import "./Styles.css";
+
 
 function UpdatePost(props) {
   const [loading, setLoading] = useState(false)
@@ -17,6 +20,8 @@ function UpdatePost(props) {
   const history = useHistory();
   const [isUpdated, setUpdated] = useState(false);
 
+
+  ClassicEditor.defaultConfig = config
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -61,13 +66,6 @@ function UpdatePost(props) {
   if (isUpdated) {
     return <Redirect to={`/explore`} />;
   }
-  console.log(post_id)
-
-  const handleDelete = async (event) => {
-    event.preventDefault();
-    const updated = await deletePost(post_id);
-    history.push(`/explore`)
-  };
 
   const uploadImage = async (e) => {
     const files = e.target.files;
@@ -94,7 +92,7 @@ function UpdatePost(props) {
   return (
     <div>
       <img class="create-post-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner-Image"></img>
-      {image !== "" ? (<img className="create-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div></div>)}
+      {image !== "" ? (<img className="create-post-close-icons" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div></div>)}
       <div class="create-post-page">
         <form
           onSubmit={handleSubmit}
@@ -192,7 +190,6 @@ function UpdatePost(props) {
           )}
         </form>
         <Footer />
-        <button onClick={handleDelete}>Delete</button>
       </div>
     </div >
   );

@@ -8,9 +8,6 @@ import "./Styles.css";
 import "./Createpost.css";
 import { config } from './editorConfig'
 
-
-
-
 function CreatePosts(props) {
   const { currentUser } = props;
   const history = useHistory()
@@ -52,7 +49,6 @@ function CreatePosts(props) {
       }
     )
     const file = await res.json();
-    console.log(file.secure_url)
     if (file.secure_url == undefined) {
       setImage('');
     } else {
@@ -63,7 +59,6 @@ function CreatePosts(props) {
   return (
     <div>
       <img class="create-post-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner-Image"></img>
-      {image !== "" ? (<img className="create-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div></div>)}
       <div class="create-post-page">
         <form class="create-post-form"
           onSubmit={(e) => {
@@ -140,7 +135,7 @@ function CreatePosts(props) {
           <label class="create-post-label-and-input-div bottom">
             <div class="create-post-input-text"></div>
             <CKEditor
-              config={{ placeholder: "Content..." }}
+              config={{ placeholder: "Content...", }}
               class="ck-editor"
               editor={ClassicEditor}
               onChange={(event, editor) => {
@@ -153,6 +148,7 @@ function CreatePosts(props) {
             <button className="submit-button-disabled" disabled='true'>Submit</button>) : (
             <button className="submit-button">Submit</button>
           )}
+          {image !== "" ? (<img className="create-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div></div>)}
         </form>
         <Footer />
       </div>

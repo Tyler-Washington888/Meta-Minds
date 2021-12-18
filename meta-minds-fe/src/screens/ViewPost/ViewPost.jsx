@@ -5,7 +5,8 @@ import { getPost, deletePost } from '../../services/Posts';
 import { getUsers } from "../../services/Users";
 import Modal from '../../components/Modal/Modal';
 import ReactHtmlParser from 'react-html-parser';
-
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
+import { config } from './editorConfiguration'
 import "./ViewPost.css";
 
 
@@ -20,6 +21,9 @@ export default function ViewPost(props) {
   const [copied, setCopied] = useState(false);
   const history = useHistory();
   const { DateTime } = require("luxon");
+
+
+  ClassicEditor.defaultConfig = config
 
   useEffect(async () => {
     const fetchPost = async () => {
@@ -65,6 +69,8 @@ export default function ViewPost(props) {
     document.body.removeChild(el);
     setCopied(true);
   }
+
+
 
   return (
     <div>
@@ -133,8 +139,9 @@ export default function ViewPost(props) {
           }
         </div>
         <p className="view-post-content">{ReactHtmlParser(post?.content)}</p>
+        <form className="margin">
 
-        {/* Div Of Posts With Same Category As Displayed Post  */}
+        </form>
         <div className="similar-posts-div">
           <div className="similar-posts-title">Similar Posts</div>
           <div className="each-similar-post-div">
@@ -156,8 +163,6 @@ export default function ViewPost(props) {
             })}
           </div>
         </div>
-
-        {/* Footer Div */}
         <Footer />
       </div>
     </div >
