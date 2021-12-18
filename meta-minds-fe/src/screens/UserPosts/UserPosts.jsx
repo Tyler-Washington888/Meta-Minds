@@ -12,6 +12,8 @@ export default function YourPosts(props) {
   const [newestPost, setNewestPost] = useState([])
   const { DateTime } = require("luxon");
 
+  console.log(currentUser)
+
   useEffect(async () => {
     const userPosts = await posts.filter((post) => {
       return post.user_id === currentUser.id
@@ -21,7 +23,7 @@ export default function YourPosts(props) {
     })
     setNewestPost(mostRecentPost[0])
     setAllPosts(userPosts)
-  }, [posts])
+  }, [currentUser])
 
   return (
     <div>
