@@ -4,9 +4,11 @@
   object-fit: cover;
   height: 305px;
   width: 100%;
+  z-index: 2;
   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
 }
 .latest-and-all-posts-main-div{
+  margin-top: 37px;
   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
   display: flex;
   flex-direction: column;
@@ -21,7 +23,7 @@
   display:flex;
   flex-direction: row;
   padding-left: 95px;
-  padding-top: 120px;
+  padding-top: 80px;
   padding-bottom: 100px;
 }
 .latest-posts-image {

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import "./Film.css";
+import FilmImage from "../../services/FilmImage.jpg"
 import { Link } from "react-router-dom";
 
 function Film(props) {
@@ -21,7 +22,7 @@ function Film(props) {
 
   return (
     <div>
-      <img className="film-banner-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637123958/Meta-Minds/ready_player_one_eol12i.jpg" alt="banner-image"></img>
+      <img className="film-banner-image" src={FilmImage} alt="banner-image"></img>
       <div className="film-posts-div">
         <div className="each-post-outer-div">
           {allPosts.map(post => {

@@ -1,4 +1,5 @@
 .create-post-image{
+  margin-top: -40px;
   border-right: none;
   border-left: none ;
   object-fit: cover;
@@ -7,6 +8,7 @@
   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
 }
 .create-post-page{
+  margin-top: 37px;
   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,6 +24,7 @@
   flex-direction: column;
 }
 .create-post-header-text{
+  margin-top: -15px;
   margin-bottom: 50px;
 }
 .post-details-top-div{

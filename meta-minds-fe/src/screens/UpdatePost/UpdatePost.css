@@ -1,3 +1,26 @@
+
+.update-post-image{
+  border-right: none;
+  border-left: none ;
+  object-fit: cover;
+  height: 305px;
+  width: 100%;
+  box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+  margin-top: -40px;
+}
+.update-post-page{
+  margin-top: 18px;
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  z-index: 1;
+  height: calc( 100% + 300px);
+  overflow-y: hidden;
+}
+
 .submit-buttons{
   width: 150px;
   height: 50px;
@@ -15,7 +38,7 @@
 }
 .create-post-close-icons {
   position: relative;
-  top: 180px;
+  top: 165px;
   left: 480px;
   height: 50px;
   width: 50px;

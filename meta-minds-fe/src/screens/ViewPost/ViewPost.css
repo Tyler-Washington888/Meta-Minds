@@ -1,4 +1,5 @@
 .view-post-image {
+  margin-top: -40px;
   border-right: none;
   border-left: none ;
   object-fit: cover;
@@ -10,12 +11,13 @@
 }
 
 .view-post-full-details-div{
+  margin-top: 37px;
   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 5%;
+  padding-top: 1.8%;
   z-index: 1;
   height: calc( 100% + 300px);
   overflow-y: hidden;

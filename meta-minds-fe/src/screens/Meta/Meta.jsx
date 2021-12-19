@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import "./Meta.css";
+import MetaImage from "../../services/MetaImage.jpg"
 import { Link } from "react-router-dom";
 
 function Meta(props) {
@@ -22,7 +23,7 @@ function Meta(props) {
 
   return (
     <div>
-      <img className="meta-banner-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637542839/Meta-Minds/meta_gvy4ph.png" alt="meta-banner-image"></img>
+      <img className="meta-banner-image" src={MetaImage} alt="meta-banner-image"></img>
       <div className="meta-posts-div">
         <div className="each-meta-post-outer-div">
           {allPosts.map(post => {

@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import "./Mana.css";
+import ManaImage from "../../services/ManaImage.jpg"
 import { Link } from "react-router-dom";
 
 function Mana(props) {
@@ -23,7 +24,7 @@ function Mana(props) {
 
   return (
     <div>
-      <img className="mana-banner-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637555469/Meta-Minds/mana_iv9sve.jpg" alt="mana-banner-image"></img>
+      <img className="mana-banner-image" src={ManaImage} alt="mana-banner-image"></img>
       <div className="mana-posts-div">
         <div className="each-mana-post-outer-div">
           {allPosts.map(post => {

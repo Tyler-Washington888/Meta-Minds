@@ -7,17 +7,17 @@
   height: calc( 100% + 100px );
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -40px;
+  margin-top: 2px;
   z-index: 1;
 }
 
 .user-post--banner-image {
+  margin-top: -40px;
   border-right: none;
-  border-left: none ;
+  border-left: none;
   height: 305px;
   width: 100%;
   object-fit:cover;
-  object-position: center -300px;
   z-index: 90;
   margin-bottom: -5px;
   padding-left: -3px;
@@ -32,6 +32,8 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   border-style: hidden;
   border-radius: 12px;
+ position: relative;
+ bottom: 30px;
 }
 .create-post-button:hover {
   background-color: #57dff1;
@@ -45,7 +47,7 @@
 }
 
 .user-post-outer-div{
-  margin-top: 30px;
+  margin-top: 5px;
   margin-bottom: 420px;
 }
 

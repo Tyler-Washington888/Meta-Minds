@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import { Link } from "react-router-dom";
 import "./Explore.css";
+import ExploreImage from "../../services/ExploreImage.jpg"
 const postsPerLoad = 6;
 let arrayForHoldingPosts = [];
 
@@ -34,7 +35,6 @@ function Explore(props) {
     const orderedPosts = filteredMetaPosts.sort((b, a) => {
       return b.id - a.id
     })
-    console.log(orderedPosts)
     const slicedPosts = orderedPosts.reverse().slice(start, end);
     arrayForHoldingPosts = [...arrayForHoldingPosts, ...slicedPosts]
     setAllPosts(arrayForHoldingPosts);
@@ -47,7 +47,7 @@ function Explore(props) {
 
   return (
     <div >
-      <img className="explore-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636154827/Meta-Minds/meta_vmqfci.jpg" alt="banner-mage"></img>
+      <img className="explore-image" src={ExploreImage} alt="banner-mage"></img>
       <div className="latest-and-all-posts-main-div">
         <div className="latest-post-div">
           <Link to={`/view-post/${newPost?.id}`} key={newPost?.id} className="single-post-title-link-image"><img className="latest-posts-image" src={newPost?.image} alt={newPost?.title} ></img></Link>

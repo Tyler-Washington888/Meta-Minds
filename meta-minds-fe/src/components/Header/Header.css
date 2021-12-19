@@ -3,8 +3,9 @@
   flex-direction: row;
   justify-content: space-between;
   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
-  height: 200px;
+  height: 160px;
   width: 100%;
+  margin-bottom: 40px;
 }
 .header-div-content-margin-left {
   margin-left: 90px;

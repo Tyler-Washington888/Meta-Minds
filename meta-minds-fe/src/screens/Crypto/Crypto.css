@@ -21,10 +21,11 @@
   height: calc( 100% + 100px );
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -40px;
+  margin-top: 2px;
   z-index: 1;
 }
 .crypto-all-posts-outer-div{
+  margin-top: -20px;
   margin-bottom: 420px;
 }
 
