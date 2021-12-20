@@ -23,12 +23,10 @@ import {
   verifyUser,
 } from './services/auth';
 import ScrollToTop from "./components/ScrollToTop.jsx";
-
-
-
 function App() {
   const [posts, setPosts] = useState([])
   const [users, setUsers] = useState([])
+  const [refresh, setRefresh] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
 
@@ -38,7 +36,7 @@ function App() {
       setPosts(allPosts);
     }
     fetchPosts();
-  }, [posts.length])
+  }, [refresh])
 
   useEffect(() => {
     const fecthUsers = async () => {
@@ -77,77 +75,70 @@ function App() {
 
 
 
-  // <div className="App">
-  //   <Switch>
-  //     <Route path="/explore" exact component={Contacts} />
-  //   </Switch>
-  // </div >
-
   return (
     <div className="App">
-
 
       <Switch>
         <Route exact path='/create-post'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-            <CreatePost currentUser={currentUser} />
+            <CreatePost setRefresh={setRefresh} currentUser={currentUser} />
           </Layout>
         </Route>
 
         <Route exact path='/update-post/:post_id'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-            <UpdatePost users={users} currentUser={currentUser} />
+            <UpdatePost setRefresh={setRefresh} users={users} currentUser={currentUser} />
           </Layout>
         </Route>
 
         <Route exact path='/view-post/:post_id'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-            <ViewPost users={users} currentUser={currentUser} posts={posts} />
+            <ViewPost setRefresh={setRefresh} users={users} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
 
         <Route exact path='/user-posts/:id'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-            <UserPosts currentUser={currentUser} posts={posts} />
+            <UserPosts setRefresh={setRefresh} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
 
         <Route exact path='/explore'>
           <ScrollToTop />
           <Layout className='' currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-            <Explore posts={posts} />
+            <Explore refresh={refresh} posts={posts} />
           </Layout >
         </Route>
 
         <Route path='/meta'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-            <Meta currentUser={currentUser} posts={posts} />
+            <Meta setRefresh={setRefresh} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
 
         <Route path='/mana'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-            <Mana currentUser={currentUser} posts={posts} />
+            <Mana setRefresh={setRefresh} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
 
         <Route path='/crypto'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-            <Crypto currentUser={currentUser} posts={posts} />
+            <Crypto setRefresh={setRefresh} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
 
         <Route exact path='/film'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-            <Film currentUser={currentUser} posts={posts} />
+            <Film setRefresh={setRefresh} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
 

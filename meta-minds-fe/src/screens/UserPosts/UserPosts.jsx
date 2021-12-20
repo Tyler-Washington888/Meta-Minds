@@ -25,9 +25,8 @@ export default function YourPosts(props) {
     setNewestPost(mostRecentPost[0])
     setAllPosts(userPosts)
     setLoading(false);
-  }, [currentUser])
+  }, [posts])
 
-  console.log(newestPost)
 
   return (
     <div>

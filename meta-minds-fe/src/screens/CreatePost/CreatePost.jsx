@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import { createPost } from '../../services/Posts.js'
 import { useHistory } from 'react-router';
 import { CKEditor } from '@ckeditor/ckeditor5-react'
@@ -9,7 +10,7 @@ import "./Createpost.css";
 import { config } from './editorConfig'
 
 function CreatePosts(props) {
-  const { currentUser } = props;
+  const { currentUser, setRefresh } = props;
   const history = useHistory()
   const [loading, setLoading] = useState(false)
   const [image, setImage] = useState('')
@@ -17,6 +18,7 @@ function CreatePosts(props) {
   const [title, setTitle] = useState('')
   const [subtitle, setSubtitle] = useState('')
   const [content, setContent] = useState('')
+  const [isUpdated, setUpdated] = useState(false);
 
   ClassicEditor.defaultConfig = config
 
@@ -56,22 +58,30 @@ function CreatePosts(props) {
     }
     setLoading(false);
   }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const updated = await createPost({
+      image: image,
+      category: category,
+      title: title,
+      subtitle: subtitle,
+      content: content,
+    })
+    setRefresh(prevState => !prevState)
+    setUpdated(updated);
+  };
+  if (isUpdated) {
+    return <Redirect to={`/explore`} />;
+  }
+
   return (
     <div>
       <img class="create-post-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner-Image"></img>
       <div class="create-post-page">
         <form class="create-post-form"
-          onSubmit={(e) => {
-            e.preventDefault();
-            createPost({
-              image: image,
-              category: category,
-              title: title,
-              subtitle: subtitle,
-              content: content
-            });
-            history.push(`/user-posts/${currentUser?.id}`)
-          }}>
+          onSubmit={handleSubmit}
+        >
           <h1 class="create-post-header-text">Create Post</h1>
           <div className="post-details-top-div">
             <div className="post-details-top-left">

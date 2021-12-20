@@ -18,6 +18,7 @@
   z-index: 1;
   height: calc( 100% + 300px);
   overflow-y: hidden;
+  background-color: blue;
 }
 .latest-post-div {
   display:flex;
@@ -27,6 +28,7 @@
   padding-bottom: 100px;
 }
 .latest-posts-image {
+  background-color: #0ACCE5;
   width: 650px;
   height: 400px;
   border-radius: 12px;
@@ -34,6 +36,8 @@
   box-shadow: 0 4px 8px 0 rgba(0,4,4,0.4);
   z-index: 4;
   transition: .5s ease;
+  position: relative;
+  top:  40px;
 }
 .latest-posts-image:hover {
 -webkit-transform: scale(1.05);
@@ -43,6 +47,10 @@ transition: .5s ease;
 }
 .single-post-title-link-image{
   z-index: 4;
+  position: relative;
+  bottom: 50px;
+  height: 400px;
+  border-radius: 12px;
 }
 .latest-post-details-background-div{
   height: 400px;

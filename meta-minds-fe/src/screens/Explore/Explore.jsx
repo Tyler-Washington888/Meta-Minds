@@ -7,11 +7,13 @@ const postsPerLoad = 6;
 let arrayForHoldingPosts = [];
 
 function Explore(props) {
-  const { posts } = props;
+  const { posts, refresh } = props;
   const [allPosts, setAllPosts] = useState([]);
   const [nextPosts, setNextPosts] = useState(6);
   const [newPost, setNewPost] = useState([]);
   const { DateTime } = require("luxon");
+
+
 
   const metaPosts = posts.filter((post) => {
     return post.category === 'Meta'
@@ -20,12 +22,13 @@ function Explore(props) {
     return a.id - b.id
   })
 
-  useEffect(async () => {
+  useEffect(() => {
     setNewPost(latestMetaPost[0]);
     arrayForHoldingPosts = [];
-
     loopWithSlice(0, postsPerLoad);
   }, [posts])
+
+
 
 
   const loopWithSlice = (start, end) => {
@@ -44,6 +47,8 @@ function Explore(props) {
     loopWithSlice(nextPosts, nextPosts + postsPerLoad);
     setNextPosts(nextPosts + postsPerLoad);
   };
+
+
 
   return (
     <div >

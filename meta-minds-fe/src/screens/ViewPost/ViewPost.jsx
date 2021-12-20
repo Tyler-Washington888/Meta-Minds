@@ -11,6 +11,7 @@ import "./ViewPost.css";
 
 
 export default function ViewPost(props) {
+  const { setRefresh } = props;
   const { post_id } = useParams();
   const { posts, currentUser } = props;
   const [post, setPost] = useState([]);
@@ -31,7 +32,7 @@ export default function ViewPost(props) {
       setPost(res);
     };
     fetchPost();
-  }, [post_id]);
+  }, [posts]);
 
   useEffect(async () => {
     const fetchUser = async () => {
@@ -56,8 +57,10 @@ export default function ViewPost(props) {
   const handleDelete = async (event) => {
     event.preventDefault()
     const updated = await deletePost(post_id);
-    history.push(`/explore`)
+    setRefresh(prevState => !prevState)
+    history.push(`/user-posts/${currentUser?.id}`)
   };
+
 
   function copy() {
     setIsOpen(!isOpen)

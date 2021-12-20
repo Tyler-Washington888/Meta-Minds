@@ -10,6 +10,7 @@ import "./Styles.css";
 
 
 function UpdatePost(props) {
+  const { setRefresh } = props;
   const [loading, setLoading] = useState(false)
   const [image, setImage] = useState('')
   const [category, setCategory] = useState('')
@@ -61,10 +62,13 @@ function UpdatePost(props) {
       subtitle: subtitle,
       content: content,
     })
+    setRefresh(prevState => !prevState)
     setUpdated(updated);
   };
+
+
   if (isUpdated) {
-    return <Redirect to={`/explore`} />;
+    return <Redirect to={`/view-post/${post_id}`} />;
   }
 
   const uploadImage = async (e) => {
