@@ -68,7 +68,7 @@ export default function SignUp(props) {
         <button class='sign-up-button'>Sign-Up</button>
       </form>
       <div class='link-to-sign-in-div'>
-        <div class='have-account-text'>Have an Account?</div>
+        <h1 class='have-account-text'>Have an Account?</h1>
         <Link to='/sign-in'><button class='link-to-sign-in-button'>Sign-In</button></Link>
       </div>
     </div>

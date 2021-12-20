@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import { Route, Switch, useHistory } from "react-router-dom";
+import { Route, Switch, useHistory } from "react-router";
 import Layout from "./components/Layout/Layout.jsx";
 import Landing from "./screens/Landing/Landing.jsx";
 import SignIn from "./screens/SignIn/SignIn.jsx";
@@ -22,6 +22,9 @@ import {
   removeToken,
   verifyUser,
 } from './services/auth';
+import ScrollToTop from "./components/ScrollToTop.jsx";
+
+
 
 function App() {
   const [posts, setPosts] = useState([])
@@ -72,64 +75,97 @@ function App() {
     removeToken();
   };
 
+
+
+  // <div className="App">
+  //   <Switch>
+  //     <Route path="/explore" exact component={Contacts} />
+  //   </Switch>
+  // </div >
+
   return (
     <div className="App">
+
+
       <Switch>
-        <Route path='/create-post'>
+        <Route exact path='/create-post'>
+          <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
             <CreatePost currentUser={currentUser} />
           </Layout>
         </Route>
-        <Route path='/update-post/:post_id'>
+
+        <Route exact path='/update-post/:post_id'>
+          <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
             <UpdatePost users={users} currentUser={currentUser} />
           </Layout>
         </Route>
-        <Route path='/view-post/:post_id'>
+
+        <Route exact path='/view-post/:post_id'>
+          <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
             <ViewPost users={users} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
-        <Route path='/user-posts/:id'>
+
+        <Route exact path='/user-posts/:id'>
+          <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
             <UserPosts currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
-        <Route path='/explore'>
+
+        <Route exact path='/explore'>
+          <ScrollToTop />
           <Layout className='' currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
             <Explore posts={posts} />
           </Layout >
         </Route>
+
         <Route path='/meta'>
+          <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
             <Meta currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
+
         <Route path='/mana'>
+          <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
             <Mana currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
+
         <Route path='/crypto'>
+          <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
             <Crypto currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
-        <Route path='/film'>
+
+        <Route exact path='/film'>
+          <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
             <Film currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
-        <Route path="/sign-in">
+
+        <Route exact path="/sign-in">
           <SignIn handleLogin={handleLogin} />
         </Route>
-        <Route path='/sign-up'>
+
+        <Route exact path='/sign-up'>
           <SignUp handleRegister={handleRegister} />
         </Route>
-        <Route path="/">
+
+        <Route exact path="/">
           <Landing />
         </Route>
+
       </Switch>
+
+
     </div >
   );
 }

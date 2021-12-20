@@ -304,6 +304,6 @@ border-style: 5px ridge;
   background-color: rgb(32, 32, 32); 
   opacity: 30%;  
   z-index: 100;
-  pointer-events: none;
+  pointer-events:none;
 }
 

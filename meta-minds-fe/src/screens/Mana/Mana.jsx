@@ -5,6 +5,7 @@ import "./Mana.css";
 import ManaImage from "../../services/ManaImage.jpg"
 import { Link } from "react-router-dom";
 
+
 function Mana(props) {
   const { posts } = props;
   const [allPosts, setAllPosts] = useState([]);
