@@ -36,6 +36,19 @@
 .submit-buttons:hover{
   background-color: #0ACCE5;;
 }
+.update-button-disabled{
+  width: 150px;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  background-color: transparent;
+  margin-bottom: 400px;
+  position: relative;
+  left: 15px;
+  bottom: 50px;
+}
+
 .create-post-close-icons {
   position: relative;
   top: 165px;

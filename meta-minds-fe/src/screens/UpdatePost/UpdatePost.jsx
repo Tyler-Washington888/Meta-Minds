@@ -189,7 +189,7 @@ function UpdatePost(props) {
             />
           </label>
           {image.length === 0 || category === "" || title.length === 0 || subtitle.length === 0 || content.length === 0 ? (
-            <button className="submit-button-disabled" disabled='true'>Update</button>) : (
+            <button className="update-button-disabled" disabled='true'>Update</button>) : (
             <button className="submit-buttons">Update</button>
           )}
         </form>
