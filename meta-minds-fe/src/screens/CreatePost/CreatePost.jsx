@@ -66,7 +66,7 @@ function CreatePosts(props) {
       category: category,
       title: title,
       subtitle: subtitle,
-      content: content,
+      content: content
     })
     setRefresh(prevState => !prevState)
     setUpdated(updated);

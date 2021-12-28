@@ -6,8 +6,8 @@ import "./SignIn.css";
 
 function SignIn(props) {
   const [formData, setFormData] = useState({
-    username: '',
-    password: '',
+    username: 'GuestTester',
+    password: 'GuestTester123',
   });
   const { username, password } = formData;
   const { handleLogin } = props;

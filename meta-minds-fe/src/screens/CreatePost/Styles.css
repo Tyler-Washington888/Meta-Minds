@@ -15,13 +15,13 @@
 }
 
 .--ck-color-link-default{
-  color: #0ACCE5;
+  color: #000000;
   text-decoration: none;
 }
 
 a {
-  color: #0f45da;
-  text-decoration: none;
+  color: #2B3F98;
+  text-decoration: underline;
 }
 
 .ck-editor{

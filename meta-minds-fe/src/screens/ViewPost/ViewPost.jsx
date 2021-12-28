@@ -1,30 +1,23 @@
 import Footer from '../../components/Footer/Footer';
 import React, { useEffect, useState } from 'react'
-import { useParams, Link, useHistory } from 'react-router-dom'
+import { useParams, Link, useHistory, Redirect } from 'react-router-dom'
 import { getPost, deletePost } from '../../services/Posts';
 import { getUsers } from "../../services/Users";
-import Modal from '../../components/Modal/Modal';
 import ReactHtmlParser from 'react-html-parser';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
-import { config } from './editorConfiguration'
 import "./ViewPost.css";
 
 
+
 export default function ViewPost(props) {
-  const { setRefresh } = props;
-  const { post_id } = useParams();
-  const { posts, currentUser } = props;
+  const { posts, setRefresh, currentUser } = props;
   const [post, setPost] = useState([]);
   const [user, setUser] = useState([]);
-  const [simPosts, setSimPosts] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [finalDetete, setFinalDelete] = useState(false);
   const [copied, setCopied] = useState(false);
   const history = useHistory();
   const { DateTime } = require("luxon");
-
-
-  ClassicEditor.defaultConfig = config
+  const { post_id } = useParams();
 
   useEffect(async () => {
     const fetchPost = async () => {
@@ -32,7 +25,13 @@ export default function ViewPost(props) {
       setPost(res);
     };
     fetchPost();
-  }, [posts]);
+  }, [post_id]);
+
+  const currentPost = posts.filter((current) => {
+    return current.id == post_id
+  })
+
+  console.log(user)
 
   useEffect(async () => {
     const fetchUser = async () => {
@@ -53,14 +52,12 @@ export default function ViewPost(props) {
   })
   const firstTwoPosts = newestSimPosts.slice(0, 3)
 
-
   const handleDelete = async (event) => {
     event.preventDefault()
     const updated = await deletePost(post_id);
     setRefresh(prevState => !prevState)
     history.push(`/user-posts/${currentUser?.id}`)
   };
-
 
   function copy() {
     setIsOpen(!isOpen)
@@ -71,14 +68,11 @@ export default function ViewPost(props) {
     document.execCommand("copy");
     document.body.removeChild(el);
     setCopied(true);
-  }
-
-
+  };
 
   return (
     <div>
-      <img className="view-post-image" src={post?.image} alt="banner-mage"></img>
-      {/* Post Details Div */}
+      <img className="view-post-image" src={currentPost[0]?.image} alt="banner-mage"></img>
       <div className="view-post-full-details-div">
         <div className="view-post-upper-details-div" >
           <div className="view-post-upper-details-div-left">
@@ -142,9 +136,7 @@ export default function ViewPost(props) {
           }
         </div>
         <p className="view-post-content">{ReactHtmlParser(post?.content)}</p>
-        <form className="margin">
 
-        </form>
         <div className="similar-posts-div">
           <div className="similar-posts-title">Similar Posts</div>
           <div className="each-similar-post-div">

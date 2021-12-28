@@ -36,6 +36,7 @@ export const updatePost = async (id, updated) => {
   }
 };
 
+
 export const deletePost = async (id) => {
   try {
     const res = await api.delete(`/posts/${id}`);

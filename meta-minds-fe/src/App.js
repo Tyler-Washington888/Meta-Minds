@@ -46,6 +46,7 @@ function App() {
     fecthUsers();
   }, [])
 
+
   useEffect(() => {
     const handleVerify = async () => {
       const userData = await verifyUser();
