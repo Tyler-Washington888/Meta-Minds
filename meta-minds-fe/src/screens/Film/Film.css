@@ -12,7 +12,6 @@
   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
   filter: 30%;
 }
-
 .film-posts-div{
   display: flex;
   flex-direction: column;
@@ -28,7 +27,6 @@
   margin-top: -20px;
   margin-bottom: 420px;
 }
-
 .each-post-inner-div {
   display: flex;
   flex-direction: row;
@@ -41,13 +39,10 @@
   border-color: yellowgreen;
   box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3)
 }
-
 .each-post-inner-div-link{
   text-decoration: none;
   color: black;
-
 }
-
 .each-post-inner-div:hover {
   background-color: #57dff1;
   opacity: 90%;
@@ -55,17 +50,14 @@
   box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.4);
   border-style: hidden;
 }
-
 .each-post-inner-div:hover > .each-post-image{
   margin-right: 15px;
   transition: .5s ease;
 }
-
 .each-post-inner-div:hover > .each-post-date-and-title-div {
   padding-left: 10px;
   transition: .5s ease;
 }
-
 .each-post-date-and-title-div {
   display: flex;
   flex-direction: row;
@@ -73,8 +65,14 @@
   margin-left: 50px;
   margin-top: 0px;
 }
-
-
+.each-post-date {
+  font-size: 25px;
+ }
+ .each-post-title{
+  font-size: 25px;
+  margin-left: 150px;
+  margin-top: 55px;
+}
 .each-post-image {
   display: flex;
   justify-content: flex-end;
@@ -86,12 +84,5 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   margin-right: 8px;
 }
-.each-post-title{
-  font-size: 25px;
-  margin-left: 150px;
-  margin-top: 55px;
-}
-.each-post-date {
- font-size: 25px;
-}
+
 

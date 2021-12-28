@@ -69,15 +69,14 @@
   margin-left: 50px;
   margin-top: 0px;
 }
+.each-mana-post-date {
+  font-size: 25px;
+ }
 .each-mana-post-title{
   font-size: 25px;
   margin-left: 150px;
   margin-top: 55px;
 }
-.each-mana-post-date {
- font-size: 25px;
-}
-
 .each-mana-post-image {
   display: flex;
   justify-content: flex-end;
