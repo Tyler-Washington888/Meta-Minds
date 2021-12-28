@@ -18,8 +18,8 @@ function Explore(props) {
   const metaPosts = posts.filter((post) => {
     return post.category === 'Meta'
   })
-  const latestMetaPost = metaPosts.sort((b, a) => {
-    return a.id - b.id
+  const latestMetaPost = metaPosts.filter((post) => {
+    return post.id === 1075
   })
 
   useEffect(() => {
@@ -27,8 +27,6 @@ function Explore(props) {
     arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerLoad);
   }, [posts])
-
-
 
 
   const loopWithSlice = (start, end) => {

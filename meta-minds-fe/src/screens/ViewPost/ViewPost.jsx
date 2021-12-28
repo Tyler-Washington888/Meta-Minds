@@ -31,8 +31,6 @@ export default function ViewPost(props) {
     return current.id == post_id
   })
 
-  console.log(user)
-
   useEffect(async () => {
     const fetchUser = async () => {
       const res = await getUsers();
@@ -58,6 +56,7 @@ export default function ViewPost(props) {
     setRefresh(prevState => !prevState)
     history.push(`/user-posts/${currentUser?.id}`)
   };
+  console.log(post)
 
   function copy() {
     setIsOpen(!isOpen)

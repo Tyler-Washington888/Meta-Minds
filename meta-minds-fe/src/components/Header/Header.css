@@ -43,7 +43,6 @@ border-style: 5px ridge;
   border-bottom:ridge;
   border-bottom-color: white;
 }
-
 .header-div-content-margin-right {
   padding-right: 30px;
   display: flex;
@@ -79,6 +78,14 @@ border-style: 5px ridge;
   width: 20px;
   z-index: 114;
 }
+.non-empty-search-icon {
+  position: relative;
+  top: 7px;
+  left: 0px;
+  height: 20px;
+  width: 20px;
+  z-index: 11;
+}
 .close-icon {
   position: relative;
   top: -10px;
@@ -101,7 +108,6 @@ border-style: 5px ridge;
   z-index: 10;
   outline-width: 0;
 }
-
 .header-div-search-input-not-empty {
   background-color: white;
   position: relative;
@@ -141,16 +147,10 @@ border-style: 5px ridge;
   position: relative;
   right: 37px;
 }
-
-.non-empty-search-icon {
-  position: relative;
-  top: 7px;
-  left: 0px;
-  height: 20px;
-  width: 20px;
-  z-index: 11;
+.single-search-result-div-link{
+  text-decoration: none;
+  color: black;
 }
-
 .single-search-result-div {
   padding-top: 80px;
     padding-right: 30px;
@@ -168,10 +168,6 @@ border-style: 5px ridge;
     background-color: #D8D8D8;
    opacity: 80%;
   }
-  .single-search-result-div-link{
-    text-decoration: none;
-    color: black;
-  }
   .search-result-image{
     transition: .5s ease;
     height: 90px;
@@ -180,7 +176,6 @@ border-style: 5px ridge;
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   }
-
 .search-result-title{
   font-size: 22px;
   position: relative;
@@ -196,7 +191,6 @@ border-style: 5px ridge;
     left: -10px;
     text-align: left;
     }
-
 .unsuccessful-search-results {
   height: 500px; 
   width: 580px; 
@@ -265,13 +259,13 @@ border-style: 5px ridge;
 .header-div-your-posts:hover {
   border-bottom: 4px ridge white;
 }
-.header-div-logout {
- margin-left: 70px;
- font-size: 20px;
-}
 .header-div-logout-link{
   text-decoration: none;
   color: black;
+}
+.header-div-logout {
+ margin-left: 70px;
+ font-size: 20px;
 }
 .header-div-non-user {
   display: flex; 

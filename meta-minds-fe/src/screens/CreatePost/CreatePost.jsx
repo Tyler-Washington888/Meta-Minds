@@ -5,7 +5,7 @@ import { useHistory } from 'react-router';
 import { CKEditor } from '@ckeditor/ckeditor5-react'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import Footer from '../../components/Footer/Footer';
-import "./Styles.css";
+import "./Ckeditor.css";
 import "./Createpost.css";
 import { config } from './editorConfig'
 
@@ -96,7 +96,7 @@ function CreatePosts(props) {
                 </select>
               </label>
               <br />
-              <label class="create-post-label-and-input-div title-div">
+              <label class="create-post-label-and-input-div">
                 <div class="create-post-input-text"></div>
                 <input
                   class="create-post-user-input-box"
@@ -107,7 +107,7 @@ function CreatePosts(props) {
                   onChange={handleChange} />
               </label>
               <br />
-              <label class="create-post-label-and-input-div subtitle-div">
+              <label class="create-post-label-and-input-div ">
                 <div class="create-post-input-text"></div>
                 <input
                   class="create-post-user-input-box"
@@ -125,7 +125,7 @@ function CreatePosts(props) {
                     <h5 className="loading-image-text">Loading Image...</h5>
                   ) : (image === '' ? (
                     <div></div>
-                  ) : (<img className="image-divs" src={image} alt="new-post" />)
+                  ) : (<img className="uploaded-image" src={image} alt="new-post" />)
                   )}
                 </div>
                 <label for="file-inputs">
