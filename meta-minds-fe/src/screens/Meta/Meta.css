@@ -71,8 +71,14 @@
   margin-left: 50px;
   margin-top: 0px;
 }
-
-
+.each-meta-post-date {
+ font-size: 25px;
+}
+.each-meta-post-title{
+  font-size: 25px;
+  margin-left: 150px;
+  margin-top: 55px;
+}
 .each-meta-post-image {
   display: flex;
   justify-content: flex-end;
@@ -83,14 +89,6 @@
   border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   margin-right: 8px;
-}
-.each-meta-post-title{
-  font-size: 25px;
-  margin-left: 150px;
-  margin-top: 55px;
-}
-.each-meta-post-date {
- font-size: 25px;
 }
 
 
