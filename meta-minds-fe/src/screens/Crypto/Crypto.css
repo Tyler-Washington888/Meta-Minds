@@ -67,8 +67,14 @@
   margin-left: 50px;
   margin-top: 0px;
 }
-
-
+.crypto-all-posts-date {
+  font-size: 25px;
+ }
+ .crypto-all-posts-title{
+  font-size: 25px;
+  margin-left: 150px;
+  margin-top: 55px;
+}
 .crypto-all-posts-image {
   display: flex;
   justify-content: flex-end;
@@ -79,14 +85,6 @@
   border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   margin-right: 8px;
-}
-.crypto-all-posts-title{
-  font-size: 25px;
-  margin-left: 150px;
-  margin-top: 55px;
-}
-.crypto-all-posts-date {
- font-size: 25px;
 }
 
 .crypto-all-posts-inner-div-link {
