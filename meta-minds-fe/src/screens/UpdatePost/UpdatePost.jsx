@@ -6,7 +6,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import Footer from '../../components/Footer/Footer';
 import "./UpdatePost.css";
 import { config } from './editorConfig'
-import "./Styles.css";
+import "./CkeditorTwo.css";
 
 
 function UpdatePost(props) {
@@ -98,30 +98,30 @@ function UpdatePost(props) {
       <img class="update-post-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner-Image"></img>
       {image !== "" ? (<img className="create-post-close-icons" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div></div>)}
       <div class="update-post-page">
-        <form
+        <form class="update-post-form"
           onSubmit={handleSubmit}
         >
-          <h1 class="create-post-header-text">Update Post</h1>
-          <div className="post-details-top-div">
-            <div className="post-details-top-left">
-              <label class="create-post-label-and-input-div category-div">
-                <div class="create-post-input-text"></div>
-                {category === "Mana" ? (<select name="category" className="category" onChange={handleChange}>
+          <h1 class="update-post-header-text">Update Post</h1>
+          <div className="update-details-top-div">
+            <div className="update-details-top-left">
+              <label class="update-post-label-and-input-div update-category-div">
+                <div class="update-post-input-text"></div>
+                {category === "Mana" ? (<select name="category" className="update-category" onChange={handleChange}>
                   <option value="Mana" selected="selected">{category}</option>
                   <option value="Meta">Meta</option>
                   <option value="Crypto">Crypto</option>
                   <option value="Film">Film</option>
-                </select>) : (category === "Meta" ? (<select name="category" className="category" onChange={handleChange}>
+                </select>) : (category === "Meta" ? (<select name="category" className="update-category" onChange={handleChange}>
                   <option value="Meta" selected="selected">{category}</option>
                   <option value="Mana">Mana</option>
                   <option value="Crypto">Crypto</option>
                   <option value="Film">Film</option>
-                </select>) : (category === "Crypto" ? (<select name="category" className="category" onChange={handleChange}>
+                </select>) : (category === "Crypto" ? (<select name="category" className="update-category" onChange={handleChange}>
                   <option value="Crypto" selected="selected">{category}</option>
                   <option value="Meta">Meta</option>
                   <option value="Mana">Mana</option>
                   <option value="Film">Film</option>
-                </select>) : (<select name="category" className="category" onChange={handleChange}>
+                </select>) : (<select name="category" className="update-category" onChange={handleChange}>
                   <option value="Film" selected="selected">{category}</option>
                   <option value="Meta">Meta</option>
                   <option value="Mana">Mana</option>
@@ -129,10 +129,10 @@ function UpdatePost(props) {
                 </select>)))}
               </label>
               <br />
-              <label class="create-post-label-and-input-div title-div">
-                <div class="create-post-input-text"></div>
+              <label class="update-post-label-and-input-div title-div">
+                <div class="update-post-input-text"></div>
                 <input
-                  class="create-post-user-input-box"
+                  class="update-post-user-input-box"
                   type='text'
                   placeholder="Title"
                   value={title}
@@ -140,10 +140,10 @@ function UpdatePost(props) {
                   onChange={handleChange} />
               </label>
               <br />
-              <label class="create-post-label-and-input-div subtitle-div">
-                <div class="create-post-input-text"></div>
+              <label class="update-post-label-and-input-div subtitle-div">
+                <div class="update-post-input-text"></div>
                 <input
-                  class="create-post-user-input-box"
+                  class="update-post-user-input-box"
                   type='text'
                   value={subtitle}
                   placeholder="Subtitle"
@@ -151,21 +151,21 @@ function UpdatePost(props) {
                   onChange={handleChange} />
               </label>
             </div>
-            <div className="image-upload-div">
-              <label class="create-post-label-and-input-div image-div">
+            <div className="update-image-upload-div">
+              <label class="update-post-label-and-input-div update-image-div">
                 <div>
                   {loading ? (
-                    <h5 className="loading-image-text">Loading Image...</h5>
+                    <h5 className="update-loading-image-text">Loading Image...</h5>
                   ) : (image === '' ? (
                     <div></div>
-                  ) : (<img className="image-divs" src={image} alt="new-post" />)
+                  ) : (<img className="update-uploaded-image" src={image} alt="new-post" />)
                   )}
                 </div>
                 <label for="file-inputs">
-                  {loading && image === '' || image !== '' ? (<div></div>) : (<img className="image-upload-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" />)}
+                  {loading && image === '' || image !== '' ? (<div></div>) : (<img className="image-upload-icon-update" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" />)}
                 </label>
                 <input
-                  id="file-inputs"
+                  id="file-inputs-update"
                   type='file'
                   accept='image/*'
                   onChange={uploadImage}
@@ -175,8 +175,8 @@ function UpdatePost(props) {
             </div>
           </div>
           <br />
-          <label class="create-post-label-and-input-div bottom">
-            <div class="create-post-input-text"></div>
+          <label class="update-post-label-and-input-div bottom">
+            <div class="update-post-input-text"></div>
             <CKEditor
               data={content}
               config={{ placeholder: "Content..." }}
@@ -190,7 +190,7 @@ function UpdatePost(props) {
           </label>
           {image.length === 0 || category === "" || title.length === 0 || subtitle.length === 0 || content.length === 0 ? (
             <button className="update-button-disabled" disabled='true'>Update</button>) : (
-            <button className="submit-buttons">Update</button>
+            <button className="update-button">Update</button>
           )}
         </form>
         <Footer />

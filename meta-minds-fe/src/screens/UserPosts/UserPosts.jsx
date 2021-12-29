@@ -30,12 +30,12 @@ export default function YourPosts(props) {
 
   return (
     <div>
-      <img className="user-post--banner-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner-Image"></img>
+      <img className="user-posts-banner-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner-Image"></img>
       <div className="user-post-and-button-div">
         <div className="create-post-button-div">
           <button className="create-post-button"><Link to='/create-post' className="create-post-button-link" >Create Post</Link></button>
         </div>
-        {newestPost === undefined && loading === false ? (<h2 className='firstpost'>Start influencing the creation of Web3 by making your first post!</h2>) : (newestPost === [] && loading === true ? (<div>Loading...</div>) : (<div></div>))}
+        {newestPost === undefined && loading === false ? (<h2 className='firstpost'>Start influencing the development of Web3 by making your first post!</h2>) : (newestPost === [] && loading === true ? (<div>Loading...</div>) : (<div></div>))}
         <div class="user-post-outer-div">
           {allPosts.map(post => {
             return (

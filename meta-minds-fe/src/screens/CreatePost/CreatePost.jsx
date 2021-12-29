@@ -122,7 +122,7 @@ function CreatePosts(props) {
               <label class="create-post-label-and-input-div image-div">
                 <div>
                   {loading ? (
-                    <h5 className="loading-image-text">Loading Image...</h5>
+                    <h5 className="update-loading-image-text">Loading Image...</h5>
                   ) : (image === '' ? (
                     <div></div>
                   ) : (<img className="uploaded-image" src={image} alt="new-post" />)

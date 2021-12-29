@@ -56,7 +56,6 @@ export default function ViewPost(props) {
     setRefresh(prevState => !prevState)
     history.push(`/user-posts/${currentUser?.id}`)
   };
-  console.log(post)
 
   function copy() {
     setIsOpen(!isOpen)
@@ -135,7 +134,6 @@ export default function ViewPost(props) {
           }
         </div>
         <p className="view-post-content">{ReactHtmlParser(post?.content)}</p>
-
         <div className="similar-posts-div">
           <div className="similar-posts-title">Similar Posts</div>
           <div className="each-similar-post-div">
