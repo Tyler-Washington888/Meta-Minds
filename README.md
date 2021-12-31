@@ -18,14 +18,14 @@
 
 ## Project Overview
 
-**Meta-Minds** is a blog app that allows users to create and discover ideas related to the Metaverse. 
+**Meta-Minds** is a blog that allows users to create and discover ideas related to Web3. 
 
 
 <br>
 
 ## MVP
 
-- The Meta Minds MVP is a full CRUD, full stack application with a Rails back end and React front end. It is fully responsive, styled with CSS and Styled Components.
+- The Meta Minds MVP is a full CRUD, full stack application with a Rails back end and React front end. It is fully responsive, and styled using CSS. 
 
 <br>
 
@@ -33,8 +33,8 @@
 
 - RESTful JSON API built with Ruby on Rails with full CRUD
 - Full CRUD interactive front end built with React
-- Forms to input new posts and comments
-- Display all user posts and comments 
+- Form to input new posts and update posts
+- Display all user posts 
 - Implement Auth for users
 - Fully responsive styling with two media queries
 - Clean, organized, and structured code
@@ -49,9 +49,13 @@
 | :--------------: | :----------------------------------------- |
 |      React       | Javascript library for building user interfaces |
 |   React Router   | Library for routing, enabling navigation between components|
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|   axios | Promise-based HTTP client for Node.js and the browser | 
+|   bcrypt | Password hashing function | 
+|   jwt | Securely transmits information between parties as a JSON object | 
+|   cors | Allows a server to indicate any origins from which a browser should permit loading resources|
+| CKEditor| WYSIWYG rich text editor|
+| Luxon | Library for dealing with dates and times in JavaScript |
+| React HTML Parser | A utility for converting HTML strings into React components | 
 
 <br>
 
@@ -59,40 +63,59 @@
 
 #### Wireframes
 
-
 [Link to Wireframes](https://www.figma.com/file/CT10ITn6qskLHAbIXvlNJA/Meta-Minds-team-library?node-id=0%3A1)
 
-- Desktop Landing 
+<p align="center">
+  <img src="https://res.cloudinary.com/tylerwashington98/image/upload/v1640928119/Meta-Minds/Group_9_ourwlw.png" title="hover text">
+  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+</p>
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954651/Meta-Minds/Screen_Shot_2021-11-03_at_11.43.40_AM_ndstr6.png)
+- Home Screen   
 
-- Latest Blogs Screen
-
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954765/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.17_AM_eazih9.png)
+<img src='/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/misc/Group 24.png'>
 
 - Sign In Screeen 
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954838/Meta-Minds/Screen_Shot_2021-11-03_at_11.43.59_AM_meteox.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640927923/Meta-Minds/Group_5_jldqyj.png)
 
 - Sign Up Screen 
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954892/Meta-Minds/Screen_Shot_2021-11-03_at_11.44.19_AM_pbjubs.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928027/Meta-Minds/Group_6_em96eg.png)
 
-- Mana Blogs Screen
+- Meta Screen
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954957/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.39_AM_npetxo.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928109/Meta-Minds/Group_19_grf1gc.png)
 
-- User Posts Screen
+- Mana Screen
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635955172/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.57_AM_xwpm8c.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928120/Meta-Minds/Group_18_yzvtsr.png)
 
-- Create Post Screen
+- Crypto Screen
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954493/Meta-Minds/Screen_Shot_2021-11-03_at_11.46.12_AM_idifvh.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928120/Meta-Minds/Group_20_ykk4ow.png)
+- Film Screen  
 
-- Post Screen  
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928130/Meta-Minds/Group_21_hyh1ny.png)
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635955458/Meta-Minds/Screen_Shot_2021-11-03_at_11.46.37_AM_gcnkrv.png)
+- User Posts Screen  
+
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640929129/Meta-Minds/Group_1_trhr01.png)
+
+- Create Post Screen  
+
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928134/Meta-Minds/Group_23_qzdz1o.png)
+
+- View Post Screen  
+
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928118/Meta-Minds/Group_10_rnl93d.png)
+
+- Update Post Screen  
+
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928136/Meta-Minds/Group_17_rocrhs.png)
+
+
+
+
 
 
 #### Component Tree
@@ -149,7 +172,6 @@ src
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
 ***
-
 ## Code Showcase
 
 > Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
