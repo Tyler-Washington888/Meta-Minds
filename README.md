@@ -83,7 +83,7 @@
 
 - Mana Screen
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926328/Meta-Minds/Screen_Shot_2021-12-30_at_11.47.30_PM_zxuubv.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928120/Meta-Minds/Group_18_yzvtsr.png)
 
 - Crypto Screen
 
