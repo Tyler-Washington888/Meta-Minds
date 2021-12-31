@@ -154,15 +154,30 @@ src
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| Wireframes, ERD, Component Tree   |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+|Set up and test CRUD on back end |    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Set up React App|    H     |     1 hrs      |     1 hrs     |    1 hrs     |
+|Create file structure|    H     |     1 hrs      |     1 hrs     |    1 hrs     |
+|Create and test CRUD on front end|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Create layout components|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Create Signin/Sign up Screens|    H     |     3 hrs      |     2 hrs     |    2 hrs     |
+|Create CreatePost screen|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Create Explore screen|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Create Meta screen|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Create Mana screen|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Create Crypto screen|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Create Film screen|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Create UserPosts screen|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Create CreatePost screen|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Create ViewPost screen|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Create UpdatePost screen|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Basic Styling|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Test and clean up code|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Advanced Styling and finetuning|    M     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Post MVP|    L    |     3 hrs      |     2 Months    |    TBD      |
+| TOTAL               |          |     1 Month     |   1 Month     |     TBD     |
 
 <br>
 
