@@ -113,9 +113,8 @@
 
 #### Component Tree
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640988479/Meta-Minds/Screen_Shot_2021-12-31_at_5.04.56_PM_o6ehwn.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640990059/Meta-Minds/Group_1_1_u8mczb.png)
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
 
 #### Component Architecture
 
