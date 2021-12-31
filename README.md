@@ -88,7 +88,6 @@
 - Crypto Screen
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926354/Meta-Minds/Screen_Shot_2021-12-30_at_11.47.59_PM_hm7ank.png)
-
 - Film Screen  
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926368/Meta-Minds/Screen_Shot_2021-12-30_at_11.48.13_PM_gfcegk.png)
