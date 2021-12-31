@@ -175,7 +175,7 @@ src
 |Create UpdatePost screen|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
 |Basic Styling|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
 |Test and clean up code|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
-|Advanced Styling and finetuning|    M     |     3 hrs      |     3 hrs     |    3 hrs     |
+|Advanced Styling and finetuning|    M     |     5hrs      |     5 hrs     |    5 hrs     |
 |Post MVP|    L    |     3 hrs      |     3 hrs    |    TBD      |
 | TOTAL               |          |    61 hrs     |  61hrs    |     TBD     |
 
