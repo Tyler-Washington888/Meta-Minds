@@ -98,7 +98,7 @@ function UpdatePost(props) {
       <img class="update-post-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner-Image"></img>
       {image !== "" ? (<img className="create-post-close-icons" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div></div>)}
       <div class="update-post-page">
-        <form class="update-post-form"
+        <form
           onSubmit={handleSubmit}
         >
           <h1 class="update-post-header-text">Update Post</h1>

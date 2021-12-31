@@ -33,11 +33,13 @@ function Header(props) {
   return (
     <div className="header-div">
       <div className="header-div-content-margin-left">
-        <NavLink to="/explore" className="header-div-app-title">Meta Minds</NavLink>
+        <NavLink to="/" className="header-div-app-title">Meta Minds</NavLink>
         <div className="header-div-categories">
-          <NavLink to="/explore" activeStyle={{
+
+          <NavLink exact to="/" activeStyle={{
             borderBottom: "4px ridge white",
           }} className="header-div-catergories-text link">Latest</NavLink>
+
           <NavLink to="/meta" activeStyle={{
             borderBottom: "4px ridge white",
           }} className="header-div-catergories-text link">Meta</NavLink>
@@ -115,7 +117,7 @@ function Header(props) {
             <NavLink className="header-div-your-posts" activeStyle={{
               borderBottom: "4px ridge white",
             }} to={`/user-posts/${currentUser?.id}`}>Your Posts</NavLink>
-            <Link to="/explore" className="header-div-logout-link"><div className="header-div-logout" onClick={handleLogout}>Logout</div></Link>
+            <Link to="/" className="header-div-logout-link"><div className="header-div-logout" onClick={handleLogout}>Logout</div></Link>
           </div>
         </div>
       ) : (!currentUser && wordEntered.length == 0 ? (

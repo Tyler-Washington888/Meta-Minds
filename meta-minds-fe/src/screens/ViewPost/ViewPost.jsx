@@ -67,7 +67,6 @@ export default function ViewPost(props) {
     document.body.removeChild(el);
     setCopied(true);
   };
-
   return (
     <div>
       <img className="view-post-image" src={currentPost[0]?.image} alt="banner-mage"></img>

@@ -59,6 +59,7 @@ function CreatePosts(props) {
     setLoading(false);
   }
 
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const updated = await createPost({
@@ -66,13 +67,14 @@ function CreatePosts(props) {
       category: category,
       title: title,
       subtitle: subtitle,
-      content: content
+      content: content,
+      user_id: currentUser.id
     })
     setRefresh(prevState => !prevState)
     setUpdated(updated);
   };
   if (isUpdated) {
-    return <Redirect to={`/explore`} />;
+    return <Redirect to={`/`} />;
   }
 
   return (

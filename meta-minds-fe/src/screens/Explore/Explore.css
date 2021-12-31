@@ -9,7 +9,7 @@
 }
 .latest-and-all-posts-main-div{
   margin-top: 37px;
-  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
+  background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -180,7 +180,7 @@ transition: .5s ease;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
-  height: 110px;
+  height: 120px;
   width: 360px;
   position: relative;
   left: 54px;

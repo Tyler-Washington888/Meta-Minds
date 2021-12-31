@@ -59,13 +59,13 @@ function App() {
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
     setCurrentUser(userData);
-    history.push('/explore');
+    history.push('/');
   };
 
   const handleRegister = async (formData) => {
     const userData = await registerUser(formData);
     setCurrentUser(userData);
-    history.push('/explore');
+    history.push('/');
   };
 
   const handleLogout = () => {
@@ -108,13 +108,6 @@ function App() {
           </Layout>
         </Route>
 
-        <Route exact path='/explore'>
-          <ScrollToTop />
-          <Layout className='' currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
-            <Explore refresh={refresh} posts={posts} />
-          </Layout >
-        </Route>
-
         <Route path='/meta'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
@@ -151,12 +144,14 @@ function App() {
           <SignUp handleRegister={handleRegister} />
         </Route>
 
-        <Route exact path="/">
-          <Landing />
+        <Route exact path='/'>
+          <ScrollToTop />
+          <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout}>
+            <Explore refresh={refresh} posts={posts} />
+          </Layout >
         </Route>
 
       </Switch>
-
 
     </div >
   );
