@@ -71,7 +71,7 @@
 
 - Sign In Screeen 
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640927671/Meta-Minds/Group_7_1_yi8f55.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640927923/Meta-Minds/Group_5_jldqyj.png)
 
 - Sign Up Screen 
 
