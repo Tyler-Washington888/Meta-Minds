@@ -2,7 +2,6 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import { Route, Switch, useHistory } from "react-router";
 import Layout from "./components/Layout/Layout.jsx";
-import Landing from "./screens/Landing/Landing.jsx";
 import SignIn from "./screens/SignIn/SignIn.jsx";
 import SignUp from "./screens/SignUp/SignUp.jsx";
 import Explore from "./screens/Explore/Explore.jsx";

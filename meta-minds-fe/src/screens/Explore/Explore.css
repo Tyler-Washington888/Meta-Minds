@@ -2,13 +2,15 @@
   border-right: none;
   border-left: none ;
   object-fit: cover;
+  position: relative;
+  bottom: 40px;
   height: 305px;
   width: 100%;
   z-index: 2;
   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
 }
 .latest-and-all-posts-main-div{
-  margin-top: 37px;
+  margin-top: -43px;
   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
   display: flex;
   flex-direction: column;
@@ -18,7 +20,6 @@
   z-index: 1;
   height: calc( 100% + 300px);
   overflow-y: hidden;
-  background-color: blue;
 }
 .latest-post-div {
   display:flex;
@@ -37,7 +38,7 @@
   z-index: 4;
   transition: .5s ease;
   position: relative;
-  top:  40px;
+  top:  0px;
 }
 .latest-posts-image:hover {
 -webkit-transform: scale(1.05);
@@ -140,9 +141,9 @@ transition: .5s ease;
   display: flex;
   flex-wrap: wrap ;
   position: relative;
-  bottom: 225px;
+  bottom: 295px;
   padding-left: 2.5%;
-  margin-bottom: -220px;
+  margin-bottom: -320px;
 }
 .single-post {
   list-style: none;
@@ -231,7 +232,7 @@ transition: .5s ease;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   background-color: transparent;
-  margin-bottom: 400px;
+  margin-bottom: 450px;
 }
 .load-more-button:hover {
  background-color: #0ACCE5;
