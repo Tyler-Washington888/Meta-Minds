@@ -111,12 +111,9 @@
 
 
 
-
-
-
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640988479/Meta-Minds/Screen_Shot_2021-12-31_at_5.04.56_PM_o6ehwn.png)
 
 [Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
 
