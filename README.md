@@ -131,7 +131,7 @@ src
       |__ Footer.jsx
       |__ Layout.jsx
       |__ ScrollToTop.jsx
-|__ screens./
+|__ screens/
       |__ CreatePost.jsx
       |__ Crypto.jsx
       |__ Explore.jsx
