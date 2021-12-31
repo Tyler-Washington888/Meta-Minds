@@ -124,13 +124,31 @@
 
 src
 |__ assets/
-      |__ fonts
-      |__ graphics
+      |__ icons
       |__ images
-      |__ mockups
 |__ components/
       |__ Header.jsx
+      |__ Footer.jsx
+      |__ Layout.jsx
+      |__ ScrollToTop.jsx
+|__ screens./
+      |__ CreatePost.jsx
+      |__ Crypto.jsx
+      |__ Explore.jsx
+      |__ Film.jsx
+      |__ Mana.jsx
+      |__ Meta.jsx
+      |__ SignIn.jsx
+      |__ SignUp.jsx
+      |__ UpdatePost.jsx
+      |__ UserPost.jsx
+      |__ ViewPost.jsx
 |__ services/
+      |__ Api_config.js
+      |__ auth.js
+      |__ Posts.js
+      |__ Users.js
+      |__ Comments.js
 
 ```
 
