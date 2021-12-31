@@ -65,14 +65,9 @@
 
 [Link to Wireframes](https://www.figma.com/file/CT10ITn6qskLHAbIXvlNJA/Meta-Minds-team-library?node-id=0%3A1)
 
-<p align="center">
-  <img src="https://res.cloudinary.com/tylerwashington98/image/upload/v1640928119/Meta-Minds/Group_9_ourwlw.png" title="hover text">
-  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
-</p>
-
 - Home Screen   
 
-<img src='/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/misc/Group 24.png'>
+<img src='meta-minds-fe/src/misc/Group 24.png'>
 
 - Sign In Screeen 
 
