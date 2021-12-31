@@ -65,9 +65,9 @@
 
 [Link to Wireframes](https://www.figma.com/file/CT10ITn6qskLHAbIXvlNJA/Meta-Minds-team-library?node-id=0%3A1)
 
-- Explore Page  
+- Home Screen   
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640920551/Meta-Minds/Group_7_uyryhw.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640925772/Meta-Minds/Screen_Shot_2021-12-30_at_11.41.56_PM_usamrt.png)
 
 - Sign In Screeen 
 
