@@ -87,26 +87,26 @@
 
 - Crypto Screen
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926354/Meta-Minds/Screen_Shot_2021-12-30_at_11.47.59_PM_hm7ank.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928120/Meta-Minds/Group_20_ykk4ow.png)
 - Film Screen  
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926368/Meta-Minds/Screen_Shot_2021-12-30_at_11.48.13_PM_gfcegk.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928130/Meta-Minds/Group_21_hyh1ny.png)
 
 - User Posts Screen  
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926408/Meta-Minds/Screen_Shot_2021-12-30_at_11.48.27_PM_zr00k7.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928129/Meta-Minds/Group_22_v5p0le.png)
 
 - Create Post Screen  
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926432/Meta-Minds/Screen_Shot_2021-12-30_at_11.48.39_PM_m5yorn.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928134/Meta-Minds/Group_23_qzdz1o.png)
 
 - View Post Screen  
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926856/Meta-Minds/Screen_Shot_2021-12-30_at_11.45.45_PM_nfhgrw.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928118/Meta-Minds/Group_10_rnl93d.png)
 
 - Update Post Screen  
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926449/Meta-Minds/Screen_Shot_2021-12-30_at_11.47.16_PM_sfbpml.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928136/Meta-Minds/Group_17_rocrhs.png)
 
 
 
