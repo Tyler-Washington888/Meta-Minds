@@ -112,9 +112,7 @@
 
 - Update Post Screen  
 
-![Dummy Link](- Update Post Screen  
-
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926449/Meta-Minds/Screen_Shot_2021-12-30_at_11.47.16_PM_sfbpml.png))
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640927370/Meta-Minds/Group_13_1_atphx4.png)
 
 
 
