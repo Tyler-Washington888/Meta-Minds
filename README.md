@@ -94,7 +94,7 @@
 
 - User Posts Screen  
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928129/Meta-Minds/Group_22_v5p0le.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640929129/Meta-Minds/Group_1_trhr01.png)
 
 - Create Post Screen  
 
