@@ -75,11 +75,11 @@
 
 - Sign Up Screen 
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926195/Meta-Minds/Screen_Shot_2021-12-30_at_11.44.53_PM_hthrgq.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928027/Meta-Minds/Group_6_em96eg.png)
 
 - Meta Screen
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926311/Meta-Minds/Screen_Shot_2021-12-30_at_11.47.46_PM_rrjf8j.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928109/Meta-Minds/Group_19_grf1gc.png)
 
 - Mana Screen
 
