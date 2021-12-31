@@ -72,7 +72,7 @@
 
 - Home Screen   
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928119/Meta-Minds/Group_9_ourwlw.png)
+<img src='/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/misc/Group 24.png'>
 
 - Sign In Screeen 
 
