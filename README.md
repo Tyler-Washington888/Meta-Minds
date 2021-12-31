@@ -77,21 +77,41 @@
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926195/Meta-Minds/Screen_Shot_2021-12-30_at_11.44.53_PM_hthrgq.png)
 
-- Mana Blogs Screen
+- Meta Screen
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926195/Meta-Minds/Screen_Shot_2021-12-30_at_11.44.53_PM_hthrgq.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926311/Meta-Minds/Screen_Shot_2021-12-30_at_11.47.46_PM_rrjf8j.png)
 
-- User Posts Screen
+- Mana Screen
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635955172/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.57_AM_xwpm8c.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926328/Meta-Minds/Screen_Shot_2021-12-30_at_11.47.30_PM_zxuubv.png)
 
-- Create Post Screen
+- Crypto Screen
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954493/Meta-Minds/Screen_Shot_2021-11-03_at_11.46.12_AM_idifvh.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926354/Meta-Minds/Screen_Shot_2021-12-30_at_11.47.59_PM_hm7ank.png)
 
-- Post Screen  
+- Film Screen  
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635955458/Meta-Minds/Screen_Shot_2021-11-03_at_11.46.37_AM_gcnkrv.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926368/Meta-Minds/Screen_Shot_2021-12-30_at_11.48.13_PM_gfcegk.png)
+
+- User Posts Screen  
+
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926408/Meta-Minds/Screen_Shot_2021-12-30_at_11.48.27_PM_zr00k7.png)
+
+- Create Post Screen  
+
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926432/Meta-Minds/Screen_Shot_2021-12-30_at_11.48.39_PM_m5yorn.png)
+
+- View Post Screen  
+
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926856/Meta-Minds/Screen_Shot_2021-12-30_at_11.45.45_PM_nfhgrw.png)
+
+- Update Post Screen  
+
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926449/Meta-Minds/Screen_Shot_2021-12-30_at_11.47.16_PM_sfbpml.png)
+
+
+
+
 
 
 #### Component Tree
