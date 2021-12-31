@@ -71,15 +71,15 @@
 
 - Sign In Screeen 
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954838/Meta-Minds/Screen_Shot_2021-11-03_at_11.43.59_AM_meteox.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926158/Meta-Minds/Screen_Shot_2021-12-30_at_11.44.35_PM_orhdkl.png)
 
 - Sign Up Screen 
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954892/Meta-Minds/Screen_Shot_2021-11-03_at_11.44.19_AM_pbjubs.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926195/Meta-Minds/Screen_Shot_2021-12-30_at_11.44.53_PM_hthrgq.png)
 
 - Mana Blogs Screen
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1635954957/Meta-Minds/Screen_Shot_2021-11-03_at_11.45.39_AM_npetxo.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926195/Meta-Minds/Screen_Shot_2021-12-30_at_11.44.53_PM_hthrgq.png)
 
 - User Posts Screen
 
