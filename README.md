@@ -176,7 +176,7 @@ src
 |Basic Styling|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
 |Test and clean up code|    H     |     3 hrs      |     3 hrs     |    3 hrs     |
 |Advanced Styling and finetuning|    M     |     3 hrs      |     3 hrs     |    3 hrs     |
-|Post MVP|    L    |     3 hrs      |     2 Months    |    TBD      |
+|Post MVP|    L    |     3 hrs      |     3 hrs    |    TBD      |
 | TOTAL               |          |     1 Month     |   1 Month     |     TBD     |
 
 <br>
