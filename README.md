@@ -68,7 +68,7 @@
 
 - Explore Page  
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640918030/Meta-Minds/Screen_Shot_2021-12-30_at_9.32.39_PM_a2bd6n.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640918390/Meta-Minds/Screen_Shot_2021-12-30_at_9.31.49_PM_gdnncv.png)
 
 - Sign In Screeen 
 
