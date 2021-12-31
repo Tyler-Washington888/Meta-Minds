@@ -67,7 +67,7 @@
 
 - Home Screen   
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640925772/Meta-Minds/Screen_Shot_2021-12-30_at_11.41.56_PM_usamrt.png)
+![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640927671/Meta-Minds/Group_7_1_yi8f55.png)
 
 - Sign In Screeen 
 
@@ -110,9 +110,7 @@
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640926449/Meta-Minds/Screen_Shot_2021-12-30_at_11.47.16_PM_sfbpml.png)
 
 
-- Update Post Screen  
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640927370/Meta-Minds/Group_13_1_atphx4.png)
 
 
 
