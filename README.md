@@ -87,14 +87,15 @@
 
 - Crypto Screen
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928120/Meta-Minds/Group_20_ykk4ow.png)
+<img src='meta-minds-fe/src/misc/Group 20.png'> 
+
 - Film Screen  
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640928130/Meta-Minds/Group_21_hyh1ny.png)
+<img src='meta-minds-fe/src/misc/Group 21.png'>
 
 - User Posts Screen  
 
-![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640929129/Meta-Minds/Group_1_trhr01.png)
+<img src='meta-minds-fe/src/misc/Group 22.png'>
 
 - Create Post Screen  
 
