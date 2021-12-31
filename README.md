@@ -18,14 +18,14 @@
 
 ## Project Overview
 
-**Meta-Minds** is a blog app that allows users to create and discover ideas related to the Metaverse. 
+**Meta-Minds** is a blog that allows users to create and discover ideas related to Web3. 
 
 
 <br>
 
 ## MVP
 
-- The Meta Minds MVP is a full CRUD, full stack application with a Rails back end and React front end. It is fully responsive, styled with CSS and Styled Components.
+- The Meta Minds MVP is a full CRUD, full stack application with a Rails back end and React front end. It is fully responsive, and styled using CSS. 
 
 <br>
 
@@ -33,8 +33,8 @@
 
 - RESTful JSON API built with Ruby on Rails with full CRUD
 - Full CRUD interactive front end built with React
-- Forms to input new posts and comments
-- Display all user posts and comments 
+- Form to input new posts and update posts
+- Display all user posts 
 - Implement Auth for users
 - Fully responsive styling with two media queries
 - Clean, organized, and structured code
@@ -49,9 +49,13 @@
 | :--------------: | :----------------------------------------- |
 |      React       | Javascript library for building user interfaces |
 |   React Router   | Library for routing, enabling navigation between components|
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|   axios | Promise-based HTTP client for Node.js and the browser | 
+|   bcrypt | Password hashing function | 
+|   jwt | Securely transmits information between parties as a JSON object | 
+|   cors | Allows a server to indicate any origins from which a browser should permit loading resources|
+| CKEditor| WYSIWYG rich text editor|
+| Luxon | Library for dealing with dates and times in JavaScript |
+| React HTML Parser | A utility for converting HTML strings into React components | 
 
 <br>
 
