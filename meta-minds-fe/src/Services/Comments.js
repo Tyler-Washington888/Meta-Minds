@@ -25,6 +25,3 @@ export const deleteComment = async (id) => {
   return res;
 };
 
-
-
-
