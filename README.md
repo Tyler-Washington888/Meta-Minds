@@ -18,7 +18,7 @@
 
 ## Project Overview
 
-**Meta-Minds** is a blog that allows users to create and discover ideas related to Web3. 
+**Meta-Minds** is a blog app that allows users to create and discover ideas about the Metaverse. On the explore page users can interact with the latest posts, regardless of category 
 
 
 <br>
@@ -195,15 +195,15 @@ Even though the ERD contains a comments table, I chose not to display comments o
 
 - Implement filtered search on search bar 
 - Integrate WYSIWYG rich text editor for creating posts 
-- Utilize 'Load More' navigation, for posts,  on Explore screen 
-- Incorporate scroll-to-top functionality on page change with React Router
+- Utilize 'Load More' navigation for posts on Explore screen 
+- Incorporate scroll-to-top functionality on page change 
 - Allow image upload using Cloudinary 
 
 
 ***
 ## Code Showcase
 
-The ViewPost menu was a lot of fun to implement using a toggle and ternary operator. When the toggle was set to true, the menu showed on the screen and, depending on if the user created the post or not, gave the user certain options to further interact with the post. If the user created the post, they could update, delete, or copy the post. If they didn't create the post, they were restricted to copying the post. 
+The ViewPost menu was a lot of fun to implement using a toggle and ternary operator. When the toggle was set to true, the ViewPost menu showed on the screen and, depending on if the user created the post or not, gave the user different options to further interact with the post. If the user created the post, they could update, delete, or copy the post. If they didn't create the post, they were restricted to copying the post. 
 
 ```
  {isOpen && (
@@ -232,4 +232,4 @@ The ViewPost menu was a lot of fun to implement using a toggle and ternary opera
 ```
 
 ## Code Issues & Resolutions
-Before deciding not to display the comments on the front end, I had trouble making a post request to the '/comments' endpoint. I solved this problem by making sure that the paramaters on the back end, for creating a comment, were identical to the parameters on the front end for creating a comment. Intially I was trying to send just the content to the endpoint, but once I included the post_id and user_id, the additional parameters, the post requests succeeded.  
+Before deciding not to display the comments on the front end, I had trouble making a post request to the '/comments' endpoint. I solved this problem by making sure that the paramaters on the back end, for creating a comment, were identical to the parameters on the front end for creating a comment. Intially I was trying to send just the content to the '/comments' endpoint, but once I included the post_id and user_id the post requests succeeded.  
