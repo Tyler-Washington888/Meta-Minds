@@ -18,7 +18,7 @@
 
 ## Project Overview
 
-**Meta-Minds** is a blog app that allows users to create and discover ideas about the Metaverse. On the explore page users can interact with the latest posts, regardless of category 
+**Meta-Minds** is a blog app that allows users to create and discover ideas about the Metaverse. 
 
 
 <br>
