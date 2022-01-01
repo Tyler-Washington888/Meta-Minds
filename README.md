@@ -203,8 +203,9 @@ Even though the ERD contains a comments table, I chose not to display comments o
 ***
 ## Code Showcase
 
+The ViewPost menu was a lot of fun to implement using a toggle and ternary operator. When the toggle was set to true, the menu showed on the screen and, depending on if the user created the post or not, gave the user certain options to further interact with the post. If the user created the post, they could update, delete, or copy the post. If they didn't create the post, they were restricted to copying the post. 
+
 ```
-The ViewPost menu was a lot of fun to implement using a toggle and ternary operator. When the toggle was set to true, the menu showed on the screen and, depending on if the user created the post or not, gave the user certain options to further interact with the post. If the user created the post, they could update, delete, or copy the post. If they didn't create the post, they were restricted to copying the post . 
  {isOpen && (
             (currentUser && currentUser.id === post.user_id ? (
               <div className="view-post-show-options-dropdown">
