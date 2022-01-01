@@ -195,7 +195,12 @@ While the ERD contains a comments table, I chose not to display the comments on 
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- Implement filtered search on search bar 
+- Integrate WYSIWYG rich text editor for creating posts 
+- Utilize 'Load More' navigation for posts on Explore screen 
+- Incorporate 'Scroll to Top' on page change with React Router
+- Allow image upload using Cloudinary 
+
 
 ***
 ## Code Showcase
