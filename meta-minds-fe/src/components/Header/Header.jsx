@@ -132,6 +132,7 @@ function Header(props) {
       {wordEntered.length !== 0 ? (
         <div className="page-overlay"></div>
       ) : (<div></div>)}
+
     </div>
   )
 }
