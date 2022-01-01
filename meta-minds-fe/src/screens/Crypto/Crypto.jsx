@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import "./Crypto.css";
-import CryptoImage from "../../services/CryptoImage.jpg"
+import CryptoImage from "/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/assets/images/CryptoImage.jpg"
 import { Link } from "react-router-dom";
 
 function Crypto(props) {

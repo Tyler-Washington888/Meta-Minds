@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import "./Mana.css";
-import ManaImage from "../../services/ManaImage.jpg"
+import ManaImage from "/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/assets/images/ManaImage.jpg"
 import { Link } from "react-router-dom";
 
 

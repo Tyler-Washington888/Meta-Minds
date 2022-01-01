@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import "./Film.css";
-import FilmImage from "../../services/FilmImage.jpg"
+import FilmImage from "/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/assets/images/FilmImage.jpg"
 import { Link } from "react-router-dom";
 
 function Film(props) {

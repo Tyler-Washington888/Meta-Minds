@@ -2,9 +2,8 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import "./Meta.css";
-import MetaImage from "../../services/MetaImage.jpg"
+import MetaImage from "/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/assets/images/MetaImage.jpg"
 import { Link } from "react-router-dom";
-import Header from '../../components/Header/Header';
 
 function Meta(props) {
   const { posts } = props;
