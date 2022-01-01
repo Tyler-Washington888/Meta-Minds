@@ -23,8 +23,8 @@ function SignIn(props) {
   return (
     <div class='sign-in-div'>
       <div class="meta-minds-logo-div">
-        <img className="meta-minds-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="Meta Minds Logo"></img>
-        <h2 className='copyright-text'>copyright 2021</h2>
+        <img className="sign-in-meta-minds-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="Meta Minds Logo"></img>
+        <h2 className='sign-in-copyright-text'>copyright 2021</h2>
       </div >
       <form class='sing-in-form'
         onSubmit={(e) => {

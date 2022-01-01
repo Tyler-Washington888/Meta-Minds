@@ -18,10 +18,10 @@
   height: 200px;
   width:  200px;
 }
-.copyright-text{
+.sign-up-copyright-text{
   font-size: 7px;
   position: relative;
-  bottom: 20px;
+  bottom: 60px;
   left: 2px;
 }
 .sign-up-form{
@@ -33,7 +33,7 @@
   height: 380px;
   width: 350px;
   position: relative;
-  bottom: 2%;
+  bottom: 7%;
 }
 .sign-up-header-text {
   font-size: 40px;
@@ -86,12 +86,12 @@
 .have-account-text{
   font-size: 25px;
   position: relative;
-  bottom: 40%;
+  bottom:100%;
   margin-bottom: -5px;
 }
 .link-to-sign-in-button {
   position: relative;
-  bottom: 10px;
+  bottom: 60px;
   height: 40px;
   width: 330px;
   background-color: transparent;

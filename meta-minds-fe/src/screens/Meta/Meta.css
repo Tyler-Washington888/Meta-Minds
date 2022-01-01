@@ -10,6 +10,8 @@
   padding-left: -3px;
   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
   filter: 30%;
+  position: relative;
+  bottom: 40px;
 }
 
 .meta-posts-div{
@@ -20,7 +22,7 @@
   height: calc( 100% + 100px );
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 2px;
+  margin-top: -38px;
   z-index: 1;
 }
 .each-meta-post-outer-div{

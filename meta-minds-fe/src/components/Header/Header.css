@@ -63,7 +63,7 @@ border-style: 5px ridge;
 }
 .empty-search-search-icon {
   position: relative;
-  top: 50px;
+  top: 10px;
   left: 35px;
   height: 20px;
   width: 20px;
@@ -80,15 +80,15 @@ border-style: 5px ridge;
 }
 .non-empty-search-icon {
   position: relative;
-  top: 7px;
-  left: 0px;
+  top: 41px;
+  left: -2px;
   height: 20px;
   width: 20px;
   z-index: 11;
 }
 .close-icon {
   position: relative;
-  top: -10px;
+  top: 15px;
   left: 525px;
   height: 25px;
   width: 25px;
@@ -104,7 +104,7 @@ border-style: 5px ridge;
   font-size: 15px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  padding-left: 50px;
+  padding-left: 47px;
   z-index: 10;
   outline-width: 0;
 }
@@ -152,9 +152,7 @@ border-style: 5px ridge;
   color: black;
 }
 .single-search-result-div {
-  padding-top: 80px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 80px 30px 0px 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -175,17 +173,20 @@ border-style: 5px ridge;
     margin-right: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    position: relative;
+    bottom: 40px;
   }
 .search-result-title{
-  font-size: 22px;
+  font-size: 20px;
   position: relative;
   top: -40px;
   left: -10px;
   font-weight: bold;
   text-align: left;
+  margin-bottom: 3px;
   }
   .search-result-subtitle {
-    font-size: 18px;
+    font-size: 19px;
     position: relative;
     top: -40px;
     left: -10px;
@@ -234,7 +235,7 @@ border-style: 5px ridge;
   justify-content: flex-end;
   position: relative;
   right: 515px;
- top: 58px;
+ top: 60px;
   height: 98px;
   width: 500px;
 }

@@ -23,7 +23,7 @@ export default function SignUp(props) {
     <div class="sign-up-div">
       <div class="meta-minds-logo-div">
         <img className="meta-minds-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="Meta Minds Logo"></img>
-        <h2 className='copyright-text'>copyright 2021</h2>
+        <h2 className='sign-up-copyright-text'>copyright 2021</h2>
       </div >
       <form class='sign-up-form'
         onSubmit={(e) => {

@@ -16,14 +16,14 @@
   top: 0%;
   margin-bottom: 1%;
 }
-.meta-minds-logo{
+.sign-in-meta-minds-logo{
   height: 200px;
   width:  200px;
 }
-.copyright-text{
+.sign-in-copyright-text{
   font-size: 7px;
   position: relative;
-  bottom: 20px;
+  bottom: 60px;
   left: 2px;
 }
 .sing-in-form{
@@ -36,7 +36,7 @@
   height: 320px;
   width: 350px;
   position: relative;
-  bottom: 2%;
+  bottom: 6%;
 }
 .sign-in-header-text {
   font-size: 40px;
@@ -90,7 +90,7 @@
   }
 .new-to-site-text{
   font-size: 25px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
   .link-to-sign-up-button {
