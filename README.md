@@ -185,7 +185,7 @@ src
 
 #### ERD Model
 
-Even though the ERD contains a comments table, I chose not to display comments, on the front end, for aesthetic purposes. 
+Even though the ERD contains a comments table, I chose not to display comments on the front end for aesthetic purposes. 
 
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1641006604/Meta-Minds/Screen_Shot_2021-12-31_at_10.09.24_PM_w2ppna.png)
 
