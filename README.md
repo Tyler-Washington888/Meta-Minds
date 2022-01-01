@@ -43,8 +43,6 @@
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       | Javascript library for building user interfaces |
@@ -113,12 +111,12 @@
 
 #### Component Tree
 
+[Link to Component Tree](https://www.figma.com/file/ViGpk9QRoTXnonYOcIGYPI/Component-Tree)
+
 ![Dummy Link](https://res.cloudinary.com/tylerwashington98/image/upload/v1640990059/Meta-Minds/Group_1_1_u8mczb.png)
 
 
 #### Component Architecture
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
