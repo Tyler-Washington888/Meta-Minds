@@ -185,9 +185,8 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+[ERD](https://res.cloudinary.com/tylerwashington98/image/upload/v1641006604/Meta-Minds/Screen_Shot_2021-12-31_at_10.09.24_PM_w2ppna.png)
 
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
 <br>
 
 ***
