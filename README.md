@@ -231,5 +231,4 @@ The ViewPost menu was a lot of fun to implement using a toggle and ternary opera
 ```
 
 ## Code Issues & Resolutions
-
-> Use this section to list of all major issues encountered and their resolution.
+Before deciding not to display the comments on the front end, I had trouble making a post request to the '/comments' endpoint. I solved this problem by making sure that the paramaters on the back end, for creating a comment, were identical to the parameters on the front end for creating a comment. Intially I was trying to send just the content to the endpoint, but once I included the post_id and user_id, the additional parameters, the post requests succeeded.  
