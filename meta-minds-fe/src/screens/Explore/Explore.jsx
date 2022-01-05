@@ -46,6 +46,8 @@ function Explore(props) {
 
 
 
+
+
   return (
     <div >
       <img className="explore-image" src={ExploreImage} alt="banner-mage"></img>

@@ -252,3 +252,31 @@ transition: .5s ease;
 }
 
 
+
+@media screen and (min-width: 350px) {
+  .explore-image {
+    border-right: none;
+    border-left: none ;
+    object-fit: cover;
+    position: relative;
+    bottom: 40px;
+    height: 305px;
+    width: 50%;
+    z-index: 2;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+  }
+  .latest-and-all-posts-main-div{
+    margin-top: -43px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    z-index: 1;
+    height: calc( 100% + 200px);
+    overflow-y: hidden;
+  }
+}
+
+

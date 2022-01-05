@@ -37,6 +37,8 @@ function CreatePosts(props) {
     }
   };
 
+
+
   const uploadImage = async (e) => {
     const files = e.target.files;
     const data = new FormData();
@@ -75,6 +77,8 @@ function CreatePosts(props) {
   };
   if (isUpdated) {
     return <Redirect to={`/`} />;
+
+
   }
 
   return (
