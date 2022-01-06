@@ -84,7 +84,7 @@
 
 - Crypto Screen
 
-<img src='meta-minds-fe/src/assets/images/Group 20.png'> 
+<img src='meta-minds-fe/src/assets/images/Group 21.png'> 
 
 - Film Screen  
 
