@@ -44,14 +44,20 @@ function Explore(props) {
     setNextPosts(nextPosts + postsPerLoad);
   };
 
-
-
-
-
   return (
-    <div >
+    <div>
       <img className="explore-image" src={ExploreImage} alt="banner-mage"></img>
       <div className="latest-and-all-posts-main-div">
+        <div className='mobile-latest-post-div'>
+          <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="moble-latest-post-link"><img className="moble-latest-post-image" src={mostPopularMetaPost[0]?.image} alt={mostPopularMetaPost[0]?.title} ></img></Link>
+          <div className='mobile-latest-post-details-div'>
+            <div className='mobile-latest-post-date-and-category-div'>
+              <div className='mobile-latest-post-date'>{DateTime.fromISO(`${mostPopularMetaPost[0]?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
+              <Link to={`/${mostPopularMetaPost[0]?.category}`} className="single-post-category-link"><div className='mobile-latest-post-category'>{mostPopularMetaPost[0]?.category}</div></Link>
+            </div>
+            <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="single-post-title-link"><div className='mobile-latest-post-title'>{mostPopularMetaPost[0]?.title}</div></Link>
+          </div>
+        </div>
         <div className="latest-post-div">
           <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="single-post-title-link-image"><img className="latest-posts-image" src={mostPopularMetaPost[0]?.image} alt={mostPopularMetaPost[0]?.title} ></img></Link>
           <div className="latest-post-details-div">
@@ -66,6 +72,22 @@ function Explore(props) {
               <p className="latest-post-details-subtitle ">{mostPopularMetaPost[0]?.subtitle}</p>
             </div>
           </div>
+        </div>
+        <div className='all-posts-mobile-div'>
+          {allPosts.map((post) => {
+            return (
+              <div className='each-single-mobile-post'>
+                <Link to={`/view-post/${post.id}`} key={post.id} className="each-single-mobile-post-image-link"><img className="each-single-mobile-post-image" src={post.image} alt={post.tile} /></Link>
+                <div className='each-single-mobile-post-details-div'>
+                  <div className='each-single-mobile-post-details-date-and-category-div'>
+                    <div className='each-single-mobile-post-details-date'>{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
+                    <Link to={`/${post.category}`} className="single-post-category-link"> <div className='each-single-mobile-post-details-category'>{post.category}</div></Link>
+                  </div>
+                  <Link to={`/view-post/${post.id}`} className='each-single-mobile-post-details-title single-post-category-link'>{post.title}</Link>
+                </div>
+              </div>
+            )
+          })}
         </div>
         <div className="all-posts-div">
           {allPosts.map((post) => {

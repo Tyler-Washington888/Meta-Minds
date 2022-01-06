@@ -40,6 +40,22 @@ function Meta(props) {
         </div>
         <Footer />
       </div>
+      <div className='meta-mobile'>
+        <div className='meta-mobile-outer-div'>
+          {allPosts.map(post => {
+            return (
+              <Link to={`/view-post/${post.id}`} key={post.id} className="meta-mobile-inner-div-link"><div className="meta-mobile-inner-div" key={post.id}>
+                <div className='meta-posts-date-and-title'>
+                  <div className='meta-mobile-date'>{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
+                  <div className='meta-mobile-title'>{post.title}</div>
+                </div>
+                <img className='meta-mobile-image' src={post.image} alt={post.tile} />
+              </div></Link>
+            )
+          })}
+        </div>
+        <Footer />
+      </div>
     </div >
   )
 }

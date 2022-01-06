@@ -63,11 +63,9 @@ function Header(props) {
       <div className="header-div-content-margin-left">
         <NavLink to="/" className="header-div-app-title">Meta Minds</NavLink>
         <div className="header-div-categories">
-
           <NavLink exact to="/" activeStyle={{
             borderBottom: "4px ridge white",
           }} className="header-div-catergories-text link">Latest</NavLink>
-
           <NavLink to="/meta" activeStyle={{
             borderBottom: "4px ridge white",
           }} className="header-div-catergories-text link">Meta</NavLink>
@@ -86,131 +84,7 @@ function Header(props) {
 
 
 
-      <div className="mobile-content-div">
-        <img className="hamburger-menu" onClick={() => setOpenHamburger(!openHamburger)} src={HamburgerMenu} alt="hamburger-menu"></img>
-        <Link className="mobile-logo-div-link" to="/"><div className="mobile-logo-div">
-          <img className="meta-logo-person" src={MetaLogo} alt="meta-logo-person"></img>
-          <div className="meta-minds-text" alt="meta-minds-text">Meta Minds</div>
-        </div></Link>
 
-
-
-        {openHamburger === true ? (
-          <div className="mobile-hamburger-div">
-            <div className='exit-out-and-meta-logo-div'>
-              <img className="exit-out-icon" src={X} onClick={() => setOpenHamburger(!openHamburger)} alt="exit-out-icon"></img>
-              <div className="ham-mobile-logo-div">
-                <img className="ham-meta-logo-person" src={MetaLogo} alt="meta-logo-person"></img>
-                <div className="ham-meta-minds-text" alt="meta-minds-text">Meta Minds</div>
-              </div>
-            </div>
-            <div className='hamburger-details-div'>
-              <div className='categories-div'>
-                <h3>Categories</h3>
-                <div className='category-links'>
-                  <NavLink exact to="/" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    color: "#0ACCE5"
-                  }} className="nav-Links"><div className='links'>Latest</div></NavLink>
-                  <NavLink to="/meta" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    color: "#0ACCE5"
-                  }} className="nav-Links"><div className='links'>Meta</div></NavLink>
-                  <NavLink to="/mana" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    color: "#0ACCE5"
-                  }} className="nav-Links"><div className='links'>Mana</div></NavLink>
-                  <NavLink to="/crypto" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    color: "#0ACCE5"
-                  }} className="nav-Links"><div className='links'>Crypto</div></NavLink>
-                  <NavLink to="/film" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    color: "#0ACCE5"
-                  }} className="nav-Links"><div className='links'>Film</div></NavLink>
-                </div>
-              </div>
-              <div className='personal-div'>
-                <h3>Personal</h3>
-                {currentUser ? (<div className='personal-links'>
-                  <NavLink to={`/user-posts/${currentUser?.id}`} onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    color: "#0ACCE5"
-                  }} className="nav-Links"><div className='links'>User Posts</div></NavLink>
-                  <Link exact to="/" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Links"><div onClick={handleLogout} className='links'>Logout</div></Link>
-                </div>) : (
-                  <div className='personal-links'>
-                    <Link to="/sign-in" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Links links">Sign In</Link>
-                    <Link to="/sign-up" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Links links">Sing Up</Link>
-                  </div>)}
-              </div>
-              <div className='creator-div'>
-                <h3>Creator</h3>
-                <div className='creator-links'>
-                  <a href=" https://www.linkedin.com/in/tyler-washington-4a8429176" className='nav-Links links'>LinkedIn</a>
-                  <a href="https://github.com/Tyler-Washington888" className=' nav-Links links' >Github</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        ) : <div></div>}
-
-
-
-        {mobileSearch === true ? (
-          <div className='mobile-search-div'>
-            <div className="mobile-search-top-div">
-              <img className="search-bar-icon" src={SearchBar} alt="search-bar-icon"></img>
-              <img onClick={clearSearch} className="close-search-bar-icon" src={Xbox} alt="close-search-bar-icon"></img>
-              <div className='mobile-search-input-div'></div>
-              <input
-                className="mobile-search-input"
-                type="text"
-                value={wordsEntered}
-                placeholder="Search"
-                onChange={handleFilterMobile}
-              />
-            </div>
-            {wordsEntered == 0 ? (
-              <div className="mobile-search-bar-default-result">
-                <img className="meta-logo-default-result" src={MetaLogo} alt="meta-logo-default-result"></img>
-              </div>) :
-              (filteredDataMobile.length != 0 && newFilterMobile != [] ? (
-                <div className="mobile-search-bar-successful-result">
-                  {filteredDataMobile.slice(0, 15).map((data) => {
-                    return (
-                      <Link to={`/view-post/${data.id}`} key={data.id} className="single-search-result-div-link" onClick={clearSearch}><div className="single-search-result-div-mobile">
-                        <div>
-                          <div className="search-result-title">{data.title}</div>
-                          <div className="search-result-subtitle">{data.subtitle}</div>
-                        </div>
-                      </div></Link>
-                    )
-                  })}
-                </div>
-              ) : (wordsEntered.length > 0 && newFilterMobile.length === 0 ? (
-                <div className="mobile-search-bar-unsuccessful-result">
-                  <div className="unsuccessful-search-results-text-divs">
-                    <img className="unsuccessful-search-result-icon" src={SearchBar}></img>
-                    <h2 className="sorry-text">Sorry, we couldn't find any matches</h2>
-                    <h3 className="try-again-text">Try searching for a different keyword</h3>
-                  </div>
-                </div>
-              ) : (
-                <div></div>
-              )))}
-          </div>
-        )
-          : (<img onClick={() => setMobileSearch(!mobileSearch)} className="search-bar-icon-mobile" src={SearchBar} alt="search-bar-icon-mobile"></img>)}
-      </div>
-      {
-        mobileSearch === true || openHamburger === true ? (
-          <div className="page-overlay-mobile-div"></div>
-        ) : (<div></div>)
-      }
-
-
-
-
-
-
-
-
-      <div></div>
       <div className="header-div-content-margin-right">
         <div className="empty-search-bar-container">
           <div className="empty-search-bar-form">
@@ -292,7 +166,117 @@ function Header(props) {
           <div className="page-overlay"></div>
         ) : (<div></div>)
       }
-
+      {/* mobile div */}
+      <div className="mobile-content-div">
+        <img className="hamburger-menu" onClick={() => setOpenHamburger(!openHamburger)} src={HamburgerMenu} alt="hamburger-menu"></img>
+        <Link className="mobile-logo-div-link" to="/"><div className="mobile-logo-div">
+          <img className="meta-logo-person" src={MetaLogo} alt="meta-logo-person"></img>
+          <div className="meta-minds-text" alt="meta-minds-text">Meta Minds</div>
+        </div></Link>
+        {openHamburger === true ? (
+          <div className="mobile-hamburger-div">
+            <div className='exit-out-and-meta-logo-div'>
+              <img className="exit-out-icon" src={X} onClick={() => setOpenHamburger(!openHamburger)} alt="exit-out-icon"></img>
+              <div className="ham-mobile-logo-div">
+                <img className="ham-meta-logo-person" src={MetaLogo} alt="meta-logo-person"></img>
+                <div className="ham-meta-minds-text" alt="meta-minds-text">Meta Minds</div>
+              </div>
+            </div>
+            <div className='hamburger-details-div'>
+              <div className='categories-div'>
+                <h3>Categories</h3>
+                <div className='category-links'>
+                  <NavLink exact to="/" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
+                    color: "#0ACCE5"
+                  }} className="nav-Links"><div className='links'>Latest</div></NavLink>
+                  <NavLink to="/meta" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
+                    color: "#0ACCE5"
+                  }} className="nav-Links"><div className='links'>Meta</div></NavLink>
+                  <NavLink to="/mana" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
+                    color: "#0ACCE5"
+                  }} className="nav-Links"><div className='links'>Mana</div></NavLink>
+                  <NavLink to="/crypto" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
+                    color: "#0ACCE5"
+                  }} className="nav-Links"><div className='links'>Crypto</div></NavLink>
+                  <NavLink to="/film" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
+                    color: "#0ACCE5"
+                  }} className="nav-Links"><div className='links'>Film</div></NavLink>
+                </div>
+              </div>
+              <div className='personal-div'>
+                <h3>Personal</h3>
+                {currentUser ? (<div className='personal-links'>
+                  <NavLink to={`/user-posts/${currentUser?.id}`} onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
+                    color: "#0ACCE5"
+                  }} className="nav-Links"><div className='links'>User Posts</div></NavLink>
+                  <Link exact to="/" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Links"><div onClick={handleLogout} className='links'>Logout</div></Link>
+                </div>) : (
+                  <div className='personal-links'>
+                    <Link to="/sign-in" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Links links">Sign In</Link>
+                    <Link to="/sign-up" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Links links">Sing Up</Link>
+                  </div>)}
+              </div>
+              <div className='creator-div'>
+                <h3>Creator</h3>
+                <div className='creator-links'>
+                  <a href=" https://www.linkedin.com/in/tyler-washington-4a8429176" className='nav-Links links'>LinkedIn</a>
+                  <a href="https://github.com/Tyler-Washington888" className=' nav-Links links' >Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : <div></div>}
+        {mobileSearch === true ? (
+          <div className='mobile-search-div'>
+            <div className="mobile-search-top-div">
+              <img className="search-bar-icon" src={SearchBar} alt="search-bar-icon"></img>
+              <img onClick={clearSearch} className="close-search-bar-icon" src={Xbox} alt="close-search-bar-icon"></img>
+              <div className='mobile-search-input-div'></div>
+              <input
+                className="mobile-search-input"
+                type="text"
+                value={wordsEntered}
+                placeholder="Search"
+                onChange={handleFilterMobile}
+              />
+            </div>
+            {wordsEntered == 0 ? (
+              <div className="mobile-search-bar-default-result">
+                <img className="meta-logo-default-result" src={MetaLogo} alt="meta-logo-default-result"></img>
+              </div>) :
+              (filteredDataMobile.length != 0 && newFilterMobile != [] ? (
+                <div className="mobile-search-bar-successful-result">
+                  {filteredDataMobile.slice(0, 15).map((data) => {
+                    return (
+                      <Link to={`/view-post/${data.id}`} key={data.id} className="single-search-result-div-link" onClick={clearSearch}><div className="single-search-result-div-mobile">
+                        <div>
+                          <div className="search-result-title">{data.title}</div>
+                          <div className="search-result-subtitle">{data.subtitle}</div>
+                        </div>
+                      </div></Link>
+                    )
+                  })}
+                </div>
+              ) : (wordsEntered.length > 0 && newFilterMobile.length === 0 ? (
+                <div className="mobile-search-bar-unsuccessful-result">
+                  <div className="unsuccessful-search-results-text-divs">
+                    <img className="unsuccessful-search-result-icon" src={SearchBar}></img>
+                    <h2 className="sorry-text">Sorry, we couldn't find any matches</h2>
+                    <h3 className="try-again-text">Try searching for a different keyword</h3>
+                  </div>
+                </div>
+              ) : (
+                <div></div>
+              )))}
+          </div>
+        )
+          : (<img onClick={() => setMobileSearch(!mobileSearch)} className="search-bar-icon-mobile" src={SearchBar} alt="search-bar-icon-mobile"></img>)}
+      </div>
+      {
+        mobileSearch === true || openHamburger === true ? (
+          <div className="page-overlay-mobile-div"></div>
+        ) : (<div></div>)
+      }
     </div >
   )
 }

@@ -68,7 +68,7 @@ border-style: 5px ridge;
   left: 35px;
   height: 20px;
   width: 20px;
-  z-index: 11;
+  z-index: 1114;
 }
 .non-empty-search-icon-div {
   background-color: transparent;
@@ -78,7 +78,7 @@ border-style: 5px ridge;
   left: -3px;
   height: 20px;
   width: 20px;
-  z-index: 114;
+  z-index: 1114;
 }
 .non-empty-search-icon {
   position: relative;
@@ -86,7 +86,7 @@ border-style: 5px ridge;
   left: -2px;
   height: 20px;
   width: 20px;
-  z-index: 11;
+  z-index: 1114;
   background-color: white;
 }
 .close-icon {
@@ -95,7 +95,7 @@ border-style: 5px ridge;
   left: 525px;
   height: 25px;
   width: 25px;
-  z-index: 114;
+  z-index: 1114;
 }
 .header-div-search-bar-input-empty {
   background-color:white;
@@ -129,7 +129,7 @@ border-style: 5px ridge;
   border-style:solid;
   font-size: 15px;
   padding-left: 50px;
-  z-index: 113;
+  z-index: 1113;
   outline-width: 0;
 }
 
@@ -144,7 +144,7 @@ border-style: 5px ridge;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  z-index: 112;
+  z-index: 1112;
   height: 500px; 
   width: 580px; 
   position: relative;
@@ -209,7 +209,7 @@ border-style: 5px ridge;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  z-index: 112;
+  z-index: 1112;
   position: relative;
   right: 37px;
 }
@@ -324,6 +324,10 @@ border-style: 5px ridge;
   height: 100px;
   width: 100%;
   margin-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 3000;
 }
 .mobile-content-div{
   width: 100%;
@@ -351,7 +355,7 @@ border-style: 5px ridge;
   max-height: 100%;
   position: relative;
   top: 2px;
-  left: -6px;
+  left: 6px;
   z-index: 1001;
 }
 .meta-logo-person{
@@ -374,7 +378,7 @@ border-style: 5px ridge;
 .mobile-hamburger-div{
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   overflow: hidden;
   overflow-y: auto;
@@ -397,6 +401,8 @@ border-style: 5px ridge;
 }
 .exit-out-icon{
   padding-left: 17px;
+  position: relative;
+  top: 5px;
   height: 30px;
   width: 30px;
 }
@@ -405,8 +411,8 @@ border-style: 5px ridge;
   flex-direction: row;
   max-height: 100%;
   position: relative;
-  top: -10px;
-  left: 30px;
+  top: -8px;
+  left: 17px;
   z-index: 1001;
 }
 .ham-meta-logo-person{
@@ -477,13 +483,6 @@ border-style: 5px ridge;
   justify-content: flex-start;
   align-items: flex-start;
 }
-
-
-
-
-
-
-
 
 .mobile-search-div{
   display: flex;
