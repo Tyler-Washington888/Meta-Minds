@@ -64,7 +64,7 @@
 
 - Home Screen   
 
-<img src='meta-minds-fe/src/misc/Group 24.png'>
+<img src='meta-minds-fe/src/assets/images/Group 24.png'>
 
 - Sign In Screeen 
 
@@ -84,15 +84,15 @@
 
 - Crypto Screen
 
-<img src='meta-minds-fe/src/misc/Group 20.png'> 
+<img src='meta-minds-fe/src/assets/images/Group 20.png'> 
 
 - Film Screen  
 
-<img src='meta-minds-fe/src/misc/Group 21.png'>
+<img src='meta-minds-fe/src/assets/images/Group 20.png'>
 
 - User Posts Screen  
 
-<img src='meta-minds-fe/src/misc/Group 22.png'>
+<img src='meta-minds-fe/src/assets/images/Group 22.png'>
 
 - Create Post Screen  
 
