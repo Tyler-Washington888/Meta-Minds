@@ -168,6 +168,7 @@ function CreatePosts(props) {
         </form>
         <Footer />
       </div>
+
       <div className='create-posts-mobile'>
         <form class="create-post-form"
           onSubmit={handleSubmit}

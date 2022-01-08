@@ -165,3 +165,35 @@ width: 70px;
   bottom: 50px;
 }
 
+@media screen and (max-width: 400px ) {
+  .update-post-image{
+    margin-top: -40px;
+    z-index: 90;
+    margin-top: -40px;
+    border-right: none;
+    border-left: none;
+    object-fit:cover;
+    object-position: center -30px;
+    height: 160px;
+    width: 100%;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+   }
+
+   .update-post-close-icon{
+     display: none;
+   }
+  .update-post-page{
+    display: none;
+  }
+  .creates-post-close-icon {
+    position: relative;
+    bottom: 1800px;
+    left: 310px;
+    height: 50px;
+    width: 50px;
+    z-index: 114;
+    border-radius: 12px;
+  }  
+
+}
