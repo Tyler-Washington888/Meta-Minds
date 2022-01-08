@@ -39,6 +39,22 @@ function Crypto(props) {
         </div>
         <Footer />
       </div>
+      <div className='crypto-mobile'>
+        <div className='crypto-mobile-outer-div'>
+          {allPosts.map(post => {
+            return (
+              <Link to={`/view-post/${post.id}`} key={post.id} className="crypto-mobile-inner-div-link"><div className="crypto-mobile-inner-div" key={post.id}>
+                <div className='crypto-posts-date-and-title'>
+                  <div className='crypto-mobile-date'>{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
+                  <div className='crypto-mobile-title'>{post.title}</div>
+                </div>
+                <img className='crypto-mobile-image' src={post.image} alt={post.tile} />
+              </div></Link>
+            )
+          })}
+        </div>
+        <Footer />
+      </div>
     </div >
   )
 }

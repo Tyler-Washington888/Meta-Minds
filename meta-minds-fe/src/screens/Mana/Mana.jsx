@@ -42,6 +42,22 @@ function Mana(props) {
         </div>
         <Footer />
       </div>
+      <div className='mana-mobile'>
+        <div className='mana-mobile-outer-div'>
+          {allPosts.map(post => {
+            return (
+              <Link to={`/view-post/${post.id}`} key={post.id} className="mana-mobile-inner-div-link"><div className="mana-mobile-inner-div" key={post.id}>
+                <div className='mana-posts-date-and-title'>
+                  <div className='mana-mobile-date'>{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
+                  <div className='mana-mobile-title'>{post.title}</div>
+                </div>
+                <img className='mana-mobile-image' src={post.image} alt={post.tile} />
+              </div></Link>
+            )
+          })}
+        </div>
+        <Footer />
+      </div>
     </div >
   )
 }

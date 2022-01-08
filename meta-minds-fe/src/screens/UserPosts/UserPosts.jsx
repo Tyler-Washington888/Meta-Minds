@@ -54,6 +54,29 @@ export default function YourPosts(props) {
         </div>
         <Footer />
       </div>
+      <div className='user-posts-mobile'>
+        <div className="create-post-button-div">
+          <button className="create-post-button"><Link to='/create-post' className="create-post-button-link" >Create Post</Link></button>
+        </div>
+        {newestPost === undefined && loading === false ? (
+          <h2 className='firstpost'>Begin influencing the development of Web3 by making your first post!</h2>
+        )
+          : (newestPost === [] && loading === true ? (<div>Loading...</div>) : (<div></div>))}
+        <div className='user-posts-mobile-outer-div'>
+          {allPosts.map(post => {
+            return (
+              <Link to={`/view-post/${post.id}`} key={post.id} className="user-posts-mobile-inner-div-link"><div className="user-posts-mobile-inner-div" key={post.id}>
+                <div className='user-posts-posts-date-and-title'>
+                  <div className='user-posts-mobile-date'>{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
+                  <div className='user-posts-mobile-title'>{post.title}</div>
+                </div>
+                <img className='user-posts-mobile-image' src={post.image} alt={post.tile} />
+              </div></Link>
+            )
+          })}
+        </div>
+        <Footer />
+      </div>
     </div >
   )
 }

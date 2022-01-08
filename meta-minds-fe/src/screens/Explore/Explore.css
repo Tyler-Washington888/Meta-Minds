@@ -253,7 +253,9 @@ transition: .5s ease;
 .mobile-latest-post-div{
   display: none;
 }
-
+.all-posts-mobile-div{
+  display: none;
+}
 
 
 
@@ -337,6 +339,7 @@ transition: .5s ease;
  }
 
 .all-posts-mobile-div{
+  display: unset;
   margin-bottom: 40px;
 }
 .each-single-mobile-post{

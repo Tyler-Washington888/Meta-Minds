@@ -48,6 +48,7 @@ function Explore(props) {
     <div>
       <img className="explore-image" src={ExploreImage} alt="banner-mage"></img>
       <div className="latest-and-all-posts-main-div">
+
         <div className='mobile-latest-post-div'>
           <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="moble-latest-post-link"><img className="moble-latest-post-image" src={mostPopularMetaPost[0]?.image} alt={mostPopularMetaPost[0]?.title} ></img></Link>
           <div className='mobile-latest-post-details-div'>
@@ -58,6 +59,7 @@ function Explore(props) {
             <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="single-post-title-link"><div className='mobile-latest-post-title'>{mostPopularMetaPost[0]?.title}</div></Link>
           </div>
         </div>
+
         <div className="latest-post-div">
           <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="single-post-title-link-image"><img className="latest-posts-image" src={mostPopularMetaPost[0]?.image} alt={mostPopularMetaPost[0]?.title} ></img></Link>
           <div className="latest-post-details-div">
@@ -73,6 +75,7 @@ function Explore(props) {
             </div>
           </div>
         </div>
+
         <div className='all-posts-mobile-div'>
           {allPosts.map((post) => {
             return (
@@ -89,6 +92,8 @@ function Explore(props) {
             )
           })}
         </div>
+
+
         <div className="all-posts-div">
           {allPosts.map((post) => {
             return (

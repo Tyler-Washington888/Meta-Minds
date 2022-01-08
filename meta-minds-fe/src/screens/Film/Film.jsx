@@ -39,6 +39,22 @@ function Film(props) {
         </div>
         <Footer />
       </div>
+      <div className='film-mobile'>
+        <div className='film-mobile-outer-div'>
+          {allPosts.map(post => {
+            return (
+              <Link to={`/view-post/${post.id}`} key={post.id} className="film-mobile-inner-div-link"><div className="film-mobile-inner-div" key={post.id}>
+                <div className='film-posts-date-and-title'>
+                  <div className='film-mobile-date'>{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
+                  <div className='film-mobile-title'>{post.title}</div>
+                </div>
+                <img className='film-mobile-image' src={post.image} alt={post.tile} />
+              </div></Link>
+            )
+          })}
+        </div>
+        <Footer />
+      </div>
     </div >
   )
 }
