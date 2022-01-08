@@ -79,6 +79,35 @@ export default function ViewPost(props) {
             </div>
             <div className="view-post-title">{post?.title}</div>
             <div className="view-post-subtitle">{post?.subtitle}</div>
+            <div className="view-post-option-and-name-div-mobile">
+              <div className="view-post-created-name-mobile">{user[0]?.username}</div>
+              <div className='options-and-drop-down-mobile-div'>
+                <img className="view-post-edit-or-delete-option-mobile" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638566267/option_nqo2as.png" onClick={() => setIsOpen(!isOpen)} alt="banner-mage"></img>
+                {isOpen && (
+                  (currentUser && currentUser.id === post.user_id ? (
+                    <div className="view-post-show-options-dropdown-mobile">
+                      <Link className="edit-post-div-link" to={`/update-post/${post?.id}`} key={post?.id}><div className="edit-post-div">
+                        <img className="edit-post-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638767523/Meta-Minds/icons8-edit-30_c4n4wb.png"></img>
+                        <div className="edit-post-text">Edit Post</div>
+                      </div></Link>
+                      <div onClick={() => setFinalDelete(!finalDetete)} className="delete-post-div">
+                        <img className="delete-post-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638767542/Meta-Minds/icons8-delete-48_ujlv7r.png" ></img>
+                        <div className="delete-post-text">Delete Post</div>
+                      </div>
+                      <div onClick={copy} className="copy-post-url-div">
+                        <img className="copy-link-icon-one" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638893598/Meta-Minds/icons8-link-50_jaqddt.png" ></img>
+                        <div className="copy-link-text">Copy Post</div>
+                      </div>
+                    </div>) : (
+                    <div onClick={copy} className="view-post-show-options-dropdown-two">
+                      <div className="copy-post-url-div-two">
+                        <img className="copy-link-icon-two" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638893598/Meta-Minds/icons8-link-50_jaqddt.png" ></img>
+                        <div className="copy-link-text-two">Copy Post</div>
+                      </div>
+                    </div>
+                  )))}
+              </div>
+            </div>
           </div>
           <div className="view-post-option-and-name-div">
             <img className="view-post-edit-or-delete-option" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638566267/option_nqo2as.png" onClick={() => setIsOpen(!isOpen)} alt="banner-mage"></img>
@@ -148,6 +177,22 @@ export default function ViewPost(props) {
                       </div>
                       <Link to={`/view-post/${simPost?.id}`} key={simPost?.id} className="single-post-title-link"><h1 className="each-similar-post-title">{simPost?.title}</h1></Link>
                     </div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+          <div className='sim-posts-mobile-div'>
+            {firstTwoPosts.map((simPost) => {
+              return (
+                <div className='vp-each-single-mobile-post'>
+                  <Link to={`/view-post/${simPost.id}`} key={simPost.id} className="vp-each-single-mobile-post-image-link"><img className="vp-each-single-mobile-post-image" src={simPost.image} alt={simPost.title} /></Link>
+                  <div className='vp-each-single-mobile-post-details-div'>
+                    <div className='vp-each-single-mobile-post-details-date-and-category-div'>
+                      <div className='vp-each-single-mobile-post-details-date'>{DateTime.fromISO(`${simPost?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
+                      <Link to={`/${simPost.category}`} className="vp-single-post-category-link"> <div className='vp-each-single-mobile-post-details-category'>{simPost.category}</div></Link>
+                    </div>
+                    <Link to={`/view-post/${simPost.id}`} className='vp-each-single-mobile-post-details-title vp-single-post-category-link'>{simPost.title}</Link>
                   </div>
                 </div>
               )
