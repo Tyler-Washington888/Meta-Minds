@@ -10,6 +10,9 @@
   background-size: cover;
   z-index: 1;
 }
+.outer-div-mobile{
+  display: none;
+}
 .meta-minds-logo-div{
   padding-top: 15px;
   position: relative;
@@ -109,4 +112,369 @@
   .link-to-sign-up-button:hover{
     background-color: #0ACCE5;
     opacity: 80%;
+  }
+
+  @media screen and (max-width: 390px ) {
+    .sign-in-div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+    .outer-div-desktop{
+      display: none;
+    }
+    .outer-div-mobile{
+     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+     border-radius: 12px;
+     display: flex;
+     flex-direction: column;
+     justify-content:flex-start;
+     width: 96%;
+     height: 98%;
+    }
+    .mobile-meta-minds-logo-div{
+      padding-top: 0px;
+      position: relative;
+      top: -3%;
+      margin-bottom: -2%;
+    }
+    .mobile-sign-in-meta-minds-logo{
+      height: 220px;
+      width:  220px;
+      margin-bottom: -5px;
+    }
+    .mobile-sign-in-copyright-text{
+      font-size: 7px;
+      position: relative;
+      bottom: 60px;
+      left: 2px;
+    }
+    .mobile-sing-in-form{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding: 30px;
+      padding-bottom: 0px;
+      height: 380px;
+      max-width: 100%;
+      position: relative;
+      bottom: 6%;
+    }
+    .mobile-sign-in-header-text {
+      font-size: 45px;
+      position: relative;
+      bottom: 70px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    .mobile-sign-in-label-and-input-div {
+      margin-top: 0px;
+      position: relative;
+      bottom:26%;
+    }
+    .mobile-input-text-title {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    .mobile-user-input-box {
+      width: 90%;
+      height: 40px;
+      border-radius: 12px;
+      border-style: hidden;
+      outline: none;
+      box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+      background-color: white;
+      padding-left: 15px;
+    }
+    .mobile-sign-in-button {
+      position: relative;
+      bottom: 4px;
+      left: 6px;
+      margin-top: -80px;
+        height: 50px;
+        width: 95%;
+        background-color: transparent;
+       border-style: hidden;
+        font-size: 20px;
+        border-radius: 12px;
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+        background-color:transparent;
+      }
+      .mobile-sign-in-button:hover {
+        background-color: #0ACCE5;
+        opacity: 80%;
+      }
+      .mobile-link-to-sign-up-div{
+        position: relative;
+        bottom: 2%;
+      }
+    .mobile-new-to-site-text{
+      font-size: 25px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+      .mobile-link-to-sign-up-button {
+        position: relative;
+        bottom: 10px;
+        height: 50px;
+        width: 80%;
+        background-color: transparent;
+        border-style: hidden;
+        font-size: 20px;
+        border-radius: 12px; 
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+        background-color:transparent;
+      }
+      .mobile-link-to-sign-up-button:hover{
+        background-color: #0ACCE5;
+        opacity: 80%;
+      }
+  }
+  @media screen and (max-width: 414px ) {
+    .sign-in-div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+    .outer-div-desktop{
+      display: none;
+    }
+    .outer-div-mobile{
+     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+     border-radius: 12px;
+     display: flex;
+     flex-direction: column;
+     justify-content:flex-start;
+     width: 96%;
+     height: 98%;
+    }
+    .mobile-meta-minds-logo-div{
+      padding-top: 0px;
+      position: relative;
+      top: -3%;
+      margin-bottom: -2%;
+    }
+    .mobile-sign-in-meta-minds-logo{
+      height: 220px;
+      width:  220px;
+      margin-bottom: -5px;
+    }
+    .mobile-sign-in-copyright-text{
+      font-size: 7px;
+      position: relative;
+      bottom: 60px;
+      left: 2px;
+    }
+    .mobile-sing-in-form{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding: 30px;
+      padding-bottom: 0px;
+      height: 380px;
+      max-width: 100%;
+      position: relative;
+      bottom: 6%;
+    }
+    .mobile-sign-in-header-text {
+      font-size: 45px;
+      position: relative;
+      bottom: 70px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    .mobile-sign-in-label-and-input-div {
+      margin-top: 0px;
+      position: relative;
+      bottom:26%;
+    }
+    .mobile-input-text-title {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    .mobile-user-input-box {
+      width: 90%;
+      height: 40px;
+      border-radius: 12px;
+      border-style: hidden;
+      outline: none;
+      box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+      background-color: white;
+      padding-left: 15px;
+    }
+    .mobile-sign-in-button {
+      position: relative;
+      bottom: 4px;
+      left: 6px;
+      margin-top: -80px;
+        height: 50px;
+        width: 95%;
+        background-color: transparent;
+       border-style: hidden;
+        font-size: 20px;
+        border-radius: 12px;
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+        background-color:transparent;
+      }
+      .mobile-sign-in-button:hover {
+        background-color: #0ACCE5;
+        opacity: 80%;
+      }
+      .mobile-link-to-sign-up-div{
+        position: relative;
+        bottom: 2%;
+      }
+    .mobile-new-to-site-text{
+      font-size: 25px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+      .mobile-link-to-sign-up-button {
+        position: relative;
+        bottom: 10px;
+        height: 50px;
+        width: 80%;
+        background-color: transparent;
+        border-style: hidden;
+        font-size: 20px;
+        border-radius: 12px; 
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+        background-color:transparent;
+      }
+      .mobile-link-to-sign-up-button:hover{
+        background-color: #0ACCE5;
+        opacity: 80%;
+      }
+  }
+  @media screen and (max-width: 428px ) {
+    .sign-in-div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      height: 900px;
+    }
+    .outer-div-desktop{
+      display: none;
+    }
+    .outer-div-mobile{
+     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+     border-radius: 12px;
+     display: flex;
+     flex-direction: column;
+     justify-content:flex-start;
+     width: 96%;
+     height: 98%;
+    }
+    .mobile-meta-minds-logo-div{
+      padding-top: 0px;
+      position: relative;
+      top: -3%;
+      margin-bottom: -2%;
+    }
+    .mobile-sign-in-meta-minds-logo{
+      height: 220px;
+      width:  220px;
+      margin-bottom: -5px;
+    }
+    .mobile-sign-in-copyright-text{
+      font-size: 7px;
+      position: relative;
+      bottom: 60px;
+      left: 2px;
+    }
+    .mobile-sing-in-form{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding: 30px;
+      padding-bottom: 0px;
+      height: 380px;
+      max-width: 100%;
+      position: relative;
+      bottom: 6%;
+    }
+    .mobile-sign-in-header-text {
+      font-size: 45px;
+      position: relative;
+      bottom: 70px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    .mobile-sign-in-label-and-input-div {
+      margin-top: 0px;
+      position: relative;
+      bottom:26%;
+    }
+    .mobile-input-text-title {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    .mobile-user-input-box {
+      width: 90%;
+      height: 40px;
+      border-radius: 12px;
+      border-style: hidden;
+      outline: none;
+      box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+      background-color: white;
+      padding-left: 15px;
+    }
+    .mobile-sign-in-button {
+      position: relative;
+      bottom: 4px;
+      left: 6px;
+      margin-top: -80px;
+        height: 50px;
+        width: 95%;
+        background-color: transparent;
+       border-style: hidden;
+        font-size: 20px;
+        border-radius: 12px;
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+        background-color:transparent;
+      }
+      .mobile-sign-in-button:hover {
+        background-color: #0ACCE5;
+        opacity: 80%;
+      }
+      .mobile-link-to-sign-up-div{
+        position: relative;
+        bottom: 2%;
+      }
+    .mobile-new-to-site-text{
+      font-size: 25px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+      .mobile-link-to-sign-up-button {
+        position: relative;
+        bottom: 10px;
+        height: 50px;
+        width: 80%;
+        background-color: transparent;
+        border-style: hidden;
+        font-size: 20px;
+        border-radius: 12px; 
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+        background-color:transparent;
+      }
+      .mobile-link-to-sign-up-button:hover{
+        background-color: #0ACCE5;
+        opacity: 80%;
+      }
   }

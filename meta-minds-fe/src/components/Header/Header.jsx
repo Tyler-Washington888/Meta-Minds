@@ -80,11 +80,6 @@ function Header(props) {
           }} className="header-div-catergories-text link">Film</NavLink>
         </div>
       </div>
-
-
-
-
-
       <div className="header-div-content-margin-right">
         <div className="empty-search-bar-container">
           <div className="empty-search-bar-form">

@@ -195,7 +195,8 @@ function UpdatePost(props) {
         </form>
         <Footer />
       </div>
-      <div className='create-posts-mobile'>
+      <div className='update-posts-mobile'>
+        {image !== "" ? (<img className="updates-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div className="updates-post-close-icon"></div>)}
         <form class="create-post-form"
           onSubmit={handleSubmit}
         >
@@ -285,7 +286,6 @@ function UpdatePost(props) {
           )}
         </form>
         <Footer />
-        {image !== "" ? (<img className="creates-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div></div>)}
       </div>
     </div >
   );

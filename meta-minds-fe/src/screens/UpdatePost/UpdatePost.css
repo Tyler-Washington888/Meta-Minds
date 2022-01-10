@@ -165,7 +165,7 @@ width: 70px;
   bottom: 50px;
 }
 
-@media screen and (max-width: 400px ) {
+@media only screen and (max-width: 375px ){
   .update-post-image{
     margin-top: -40px;
     z-index: 90;
@@ -180,19 +180,223 @@ width: 70px;
     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
    }
 
+   .update-posts-mobile{
+   display: flex;
+   flex-direction: column;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   padding: 1%;
+   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+   height: calc( 100% + 100px );
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top: -150px;
+   z-index: 1;
+ }
+
    .update-post-close-icon{
      display: none;
    }
   .update-post-page{
     display: none;
   }
-  .creates-post-close-icon {
+  .updates-post-close-icon {
     position: relative;
-    bottom: 1800px;
-    left: 310px;
+    top: 150px;
+    left: 315px;
+    height: 45px;
+    width: 45px;
+    z-index: 143;
+    border-radius: 12px;
+  }  
+}
+
+@media only screen and (min-width: 390px ) {
+  .update-post-image{
+    margin-top: -40px;
+    z-index: 90;
+    margin-top: -40px;
+    border-right: none;
+    border-left: none;
+    object-fit:cover;
+    object-position: center -30px;
+    height: 160px;
+    width: 100%;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+   }
+
+   .update-posts-mobile{
+   display: flex;
+   flex-direction: column;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   padding: 1%;
+   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+   height: calc( 100% + 100px );
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top: -150px;
+   z-index: 1;
+ }
+
+   .update-post-close-icon{
+     display: none;
+   }
+  .update-post-page{
+    display: none;
+  }
+  .updates-post-close-icon {
+    position: relative;
+    top: 150px;
+    left: 320px;
     height: 50px;
     width: 50px;
-    z-index: 114;
+    z-index: 143;
+    border-radius: 12px;
+  }  
+
+
+
+}
+
+@media only screen and (max-width: 375px ){
+  .update-post-image{
+    margin-top: -40px;
+    z-index: 90;
+    margin-top: -40px;
+    border-right: none;
+    border-left: none;
+    object-fit:cover;
+    object-position: center -30px;
+    height: 160px;
+    width: 100%;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+   }
+
+   .update-posts-mobile{
+   display: flex;
+   flex-direction: column;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   padding: 1%;
+   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+   height: calc( 100% + 100px );
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top: -150px;
+   z-index: 1;
+ }
+
+   .update-post-close-icon{
+     display: none;
+   }
+  .update-post-page{
+    display: none;
+  }
+  .updates-post-close-icon {
+    position: relative;
+    top: 150px;
+    left: 315px;
+    height: 45px;
+    width: 45px;
+    z-index: 143;
+    border-radius: 12px;
+  }  
+}
+
+@media only screen and (min-width: 414px ) {
+  .update-post-image{
+    margin-top: -40px;
+    z-index: 90;
+    margin-top: -40px;
+    border-right: none;
+    border-left: none;
+    object-fit:cover;
+    object-position: center -30px;
+    height: 160px;
+    width: 100%;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+   }
+
+   .update-posts-mobile{
+   display: flex;
+   flex-direction: column;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   padding: 1%;
+   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+   height: calc( 100% + 100px );
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top: -150px;
+   z-index: 1;
+ }
+
+   .update-post-close-icon{
+     display: none;
+   }
+  .update-post-page{
+    display: none;
+  }
+  .updates-post-close-icon {
+    position: relative;
+    top: 150px;
+    left: 345px;
+    height: 55px;
+    width: 55px;
+    z-index: 143;
+    border-radius: 12px;
+  }  
+
+
+
+}
+
+@media only screen and (min-width: 428px ) {
+  .update-post-image{
+    margin-top: -40px;
+    z-index: 90;
+    margin-top: -40px;
+    border-right: none;
+    border-left: none;
+    object-fit:cover;
+    object-position: center -30px;
+    height: 160px;
+    width: 100%;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+   }
+
+   .update-posts-mobile{
+   display: flex;
+   flex-direction: column;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   padding: 1%;
+   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+   height: calc( 100% + 100px );
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top: -150px;
+   z-index: 1;
+ }
+
+   .update-post-close-icon{
+     display: none;
+   }
+  .update-post-page{
+    display: none;
+  }
+  .updates-post-close-icon {
+    position: relative;
+    top: 150px;
+    left: 350px;
+    height: 55px;
+    width: 55px;
+    z-index: 143;
     border-radius: 12px;
   }  
 

@@ -99,7 +99,7 @@ export default function ViewPost(props) {
                         <div className="copy-link-text">Copy Post</div>
                       </div>
                     </div>) : (
-                    <div onClick={copy} className="view-post-show-options-dropdown-two">
+                    <div onClick={copy} className="view-post-show-options-dropdown-two-mobile">
                       <div className="copy-post-url-div-two">
                         <img className="copy-link-icon-two" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638893598/Meta-Minds/icons8-link-50_jaqddt.png" ></img>
                         <div className="copy-link-text-two">Copy Post</div>

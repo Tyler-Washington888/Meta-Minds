@@ -36,7 +36,7 @@ a {
   left: 230px;
 }
 
-@media screen and (max-width: 400px ) {
+@media screen and (max-width: 390px ) {
  .ck-editor{
     background-color: yellowgreen;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
@@ -59,6 +59,52 @@ a {
 
 
 }
+@media screen and (max-width: 414px ) {
+  .ck-editor{
+     background-color: yellowgreen;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+     border-radius: 12px;
+     margin-bottom: 0px;
+   }
+   .bottom {
+     margin-top: 15px;
+     position: relative;
+     left:0px ;
+     right: 200px;
+     margin-bottom: 100px;
+     width: 100%;
+   }
+   .ck-editor__editable_inline {
+     min-height: 300px;
+     max-height: 600px;
+     outline-width: 0;
+   } 
+ 
+ 
+ }
+ @media screen and (max-width: 428px ) {
+  .ck-editor{
+     background-color: yellowgreen;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+     border-radius: 12px;
+     margin-bottom: 0px;
+   }
+   .bottom {
+     margin-top: 15px;
+     position: relative;
+     left:0px ;
+     right: 200px;
+     margin-bottom: 100px;
+     width: 100%;
+   }
+   .ck-editor__editable_inline {
+     min-height: 300px;
+     max-height: 600px;
+     outline-width: 0;
+   } 
+ 
+ 
+ }
 
 
 

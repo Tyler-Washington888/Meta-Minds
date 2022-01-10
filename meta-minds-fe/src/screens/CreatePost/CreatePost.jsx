@@ -168,8 +168,8 @@ function CreatePosts(props) {
         </form>
         <Footer />
       </div>
-
       <div className='create-posts-mobile'>
+        {image !== "" ? (<img className="creates-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div className="create-post-close-icon"></div>)}
         <form class="create-post-form"
           onSubmit={handleSubmit}
         >
@@ -244,7 +244,6 @@ function CreatePosts(props) {
           )}
         </form>
         <Footer />
-        {image !== "" ? (<img className="create-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div></div>)}
       </div>
     </div >
   );
