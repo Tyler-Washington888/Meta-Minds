@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import { createPost } from '../../services/Posts.js'
-import { useHistory } from 'react-router';
 import { CKEditor } from '@ckeditor/ckeditor5-react'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import Footer from '../../components/Footer/Footer';
@@ -11,7 +10,6 @@ import { config } from './editorConfig'
 
 function CreatePosts(props) {
   const { currentUser, setRefresh } = props;
-  const history = useHistory()
   const [loading, setLoading] = useState(false)
   const [image, setImage] = useState('')
   const [category, setCategory] = useState('')
@@ -53,7 +51,7 @@ function CreatePosts(props) {
       }
     )
     const file = await res.json();
-    if (file.secure_url == undefined) {
+    if (file.secure_url === undefined) {
       setImage('');
     } else {
       setImage(file.secure_url);
@@ -83,8 +81,10 @@ function CreatePosts(props) {
 
   return (
     <div>
-      <img class="create-post-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner-Image"></img>
+      {/* desktop version */}
+      <img class="create-post-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner"></img>
       <div class="create-post-page">
+        {image !== "" ? (<img className="close-icon-mobile-create" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div className="close-icon-mobile-create"></div>)}
         <form class="create-post-form"
           onSubmit={handleSubmit}
         >
@@ -135,7 +135,7 @@ function CreatePosts(props) {
                   )}
                 </div>
                 <label for="file-inputs">
-                  {loading && image === '' || image !== '' ? (<div></div>) : (<img className="image-upload-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" />)}
+                  {((loading && image === '') || image !== '') ? (<div></div>) : (<img className="image-upload-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" alt="upload-icon" />)}
                 </label>
                 <input
                   id="file-inputs"
@@ -164,27 +164,27 @@ function CreatePosts(props) {
             <button className="submit-button-disabled" disabled='true'>Submit</button>) : (
             <button className="submit-button">Submit</button>
           )}
-          {image !== "" ? (<img className="create-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div></div>)}
         </form>
         <Footer />
       </div>
+      {/* mobile version */}
       <div className='create-posts-mobile'>
-        {image !== "" ? (<img className="creates-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div className="create-post-close-icon"></div>)}
+        {image !== "" ? (<img className="close-icon-mobile-create" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div className="close-icon-mobile-create"></div>)}
         <form class="create-post-form"
           onSubmit={handleSubmit}
         >
           <h1 class="create-post-header-text">Create Post</h1>
           <label class="create-post-label-and-input-div image-div">
-            <div>
+            <div >
               {loading ? (
                 <h5 className="update-loading-image-text">Loading Image...</h5>
               ) : (image === '' ? (
                 <div></div>
-              ) : (<img className="uploaded-image" src={image} alt="new-post" />)
+              ) : (<img className="uploaded-image-mobile" src={image} alt="new-post" />)
               )}
             </div>
             <label for="file-inputs">
-              {loading && image === '' || image !== '' ? (<div></div>) : (<img className="image-upload-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" />)}
+              {((loading && image === '') || image !== '') ? (<div></div>) : (<img className="image-upload-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" alt='upload-icon' />)}
             </label>
             <input
               id="file-inputs"

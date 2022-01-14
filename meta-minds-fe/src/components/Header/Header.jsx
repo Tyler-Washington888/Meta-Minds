@@ -59,6 +59,7 @@ function Header(props) {
   }
 
   return (
+    //  desktop version
     <div className="header-div">
       <div className="header-div-content-margin-left">
         <NavLink to="/" className="header-div-app-title">Meta Minds</NavLink>
@@ -109,7 +110,7 @@ function Header(props) {
               />
             )}
           </div>
-          {filteredData.length != 0 && newFilter != [] ? (
+          {filteredData.length !== 0 && newFilter !== [] ? (
             <div className="successful-search-bar-not-empty">
               {filteredData.slice(0, 15).map((data) => {
                 return (
@@ -126,7 +127,7 @@ function Header(props) {
           ) : (wordEntered.length > 0 && newFilter.length === 0 ? (
             <div className="unsuccessful-search-results">
               <div className="unsuccessful-search-results-text-div">
-                <img className="unsuccessful-search-result-icon" src={SearchBar}></img>
+                <img className="unsuccessful-search-result-icon" src={SearchBar} alt="unsuccessful search"></img>
                 <h2 className="sorry-text">Sorry, we couldn't find any matches</h2>
                 <h3 className="try-again-text">Try searching for a different keyword</h3>
               </div>
@@ -137,7 +138,7 @@ function Header(props) {
         </div>
       </div>
       {
-        currentUser && wordEntered.length == 0 ? (
+        currentUser && wordEntered.length === 0 ? (
           <div className="header-div-user">
             <p className="header-div-user-welcome">Welcome, <span className="welcome-text">{currentUser.username}</span></p>
             <div className="header-div-your-posts-and-logout-div">
@@ -147,7 +148,7 @@ function Header(props) {
               <Link to="/" className="header-div-logout-link"><div className="header-div-logout" onClick={handleLogout}>Logout</div></Link>
             </div>
           </div>
-        ) : (!currentUser && wordEntered.length == 0 ? (
+        ) : (!currentUser && wordEntered.length === 0 ? (
           <div className="header-div-non-user">
             <Link className="header-div-sign-in" to="/sign-in"><div>Sign In</div></Link>
             <Link className="header-div-sign-up" to="/sign-up"><div>Sign Up</div></Link>
@@ -161,7 +162,10 @@ function Header(props) {
           <div className="page-overlay"></div>
         ) : (<div></div>)
       }
-      {/* mobile div */}
+
+
+
+      {/* mobile version */}
       <div className="mobile-content-div">
         <img className="hamburger-menu" onClick={() => setOpenHamburger(!openHamburger)} src={HamburgerMenu} alt="hamburger-menu"></img>
         <Link className="mobile-logo-div-link" to="/"><div className="mobile-logo-div">
@@ -235,18 +239,18 @@ function Header(props) {
                 onChange={handleFilterMobile}
               />
             </div>
-            {wordsEntered == 0 ? (
+            {wordsEntered === 0 ? (
               <div className="mobile-search-bar-default-result">
                 <img className="meta-logo-default-result" src={MetaLogo} alt="meta-logo-default-result"></img>
               </div>) :
-              (filteredDataMobile.length != 0 && newFilterMobile != [] ? (
+              (filteredDataMobile.length !== 0 && newFilterMobile !== [] ? (
                 <div className="mobile-search-bar-successful-result">
                   {filteredDataMobile.slice(0, 15).map((data) => {
                     return (
                       <Link to={`/view-post/${data.id}`} key={data.id} className="single-search-result-div-link" onClick={clearSearch}><div className="single-search-result-div-mobile">
                         <div>
-                          <div className="search-result-title">{data.title}</div>
-                          <div className="search-result-subtitle">{data.subtitle}</div>
+                          <div className="search-result-title-mobile">{data.title}</div>
+                          <div className="search-result-subtitle-mobile">{data.subtitle}</div>
                         </div>
                       </div></Link>
                     )
@@ -254,10 +258,10 @@ function Header(props) {
                 </div>
               ) : (wordsEntered.length > 0 && newFilterMobile.length === 0 ? (
                 <div className="mobile-search-bar-unsuccessful-result">
-                  <div className="unsuccessful-search-results-text-divs">
-                    <img className="unsuccessful-search-result-icon" src={SearchBar}></img>
-                    <h2 className="sorry-text">Sorry, we couldn't find any matches</h2>
-                    <h3 className="try-again-text">Try searching for a different keyword</h3>
+                  <div className="mobile-unsuccessful-search-results-text-divs">
+                    <img className="mobile-unsuccessful-search-result-icon" src={SearchBar} alt="unsuccessful search"></img>
+                    <h2 className="mobile-sorry-text">Sorry, we couldn't find any matches</h2>
+                    <h3 className="mobile-try-again-text">Try searching for a different keyword</h3>
                   </div>
                 </div>
               ) : (

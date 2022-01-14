@@ -1,16 +1,24 @@
+@media screen and (min-width: 1440px ) and (max-width: 1599px )  {
 .sign-up-div{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
-  height: calc(100% + 20px);
+  height: calc(100% + 0px);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
 }
+.sign-up-outer-div-desktop{
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .meta-minds-logo-div{
   position: relative;
+  margin-top: -20px;
   top: 0%;
   margin-bottom: 1%;
 }
@@ -107,161 +115,496 @@
   opacity: 80%;
 }
 
-@media screen and (max-width: 390px ) {
-  .sign-up-outer-div-desktop{
-    display: none;
-  }
-  .sign-up-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: hidden;
-  }
-  .sign-up-outer-div-mobile{
-    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    width: 96%;
-    height: 98%;
-  }
-  .meta-minds-logo-div-sign-up-mobile{
-    padding-top: 0px;
-    position: relative;
-    top: -3%;
-    margin-bottom: -2%;
-  }
-  .meta-minds-logo-sign-up{
-    height: 220px;
-    width:  220px;
-    margin-bottom: -5px;
-  }
-  .sign-up-form-mobile{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    border-radius: 12px;
-    padding: 30px;
-    height: 420px;
-    max-width: 98%;
-    position: relative;
-    bottom: 7%;
-  }
-  .sign-up-header-text-mobile{
-    font-size: 45px;
-    position: relative;
-    bottom: 10px;
-    font-weight: bold;
-    margin-bottom: 0px;
-  }
-  .user-input-box{
-    width: 90%;
-    height: 40px;
-    border-radius: 12px;
-    border-style: hidden;
-    outline: none;
-    box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
-    background-color: white;
-    padding-left: 15px;
-  }
- .sign-up-button{
-   height: 50px;
-   margin-top: 10px;
- border-radius: 12px;
-  box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
- }
- .link-to-sign-in-button{
-  height: 50px;
-  width: 78%;
-border-radius: 12px;
-box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
- }
+.sign-up-outer-div-mobile {
+  display: none;
 }
-@media screen and (max-width: 414px ) {
-  .sign-up-outer-div-desktop{
-    display: none;
-  }
-  .sign-up-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: hidden;
-  }
-  .sign-up-outer-div-mobile{
-    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    width: 96%;
-    height: 98%;
-  }
-  .meta-minds-logo-div-sign-up-mobile{
-    padding-top: 0px;
-    position: relative;
-    top: -3%;
-    margin-bottom: -2%;
-  }
-  .meta-minds-logo-sign-up{
-    height: 220px;
-    width:  220px;
-    margin-bottom: -5px;
-  }
-  .sign-up-form-mobile{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    border-radius: 12px;
-    padding: 30px;
-    height: 420px;
-    max-width: 98%;
-    position: relative;
-    bottom: 7%;
-  }
-  .sign-up-header-text-mobile{
-    font-size: 45px;
-    position: relative;
-    bottom: 10px;
-    font-weight: bold;
-    margin-bottom: 0px;
-  }
-  .user-input-box{
-    width: 90%;
-    height: 40px;
-    border-radius: 12px;
-    border-style: hidden;
-    outline: none;
-    box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
-    background-color: white;
-    padding-left: 15px;
-  }
- .sign-up-button{
-   height: 50px;
-   margin-top: 10px;
- border-radius: 12px;
-  box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
- }
- .link-to-sign-in-button{
-  height: 50px;
-  width: 78%;
-border-radius: 12px;
-box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
- }
 }
-@media screen and (max-width: 428px ) {
+
+@media screen and (min-width: 1600px ) and (max-width: 1679px )  {
+  .sign-up-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+    height: calc(100% + 0px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+  .sign-up-outer-div-desktop{
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .meta-minds-logo-div{
+    position: relative;
+    top: 0%;
+    margin-bottom: 1%;
+  }
+  .meta-minds-logo{
+    height: 260px;
+    width:  260px;
+  }
+  .sign-up-copyright-text{
+    font-size: 9px;
+    position: relative;
+    bottom: 75px;
+    left: 4px;
+  }
+  .sign-up-form{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+    border-radius: 12px;
+    padding: 30px;
+    height: 420px;
+    width: 350px;
+    position: relative;
+    bottom: 7%;
+  }
+  .sign-up-header-text {
+    font-size: 50px;
+    position: relative;
+    bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .sign-up-label-and-input-div {
+      margin-top: 20px;
+  }
+  .input-text-title {
+    font-size: 25px;
+    margin-bottom: 12px;
+  }
+  .user-input-box {
+    width: 80%;
+    height: 30px;
+    border-radius: 4px;
+    border-style: hidden;
+    background-color: whitesmoke;
+    outline: none;
+    box-shadow: 0px 1px 1px 1px rgba(0,4,4,0.4);
+    background-color: white;
+    padding-left: 15px;
+  }
+  .sign-up-button{
+    position: relative;
+    top: 20px;
+    left: 10px;
+    height: 40px;
+    width: 95%;
+    background-color: transparent;
+    border-style: hidden;
+    font-size: 20px;
+    border-radius: 6px; 
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+    background-color:transparent;
+  }
+  .sign-up-button:hover{
+    background-color: #0ACCE5;
+    opacity: 80%;
+  }
+  
+  .link-to-sign-in-div{
+    font-size: 25px;
+    margin-top: 40px;
+  }
+  .have-account-text{
+    font-size: 25px;
+    position: relative;
+    bottom:100%;
+    margin-bottom: -5px;
+  }
+  .link-to-sign-in-button {
+    position: relative;
+    bottom: 60px;
+    height: 40px;
+    width: 330px;
+    background-color: transparent;
+    border-style: hidden;
+    font-size: 20px;
+    border-radius: 6px; 
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+    background-color:transparent;
+  }
+  .link-to-sign-in-button:hover{
+    background-color: #0ACCE5;
+    opacity: 80%;
+  }
+  
+  .sign-up-outer-div-mobile {
+    display: none;
+  }
+  }
+  @media screen and (min-width: 1680px ) and (max-width: 1919px )  {
+    .sign-up-div{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+      height: calc(100% + 0px);
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+    }
+    .sign-up-outer-div-desktop{
+      display: flex; 
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    
+    .meta-minds-logo-div{
+      position: relative;
+      top: 0%;
+      margin-bottom: 1%;
+    }
+    .meta-minds-logo{
+      height: 260px;
+      width:  260px;
+    }
+    .sign-up-copyright-text{
+      font-size: 9px;
+      position: relative;
+      bottom: 75px;
+      left: 4px;
+    }
+    .sign-up-form{
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+      border-radius: 12px;
+      padding: 30px;
+      height: 420px;
+      width: 350px;
+      position: relative;
+      bottom: 7%;
+    }
+    .sign-up-header-text {
+      font-size: 50px;
+      position: relative;
+      bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .sign-up-label-and-input-div {
+        margin-top: 20px;
+    }
+    .input-text-title {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+    .user-input-box {
+      width: 80%;
+      height: 30px;
+      border-radius: 4px;
+      border-style: hidden;
+      background-color: whitesmoke;
+      outline: none;
+      box-shadow: 0px 1px 1px 1px rgba(0,4,4,0.4);
+      background-color: white;
+      padding-left: 15px;
+    }
+    .sign-up-button{
+      position: relative;
+      top: 20px;
+      left: 10px;
+      height: 40px;
+      width: 95%;
+      background-color: transparent;
+      border-style: hidden;
+      font-size: 20px;
+      border-radius: 6px; 
+      text-decoration: none;
+      box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+      background-color:transparent;
+    }
+    .sign-up-button:hover{
+      background-color: #0ACCE5;
+      opacity: 80%;
+    }
+    
+    .link-to-sign-in-div{
+      font-size: 25px;
+      margin-top: 40px;
+    }
+    .have-account-text{
+      font-size: 25px;
+      position: relative;
+      bottom:100%;
+      margin-bottom: -5px;
+    }
+    .link-to-sign-in-button {
+      position: relative;
+      bottom: 60px;
+      height: 40px;
+      width: 330px;
+      background-color: transparent;
+      border-style: hidden;
+      font-size: 20px;
+      border-radius: 6px; 
+      text-decoration: none;
+      box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+      background-color:transparent;
+    }
+    .link-to-sign-in-button:hover{
+      background-color: #0ACCE5;
+      opacity: 80%;
+    }
+    
+    .sign-up-outer-div-mobile {
+      display: none;
+    }
+    }
+    @media screen and (min-width: 1920px ) and (max-width: 2559px )  {
+      .sign-up-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+        height: calc(100% + 0px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+      }
+      .sign-up-outer-div-desktop{
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        top: 40px;
+      }
+
+      
+      .meta-minds-logo-div{
+        position: relative;
+        top: 0%;
+        margin-bottom: 1%;
+      }
+      .meta-minds-logo{
+        height: 260px;
+        width:  260px;
+      }
+      .sign-up-copyright-text{
+        font-size: 9px;
+        position: relative;
+        bottom: 75px;
+        left: 4px;
+      }
+      .sign-up-form{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+        border-radius: 12px;
+        padding: 30px;
+        height: 420px;
+        width: 350px;
+        position: relative;
+        bottom: 7%;
+      }
+      .sign-up-header-text {
+        font-size: 50px;
+        position: relative;
+        bottom: 10px;
+        font-weight: bold;
+      }
+      
+      .sign-up-label-and-input-div {
+          margin-top: 20px;
+      }
+      .input-text-title {
+        font-size: 25px;
+        margin-bottom: 12px;
+      }
+      .user-input-box {
+        width: 80%;
+        height: 30px;
+        border-radius: 4px;
+        border-style: hidden;
+        background-color: whitesmoke;
+        outline: none;
+        box-shadow: 0px 1px 1px 1px rgba(0,4,4,0.4);
+        background-color: white;
+        padding-left: 15px;
+      }
+      .sign-up-button{
+        position: relative;
+        top: 20px;
+        left: 10px;
+        height: 40px;
+        width: 95%;
+        background-color: transparent;
+        border-style: hidden;
+        font-size: 20px;
+        border-radius: 6px; 
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+        background-color:transparent;
+      }
+      .sign-up-button:hover{
+        background-color: #0ACCE5;
+        opacity: 80%;
+      }
+      
+      .link-to-sign-in-div{
+        font-size: 25px;
+        margin-top: 40px;
+      }
+      .have-account-text{
+        font-size: 25px;
+        position: relative;
+        bottom:100%;
+        margin-bottom: -5px;
+      }
+      .link-to-sign-in-button {
+        position: relative;
+        bottom: 60px;
+        height: 40px;
+        width: 330px;
+        background-color: transparent;
+        border-style: hidden;
+        font-size: 20px;
+        border-radius: 6px; 
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+        background-color:transparent;
+      }
+      .link-to-sign-in-button:hover{
+        background-color: #0ACCE5;
+        opacity: 80%;
+      }
+      
+      .sign-up-outer-div-mobile {
+        display: none;
+      }
+      }
+  @media screen and (min-width: 375px ) and (max-width: 389px ){
+    .sign-up-outer-div-desktop{
+      display: none;
+    }
+    .sign-up-div{
+      background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: calc(100% + 200px);
+      z-index: 1;
+    }
+    .sign-up-copyright-text{
+      font-size: 8px;
+      position: relative;
+      bottom: 60px;
+      left: 3px;
+    }
+    .input-text-title {
+      font-size: 25px;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+    .sign-up-outer-div-mobile{
+      box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+      width: 96%;
+      height: 98%;
+    }
+    .meta-minds-logo-div-sign-up-mobile{
+      padding-top: 0px;
+      position: relative;
+      top: -3%;
+      margin-bottom: -2%;
+    }
+    .meta-minds-logo-sign-up{
+      height: 220px;
+      width:  220px;
+      margin-bottom: -5px;
+    }
+    .sign-up-form-mobile{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      border-radius: 12px;
+      padding: 30px;
+      height: 520px;
+      max-width: 98%;
+      position: relative;
+      bottom: 6%;
+    }
+    .sign-up-header-text-mobile{
+      font-size: 45px;
+      position: relative;
+      bottom: 10px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .user-input-box{
+      width: 90%;
+      height: 40px;
+      border-radius: 12px;
+      border-style: hidden;
+      outline: none;
+      box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+      background-color: white;
+      padding-left: 15px;
+    }
+   .sign-up-button{
+     background-color: transparent;
+     height: 50px;
+     margin-top: 25px;
+   border-radius: 12px;
+   width: 290px;
+    box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+    border-style: hidden;
+    position: relative;
+    left: 5px;
+   }
+   .link-to-sign-in-button{
+    height: 50px;
+    width: 78%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+  border-style: hidden;
+  background-color: transparent;
+
+   }
+   .link-to-sign-in-div{
+     margin-top: -40px;
+     font-size: 14px;
+   }
+  }
+
+@media screen and (min-width: 390px ) and (max-width: 413px ){
   .sign-up-outer-div-desktop{
     display: none;
   }
   .sign-up-div{
+    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow-y: hidden;
-    height: 900px;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100% + 200px);
+    z-index: 1;
+  }
+  .sign-up-copyright-text{
+    font-size: 8px;
+    position: relative;
+    bottom: 60px;
+    left: 3px;
   }
   .sign-up-outer-div-mobile{
     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
@@ -271,6 +614,11 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     justify-content:flex-start;
     width: 96%;
     height: 98%;
+  }
+  .input-text-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 5px;
   }
   .meta-minds-logo-div-sign-up-mobile{
     padding-top: 0px;
@@ -289,7 +637,7 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     flex-direction: column;
     border-radius: 12px;
     padding: 30px;
-    height: 420px;
+    height: 520px;
     max-width: 98%;
     position: relative;
     bottom: 7%;
@@ -299,7 +647,7 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     position: relative;
     bottom: 10px;
     font-weight: bold;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
   .user-input-box{
     width: 90%;
@@ -312,15 +660,227 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     padding-left: 15px;
   }
  .sign-up-button{
+   background-color: transparent;
    height: 50px;
-   margin-top: 10px;
+   margin-top: 25px;
  border-radius: 12px;
   box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+  width: 295px;
+  position: relative;
+  left: 8px;
+  top: 10px;
+  border-style: hidden;
  }
  .link-to-sign-in-button{
+   background-color: transparent;
+  border-style: hidden;
   height: 50px;
   width: 78%;
 border-radius: 12px;
 box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
  }
+ .link-to-sign-in-div{
+  margin-top: -40px;
+  font-size: 14px;
+}
+}
+@media screen and (min-width:414px ) and (max-width: 427px ) {
+  .sign-up-outer-div-desktop{
+    display: none;
+  }
+  .sign-up-div{
+    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100% + 200px);
+    z-index: 1;
+  }
+  .sign-up-copyright-text{
+    font-size: 8px;
+    position: relative;
+    bottom: 60px;
+    left: 3px;
+  }
+  .input-text-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  .sign-up-outer-div-mobile{
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 96%;
+    height: 98%;
+  }
+  .meta-minds-logo-div-sign-up-mobile{
+    padding-top: 0px;
+    position: relative;
+    top: -3%;
+    margin-bottom: -2%;
+  }
+  .meta-minds-logo-sign-up{
+    height: 230px;
+    width:  230px;
+    margin-bottom: -5px;
+  }
+  .sign-up-form-mobile{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 30px;
+    height: 520px;
+    max-width: 98%;
+    position: relative;
+    bottom: 7%;
+  }
+  .sign-up-header-text-mobile{
+    font-size: 45px;
+    position: relative;
+    bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .user-input-box{
+    width: 90%;
+    height: 40px;
+    border-radius: 12px;
+    border-style: hidden;
+    outline: none;
+    box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+    background-color: white;
+    padding-left: 15px;
+  }
+ .sign-up-button{
+   background-color: transparent;
+   height: 50px;
+   margin-top: 20px;
+ border-radius: 12px;
+  box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+  width: 320px;
+  position: relative;
+  left: 8px;
+  top: 10px;
+  border-style: hidden;
+ }
+ .link-to-sign-in-button{
+  background-color: transparent;
+  border-style: hidden;
+  height: 50px;
+  width: 78%;
+border-radius: 12px;
+box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+ }
+ .link-to-sign-in-div{
+  margin-top: -40px;
+  font-size: 14px;
+}
+}
+@media screen and (min-width: 428px ) and (max-width: 599px ) {
+  .sign-up-outer-div-desktop{
+    display: none;
+  }
+  .sign-up-div{
+    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100% + 200px);
+    z-index: 1;
+  }
+  .sign-up-copyright-text{
+    font-size: 8px;
+    position: relative;
+    bottom: 60px;
+    left: 3px;
+  }
+  .input-text-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  .sign-up-outer-div-mobile{
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 96%;
+    height: 98%;
+  }
+  .meta-minds-logo-div-sign-up-mobile{
+    padding-top: 0px;
+    position: relative;
+    top: -3%;
+    margin-bottom: -2%;
+  }
+  .meta-minds-logo-sign-up{
+    height: 230px;
+    width:  230px;
+    margin-bottom: -5px;
+  }
+  .sign-up-form-mobile{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 30px;
+    height: 520px;
+    max-width: 98%;
+    position: relative;
+    bottom: 7%;
+  }
+  .sign-up-header-text-mobile{
+    font-size: 45px;
+    position: relative;
+    bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .user-input-box{
+    width: 90%;
+    height: 40px;
+    border-radius: 12px;
+    border-style: hidden;
+    outline: none;
+    box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+    background-color: white;
+    padding-left: 15px;
+  }
+ .sign-up-button{
+   background-color: transparent;
+   height: 50px;
+   margin-top: 20px;
+ border-radius: 12px;
+  box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+  width: 320px;
+  position: relative;
+  left: 8px;
+  top: 10px;
+  border-style: hidden;
+ }
+ .link-to-sign-in-button{
+  background-color: transparent;
+  border-style: hidden;
+  height: 50px;
+  width: 78%;
+border-radius: 12px;
+box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+ }
+ .link-to-sign-in-div{
+  margin-top: -40px;
+  font-size: 14px;
+}
 }

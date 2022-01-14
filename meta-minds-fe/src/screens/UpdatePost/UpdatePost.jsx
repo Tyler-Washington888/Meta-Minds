@@ -96,7 +96,7 @@ function UpdatePost(props) {
   return (
     <div>
       <img class="update-post-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner-Image"></img>
-      {image !== "" ? (<img className="update-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div></div>)}
+      {image !== "" ? (<img className="update-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div className="update-post-close-icon"></div>)}
       <div class="update-post-page">
         <form
           onSubmit={handleSubmit}
@@ -197,7 +197,7 @@ function UpdatePost(props) {
       </div>
       <div className='update-posts-mobile'>
         {image !== "" ? (<img className="updates-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div className="updates-post-close-icon"></div>)}
-        <form class="create-post-form"
+        <form class="create-post-form-update"
           onSubmit={handleSubmit}
         >
           <h1 class="create-post-header-text">Update Post</h1>
@@ -207,7 +207,7 @@ function UpdatePost(props) {
                 <h5 className="update-loading-image-text">Loading Image...</h5>
               ) : (image === '' ? (
                 <div></div>
-              ) : (<img className="uploaded-image" src={image} alt="new-post" />)
+              ) : (<img className="uploaded-image-update" src={image} alt="new-post" />)
               )}
             </div>
             <label for="file-inputs">

@@ -1,4 +1,4 @@
-
+@media only screen and (min-width: 1440px ) and (max-width: 1599px ) {
 .update-post-image{
   border-right: none;
   border-left: none ;
@@ -146,7 +146,7 @@ width: 70px;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   background-color: transparent;
-  margin-bottom: 400px;
+  margin-bottom: 20px;
   position: relative;
   bottom: 50px;
 }
@@ -160,12 +160,531 @@ width: 70px;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   background-color: transparent;
-  margin-bottom: 400px;
+  margin-bottom: 20px;
   position: relative;
   bottom: 50px;
 }
 
-@media only screen and (max-width: 375px ){
+.create-posts-mobile{
+  display: none;
+}
+
+.update-posts-mobile{
+  display: none;
+}
+}
+
+@media only screen and (min-width: 1600px ) and (max-width: 1679px ) {
+  .update-post-image{
+    border-right: none;
+    border-left: none ;
+    object-fit: cover;
+    height: 305px;
+    width: 100%;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+    margin-top: -40px;
+  }
+  .create-post-close-icons {
+    position: relative;
+    top: 165px;
+    left: 480px;
+    height: 50px;
+    width: 50px;
+    z-index: 114;
+    border-radius: 12px;
+  }
+  .update-post-page{
+    margin-top: 18px;
+    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    z-index: 1;
+    height: calc( 100% + 300px);
+    overflow-y: hidden;
+    margin-top: -56px;
+  }
+  .update-post-form{
+    display: flex;
+    flex-direction: column;
+  }
+  .update-post-header-text{
+    margin-top: -15px;
+    margin-bottom: 50px;
+  }
+  .update-details-top-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .update-details-top-left{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 40px;
+  }
+  .update-post-label-and-input-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .update-category-div{
+    width: 462px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    height: 45px;
+    top: 30px;
+    background-color: white;
+   }
+   .update-post-input-text{
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    outline-width: 0;
+  }
+  .update-category{
+    position: relative;
+    bottom: 23px;
+    height: 45px;
+    width: 460px;
+    border-radius: 12px;
+    border-width: 0;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    outline-width: 0;
+  }
+  .update-post-user-input-box{
+    height: 45px;
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    border-width: 0;
+    font-size: 15px;
+    padding-left: 10px;
+    outline-width: 0;
+  }
+   .update-image-upload-div{
+     position: relative;
+     top: 10px;
+   }
+   .update-image-div{
+    position: relative;
+    height: 300px;
+    width: 462px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  }
+  .update-loading-image-text{
+    position: relative;
+    top: 110px;
+    font-size: larger;
+  }
+  .update-uploaded-image{
+    height: 300px;
+    width: 462px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  }
+  
+  .image-upload-icon-update{
+  position: relative;
+  top: 125px;
+  height: 70px;
+  width: 70px;
+  }
+  #file-inputs-update{
+    position: relative;
+    top: 100px;
+    left: 187px;
+    display: none;
+  }
+  .update-post-close-icon {
+    position: relative;
+    top: 135px;
+    left: 475px;
+    height: 50px;
+    width: 50px;
+    z-index: 114;
+    border-radius: 12px;
+  }
+  .update-button{
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    background-color: transparent;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 50px;
+  }
+  .update-button:hover{
+    background-color: #0ACCE5;;
+  }
+  .update-button-disabled{
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    background-color: transparent;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 50px;
+  }
+  
+  .create-posts-mobile{
+    display: none;
+  }
+  
+  .update-posts-mobile{
+    display: none;
+  }
+  }
+  @media only screen and (min-width: 1680px ) and (max-width: 1919px ) {
+    .update-post-image{
+      border-right: none;
+      border-left: none ;
+      object-fit: cover;
+      height: 305px;
+      width: 100%;
+      box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+      margin-top: -40px;
+    }
+    .update-post-page{
+      margin-top: 18px;
+      background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      padding-top: 5%;
+      z-index: 1;
+      height: calc( 100% + 300px);
+      overflow-y: hidden;
+      margin-top: -56px;
+    }
+    .update-post-form{
+      display: flex;
+      flex-direction: column;
+    }
+    .update-post-header-text{
+      margin-top: -15px;
+      margin-bottom: 50px;
+    }
+    .update-details-top-div{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .update-details-top-left{
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-right: 40px;
+    }
+    .update-post-label-and-input-div{
+      display: flex;
+      flex-direction: column;
+    }
+    .update-category-div{
+      width: 462px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      height: 45px;
+      top: 30px;
+      background-color: white;
+     }
+     .update-post-input-text{
+      margin-top: 15px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: 400;
+      outline-width: 0;
+    }
+    .update-category{
+      position: relative;
+      bottom: 23px;
+      height: 45px;
+      width: 460px;
+      border-radius: 12px;
+      border-width: 0;
+      padding-left: 10px;
+      font-size: 15px;
+      background-color: transparent;
+      outline-width: 0;
+    }
+    .update-post-user-input-box{
+      height: 45px;
+      width: 450px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      border-width: 0;
+      font-size: 15px;
+      padding-left: 10px;
+      outline-width: 0;
+    }
+     .update-image-upload-div{
+       position: relative;
+       top: 10px;
+     }
+     .update-image-div{
+      position: relative;
+      height: 300px;
+      width: 462px;
+      border-radius: 12px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    }
+    .update-loading-image-text{
+      position: relative;
+      top: 110px;
+      font-size: larger;
+    }
+    .update-uploaded-image{
+      height: 300px;
+      width: 462px;
+      border-radius: 12px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    }
+    
+    .image-upload-icon-update{
+    position: relative;
+    top: 125px;
+    height: 70px;
+    width: 70px;
+    }
+    #file-inputs-update{
+      position: relative;
+      top: 100px;
+      left: 187px;
+      display: none;
+    }
+    .update-post-close-icon {
+      position: relative;
+      top: 140px;
+      left: 475px;
+      height: 50px;
+      width: 50px;
+      z-index: 114;
+      border-radius: 12px;
+    }
+    .update-button{
+      width: 150px;
+      height: 50px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      background-color: transparent;
+      margin-bottom: 30px;
+      position: relative;
+      bottom: 50px;
+    }
+    .update-button:hover{
+      background-color: #0ACCE5;;
+    }
+    .update-button-disabled{
+      width: 150px;
+      height: 50px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      background-color: transparent;
+      margin-bottom: 30px;
+      position: relative;
+      bottom: 50px;
+    }
+    
+    .create-posts-mobile{
+      display: none;
+    }
+    
+    .update-posts-mobile{
+      display: none;
+    }
+    }
+
+    @media only screen and (min-width: 1920px ) and (max-width: 2559px ) {
+      .update-post-image{
+        border-right: none;
+        border-left: none ;
+        object-fit: cover;
+        height: 385px;
+        width: 100%;
+        box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+        margin-top: -40px;
+      }
+      .update-post-page{
+        margin-top: 18px;
+        background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        z-index: 1;
+        height: calc( 100% + 300px);
+        overflow-y: hidden;
+        margin-top: -56px;
+      }
+      .update-post-form{
+        display: flex;
+        flex-direction: column;
+      }
+      .update-post-header-text{
+        margin-top: -15px;
+        margin-bottom: 50px;
+        font-size: 45px;
+      }
+      .update-details-top-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .update-details-top-left{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 40px;
+      }
+      .update-post-label-and-input-div{
+        display: flex;
+        flex-direction: column;
+      }
+      .update-category-div{
+        width: 462px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        height: 45px;
+        top: 30px;
+        background-color: white;
+       }
+       .update-post-input-text{
+        margin-top: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        outline-width: 0;
+      }
+      .update-category{
+        position: relative;
+        bottom: 23px;
+        height: 45px;
+        width: 460px;
+        border-radius: 12px;
+        border-width: 0;
+        padding-left: 10px;
+        font-size: 15px;
+        background-color: transparent;
+        outline-width: 0;
+      }
+      .update-post-user-input-box{
+        height: 45px;
+        width: 450px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        border-width: 0;
+        font-size: 15px;
+        padding-left: 10px;
+        outline-width: 0;
+      }
+       .update-image-upload-div{
+         position: relative;
+         top: 10px;
+       }
+       .update-image-div{
+        position: relative;
+        height: 300px;
+        width: 462px;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      }
+      .update-loading-image-text{
+        position: relative;
+        top: 110px;
+        font-size: larger;
+      }
+      .update-uploaded-image{
+        height: 300px;
+        width: 462px;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      }
+      
+      .image-upload-icon-update{
+      position: relative;
+      top: 125px;
+      height: 70px;
+      width: 70px;
+      }
+      #file-inputs-update{
+        position: relative;
+        top: 100px;
+        left: 187px;
+        display: none;
+      }
+      .update-post-close-icon {
+        position: relative;
+        top: 170px;
+        left: 470px;
+        height: 50px;
+        width: 50px;
+        z-index: 114;
+        border-radius: 12px;
+      }
+      .update-button{
+        width: 150px;
+        height: 50px;
+        border-radius: 12px;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        background-color: transparent;
+        margin-bottom: 30px;
+        position: relative;
+        bottom: 50px;
+      }
+      .update-button:hover{
+        background-color: #0ACCE5;;
+      }
+      .update-button-disabled{
+        width: 150px;
+        height: 50px;
+        border-radius: 12px;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        background-color: transparent;
+        margin-bottom: 30px;
+        position: relative;
+        bottom: 50px;
+      }
+      
+      .create-posts-mobile{
+        display: none;
+      }
+      
+      .update-posts-mobile{
+        display: none;
+      }
+      }
+
+@media only screen and (min-width: 375px ) and (max-width: 389px ) {
   .update-post-image{
     margin-top: -40px;
     z-index: 90;
@@ -181,19 +700,43 @@ width: 70px;
    }
 
    .update-posts-mobile{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 1%;
+    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+    height: calc( 100% + 100px );
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -103px;
+    z-index: 1;
+ }
+ .uploaded-image-update{
+  position: relative;
+  top: 0px;
+  height: 300px;
+  max-width: 100%;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+.create-post-form-update{
+  padding-top: -80px;
    display: flex;
    flex-direction: column;
-   overflow-x: hidden;
-   overflow-y: hidden;
-   padding: 1%;
-   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
-   height: calc( 100% + 100px );
-   background-repeat: no-repeat;
-   background-size: cover;
-   margin-top: -150px;
-   z-index: 1;
+   align-items: center;
  }
-
+ .image-div{
+  display: flex;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
    .update-post-close-icon{
      display: none;
    }
@@ -202,7 +745,7 @@ width: 70px;
   }
   .updates-post-close-icon {
     position: relative;
-    top: 150px;
+    top: 98px;
     left: 315px;
     height: 45px;
     width: 45px;
@@ -211,7 +754,7 @@ width: 70px;
   }  
 }
 
-@media only screen and (min-width: 390px ) {
+@media only screen and (min-width: 390px ) and (max-width: 413px ) {
   .update-post-image{
     margin-top: -40px;
     z-index: 90;
@@ -236,10 +779,25 @@ width: 70px;
    height: calc( 100% + 100px );
    background-repeat: no-repeat;
    background-size: cover;
-   margin-top: -150px;
+   margin-top: -103px;
    z-index: 1;
  }
-
+ .uploaded-image-update{
+  position: relative;
+  top: 0px;
+  height: 300px;
+  max-width: 100%;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+.create-post-form-update{
+  position: relative;
+  bottom: 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
    .update-post-close-icon{
      display: none;
    }
@@ -248,7 +806,7 @@ width: 70px;
   }
   .updates-post-close-icon {
     position: relative;
-    top: 150px;
+    top: 100px;
     left: 320px;
     height: 50px;
     width: 50px;
@@ -256,11 +814,9 @@ width: 70px;
     border-radius: 12px;
   }  
 
-
-
 }
 
-@media only screen and (max-width: 375px ){
+@media only screen and (min-width: 414px ) and (max-width: 427px ) {
   .update-post-image{
     margin-top: -40px;
     z-index: 90;
@@ -288,52 +844,22 @@ width: 70px;
    margin-top: -150px;
    z-index: 1;
  }
-
-   .update-post-close-icon{
-     display: none;
-   }
-  .update-post-page{
-    display: none;
-  }
-  .updates-post-close-icon {
-    position: relative;
-    top: 150px;
-    left: 315px;
-    height: 45px;
-    width: 45px;
-    z-index: 143;
-    border-radius: 12px;
-  }  
-}
-
-@media only screen and (min-width: 414px ) {
-  .update-post-image{
-    margin-top: -40px;
-    z-index: 90;
-    margin-top: -40px;
-    border-right: none;
-    border-left: none;
-    object-fit:cover;
-    object-position: center -30px;
-    height: 160px;
-    width: 100%;
-    margin-bottom: 100px;
-    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-   }
-
-   .update-posts-mobile{
+ .create-post-form-update{
+  padding-top: 50px;
    display: flex;
    flex-direction: column;
-   overflow-x: hidden;
-   overflow-y: hidden;
-   padding: 1%;
-   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
-   height: calc( 100% + 100px );
-   background-repeat: no-repeat;
-   background-size: cover;
-   margin-top: -150px;
-   z-index: 1;
+   align-items: center;
  }
+
+ .uploaded-image-update{
+  position: relative;
+  top: 0px;
+  height: 300px;
+  max-width: 100%;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
 
    .update-post-close-icon{
      display: none;
@@ -344,18 +870,17 @@ width: 70px;
   .updates-post-close-icon {
     position: relative;
     top: 150px;
-    left: 345px;
-    height: 55px;
-    width: 55px;
+    left: 344px;
+    height: 50px;
+    width: 50px;
     z-index: 143;
     border-radius: 12px;
   }  
 
-
-
 }
 
-@media only screen and (min-width: 428px ) {
+
+@media only screen and (min-width: 428px ) and (max-width: 599px ) {
   .update-post-image{
     margin-top: -40px;
     z-index: 90;
@@ -383,6 +908,22 @@ width: 70px;
    margin-top: -150px;
    z-index: 1;
  }
+ .create-post-form-update{
+  padding-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .uploaded-image-update{
+  position: relative;
+  top: 0px;
+  height: 300px;
+  max-width: 100%;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
 
    .update-post-close-icon{
      display: none;
@@ -392,10 +933,10 @@ width: 70px;
   }
   .updates-post-close-icon {
     position: relative;
-    top: 150px;
-    left: 350px;
-    height: 55px;
-    width: 55px;
+    top: 153px;
+    left: 355px;
+    height: 50px;
+    width: 50px;
     z-index: 143;
     border-radius: 12px;
   }  

@@ -1,4 +1,4 @@
-
+@media screen and (min-width: 1440px ) and (max-width: 1599px )  {
 .meta-banner-image {
   border-right: none;
   border-left: none ;
@@ -27,7 +27,7 @@
 }
 .each-meta-post-outer-div{
   margin-top: -20px;
-  margin-bottom: 420px;
+  margin-bottom: 100px;
 }
 
 .each-meta-post-inner-div {
@@ -92,11 +92,6 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   margin-right: 8px;
 }
-
-
-
-
-
 .footer-div-meta-screen {
   display: flex;
   flex-direction: row;
@@ -160,8 +155,592 @@
  .meta-mobile{
   display: none;
 }
+}
 
- @media screen and (max-width: 390px ) {
+@media screen and (min-width: 1600px ) and (max-width: 1679px )  {
+  .meta-banner-image {
+    border-right: none;
+    border-left: none ;
+    height: 355px;
+    width: 100%;
+    object-fit:cover;
+    z-index: 90;
+    margin-bottom: -5px;
+    padding-left: -3px;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+    filter: 30%;
+    position: relative;
+    bottom: 40px;
+  }
+  
+  .meta-posts-div{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+    height: calc( 100% + 100px );
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -38px;
+    z-index: 1;
+  }
+  .each-meta-post-outer-div{
+    margin-top: -20px;
+    margin-bottom: 100px;
+  }
+  
+  .each-meta-post-inner-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    height: 180px;
+    width: 100%;
+    margin-right: 20px;
+    border-style: solid 4px;
+    border-color: yellowgreen;
+    box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3)
+  }
+  .each-meta-post-inner-div-link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .each-meta-post-inner-div:hover {
+    background-color: #57dff1;
+    opacity: 90%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.4);
+    border-style: hidden;
+  }
+  
+  .each-meta-post-inner-div:hover > .each-meta-post-image{
+    margin-right: 15px;
+    transition: .5s ease;
+  }
+  
+  .each-meta-post-inner-div:hover > .each-meta-post-date-and-title-div {
+    padding-left: 10px;
+    transition: .5s ease;
+  }
+  
+  .each-meta-post-date-and-title-div {
+    display: flex;
+    flex-direction: row;
+    min-width: 500px;
+    margin-left: 50px;
+    margin-top: 0px;
+  }
+  .each-meta-post-date {
+   font-size: 25px;
+  }
+  .each-meta-post-title{
+    font-size: 25px;
+    margin-left: 150px;
+    margin-top: 55px;
+  }
+  .each-meta-post-image {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 150px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    margin-right: 8px;
+  }
+  
+  
+  
+  
+  
+  .footer-div-meta-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: transparent;
+    opacity: 40px;
+    margin-top: -350px;
+   padding-bottom: 20px;
+    height: 250px;
+    width: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+  
+  .footer-meta-logo-div-meta-screen {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -340px;
+  }
+  .footer-meta-logo-meta-screen  {
+    position: sticky;
+    bottom: 0px;
+    margin-top: -300px;
+    margin-bottom: -400px;
+    height: 250px; 
+    width: 250px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .copyrights-meta-screen {
+    font-size: 8px;
+    padding-left: 35px;
+    position: relative;
+    top: 327px;
+    right: 10px;
+  }
+  
+  .linkedin-logo-meta-screen {
+    height: 80px;
+    width: 80px;
+    margin-right: 0px;
+    z-index: 6;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .linkedin-logo-meta-screen:hover {
+    background-color: #0ACCE5;
+   }
+  .github-logo-meta-screen {
+    padding: 20px;
+    border-radius: 15px;
+    height: 80px;
+    width: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  }
+  .github-logo-meta-screen:hover {
+    background-color: #0ACCE5;
+   }
+   .meta-mobile{
+    display: none;
+  }
+  }
+  @media screen and (min-width: 1680px ) and (max-width: 1919px )  {
+    .meta-banner-image {
+      border-right: none;
+      border-left: none ;
+      height: 355px;
+      width: 100%;
+      object-fit:cover;
+      z-index: 90;
+      margin-bottom: -5px;
+      padding-left: -3px;
+      box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+      filter: 30%;
+      position: relative;
+      bottom: 40px;
+    }
+    
+    .meta-posts-div{
+      display: flex;
+      flex-direction: column;
+      padding: 5%;
+      background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+      height: calc( 100% + 100px );
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: -38px;
+      z-index: 1;
+    }
+    .each-meta-post-outer-div{
+      margin-top: -20px;
+      margin-bottom: 100px;
+    }
+    
+    .each-meta-post-inner-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 12px;
+      height: 180px;
+      width: 100%;
+      margin-right: 20px;
+      border-style: solid 4px;
+      border-color: yellowgreen;
+      box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3)
+    }
+    .each-meta-post-inner-div-link {
+      text-decoration: none;
+      color: black;
+    }
+    
+    .each-meta-post-inner-div:hover {
+      background-color: #57dff1;
+      opacity: 90%;
+      border-radius: 12px;
+      box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.4);
+      border-style: hidden;
+    }
+    
+    .each-meta-post-inner-div:hover > .each-meta-post-image{
+      margin-right: 15px;
+      transition: .5s ease;
+    }
+    
+    .each-meta-post-inner-div:hover > .each-meta-post-date-and-title-div {
+      padding-left: 10px;
+      transition: .5s ease;
+    }
+    
+    .each-meta-post-date-and-title-div {
+      display: flex;
+      flex-direction: row;
+      min-width: 500px;
+      margin-left: 50px;
+      margin-top: 0px;
+    }
+    .each-meta-post-date {
+     font-size: 25px;
+    }
+    .each-meta-post-title{
+      font-size: 25px;
+      margin-left: 150px;
+      margin-top: 55px;
+    }
+    .each-meta-post-image {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      height: 150px;
+      width: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      margin-right: 8px;
+    }
+    
+    
+    
+    
+    
+    .footer-div-meta-screen {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-image: transparent;
+      opacity: 40px;
+      margin-top: -350px;
+     padding-bottom: 20px;
+      height: 250px;
+      width: 100%;
+      z-index: 6;
+      overflow: hidden;
+    }
+    
+    .footer-meta-logo-div-meta-screen {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: -340px;
+    }
+    .footer-meta-logo-meta-screen  {
+      position: sticky;
+      bottom: 0px;
+      margin-top: -300px;
+      margin-bottom: -400px;
+      height: 250px; 
+      width: 250px;
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+    .copyrights-meta-screen {
+      font-size: 8px;
+      padding-left: 35px;
+      position: relative;
+      top: 327px;
+      right: 10px;
+    }
+    
+    .linkedin-logo-meta-screen {
+      height: 80px;
+      width: 80px;
+      margin-right: 0px;
+      z-index: 6;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      padding: 20px;
+      border-radius: 15px;
+    }
+    .linkedin-logo-meta-screen:hover {
+      background-color: #0ACCE5;
+     }
+    .github-logo-meta-screen {
+      padding: 20px;
+      border-radius: 15px;
+      height: 80px;
+      width: 80px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    }
+    .github-logo-meta-screen:hover {
+      background-color: #0ACCE5;
+     }
+     .meta-mobile{
+      display: none;
+    }
+    }
+    @media screen and (min-width: 1920px ) and (max-width: 2559px )  {
+      .meta-banner-image {
+        border-right: none;
+        border-left: none ;
+        height: 385px;
+        width: 100%;
+        object-fit:cover;
+        z-index: 90;
+        margin-bottom: -5px;
+        padding-left: -3px;
+        box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+        filter: 30%;
+        position: relative;
+        bottom: 40px;
+      }
+      
+      .meta-posts-div{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+        height: calc( 100% + 100px );
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -38px;
+        z-index: 1;
+      }
+      .each-meta-post-outer-div{
+        margin-top: -20px;
+        margin-bottom: 100px;
+        padding-right: 1%;
+        padding-left: 4%;
+      }
+      
+      .each-meta-post-inner-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 12px;
+        height: 180px;
+        width: 100%;
+        margin-right: 20px;
+        border-style: solid 4px;
+        border-color: yellowgreen;
+        box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3)
+      }
+      .each-meta-post-inner-div-link {
+        text-decoration: none;
+        color: black;
+      }
+      
+      .each-meta-post-inner-div:hover {
+        background-color: #57dff1;
+        opacity: 90%;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.4);
+        border-style: hidden;
+      }
+      
+      .each-meta-post-inner-div:hover > .each-meta-post-image{
+        margin-right: 15px;
+        transition: .5s ease;
+      }
+      
+      .each-meta-post-inner-div:hover > .each-meta-post-date-and-title-div {
+        padding-left: 10px;
+        transition: .5s ease;
+      }
+      
+      .each-meta-post-date-and-title-div {
+        display: flex;
+        flex-direction: row;
+        min-width: 500px;
+        margin-left: 50px;
+        margin-top: 0px;
+      }
+      .each-meta-post-date {
+       font-size: 30px;
+      }
+      .each-meta-post-title{
+        font-size: 30px;
+        margin-left: 150px;
+        margin-top: 60px;
+      }
+      .each-meta-post-image {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        margin-right: 8px;
+      }
+      
+      
+      
+      
+      
+      .footer-div-meta-screen {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-image: transparent;
+        opacity: 40px;
+        margin-top: -350px;
+       padding-bottom: 20px;
+        height: 250px;
+        width: 100%;
+        z-index: 6;
+        overflow: hidden;
+      }
+      
+      .footer-meta-logo-div-meta-screen {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -340px;
+      }
+      .footer-meta-logo-meta-screen  {
+        position: sticky;
+        bottom: 0px;
+        margin-top: -300px;
+        margin-bottom: -400px;
+        height: 250px; 
+        width: 250px;
+        margin-right: 50px;
+        margin-left: 50px;
+      }
+      .copyrights-meta-screen {
+        font-size: 8px;
+        padding-left: 35px;
+        position: relative;
+        top: 327px;
+        right: 10px;
+      }
+      
+      .linkedin-logo-meta-screen {
+        height: 80px;
+        width: 80px;
+        margin-right: 0px;
+        z-index: 6;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        padding: 20px;
+        border-radius: 15px;
+      }
+      .linkedin-logo-meta-screen:hover {
+        background-color: #0ACCE5;
+       }
+      .github-logo-meta-screen {
+        padding: 20px;
+        border-radius: 15px;
+        height: 80px;
+        width: 80px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      }
+      .github-logo-meta-screen:hover {
+        background-color: #0ACCE5;
+       }
+       .meta-mobile{
+        display: none;
+      }
+      }
+@media screen and (min-width: 375px ) and (max-width: 389px )  {
+  .meta-banner-image{
+   border-right: none;
+   border-left: none ;
+   object-fit: cover;
+   position: relative;
+   bottom: 40px;
+   height: 180px;
+   width: 100%;
+   z-index: 2;
+   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+  }
+  .meta-posts-div{
+   display: none;
+
+ }
+ .meta-mobile{
+   display: flex;
+   flex-direction: column;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   padding: .2%;
+   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+   height: calc( 100% + 100px );
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top: -43px;
+   z-index: 1;
+ }
+ .meta-mobile-outer-div{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   padding-top: 40px;
+   margin-bottom: 130px;
+  }
+.meta-mobile-inner-div{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ border-radius: 12px;
+ height: 180px;
+ width: 100%;
+ border-style: solid 4px;
+ box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+ box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3);
+ margin-bottom: 20px;
+}
+ .meta-mobile-inner-div-link {
+   text-decoration: none;
+   color: black;
+ }
+ .meta-posts-date-and-title {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   height: 60%;
+   width: calc( 100% + 30px);
+   margin-left: 0px;
+   padding-top: 20px;
+   padding-left:15px;
+   margin-top: 5px;
+   position: relative;
+   bottom: 18px;
+ }
+ .meta-mobile-date{
+   font-weight: 400;
+   margin-bottom: 7px;
+ }
+ .meta-mobile-title{
+   font-weight: 600;
+   text-align: start;
+   min-width: 180px;
+   max-width: 180px;
+ }
+ 
+ .meta-mobile-image{
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: row;
+   height: 150px;
+   width: 150px;
+   object-fit: cover;
+   border-radius: 12px;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+   margin-right: 8px;
+ }
+
+}
+
+ @media screen and (min-width: 390px ) and (max-width: 413px ) {
    .meta-banner-image{
     border-right: none;
     border-left: none ;
@@ -187,7 +766,7 @@
     height: calc( 100% + 100px );
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -38px;
+    margin-top: -43px;
     z-index: 1;
   }
   .meta-mobile-outer-div{
@@ -195,7 +774,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 40px;
-    margin-bottom: 350px;
+    margin-bottom: 130px;
   }
 .meta-mobile-inner-div{
   display: flex;
@@ -252,7 +831,7 @@
   }
 
  }
- @media screen and (max-width: 414px ) {
+ @media screen and (min-width: 414px ) and (max-width: 427px ) {
   .meta-banner-image{
    border-right: none;
    border-left: none ;
@@ -278,7 +857,7 @@
    height: calc( 100% + 100px );
    background-repeat: no-repeat;
    background-size: cover;
-   margin-top: -38px;
+   margin-top: -43px;
    z-index: 1;
  }
  .meta-mobile-outer-div{
@@ -286,7 +865,7 @@
    display: flex;
    flex-direction: column;
    padding-top: 40px;
-   margin-bottom: 350px;
+   margin-bottom: 130px;
  }
 .meta-mobile-inner-div{
  display: flex;
@@ -344,94 +923,94 @@
 
 }
 
-@media screen and (max-width: 428px ) {
+@media screen and (min-width: 428px ) and (max-width: 599px ){
   .meta-banner-image{
-   border-right: none;
-   border-left: none ;
-   object-fit: cover;
-   position: relative;
-   bottom: 40px;
-   height: 180px;
-   width: 100%;
-   z-index: 2;
-   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-  }
-  .meta-posts-div{
-   display: none;
-
- }
- .meta-mobile{
-   display: flex;
-   flex-direction: column;
-   overflow-x: hidden;
-   overflow-y: hidden;
-   padding: .2%;
-   background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
-   height: calc( 100% + 100px );
-   background-repeat: no-repeat;
-   background-size: cover;
-   margin-top: -38px;
-   z-index: 1;
- }
- .meta-mobile-outer-div{
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   padding-top: 40px;
-   margin-bottom: 350px;
- }
-.meta-mobile-inner-div{
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- border-radius: 12px;
- height: 180px;
- width: 100%;
- border-style: solid 4px;
- box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
- box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3);
- margin-bottom: 20px;
-}
- .meta-mobile-inner-div-link {
-   text-decoration: none;
-   color: black;
- }
- .meta-posts-date-and-title {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: flex-start;
-   height: 60%;
-   width: calc( 100% + 30px);
-   margin-left: 0px;
-   padding-top: 20px;
-   padding-left:15px;
-   margin-top: 5px;
-   position: relative;
-   bottom: 18px;
- }
- .meta-mobile-date{
-   font-weight: 400;
-   margin-bottom: 7px;
- }
- .meta-mobile-title{
-   font-weight: 600;
-   text-align: start;
-   min-width: 180px;
-   max-width: 180px;
- }
+    border-right: none;
+    border-left: none ;
+    object-fit: cover;
+    position: relative;
+    bottom: 40px;
+    height: 180px;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+   }
+   .meta-posts-div{
+    display: none;
  
- .meta-mobile-image{
-   display: flex;
-   justify-content: flex-end;
-   flex-direction: row;
-   height: 150px;
-   width: 150px;
-   object-fit: cover;
-   border-radius: 12px;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-   margin-right: 8px;
+  }
+  .meta-mobile{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: .2%;
+    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+    height: calc( 100% + 100px );
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -43px;
+    z-index: 1;
+  }
+  .meta-mobile-outer-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    margin-bottom: 130px;
+  }
+ .meta-mobile-inner-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  height: 180px;
+  width: 100%;
+  border-style: solid 4px;
+  box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+  box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
  }
-
+  .meta-mobile-inner-div-link {
+    text-decoration: none;
+    color: black;
+  }
+  .meta-posts-date-and-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 60%;
+    width: calc( 100% + 30px);
+    margin-left: 0px;
+    padding-top: 20px;
+    padding-left:15px;
+    margin-top: 5px;
+    position: relative;
+    bottom: 18px;
+  }
+  .meta-mobile-date{
+    font-weight: 400;
+    margin-bottom: 7px;
+  }
+  .meta-mobile-title{
+    font-weight: 600;
+    text-align: start;
+    min-width: 180px;
+    max-width: 180px;
+  }
+  
+  .meta-mobile-image{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    margin-right: 8px;
+  }
+ 
 }

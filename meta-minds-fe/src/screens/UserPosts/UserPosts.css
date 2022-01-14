@@ -1,3 +1,5 @@
+
+@media screen and (min-width: 1440px ) and (max-width: 1599px )  {
 .user-posts-banner-image {
   margin-top: -40px;
   border-right: none;
@@ -46,7 +48,7 @@
 
 .user-post-outer-div{
   margin-top: 5px;
-  margin-bottom: 420px;
+  margin-bottom: 100px;
 }
 
 .user-post-inner-div {
@@ -114,18 +116,496 @@
 .user-posts-mobile{
   display: none;
 }
+}
 
-@media screen and (max-width: 390px ) {
-  .user-posts-banner-image{
-   border-right: none;
-   border-left: none;
-   object-fit:cover;
-   object-position: center -30px;
-   height: 160px;
+
+@media screen and (min-width: 1600px ) and (max-width: 1679px )  {
+  .user-posts-banner-image {
+    margin-top: -40px;
+    border-right: none;
+    border-left: none;
+    height: 355px;
+    width: 100%;
+    object-fit:cover;
+    z-index: 90;
+    margin-bottom: -5px;
+    padding-left: -3px;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+    filter: 30%;
+  }
+  .user-post-and-button-div{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+    height: calc( 100% + 100px );
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2px;
+    z-index: 1;
+  }
+  .create-post-button { 
+    width: 170px;
+    height: 55px;
+    background-color: transparent;
+    font-size: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    border-style: hidden;
+    border-radius: 12px;
+   position: relative;
+   bottom: 30px;
+  }
+  .create-post-button:hover {
+    background-color: #57dff1;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.4);
+    border-style: hidden;
+  }
+  .create-post-button-link{
+    text-decoration: none;
+    color: black;
+    font-size: 17px ;
+  }
+  
+  .user-post-outer-div{
+    margin-top: 5px;
+    margin-bottom: 100px;
+  }
+  
+  .user-post-inner-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+    margin-right: 20px;
+    box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3)
+  }
+  .user-post-inner-div-link{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .user-post-inner-div:hover {
+    background-color: #57dff1;
+    border-radius: 12px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.4);
+    border-style: hidden;
+  }
+  
+  .user-post-inner-div:hover > .user-post-image{
+    margin-right: 15px;
+    transition: .5s ease;
+  }
+  
+  .user-post-inner-div:hover > .user-post-date-and-title-div {
+    padding-left: 10px;
+    transition: .5s ease;
+  }
+  
+  .user-post-date-and-title-div {
+    display: flex;
+    flex-direction: row;
+    min-width: 500px;
+    margin-left: 50px;
+    margin-top: 0px;
+  }
+  .user-post-date {
+    font-size: 25px;
+   }
+  .user-post-title{
+    font-size: 25px;
+    margin-left: 150px;
+    margin-top: 55px;
+  }
+  .user-post-image {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 150px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    margin-right: 8px;
+  }
+  .firstpost {
+    margin-top: 71px;
+  }
+  
+  .user-posts-mobile{
+    display: none;
+  }
+  }
+
+  @media screen and (min-width: 1680px ) and (max-width: 1919px )  {
+    .user-posts-banner-image {
+      margin-top: -40px;
+      border-right: none;
+      border-left: none;
+      height: 355px;
+      width: 100%;
+      object-fit:cover;
+      z-index: 90;
+      margin-bottom: -5px;
+      padding-left: -3px;
+      box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+      filter: 30%;
+    }
+    .user-post-and-button-div{
+      display: flex;
+      flex-direction: column;
+      padding: 5%;
+      background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+      height: calc( 100% + 100px );
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 2px;
+      z-index: 1;
+    }
+    .create-post-button { 
+      width: 170px;
+      height: 55px;
+      background-color: transparent;
+      font-size: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      border-style: hidden;
+      border-radius: 12px;
+     position: relative;
+     bottom: 30px;
+    }
+    .create-post-button:hover {
+      background-color: #57dff1;
+      box-shadow: 0 0 8px 0 rgba(0,0,0,0.4);
+      border-style: hidden;
+    }
+    .create-post-button-link{
+      text-decoration: none;
+      color: black;
+      font-size: 17px ;
+    }
+    
+    .user-post-outer-div{
+      margin-top: 5px;
+      margin-bottom: 100px;
+    }
+    
+    .user-post-inner-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 180px;
+      width: 100%;
+      margin-right: 20px;
+      box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3)
+    }
+    .user-post-inner-div-link{
+      text-decoration: none;
+      color: black;
+    }
+    
+    .user-post-inner-div:hover {
+      background-color: #57dff1;
+      border-radius: 12px;
+      box-shadow: 0 0 8px 0 rgba(0,0,0,0.4);
+      border-style: hidden;
+    }
+    
+    .user-post-inner-div:hover > .user-post-image{
+      margin-right: 15px;
+      transition: .5s ease;
+    }
+    
+    .user-post-inner-div:hover > .user-post-date-and-title-div {
+      padding-left: 10px;
+      transition: .5s ease;
+    }
+    
+    .user-post-date-and-title-div {
+      display: flex;
+      flex-direction: row;
+      min-width: 500px;
+      margin-left: 50px;
+      margin-top: 0px;
+    }
+    .user-post-date {
+      font-size: 25px;
+     }
+    .user-post-title{
+      font-size: 25px;
+      margin-left: 150px;
+      margin-top: 55px;
+    }
+    .user-post-image {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      height: 150px;
+      width: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      margin-right: 8px;
+    }
+    .firstpost {
+      margin-top: 71px;
+    }
+    
+    .user-posts-mobile{
+      display: none;
+    }
+    }
+  
+    @media screen and (min-width: 1920px ) and (max-width: 2559px )  {
+      .user-posts-banner-image {
+        margin-top: -40px;
+        border-right: none;
+        border-left: none;
+        height: 385px;
+        width: 100%;
+        object-fit:cover;
+        z-index: 90;
+        margin-bottom: -5px;
+        padding-left: -3px;
+        box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+        filter: 30%;
+      }
+      .user-post-and-button-div{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+        height: calc( 100% + 100px );
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 2px;
+        z-index: 1;
+      }
+      .create-post-button { 
+        width: 170px;
+        height: 55px;
+        background-color: transparent;
+        font-size: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        border-style: hidden;
+        border-radius: 12px;
+       position: relative;
+       bottom: 30px;
+      }
+      .create-post-button:hover {
+        background-color: #57dff1;
+        box-shadow: 0 0 8px 0 rgba(0,0,0,0.4);
+        border-style: hidden;
+      }
+      .create-post-button-link{
+        text-decoration: none;
+        color: black;
+        font-size: 17px ;
+      }
+      
+      .user-post-outer-div{
+        margin-top: 5px;
+        margin-bottom: 100px;
+        padding-right: 1%;
+        padding-left: 4%;
+      }
+      
+      .user-post-inner-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 180px;
+        width: 100%;
+        margin-right: 20px;
+        box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3)
+      }
+      .user-post-inner-div-link{
+        text-decoration: none;
+        color: black;
+      }
+      
+      .user-post-inner-div:hover {
+        background-color: #57dff1;
+        border-radius: 12px;
+        box-shadow: 0 0 8px 0 rgba(0,0,0,0.4);
+        border-style: hidden;
+      }
+      
+      .user-post-inner-div:hover > .user-post-image{
+        margin-right: 15px;
+        transition: .5s ease;
+      }
+      
+      .user-post-inner-div:hover > .user-post-date-and-title-div {
+        padding-left: 10px;
+        transition: .5s ease;
+      }
+      
+      .user-post-date-and-title-div {
+        display: flex;
+        flex-direction: row;
+        min-width: 500px;
+        margin-left: 50px;
+        margin-top: 0px;
+      }
+      .user-post-date {
+        font-size: 30px;
+       }
+      .user-post-title{
+        font-size: 30px;
+        margin-left: 150px;
+        margin-top: 67px;
+      }
+      .user-post-image {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        margin-right: 8px;
+      }
+      .firstpost {
+        margin-top: 71px;
+      }
+      
+      .user-posts-mobile{
+        display: none;
+      }
+      }
+  @media screen and (min-width: 375px ) and (max-width: 389px) {
+    .user-posts-banner-image{
+      border-right: none;
+      border-left: none ;
+      object-fit: cover;
+      position: relative;
+      bottom: 40px;
+      height: 180px;
+      width: 100%;
+      z-index: 2;
+      box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+    }
+    .user-post-and-button-div{
+     display: none;
+   }
+   .user-posts-mobile{
+     display: flex;
+     flex-direction: column;
+     overflow-x: hidden;
+     overflow-y: hidden;
+     padding: .2%;
+     background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+     height: calc( 100% + 50px );
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-top: -43px;
+     z-index: 1;
+     padding-bottom: 0px;
+   }
+  .create-post-button-link{
+    text-decoration: none;
+    color: black;
+  }
+   .create-post-button-div{
+     padding-top: 60px;
+     margin-bottom: -50px;
+   }
+   .create-post-button { 
+  width: 140px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-style: hidden;
+  border-radius: 12px;
+ position: relative;
+ bottom: 30px;
+ margin-bottom: 5px;
+}
+   .user-posts-mobile-outer-div{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     padding-top: 40px;
+     margin-bottom: 150px;
+   }
+  .user-posts-mobile-inner-div{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   border-radius: 12px;
+   height: 180px;
    width: 100%;
-   z-index: 4;
-   margin-bottom: 100px;
+   border-style: solid 4px;
    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+   box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3);
+   margin-bottom: 20px;
+  }
+   .user-posts-mobile-inner-div-link {
+     text-decoration: none;
+     color: black;
+   }
+   .user-posts-posts-date-and-title {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     height: 60%;
+     width: calc( 100% + 30px);
+     margin-left: 0px;
+     padding-top: 20px;
+     padding-left:15px;
+     margin-top: 5px;
+     position: relative;
+     bottom: 18px;
+   }
+   .user-posts-mobile-date{
+     font-weight: 400;
+     margin-bottom: 7px;
+   }
+   .user-posts-mobile-title{
+     font-weight: 600;
+     text-align: start;
+     min-width: 180px;
+     max-width: 180px;
+   }
+   
+   .user-posts-mobile-image{
+     display: flex;
+     justify-content: flex-end;
+     flex-direction: row;
+     height: 150px;
+     width: 150px;
+     object-fit: cover;
+     border-radius: 12px;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+     margin-right: 8px;
+   }
+  
+   .firstpost{
+     font-size: 22px;
+     margin-top: 100px;
+     margin-left: 40px;
+     width: 80%;
+   }
+  
+  }
+@media screen and (min-width: 390px ) and (max-width: 413px) {
+  .user-posts-banner-image{
+    border-right: none;
+    border-left: none ;
+    object-fit: cover;
+    position: relative;
+    bottom: 40px;
+    height: 180px;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
   }
   .user-post-and-button-div{
    display: none;
@@ -140,21 +620,34 @@
    height: calc( 100% + 100px );
    background-repeat: no-repeat;
    background-size: cover;
-   margin-top: -103px;
+   margin-top: -43px;
    z-index: 1;
-   padding-bottom: 100px;
+   padding-bottom: 0px;
  }
 
- .create-post-button-div{
-   padding-top: 60px;
-   margin-bottom: -50px;
- }
+ .create-post-button { 
+  width: 140px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-style: hidden;
+  border-radius: 12px;
+ position: relative;
+ bottom: -40px;
+ margin-bottom: 25px;
+}
+
+.create-post-button-link{
+  text-decoration: none;
+  color: black;
+}
  .user-posts-mobile-outer-div{
    width: 100%;
    display: flex;
    flex-direction: column;
    padding-top: 40px;
-   margin-bottom: 350px;
+   margin-bottom: 130px;
  }
 .user-posts-mobile-inner-div{
  display: flex;
@@ -218,17 +711,17 @@
  }
 
 }
-@media screen and (max-width: 414px ) {
+@media screen and (min-width: 414px ) and (max-width: 427px) {
   .user-posts-banner-image{
-   border-right: none;
-   border-left: none;
-   object-fit:cover;
-   object-position: center -30px;
-   height: 160px;
-   width: 100%;
-   z-index: 4;
-   margin-bottom: 100px;
-   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+    border-right: none;
+    border-left: none ;
+    object-fit: cover;
+    position: relative;
+    bottom: 40px;
+    height: 180px;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
   }
   .user-post-and-button-div{
    display: none;
@@ -243,21 +736,41 @@
    height: calc( 100% + 100px );
    background-repeat: no-repeat;
    background-size: cover;
-   margin-top: -103px;
+   margin-top: -43px;
    z-index: 1;
    padding-bottom: 100px;
  }
+ .create-post-button { 
+  width: 140px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-style: hidden;
+  border-radius: 12px;
+ position: relative;
+ bottom: -40px;
+ margin-bottom: 25px;
+}
 
- .create-post-button-div{
-   padding-top: 60px;
-   margin-bottom: -50px;
+
+ .create-post-button-link{
+  text-decoration: none;
+  color: black;
+}
+ .user-posts-mobile-outer-div{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   padding-top: 40px;
+   margin-bottom: 130px;
  }
  .user-posts-mobile-outer-div{
    width: 100%;
    display: flex;
    flex-direction: column;
    padding-top: 40px;
-   margin-bottom: 350px;
+   margin-bottom: 130px;
  }
 .user-posts-mobile-inner-div{
  display: flex;
@@ -322,17 +835,17 @@
 
 }
 
-@media screen and (max-width: 428px ) {
+@media screen and (min-width: 428px ) and (max-width: 599px ) {
   .user-posts-banner-image{
-   border-right: none;
-   border-left: none;
-   object-fit:cover;
-   object-position: center -30px;
-   height: 160px;
-   width: 100%;
-   z-index: 4;
-   margin-bottom: 100px;
-   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
+    border-right: none;
+    border-left: none ;
+    object-fit: cover;
+    position: relative;
+    bottom: 40px;
+    height: 180px;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
   }
   .user-post-and-button-div{
    display: none;
@@ -347,21 +860,41 @@
    height: calc( 100% + 100px );
    background-repeat: no-repeat;
    background-size: cover;
-   margin-top: -103px;
+   margin-top: -43px;
    z-index: 1;
    padding-bottom: 100px;
  }
+ .create-post-button { 
+  width: 140px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-style: hidden;
+  border-radius: 12px;
+ position: relative;
+ bottom: -40px;
+ margin-bottom: 25px;
+}
 
- .create-post-button-div{
-   padding-top: 60px;
-   margin-bottom: -50px;
+
+ .create-post-button-link{
+  text-decoration: none;
+  color: black;
+}
+ .user-posts-mobile-outer-div{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   padding-top: 40px;
+   margin-bottom: 130px;
  }
  .user-posts-mobile-outer-div{
    width: 100%;
    display: flex;
    flex-direction: column;
    padding-top: 40px;
-   margin-bottom: 350px;
+   margin-bottom: 130px;
  }
 .user-posts-mobile-inner-div{
  display: flex;
@@ -423,6 +956,5 @@
    margin-left: 40px;
    width: 80%;
  }
-
 }
 

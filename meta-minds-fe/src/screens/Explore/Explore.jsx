@@ -54,9 +54,9 @@ function Explore(props) {
           <div className='mobile-latest-post-details-div'>
             <div className='mobile-latest-post-date-and-category-div'>
               <div className='mobile-latest-post-date'>{DateTime.fromISO(`${mostPopularMetaPost[0]?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
-              <Link to={`/${mostPopularMetaPost[0]?.category}`} className="single-post-category-link"><div className='mobile-latest-post-category'>{mostPopularMetaPost[0]?.category}</div></Link>
+              <Link to={`/${mostPopularMetaPost[0]?.category}`} className="single-post-category-link-mobile"><div className='mobile-latest-post-category'>{mostPopularMetaPost[0]?.category}</div></Link>
             </div>
-            <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="single-post-title-link"><div className='mobile-latest-post-title'>{mostPopularMetaPost[0]?.title}</div></Link>
+            <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="single-post-title-link-mobile"><div className='mobile-latest-post-title'>{mostPopularMetaPost[0]?.title}</div></Link>
           </div>
         </div>
 
@@ -84,9 +84,9 @@ function Explore(props) {
                 <div className='each-single-mobile-post-details-div'>
                   <div className='each-single-mobile-post-details-date-and-category-div'>
                     <div className='each-single-mobile-post-details-date'>{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
-                    <Link to={`/${post.category}`} className="single-post-category-link"> <div className='each-single-mobile-post-details-category'>{post.category}</div></Link>
+                    <Link to={`/${post.category}`} className="single-post-category-link-mobile"> <div className='each-single-mobile-post-details-category'>{post.category}</div></Link>
                   </div>
-                  <Link to={`/view-post/${post.id}`} className='each-single-mobile-post-details-title single-post-category-link'>{post.title}</Link>
+                  <Link to={`/view-post/${post.id}`} className='each-single-mobile-post-details-title single-title-category-link-mobile'>{post.title}</Link>
                 </div>
               </div>
             )

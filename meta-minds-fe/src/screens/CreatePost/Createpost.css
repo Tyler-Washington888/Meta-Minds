@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1440px ) and (max-width: 1599px ) {
 .create-post-image{
   margin-top: -40px;
   border-right: none;
@@ -7,6 +8,15 @@
   width: 100%;
   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
   z-index: 90;
+}
+.close-icon-mobile-create{
+  position: relative;
+  top: 82px;
+  left: 1165px;
+  height: 50px;
+  width: 50px;
+  z-index: 114;
+  border-radius: 12px;
 }
 .create-post-page{
   margin-top: 37px;
@@ -22,6 +32,7 @@
   margin-top: -3px;
 }
 .create-post-form{
+  margin-top: -30px;
   display: flex;
   flex-direction: column;
 }
@@ -119,15 +130,14 @@ width: 70px;
 z-index: 12;
 }
 #file-inputs{
-  background-color: tomato;
   display: none;
 }
 .create-post-close-icon {
   position: relative;
-  bottom: 1343px;
-  left: 1175px;
-  height: 50px;
-  width: 50px;
+  bottom: 1328px;
+  left: 1160px;
+  height: 60px;
+  width: 60px;
   z-index: 114;
   border-radius: 12px;
 }
@@ -138,7 +148,7 @@ z-index: 12;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   background-color: transparent;
-  margin-bottom: 380px;
+  margin-bottom: -30px;
   position: relative;
   left: 635px;
   bottom: 50px;
@@ -153,15 +163,556 @@ z-index: 12;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   background-color: transparent;
-  margin-bottom: 380px;
+  margin-bottom: -30px;
   position: relative;
   left: 635px;
   bottom: 50px;
 }
+.create-posts-mobile{
+  display: hidden;
+}
+}
 
-@media only screen and (min-width: 375px ) {
+@media only screen and (min-width: 1600px ) and (max-width: 1679px ) {
+  .create-post-image{
+    margin-top: -40px;
+    border-right: none;
+    border-left: none ;
+    object-fit: cover;
+    height: 305px;
+    width: 100%;
+    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+    z-index: 90;
+  }
+  .create-post-form{
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .close-icon-mobile-create{
+    position: relative;
+    top: 84px;
+    left: 1250px;
+    height: 50px;
+    width: 50px;
+    z-index: 114;
+    border-radius: 12px;
+  }
+  .create-post-page{
+    margin-top: 37px;
+    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    z-index: 1;
+    height: calc( 100% + 300px);
+    overflow-y: hidden;
+    margin-top: -3px;
+  }
+  .create-post-form{
+    display: flex;
+    flex-direction: column;
+  }
+  .create-post-header-text{
+    margin-top: -15px;
+    margin-bottom: 50px;
+  }
+  .post-details-top-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .post-details-top-left{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 40px;
+  }
+  .create-post-label-and-input-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .category-div{
+    width: 462px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    height: 45px;
+    top: 30px;
+    background-color: white;
+   }
+   .create-post-input-text{
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    outline-width: 0;
+  }
+  .category{
+    position: relative;
+    bottom: 23px;
+    height: 45px;
+    width: 460px;
+    border-radius: 12px;
+    border-width: 0;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    outline-width: 0;
+  }
+  .create-post-user-input-box{
+    height: 45px;
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    border-width: 0;
+    font-size: 15px;
+    padding-left: 10px;
+    outline-width: 0;
+  }
+   .image-upload-div{
+     position: relative;
+     top: 10px;
+   }
+   .image-div{
+    position: relative;
+    height: 300px;
+    width: 462px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  }
+  .loading-image-text{
+    position: relative;
+    top: 110px;
+    font-size: larger;
+  }
+  .uploaded-image{
+    position: relative;
+    top: 0px;
+    height: 300px;
+    width: 462px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  }
+  
+  .image-upload-icon{
+  position: relative;
+  top: 125px;
+  height: 70px;
+  width: 70px;
+  z-index: 12;
+  }
+  #file-inputs{
+    display: none;
+  }
+  .create-post-close-icon {
+    position: relative;
+    bottom: 1333px;
+    left: 1240px;
+    height: 60px;
+    width: 60px;
+    z-index: 114;
+    border-radius: 12px;
+  }
+  .submit-button{
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    background-color: transparent;
+    margin-bottom: -30px;
+    position: relative;
+    left: 722px;
+    bottom: 50px;
+  }
+  .submit-button:hover{
+    background-color: #0ACCE5;
+  }
+  .submit-button-disabled{
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    background-color: transparent;
+    margin-bottom: -30px;
+    position: relative;
+    left: 722px;
+    bottom: 50px;
+  }
+  .create-posts-mobile{
+    display: none;
+  }
+  }
+
+  @media only screen and (min-width: 1680px ) and (max-width: 1919px ) {
+    .create-post-image{
+      margin-top: -40px;
+      border-right: none;
+      border-left: none ;
+      object-fit: cover;
+      height: 305px;
+      width: 100%;
+      box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+      z-index: 90;
+    }
+    .create-post-form{
+      margin-top: -30px;
+      display: flex;
+      flex-direction: column;
+    }
+    .close-icon-mobile-create{
+      position: relative;
+      top: 84px;
+      left: 1290px;
+      height: 50px;
+      width: 50px;
+      z-index: 114;
+      border-radius: 12px;
+    }
+    .create-post-page{
+      margin-top: 37px;
+      background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      padding-top: 5%;
+      z-index: 1;
+      height: calc( 100% + 300px);
+      overflow-y: hidden;
+      margin-top: -3px;
+    }
+    .create-post-form{
+      display: flex;
+      flex-direction: column;
+    }
+    .create-post-header-text{
+      margin-top: -15px;
+      margin-bottom: 50px;
+    }
+    .post-details-top-div{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .post-details-top-left{
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-right: 40px;
+    }
+    .create-post-label-and-input-div{
+      display: flex;
+      flex-direction: column;
+    }
+    .category-div{
+      width: 462px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      height: 45px;
+      top: 30px;
+      background-color: white;
+     }
+     .create-post-input-text{
+      margin-top: 15px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: 400;
+      outline-width: 0;
+    }
+    .category{
+      position: relative;
+      bottom: 23px;
+      height: 45px;
+      width: 460px;
+      border-radius: 12px;
+      border-width: 0;
+      padding-left: 10px;
+      font-size: 15px;
+      background-color: transparent;
+      outline-width: 0;
+    }
+    .create-post-user-input-box{
+      height: 45px;
+      width: 450px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      border-width: 0;
+      font-size: 15px;
+      padding-left: 10px;
+      outline-width: 0;
+    }
+     .image-upload-div{
+       position: relative;
+       top: 10px;
+     }
+     .image-div{
+      position: relative;
+      height: 300px;
+      width: 462px;
+      border-radius: 12px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    }
+    .loading-image-text{
+      position: relative;
+      top: 110px;
+      font-size: larger;
+    }
+    .uploaded-image{
+      position: relative;
+      top: 0px;
+      height: 300px;
+      width: 462px;
+      border-radius: 12px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    }
+    
+    .image-upload-icon{
+    position: relative;
+    top: 125px;
+    height: 70px;
+    width: 70px;
+    z-index: 12;
+    }
+    #file-inputs{
+      display: none;
+    }
+    .submit-button{
+      width: 150px;
+      height: 50px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      background-color: transparent;
+      margin-bottom: -30px;
+      position: relative;
+      left: 760px;
+      bottom: 50px;
+    }
+    .submit-button:hover{
+      background-color: #0ACCE5;
+    }
+    .submit-button-disabled{
+      width: 150px;
+      height: 50px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      background-color: transparent;
+      margin-bottom: -30px;
+      position: relative;
+      left: 760px;
+      bottom: 50px;
+    }
+    .create-posts-mobile{
+      display: none;
+    }
+    .update-loading-image-text{
+      position: relative;
+      top: 110px;
+      font-size: larger;
+    }
+    }
+
+    @media only screen and (min-width: 1920px ) and (max-width: 2559px ) {
+      .create-post-image{
+        margin-top: -40px;
+        border-right: none;
+        border-left: none ;
+        object-fit: cover;
+        height: 385px;
+        width: 100%;
+        box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
+        z-index: 90;
+      }
+      .create-post-form{
+        margin-top: -30px;
+        display: flex;
+        flex-direction: column;
+      }
+      .close-icon-mobile-create{
+        position: relative;
+        top: 97px;
+        left: 1403px;
+        height: 53px;
+        width: 53px;
+        z-index: 114;
+        border-radius: 12px;
+      }
+      .create-post-page{
+        margin-top: 37px;
+        background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        z-index: 1;
+        height: calc( 100% + 300px);
+        overflow-y: hidden;
+        margin-top: -3px;
+      }
+      .create-post-form{
+        display: flex;
+        flex-direction: column;
+      }
+      .create-post-header-text{
+        margin-top: -15px;
+        margin-bottom: 50px;
+        font-size: 45px;
+      }
+      .post-details-top-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .post-details-top-left{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 40px;
+      }
+      .create-post-label-and-input-div{
+        display: flex;
+        flex-direction: column;
+      }
+      .category-div{
+        width: 462px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        height: 45px;
+        top: 30px;
+        background-color: white;
+       }
+       .create-post-input-text{
+        margin-top: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        outline-width: 0;
+      }
+      .category{
+        position: relative;
+        bottom: 23px;
+        height: 45px;
+        width: 460px;
+        border-radius: 12px;
+        border-width: 0;
+        padding-left: 10px;
+        font-size: 15px;
+        background-color: transparent;
+        outline-width: 0;
+      }
+      .create-post-user-input-box{
+        height: 45px;
+        width: 450px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        border-width: 0;
+        font-size: 15px;
+        padding-left: 10px;
+        outline-width: 0;
+      }
+       .image-upload-div{
+         position: relative;
+         top: 10px;
+       }
+       .image-div{
+        position: relative;
+        height: 300px;
+        width: 462px;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      }
+      .loading-image-text{
+        position: relative;
+        top: 110px;
+        font-size: larger;
+      }
+      .uploaded-image{
+        position: relative;
+        top: 0px;
+        height: 300px;
+        width: 462px;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      }
+      
+      .image-upload-icon{
+      position: relative;
+      top: 125px;
+      height: 70px;
+      width: 70px;
+      z-index: 12;
+      }
+      #file-inputs{
+        display: none;
+      }
+      .submit-button{
+        width: 150px;
+        height: 50px;
+        border-radius: 12px;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        background-color: transparent;
+        margin-bottom: -30px;
+        position: relative;
+        left: 880px;
+        bottom: 50px;
+      }
+      .submit-button:hover{
+        background-color: #0ACCE5;
+      }
+      .submit-button-disabled{
+        width: 150px;
+        height: 50px;
+        border-radius: 12px;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        background-color: transparent;
+        margin-bottom: -30px;
+        position: relative;
+        left: 880px;
+        bottom: 50px;
+      }
+      .create-posts-mobile{
+        display: none;
+      }
+      .update-loading-image-text{
+        position: relative;
+        top: 110px;
+        font-size: larger;
+      }
+      }
+
+
+
+@media only screen and (min-width: 375px ) and (max-width: 389px ) {
   .create-post-page{
     display: none;
+  }
+  .update-loading-image-text{
+    position: relative;
+    top: 110px;
+    font-size: larger;
   }
   .create-post-image{
    margin-top: -40px;
@@ -186,19 +737,22 @@ z-index: 12;
    height: calc( 100% + 100px );
    background-repeat: no-repeat;
    background-size: cover;
-   margin-top: -150px;
+   margin-top: -103px;
    z-index: 1;
  }
  .create-post-form{
-   margin-top: 50px;
+  padding-top: 0px;
    display: flex;
    flex-direction: column;
    align-items: center;
  }
  .image-div{
+   display: flex;
    position: relative;
+   justify-content: center;
+   align-items: center;
    height: 300px;
-   width: 90%;
+   width: 100%;
    border-radius: 12px;
    margin-bottom: 40px;
    background-color: white;
@@ -209,7 +763,7 @@ z-index: 12;
    margin-bottom: 50px;
    font-size: 30px;
  }
- .uploaded-image{
+ .uploaded-image-mobile{
    position: relative;
    top: 0px;
    height: 300px;
@@ -218,6 +772,23 @@ z-index: 12;
    background-color: white;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
  }
+
+ .loading-image-text{
+  position: relative;
+  top: 110px;
+  font-size: larger;
+}
+
+.image-upload-icon{
+position: relative;
+top: 125px;
+height: 70px;
+width: 70px;
+z-index: 12;
+}
+#file-inputs{
+  display: none;
+}
  .category-div {
    width: 100%;
    border-radius: 12px;
@@ -226,6 +797,7 @@ z-index: 12;
    height: 45px;
    top: 30px;
    background-color: white;
+   margin-bottom: 30px;
   }
   .create-post-label-and-input-div{
     width: 90%;
@@ -243,6 +815,7 @@ z-index: 12;
    font-size: 15px;
    padding-left: 10px;
    outline-width: 0;
+   margin-bottom: 30px;
  }
  .submit-button{
    width: 150px;
@@ -251,7 +824,7 @@ z-index: 12;
    border: none;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
    background-color: transparent;
-   margin-bottom: 380px;
+   margin-bottom: 140px;
    position: relative;
    left: 0px;
    bottom: 30px;
@@ -260,12 +833,12 @@ z-index: 12;
  .category{
    background-color: rgb(205, 181, 102);
    position: relative;
-   bottom: 23px;
+   bottom: 0px;
    height: 45px;
    width: 100%;
    border-radius: 12px;
    border-width: 0;
-   padding-left: 10px;
+   padding-left: 5px;
    font-size: 15px;
    background-color: transparent;
    outline-width: 0;
@@ -278,26 +851,31 @@ z-index: 12;
    border: none;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
    background-color: transparent;
-   margin-bottom: 380px;
+   margin-bottom: 140px;
    position: relative;
    left: 0px;
    bottom: 30px;
  }
- .creates-post-close-icon {
+ .close-icon-mobile-create{
    position: relative;
-     top: 145px;
-     left: 315px;
-     height: 45px;
-     width: 45px;
+     top: 98px;
+     left: 310px;
+     height: 50px;
+     width: 50px;
    z-index: 114;
    border-radius: 12px;
  }  
  }
 
-@media only screen and (max-width: 390px ) {
+@media only screen and (min-width: 390px ) and (max-width: 413px ) {
  .create-post-page{
    display: none;
  }
+ .update-loading-image-text{
+  position: relative;
+  top: 110px;
+  font-size: larger;
+}
  .create-post-image{
   margin-top: -40px;
   z-index: 90;
@@ -312,7 +890,6 @@ z-index: 12;
   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
  }
  .create-posts-mobile{
-   background-color: tomato;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -326,26 +903,27 @@ z-index: 12;
   z-index: 1;
 }
 .create-post-form{
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .image-div{
-  position: relative;
-  height: 300px;
-  width: 90%;
-  border-radius: 12px;
-  margin-bottom: 40px;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  display: flex;
+   position: relative;
+   height: 300px;
+   width: 100%;
+   border-radius: 12px;
+   margin-bottom: 40px;
+   background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 .create-post-header-text{
   margin-top: -15px;
   margin-bottom: 50px;
   font-size: 30px;
 }
-.uploaded-image{
+.uploaded-image-mobile{
   position: relative;
   top: 0px;
   height: 300px;
@@ -354,6 +932,16 @@ z-index: 12;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
+#file-inputs{
+  display: none;
+}
+.image-upload-icon{
+  position: relative;
+  top: 110px;
+  height: 80px;
+  width: 80px;
+  z-index: 12;
+  }
 .category-div {
   width: 100%;
   border-radius: 12px;
@@ -362,6 +950,7 @@ z-index: 12;
   height: 45px;
   top: 30px;
   background-color: white;
+  margin-bottom: 30px;
  }
  .create-post-label-and-input-div{
    width: 90%;
@@ -378,6 +967,7 @@ z-index: 12;
   border-width: 0;
   font-size: 15px;
   padding-left: 10px;
+  margin-bottom: 30px;
   outline-width: 0;
 }
 .submit-button{
@@ -387,7 +977,7 @@ z-index: 12;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   background-color: transparent;
-  margin-bottom: 380px;
+  margin-bottom: 130px;
   position: relative;
   left: 0px;
   bottom: 30px;
@@ -396,12 +986,12 @@ z-index: 12;
 .category{
   background-color: rgb(205, 181, 102);
   position: relative;
-  bottom: 23px;
+  bottom: 0px;
   height: 45px;
   width: 100%;
   border-radius: 12px;
   border-width: 0;
-  padding-left: 10px;
+  padding-left: 5px;
   font-size: 15px;
   background-color: transparent;
   outline-width: 0;
@@ -414,14 +1004,14 @@ z-index: 12;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   background-color: transparent;
-  margin-bottom: 380px;
+  margin-bottom: 130px;
   position: relative;
   left: 0px;
   bottom: 30px;
 }
-.creates-post-close-icon {
+.close-icon-mobile-create {
   position: relative;
-    top: 150px;
+    top: 160px;
     left: 320px;
     height: 50px;
     width: 50px;
@@ -430,9 +1020,14 @@ z-index: 12;
 }  
 }
 
-@media only screen and (max-width: 414px ) {
+@media only screen and (min-width: 414px ) and (max-width: 427px )  {
   .create-post-page{
     display: none;
+  }
+  .update-loading-image-text{
+    position: relative;
+    top: 110px;
+    font-size: larger;
   }
   .create-post-image{
    margin-top: -40px;
@@ -448,7 +1043,6 @@ z-index: 12;
    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
   }
   .create-posts-mobile{
-    background-color: tomato;
    display: flex;
    flex-direction: column;
    overflow-x: hidden;
@@ -468,20 +1062,21 @@ z-index: 12;
    align-items: center;
  }
  .image-div{
-   position: relative;
-   height: 300px;
-   width: 90%;
-   border-radius: 12px;
-   margin-bottom: 40px;
-   background-color: white;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  display: flex;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
  }
  .create-post-header-text{
    margin-top: -15px;
    margin-bottom: 50px;
    font-size: 30px;
  }
- .uploaded-image{
+ .uploaded-image-mobile{
    position: relative;
    top: 0px;
    height: 300px;
@@ -490,6 +1085,17 @@ z-index: 12;
    background-color: white;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
  }
+
+ #file-inputs{
+  display: none;
+}
+.image-upload-icon{
+  position: relative;
+  top: 110px;
+  height: 80px;
+  width: 80px;
+  z-index: 12;
+  }
  .category-div {
    width: 100%;
    border-radius: 12px;
@@ -497,6 +1103,7 @@ z-index: 12;
    display: flex;
    height: 45px;
    top: 30px;
+   margin-bottom: 30px;
    background-color: white;
   }
   .create-post-label-and-input-div{
@@ -514,6 +1121,7 @@ z-index: 12;
    border-width: 0;
    font-size: 15px;
    padding-left: 10px;
+   margin-bottom: 30px;
    outline-width: 0;
  }
  .submit-button{
@@ -523,7 +1131,7 @@ z-index: 12;
    border: none;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
    background-color: transparent;
-   margin-bottom: 380px;
+   margin-bottom: 140px;
    position: relative;
    left: 0px;
    bottom: 30px;
@@ -532,12 +1140,12 @@ z-index: 12;
  .category{
    background-color: rgb(205, 181, 102);
    position: relative;
-   bottom: 23px;
+   bottom: 0px;
    height: 45px;
    width: 100%;
    border-radius: 12px;
    border-width: 0;
-   padding-left: 10px;
+   padding-left: 5px;
    font-size: 15px;
    background-color: transparent;
    outline-width: 0;
@@ -550,12 +1158,12 @@ z-index: 12;
    border: none;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
    background-color: transparent;
-   margin-bottom: 380px;
+   margin-bottom: 140px;
    position: relative;
    left: 0px;
    bottom: 30px;
  }
- .create-post-close-icon {
+ .close-icon-mobile-create {
    position: relative;
      top: 150px;
      left: 345px;
@@ -566,9 +1174,14 @@ z-index: 12;
  }  
  }
 
- @media only screen and (max-width: 428px ) {
+ @media only screen and (min-width: 428px ) and (max-width: 599px )  {
   .create-post-page{
     display: none;
+  }
+  .update-loading-image-text{
+    position: relative;
+    top: 110px;
+    font-size: larger;
   }
   .create-post-image{
    margin-top: -40px;
@@ -584,7 +1197,6 @@ z-index: 12;
    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
   }
   .create-posts-mobile{
-    background-color: tomato;
    display: flex;
    flex-direction: column;
    overflow-x: hidden;
@@ -604,20 +1216,21 @@ z-index: 12;
    align-items: center;
  }
  .image-div{
-   position: relative;
-   height: 300px;
-   width: 90%;
-   border-radius: 12px;
-   margin-bottom: 40px;
-   background-color: white;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  display: flex;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
  }
  .create-post-header-text{
    margin-top: -15px;
    margin-bottom: 50px;
    font-size: 30px;
  }
- .uploaded-image{
+ .uploaded-image-mobile{
    position: relative;
    top: 0px;
    height: 300px;
@@ -626,6 +1239,17 @@ z-index: 12;
    background-color: white;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
  }
+
+ #file-inputs{
+  display: none;
+}
+.image-upload-icon{
+  position: relative;
+  top: 110px;
+  height: 80px;
+  width: 80px;
+  z-index: 12;
+  }
  .category-div {
    width: 100%;
    border-radius: 12px;
@@ -633,6 +1257,7 @@ z-index: 12;
    display: flex;
    height: 45px;
    top: 30px;
+   margin-bottom: 30px;
    background-color: white;
   }
   .create-post-label-and-input-div{
@@ -650,6 +1275,7 @@ z-index: 12;
    border-width: 0;
    font-size: 15px;
    padding-left: 10px;
+   margin-bottom: 30px;
    outline-width: 0;
  }
  .submit-button{
@@ -659,7 +1285,7 @@ z-index: 12;
    border: none;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
    background-color: transparent;
-   margin-bottom: 380px;
+   margin-bottom: 140px;
    position: relative;
    left: 0px;
    bottom: 30px;
@@ -668,12 +1294,12 @@ z-index: 12;
  .category{
    background-color: rgb(205, 181, 102);
    position: relative;
-   bottom: 23px;
+   bottom: 0px;
    height: 45px;
    width: 100%;
    border-radius: 12px;
    border-width: 0;
-   padding-left: 10px;
+   padding-left: 5px;
    font-size: 15px;
    background-color: transparent;
    outline-width: 0;
@@ -686,15 +1312,15 @@ z-index: 12;
    border: none;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
    background-color: transparent;
-   margin-bottom: 380px;
+   margin-bottom: 140px;
    position: relative;
    left: 0px;
    bottom: 30px;
  }
- .creates-post-close-icon {
+ .close-icon-mobile-create {
    position: relative;
      top: 150px;
-     left: 350px;
+     left: 360px;
      height: 50px;
      width: 50px;
    z-index: 114;
