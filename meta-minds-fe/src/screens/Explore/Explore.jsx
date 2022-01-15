@@ -10,7 +10,6 @@ function Explore(props) {
   const { posts } = props;
   const [allPosts, setAllPosts] = useState([]);
   const [nextPosts, setNextPosts] = useState(6);
-  const [newPost, setNewPost] = useState([]);
   const { DateTime } = require("luxon");
 
 
@@ -25,7 +24,6 @@ function Explore(props) {
     arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerLoad);
   }, [posts])
-
 
   const loopWithSlice = (start, end) => {
     const metaPosts = posts.filter(post => post.category === 'Meta');
@@ -65,11 +63,11 @@ function Explore(props) {
           <div className="latest-post-details-div">
             <div className="latest-post-details-background-div"></div>
             <div className="latest-post-details-text-div">
-              <h4 className="latest-post-details-date-and-category-text-div">
+              <div className="latest-post-details-date-and-category-text-div">
                 <h6 className="latest-post-details-date"> {DateTime.fromISO(`${mostPopularMetaPost[0]?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
                 <img className="meta-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="Meta-Minds-Logo"></img>
                 <Link to={`/${mostPopularMetaPost[0]?.category}`} className="single-post-category-link"><h1 className="latest-post-details-category">{mostPopularMetaPost[0]?.category}</h1></Link>
-              </h4>
+              </div>
               <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="single-post-title-link"><p className="latest-post-details-title">{mostPopularMetaPost[0]?.title}</p></Link>
               <p className="latest-post-details-subtitle ">{mostPopularMetaPost[0]?.subtitle}</p>
             </div>
@@ -79,8 +77,8 @@ function Explore(props) {
         <div className='all-posts-mobile-div'>
           {allPosts.map((post) => {
             return (
-              <div className='each-single-mobile-post'>
-                <Link to={`/view-post/${post.id}`} key={post.id} className="each-single-mobile-post-image-link"><img className="each-single-mobile-post-image" src={post.image} alt={post.tile} /></Link>
+              <div key={post.id} className='each-single-mobile-post'>
+                <Link to={`/view-post/${post.id}`} className="each-single-mobile-post-image-link"><img className="each-single-mobile-post-image" src={post.image} alt={post.tile} /></Link>
                 <div className='each-single-mobile-post-details-div'>
                   <div className='each-single-mobile-post-details-date-and-category-div'>
                     <div className='each-single-mobile-post-details-date'>{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
@@ -92,28 +90,39 @@ function Explore(props) {
             )
           })}
         </div>
-
-
         <div className="all-posts-div">
           {allPosts.map((post) => {
             return (
               <div className="single-post" key={post.id}>
-                <Link to={`/view-post/${post.id}`} key={post.id} className="single-post-title-link"><img className="single-post-image" src={post.image} alt={post.tile} /></Link>
+                <Link to={`/view-post/${post.id}`} className="single-post-title-link"><img className="single-post-image" src={post.image} alt={post.tile} /></Link>
                 <div className="single-post-detail-div">
                   <div className="single-post-date-and-category-div">
                     <h6 className="single-post-date">{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
-                    <Link to={`/${post.category}`} className="single-post-category-link"><h4 class="single-post-category">{post.category}</h4></Link>
+                    <Link to={`/${post.category}`} className="single-post-category-link"><h4 className="single-post-category">{post.category}</h4></Link>
                   </div>
-                  <Link to={`/view-post/${post.id}`} key={post.id} className="single-post-title-link"><h4 className="single-post-title">{post.title}</h4></Link>
+                  <Link to={`/view-post/${post.id}`} className="single-post-title-link"><h4 className="single-post-title">{post.title}</h4></Link>
                 </div>
               </div>
             )
           })}
         </div>
         <div>
-          {arrayForHoldingPosts.length < posts.length - 1 ? (<button className="load-more-button" onClick={handleShowMorePosts}>Load More</button>) : (<button className="load-more-button-disabled" disabled='true'>No More</button>)}
+          {arrayForHoldingPosts.length < posts.length - 1 ? (<button className="load-more-button" onClick={handleShowMorePosts}>Load More</button>) : (<button className="load-more-button-disabled" disabled={true}>No More</button>)}
         </div>
         <Footer />
+      </div>
+      <div className='badscreen'>
+        <div className="modal-page"></div>
+        <div className="modal-div">
+          <div className="modal-title-div">
+            <div className="modal-title-text-warning" >We're Sorry</div>
+            <div className="modal-title-text">Meta Minds is not yet compatible with this screen size</div>
+            <div className="modal-title-text-view-read-me">View Readme for more details</div>
+          </div>
+          <div className="modal-decision-divs">
+            <a className="modal-cancel-buttons" href="https://github.com/Tyler-Washington888/Meta-Minds">Readme</a>
+          </div>
+        </div>
       </div>
     </div >
   )

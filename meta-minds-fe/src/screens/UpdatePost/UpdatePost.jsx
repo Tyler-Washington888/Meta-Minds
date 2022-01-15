@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { useParams, Redirect, useHistory } from 'react-router-dom';
-import { getPost, updatePost, deletePost } from '../../services/Posts.js';
+import { useParams, Redirect } from 'react-router-dom';
+import { getPost, updatePost } from '../../services/Posts.js';
 import { CKEditor } from '@ckeditor/ckeditor5-react'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import Footer from '../../components/Footer/Footer';
@@ -18,7 +18,6 @@ function UpdatePost(props) {
   const [subtitle, setSubtitle] = useState('')
   const [content, setContent] = useState('')
   const { post_id } = useParams();
-  const history = useHistory();
   const [isUpdated, setUpdated] = useState(false);
 
 
@@ -86,7 +85,7 @@ function UpdatePost(props) {
     )
     const file = await res.json();
     console.log(file.secure_url)
-    if (file.secure_url == undefined) {
+    if (file.secure_url === undefined) {
       setImage('');
     } else {
       setImage(file.secure_url);
@@ -95,17 +94,17 @@ function UpdatePost(props) {
   }
   return (
     <div>
-      <img class="update-post-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner-Image"></img>
+      <img className="update-post-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner"></img>
       {image !== "" ? (<img className="update-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div className="update-post-close-icon"></div>)}
-      <div class="update-post-page">
+      <div className="update-post-page">
         <form
           onSubmit={handleSubmit}
         >
-          <h1 class="update-post-header-text">Update Post</h1>
+          <h1 className="update-post-header-text">Update Post</h1>
           <div className="update-details-top-div">
             <div className="update-details-top-left">
-              <label class="update-post-label-and-input-div update-category-div">
-                <div class="update-post-input-text"></div>
+              <label className="update-post-label-and-input-div update-category-div">
+                <div className="update-post-input-text"></div>
                 {category === "Mana" ? (<select name="category" className="update-category" onChange={handleChange}>
                   <option value="Mana" selected="selected">{category}</option>
                   <option value="Meta">Meta</option>
@@ -129,10 +128,10 @@ function UpdatePost(props) {
                 </select>)))}
               </label>
               <br />
-              <label class="update-post-label-and-input-div title-div">
-                <div class="update-post-input-text"></div>
+              <label className="update-post-label-and-input-div title-div">
+                <div className="update-post-input-text"></div>
                 <input
-                  class="update-post-user-input-box"
+                  className="update-post-user-input-box"
                   type='text'
                   placeholder="Title"
                   value={title}
@@ -140,10 +139,10 @@ function UpdatePost(props) {
                   onChange={handleChange} />
               </label>
               <br />
-              <label class="update-post-label-and-input-div subtitle-div">
-                <div class="update-post-input-text"></div>
+              <label className="update-post-label-and-input-div subtitle-div">
+                <div className="update-post-input-text"></div>
                 <input
-                  class="update-post-user-input-box"
+                  className="update-post-user-input-box"
                   type='text'
                   value={subtitle}
                   placeholder="Subtitle"
@@ -152,7 +151,7 @@ function UpdatePost(props) {
               </label>
             </div>
             <div className="update-image-upload-div">
-              <label class="update-post-label-and-input-div update-image-div">
+              <label className="update-post-label-and-input-div update-image-div">
                 <div>
                   {loading ? (
                     <h5 className="update-loading-image-text">Loading Image...</h5>
@@ -161,8 +160,8 @@ function UpdatePost(props) {
                   ) : (<img className="update-uploaded-image" src={image} alt="new-post" />)
                   )}
                 </div>
-                <label for="file-inputs">
-                  {loading && image === '' || image !== '' ? (<div></div>) : (<img className="image-upload-icon-update" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" />)}
+                <label htmlFor="file-inputs">
+                  {((loading && image === '') || image !== '') ? (<div></div>) : (<img className="image-upload-icon-update" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" alt="upload icon" />)}
                 </label>
                 <input
                   id="file-inputs-update"
@@ -175,12 +174,12 @@ function UpdatePost(props) {
             </div>
           </div>
           <br />
-          <label class="update-post-label-and-input-div bottom">
-            <div class="update-post-input-text"></div>
+          <label className="update-post-label-and-input-div bottom">
+            <div className="update-post-input-text"></div>
             <CKEditor
               data={content}
               config={{ placeholder: "Content..." }}
-              class="ck-editor"
+              className="ck-editor"
               editor={ClassicEditor}
               onChange={(event, editor) => {
                 const data = editor.getData()
@@ -200,8 +199,8 @@ function UpdatePost(props) {
         <form class="create-post-form-update"
           onSubmit={handleSubmit}
         >
-          <h1 class="create-post-header-text">Update Post</h1>
-          <label class="create-post-label-and-input-div image-div">
+          <h1 className="create-post-header-text">Update Post</h1>
+          <label className="create-post-label-and-input-div image-div">
             <div>
               {loading ? (
                 <h5 className="update-loading-image-text">Loading Image...</h5>
@@ -211,7 +210,7 @@ function UpdatePost(props) {
               )}
             </div>
             <label for="file-inputs">
-              {loading && image === '' || image !== '' ? (<div></div>) : (<img className="image-upload-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" />)}
+              {((loading && image === '') || image !== '') ? (<div></div>) : (<img className="image-upload-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" alt="upload icon" />)}
             </label>
             <input
               id="file-inputs"
@@ -221,8 +220,8 @@ function UpdatePost(props) {
             />
           </label>
           <br />
-          <label class="create-post-label-and-input-div category-div">
-            <div class="create-post-input-text"></div>
+          <label className="create-post-label-and-input-div category-div">
+            <div className="create-post-input-text"></div>
             {category === "Mana" ? (<select name="category" className="category" onChange={handleChange}>
               <option value="Mana" selected="selected">{category}</option>
               <option value="Meta">Meta</option>
@@ -246,10 +245,10 @@ function UpdatePost(props) {
             </select>)))}
           </label>
           <br />
-          <label class="create-post-label-and-input-div">
-            <div class="create-post-input-text"></div>
+          <label className="create-post-label-and-input-div">
+            <div className="create-post-input-text"></div>
             <input
-              class="create-post-user-input-box"
+              className="create-post-user-input-box"
               type='text'
               placeholder="Title"
               value={title}
@@ -257,22 +256,22 @@ function UpdatePost(props) {
               onChange={handleChange} />
           </label>
           <br />
-          <label class="create-post-label-and-input-div ">
-            <div class="create-post-input-text"></div>
+          <label className="create-post-label-and-input-div ">
+            <div className="create-post-input-text"></div>
             <input
-              class="create-post-user-input-box"
+              className="create-post-user-input-box"
               type='text'
               value={subtitle}
               placeholder="Subtitle"
               name={'subtitle'}
               onChange={handleChange} />
           </label>
-          <label class="create-post-label-and-input-div bottom">
-            <div class="create-post-input-text"></div>
+          <label className="create-post-label-and-input-div bottom">
+            <div className="create-post-input-text"></div>
             <CKEditor
               data={content}
               config={{ placeholder: "Content..." }}
-              class="ck-editor"
+              className="ck-editor"
               editor={ClassicEditor}
               onChange={(event, editor) => {
                 const data = editor.getData()
@@ -287,11 +286,21 @@ function UpdatePost(props) {
         </form>
         <Footer />
       </div>
+      <div className='badscreen'>
+        <div className="modal-page"></div>
+        <div className="modal-div">
+          <div className="modal-title-div">
+            <div className="modal-title-text-warning" >We're Sorry</div>
+            <div className="modal-title-text">Meta Minds is not yet compatible with this screen size</div>
+            <div className="modal-title-text-view-read-me">View Readme for more details</div>
+          </div>
+          <div className="modal-decision-divs">
+            <a className="modal-cancel-buttons" href="https://github.com/Tyler-Washington888/Meta-Minds">Readme</a>
+          </div>
+        </div>
+      </div>
     </div >
   );
-
-
 }
-
 
 export default UpdatePost;

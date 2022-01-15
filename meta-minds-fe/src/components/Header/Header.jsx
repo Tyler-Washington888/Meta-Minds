@@ -225,7 +225,7 @@ function Header(props) {
             </div>
           </div>
         ) : <div></div>}
-        {mobileSearch === true ? (
+        {mobileSearch == true ? (
           <div className='mobile-search-div'>
             <div className="mobile-search-top-div">
               <img className="search-bar-icon" src={SearchBar} alt="search-bar-icon"></img>
@@ -239,7 +239,7 @@ function Header(props) {
                 onChange={handleFilterMobile}
               />
             </div>
-            {wordsEntered === 0 ? (
+            {wordsEntered == 0 ? (
               <div className="mobile-search-bar-default-result">
                 <img className="meta-logo-default-result" src={MetaLogo} alt="meta-logo-default-result"></img>
               </div>) :

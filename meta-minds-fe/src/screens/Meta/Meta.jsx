@@ -56,6 +56,19 @@ function Meta(props) {
         </div>
         <Footer />
       </div>
+      <div className='badscreen'>
+        <div className="modal-page"></div>
+        <div className="modal-div">
+          <div className="modal-title-div">
+            <div className="modal-title-text-warning" >We're Sorry</div>
+            <div className="modal-title-text">Meta Minds is not yet compatible with this screen size</div>
+            <div className="modal-title-text-view-read-me">View Readme for more details</div>
+          </div>
+          <div className="modal-decision-divs">
+            <a className="modal-cancel-buttons" href="https://github.com/Tyler-Washington888/Meta-Minds">Readme</a>
+          </div>
+        </div>
+      </div>
     </div >
   )
 }

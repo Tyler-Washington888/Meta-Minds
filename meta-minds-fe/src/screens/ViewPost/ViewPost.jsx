@@ -1,6 +1,6 @@
 import Footer from '../../components/Footer/Footer';
 import React, { useEffect, useState } from 'react'
-import { useParams, Link, useHistory, Redirect } from 'react-router-dom'
+import { useParams, Link, useHistory } from 'react-router-dom'
 import { getPost, deletePost } from '../../services/Posts';
 import { getUsers } from "../../services/Users";
 import ReactHtmlParser from 'react-html-parser';
@@ -114,7 +114,7 @@ export default function ViewPost(props) {
             <div className="view-post-created-name">{user[0]?.username}</div>
           </div>
           {isOpen && (
-            (currentUser && currentUser.id === post.user_id ? (
+            (currentUser && currentUser.id == post.user_id ? (
               <div className="view-post-show-options-dropdown">
                 <Link className="edit-post-div-link" to={`/update-post/${post?.id}`} key={post?.id}><div className="edit-post-div">
                   <img className="edit-post-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638767523/Meta-Minds/icons8-edit-30_c4n4wb.png"></img>
@@ -200,6 +200,19 @@ export default function ViewPost(props) {
           </div>
         </div>
         <Footer />
+      </div>
+      <div className='badscreen'>
+        <div className="modal-page"></div>
+        <div className="modal-div">
+          <div className="modal-title-div">
+            <div className="modal-title-text-warning" >We're Sorry</div>
+            <div className="modal-title-text">Meta Minds is not yet compatible with this screen size</div>
+            <div className="modal-title-text-view-read-me">View Readme for more details</div>
+          </div>
+          <div className="modal-decision-divs">
+            <a className="modal-cancel-buttons" href="https://github.com/Tyler-Washington888/Meta-Minds">Readme</a>
+          </div>
+        </div>
       </div>
     </div >
   )
