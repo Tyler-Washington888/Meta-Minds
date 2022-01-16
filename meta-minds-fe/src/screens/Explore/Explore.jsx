@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import { Link } from "react-router-dom";
 import "./Explore.css";
-import ExploreImage from "/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/assets/images/ExploreImage.jpg"
+import ExploreImage from "src/assets/images/ExploreImage.jpg"
 const postsPerLoad = 6;
 let arrayForHoldingPosts = [];
 
