@@ -2,11 +2,6 @@ import React from 'react'
 import "./Header.css"
 import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import HamburgerMenu from "/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/assets/icons/HamburgerMenu.png"
-import MetaLogo from "/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/assets/icons/MetaLogo.png"
-import SearchBar from "/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/assets/icons/SearchBar.png"
-import Xbox from "/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/assets/icons/Xbox.png"
-import X from "/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/assets/icons/X.png"
 
 function Header(props) {
   const { currentUser, handleLogout, posts, openHamburger, setOpenHamburger } = props
@@ -127,7 +122,7 @@ function Header(props) {
           ) : (wordEntered.length > 0 && newFilter.length === 0 ? (
             <div className="unsuccessful-search-results">
               <div className="unsuccessful-search-results-text-div">
-                <img className="unsuccessful-search-result-icon" src={SearchBar} alt="unsuccessful search"></img>
+                <img className="unsuccessful-search-result-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642296024/Meta-Minds/icons8-search-50_uspsar.png" alt="unsuccessful search"></img>
                 <h2 className="sorry-text">Sorry, we couldn't find any matches</h2>
                 <h3 className="try-again-text">Try searching for a different keyword</h3>
               </div>
@@ -167,17 +162,17 @@ function Header(props) {
 
       {/* mobile version */}
       <div className="mobile-content-div">
-        <img className="hamburger-menu" onClick={() => setOpenHamburger(!openHamburger)} src={HamburgerMenu} alt="hamburger-menu"></img>
+        <img className="hamburger-menu" onClick={() => setOpenHamburger(!openHamburger)} src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642295739/Meta-Minds/icons8-menu-50_iyctkp.png" alt="hamburger-menu"></img>
         <Link className="mobile-logo-div-link" to="/"><div className="mobile-logo-div">
-          <img className="meta-logo-person" src={MetaLogo} alt="meta-logo-person"></img>
+          <img className="meta-logo-person" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="meta-logo-person"></img>
           <div className="meta-minds-text" alt="meta-minds-text">Meta Minds</div>
         </div></Link>
         {openHamburger === true ? (
           <div className="mobile-hamburger-div">
             <div className='exit-out-and-meta-logo-div'>
-              <img className="exit-out-icon" src={X} onClick={() => setOpenHamburger(!openHamburger)} alt="exit-out-icon"></img>
+              <img className="exit-out-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642296272/Meta-Minds/icons8-x-50_qb2ews.png" onClick={() => setOpenHamburger(!openHamburger)} alt="exit-out-icon"></img>
               <div className="ham-mobile-logo-div">
-                <img className="ham-meta-logo-person" src={MetaLogo} alt="meta-logo-person"></img>
+                <img className="ham-meta-logo-person" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="meta-logo-person"></img>
                 <div className="ham-meta-minds-text" alt="meta-minds-text">Meta Minds</div>
               </div>
             </div>
@@ -228,8 +223,8 @@ function Header(props) {
         {mobileSearch == true ? (
           <div className='mobile-search-div'>
             <div className="mobile-search-top-div">
-              <img className="search-bar-icon" src={SearchBar} alt="search-bar-icon"></img>
-              <img onClick={clearSearch} className="close-search-bar-icon" src={Xbox} alt="close-search-bar-icon"></img>
+              <img className="search-bar-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642296024/Meta-Minds/icons8-search-50_uspsar.png" alt="search-bar-icon"></img>
+              <img onClick={clearSearch} className="close-search-bar-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637356989/Meta-Minds/icons8-xbox-x-30_b6ugfl.png" alt="close-search-bar-icon"></img>
               <div className='mobile-search-input-div'></div>
               <input
                 className="mobile-search-input"
@@ -241,7 +236,7 @@ function Header(props) {
             </div>
             {wordsEntered == 0 ? (
               <div className="mobile-search-bar-default-result">
-                <img className="meta-logo-default-result" src={MetaLogo} alt="meta-logo-default-result"></img>
+                <img className="meta-logo-default-result" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="meta-logo-default-result"></img>
               </div>) :
               (filteredDataMobile.length !== 0 && newFilterMobile !== [] ? (
                 <div className="mobile-search-bar-successful-result">
@@ -259,7 +254,7 @@ function Header(props) {
               ) : (wordsEntered.length > 0 && newFilterMobile.length === 0 ? (
                 <div className="mobile-search-bar-unsuccessful-result">
                   <div className="mobile-unsuccessful-search-results-text-divs">
-                    <img className="mobile-unsuccessful-search-result-icon" src={SearchBar} alt="unsuccessful search"></img>
+                    <img className="mobile-unsuccessful-search-result-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642296024/Meta-Minds/icons8-search-50_uspsar.png" alt="unsuccessful search"></img>
                     <h2 className="mobile-sorry-text">Sorry, we couldn't find any matches</h2>
                     <h3 className="mobile-try-again-text">Try searching for a different keyword</h3>
                   </div>
@@ -269,7 +264,7 @@ function Header(props) {
               )))}
           </div>
         )
-          : (<img onClick={() => setMobileSearch(!mobileSearch)} className="search-bar-icon-mobile" src={SearchBar} alt="search-bar-icon-mobile"></img>)}
+          : (<img onClick={() => setMobileSearch(!mobileSearch)} className="search-bar-icon-mobile" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642296024/Meta-Minds/icons8-search-50_uspsar.png" alt="search-bar-icon-mobile"></img>)}
       </div>
       {
         mobileSearch === true || openHamburger === true ? (
