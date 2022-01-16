@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import "./Crypto.css";
-import CryptoImage from "/Users/tylerwashington/new-work/Meta-Minds/meta-minds-fe/src/assets/images/CryptoImage.jpg"
 import { Link } from "react-router-dom";
 
 function Crypto(props) {
@@ -22,7 +21,7 @@ function Crypto(props) {
 
   return (
     <div>
-      <img className="crypto-banner-image" src={CryptoImage} alt="crypto-banner-image"></img>
+      <img className="crypto-banner-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637134484/Meta-Minds/axie_infinity_z8nqbw.jpg" alt="crypto-banner-image"></img>
       <div className="crypto-all-posts-div">
         <div className="crypto-all-posts-outer-div">
           {allPosts.map(post => {

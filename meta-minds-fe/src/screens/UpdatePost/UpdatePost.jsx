@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Redirect } from 'react-router-dom';
-import { getPost, updatePost } from '../../Services/Posts.js';
+import { getPost, updatePost } from '../../j/Posts.js';
 import { CKEditor } from '@ckeditor/ckeditor5-react'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import Footer from '../../components/Footer/Footer';

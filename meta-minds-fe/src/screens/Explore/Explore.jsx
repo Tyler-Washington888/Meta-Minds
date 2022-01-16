@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import { Link } from "react-router-dom";
 import "./Explore.css";
-import ExploreImage from "src/assets/images/ExploreImage.jpg"
 const postsPerLoad = 6;
 let arrayForHoldingPosts = [];
 
@@ -44,7 +43,7 @@ function Explore(props) {
 
   return (
     <div>
-      <img className="explore-image" src={ExploreImage} alt="banner-mage"></img>
+      <img className="explore-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636154827/Meta-Minds/meta_vmqfci.jpg" alt="banner-mage"></img>
       <div className="latest-and-all-posts-main-div">
 
         <div className='mobile-latest-post-div'>

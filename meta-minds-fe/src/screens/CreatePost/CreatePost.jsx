@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Redirect } from 'react-router-dom';
-import { createPost } from '../../Services/Posts.js'
+import { createPost } from '../../j/Posts.js'
 import { CKEditor } from '@ckeditor/ckeditor5-react'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import Footer from '../../components/Footer/Footer';
