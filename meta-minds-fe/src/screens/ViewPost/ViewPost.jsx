@@ -1,8 +1,8 @@
 import Footer from '../../components/Footer/Footer';
 import React, { useEffect, useState } from 'react'
 import { useParams, Link, useHistory } from 'react-router-dom'
-import { getPost, deletePost } from '../../services/Posts';
-import { getUsers } from "../../services/Users";
+import { getPost, deletePost } from '../../Services/Posts';
+import { getUsers } from "../../Services/Users";
 import ReactHtmlParser from 'react-html-parser';
 import "./ViewPost.css";
 

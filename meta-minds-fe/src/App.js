@@ -20,7 +20,7 @@ import {
   registerUser,
   removeToken,
   verifyUser,
-} from './services/auth';
+} from './Services/auth';
 import ScrollToTop from "./components/ScrollToTop.jsx";
 function App() {
   const [posts, setPosts] = useState([])
