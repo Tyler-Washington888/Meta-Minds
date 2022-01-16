@@ -13,8 +13,8 @@ import UserPosts from './screens/UserPosts/UserPosts.jsx';
 import UpdatePost from './screens/UpdatePost/UpdatePost.jsx';
 import CreatePost from './screens/CreatePost/CreatePost.jsx';
 import ViewPost from './screens/ViewPost/ViewPost.jsx';
-import { getPosts } from "./services/Posts";
-import { getUsers } from "./services/Users";
+import { getPosts } from "./Services/Posts";
+import { getUsers } from "./Services/Users";
 import {
   loginUser,
   registerUser,
