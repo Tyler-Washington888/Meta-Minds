@@ -13,14 +13,14 @@ import UserPosts from './screens/UserPosts/UserPosts.jsx';
 import UpdatePost from './screens/UpdatePost/UpdatePost.jsx';
 import CreatePost from './screens/CreatePost/CreatePost.jsx';
 import ViewPost from './screens/ViewPost/ViewPost.jsx';
-import { getPosts } from "./services/Posts";
-import { getUsers } from "./services/Users";
+import { getPosts } from "./j/Posts";
+import { getUsers } from "./j/Users";
 import {
   loginUser,
   registerUser,
   removeToken,
   verifyUser,
-} from './services/auth';
+} from './j/auth';
 import ScrollToTop from "./components/ScrollToTop.jsx";
 function App() {
   const [posts, setPosts] = useState([])
