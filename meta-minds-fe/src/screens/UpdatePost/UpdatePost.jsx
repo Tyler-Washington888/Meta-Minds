@@ -196,7 +196,7 @@ function UpdatePost(props) {
       </div>
       <div className='update-posts-mobile'>
         {image !== "" ? (<img className="updates-post-close-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div className="updates-post-close-icon"></div>)}
-        <form class="create-post-form-update"
+        <form className="create-post-form-update"
           onSubmit={handleSubmit}
         >
           <h1 className="create-post-header-text">Update Post</h1>
@@ -209,7 +209,7 @@ function UpdatePost(props) {
               ) : (<img className="uploaded-image-update" src={image} alt="new-post" />)
               )}
             </div>
-            <label for="file-inputs">
+            <label htmlFor="file-inputs">
               {((loading && image === '') || image !== '') ? (<div></div>) : (<img className="image-upload-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" alt="upload icon" />)}
             </label>
             <input
@@ -280,7 +280,7 @@ function UpdatePost(props) {
             />
           </label>
           {image.length === 0 || category === "" || title.length === 0 || subtitle.length === 0 || content.length === 0 ? (
-            <button className="submit-button-disabled" disabled='true'>Update</button>) : (
+            <button className="submit-button-disabled" disabled={true} >Update</button>) : (
             <button className="submit-button">Update</button>
           )}
         </form>

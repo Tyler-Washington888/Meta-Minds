@@ -161,14 +161,14 @@ export default function ViewPost(props) {
           )
           }
         </div>
-        <p className="view-post-content">{ReactHtmlParser(post?.content)}</p>
+        <div className="view-post-content">{ReactHtmlParser(post?.content)}</div>
         <div className="similar-posts-div">
           <div className="similar-posts-title">Similar Posts</div>
           <div className="each-similar-post-div">
             {firstTwoPosts.map((simPost) => {
               return (
-                <div className="each-similar-post">
-                  <Link to={`/view-post/${simPost?.id}`} key={simPost?.id} className="single-post-title-link"><img className="each-similar-post-image" src={simPost?.image} alt="similar-post"></img></Link>
+                <div className="each-similar-post" key={simPost?.id}>
+                  <Link to={`/view-post/${simPost?.id}`} className="single-post-title-link"><img className="each-similar-post-image" src={simPost?.image} alt="similar-post"></img></Link>
                   <div className="each-similar-post-details-div">
                     <div className="each-similar-post-details-div-text">
                       <div className="each-similar-post-cretated-at-and-category-div">
@@ -185,8 +185,8 @@ export default function ViewPost(props) {
           <div className='sim-posts-mobile-div'>
             {firstTwoPosts.map((simPost) => {
               return (
-                <div className='vp-each-single-mobile-post'>
-                  <Link to={`/view-post/${simPost.id}`} key={simPost.id} className="vp-each-single-mobile-post-image-link"><img className="vp-each-single-mobile-post-image" src={simPost.image} alt={simPost.title} /></Link>
+                <div className='vp-each-single-mobile-post' key={simPost.id}>
+                  <Link to={`/view-post/${simPost.id}`} className="vp-each-single-mobile-post-image-link"><img className="vp-each-single-mobile-post-image" src={simPost.image} alt={simPost.title} /></Link>
                   <div className='vp-each-single-mobile-post-details-div'>
                     <div className='vp-each-single-mobile-post-details-date-and-category-div'>
                       <div className='vp-each-single-mobile-post-details-date'>{DateTime.fromISO(`${simPost?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>

@@ -183,7 +183,7 @@ function CreatePosts(props) {
               ) : (<img className="uploaded-image-mobile" src={image} alt="new-post" />)
               )}
             </div>
-            <label for="file-inputs">
+            <label htmlFor="file-inputs">
               {((loading && image === '') || image !== '') ? (<div></div>) : (<img className="image-upload-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" alt='upload-icon' />)}
             </label>
             <input
