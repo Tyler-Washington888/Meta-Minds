@@ -58,7 +58,7 @@
 
 ### Client (Front End)
 
-### Wireframes
+#### Wireframes
 
 [Link to Wireframes](https://www.figma.com/file/CT10ITn6qskLHAbIXvlNJA/Meta-Minds-team-library?node-id=0%3A1)
 
