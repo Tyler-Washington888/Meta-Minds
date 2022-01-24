@@ -1277,6 +1277,7 @@ border-style: 5px ridge;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
     height: 100px;
     width: 100%;
@@ -1299,7 +1300,7 @@ border-style: 5px ridge;
     align-items: center;
     z-index: 1000;
     position: relative;
-    bottom: 5px;
+    bottom: 0px;
   }
   .hamburger-menu{
     margin-left: 10px;
@@ -1316,7 +1317,6 @@ border-style: 5px ridge;
     flex-direction: row;
     max-height: 100%;
     position: relative;
-    top: 2px;
     left: 6px;
     z-index: 1001;
   }
