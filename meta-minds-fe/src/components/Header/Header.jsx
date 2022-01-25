@@ -178,43 +178,43 @@ function Header(props) {
             </div>
             <div className='hamburger-details-div'>
               <div className='categories-div'>
-                <h3>Categories</h3>
+                <h3 className='detail-titles'>Categories</h3>
                 <div className='category-links'>
                   <NavLink exact to="/" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    border: '1px solid '
+                    border: '1px solid ', borderRadius: '5px'
                   }} className="nav-Links"><div className='links'>Latest</div></NavLink>
                   <NavLink to="/meta" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    border: '1px solid '
+                    border: '1px solid ', borderRadius: '5px'
                   }} className="nav-Links"><div className='links'>Meta</div></NavLink>
                   <NavLink to="/mana" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    border: '1px solid '
+                    border: '1px solid ', borderRadius: '5px'
                   }} className="nav-Links"><div className='links'>Mana</div></NavLink>
                   <NavLink to="/crypto" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    border: '1px solid '
+                    border: '1px solid ', borderRadius: '5px'
                   }} className="nav-Links"><div className='links'>Crypto</div></NavLink>
                   <NavLink to="/film" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    border: '1px solid '
+                    border: '1px solid ', borderRadius: '5px'
                   }} className="nav-Links"><div className='links'>Film</div></NavLink>
                 </div>
               </div>
-              <div className='personal-div'>
+              <div className='creator-divs'>
                 <h3>Personal</h3>
-                {currentUser ? (<div className='personal-links'>
+                {currentUser ? (<div className='creator-links'>
                   <NavLink to={`/user-posts/${currentUser?.id}`} onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    color: "#0ACCE5"
-                  }} className="nav-Links"><div className='links'>User Posts</div></NavLink>
-                  <Link exact to="/" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Links"><div onClick={handleLogout} className='links'>Logout</div></Link>
+                    border: '1px solid ', borderRadius: '5px'
+                  }} className="nav-Linkss links">User Posts</NavLink>
+                  <Link exact to="/" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Linkss links" onClick={handleLogout}>Logout</Link>
                 </div>) : (
                   <div className='personal-links'>
-                    <Link to="/sign-in" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Links links">Sign In</Link>
-                    <Link to="/sign-up" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Links links">Sing Up</Link>
+                    <Link to="/sign-in" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Linkss links">Sign In</Link>
+                    <Link to="/sign-up" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Linkss links">Sing Up</Link>
                   </div>)}
               </div>
               <div className='creator-div'>
-                <h3>Creator</h3>
+                <h3 >Creator</h3>
                 <div className='creator-links'>
-                  <a href=" https://www.linkedin.com/in/tyler-washington-4a8429176" className='nav-Links links'>LinkedIn</a>
-                  <a href="https://github.com/Tyler-Washington888" className=' nav-Links links' >Github</a>
+                  <a href=" https://www.linkedin.com/in/tyler-washington-4a8429176" className='nav-Linkss links'>LinkedIn</a>
+                  <a href="https://github.com/Tyler-Washington888" className=' nav-Linkss links' >Github</a>
                 </div>
               </div>
             </div>
