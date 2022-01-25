@@ -1345,6 +1345,7 @@ border-style: 5px ridge;
     z-index: 2000;
     width: 375px;
     height: 70px;
+    background-color: rgb(255, 255, 255);
   }
   .exit-out-icon{
     padding-left: 10px;
@@ -1386,6 +1387,7 @@ border-style: 5px ridge;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start ;
+    background-color: rgb(255, 255, 255);
   }
   .categories-div{
     display: flex;

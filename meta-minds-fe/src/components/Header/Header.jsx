@@ -181,19 +181,19 @@ function Header(props) {
                 <h3>Categories</h3>
                 <div className='category-links'>
                   <NavLink exact to="/" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    color: "white"
+                    color: "#0BC9E3"
                   }} className="nav-Links"><div className='links'>Latest</div></NavLink>
                   <NavLink to="/meta" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    color: "white"
+                    color: "#0BC9E3"
                   }} className="nav-Links"><div className='links'>Meta</div></NavLink>
                   <NavLink to="/mana" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    color: "white"
+                    color: "#0BC9E3"
                   }} className="nav-Links"><div className='links'>Mana</div></NavLink>
                   <NavLink to="/crypto" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    color: "white"
+                    color: "#0BC9E3"
                   }} className="nav-Links"><div className='links'>Crypto</div></NavLink>
                   <NavLink to="/film" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    color: "white"
+                    color: "#0BC9E3"
                   }} className="nav-Links"><div className='links'>Film</div></NavLink>
                 </div>
               </div>
@@ -266,7 +266,7 @@ function Header(props) {
         )
           : (<img onClick={() => setMobileSearch(!mobileSearch)} className="search-bar-icon-mobile" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642296024/Meta-Minds/icons8-search-50_uspsar.png" alt="search-bar-icon-mobile"></img>)}
         {
-          mobileSearch == true || openHamburger == true ? (
+          mobileSearch != false || openHamburger != false ? (
             <div className="page-overlay-mobile-div"></div>
           ) : (<div></div>)
         }
