@@ -167,7 +167,7 @@ function Header(props) {
           <img className="meta-logo-person" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="meta-logo-person"></img>
           <div className="meta-minds-text" alt="meta-minds-text">Meta Minds</div>
         </div></Link>
-        {openHamburger === true ? (
+        {openHamburger == true ? (
           <div className="mobile-hamburger-div">
             <div className='exit-out-and-meta-logo-div'>
               <img className="exit-out-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642296272/Meta-Minds/icons8-x-50_qb2ews.png" onClick={() => setOpenHamburger(!openHamburger)} alt="exit-out-icon"></img>
@@ -265,13 +265,13 @@ function Header(props) {
           </div>
         )
           : (<img onClick={() => setMobileSearch(!mobileSearch)} className="search-bar-icon-mobile" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642296024/Meta-Minds/icons8-search-50_uspsar.png" alt="search-bar-icon-mobile"></img>)}
+        {
+          mobileSearch == true || openHamburger == true ? (
+            <div className="page-overlay-mobile-div"></div>
+          ) : (<div></div>)
+        }
       </div>
-      {
-        mobileSearch == true || openHamburger == true ? (
-          <div className="page-overlay-mobile-div"></div>
-        ) : (<div></div>)
-      }
-    </div >
+    </div>
   )
 }
 export default Header;
