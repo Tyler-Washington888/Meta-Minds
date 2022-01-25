@@ -1282,7 +1282,7 @@ border-style: 5px ridge;
     height: 100px;
     width: 100%;
     margin-bottom: 40px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px 0 #000000;
     position: sticky;
     top: 0;
     z-index: 3000;
@@ -1293,7 +1293,6 @@ border-style: 5px ridge;
     color:black;
   }
   .mobile-content-div{
-    background-color: chocolate;
     width: 100%;
     display:flex;
     flex-direction: row;
@@ -1338,34 +1337,19 @@ border-style: 5px ridge;
     margin-left: 0px;
     z-index: 1001;
   }
-  .mobile-hamburger-div{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    overflow: hidden;
-    overflow-y: auto;
-   border-radius: 12px;
-    height: 300px;
-    width: 95%;
-    z-index: 1050;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-  }
   .exit-out-and-meta-logo-div{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     z-index: 2000;
-    width: 100%;
+    width: 375px;
     height: 70px;
   }
   .exit-out-icon{
-    padding-left: 17px;
+    padding-left: 10px;
     position: relative;
-    top: 5px;
+    top: 16px;
     height: 30px;
     width: 30px;
   }
@@ -1374,8 +1358,8 @@ border-style: 5px ridge;
     flex-direction: row;
     max-height: 100%;
     position: relative;
-    top: -8px;
-    left: 17px;
+    top: 5px;
+    left: 31px;
     z-index: 1001;
   }
   .ham-meta-logo-person{
@@ -1406,6 +1390,8 @@ border-style: 5px ridge;
   .categories-div{
     display: flex;
     flex-direction: column;
+    margin-left: -8px;
+    margin-right: 20px;
   }
   .category-links{
     display: flex;
@@ -1427,6 +1413,8 @@ border-style: 5px ridge;
   .personal-div{
     display: flex;
     flex-direction: column;
+    margin-left: -20px;
+    margin-right: 20px;
   }
   .personal-links{
     display: flex;
@@ -1450,17 +1438,19 @@ border-style: 5px ridge;
   .mobile-hamburger-div{
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     overflow: hidden;
     overflow-y: auto;
    border-radius: 12px;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
     height: 300px;
-    width: 95%;
+    width: 100%;
     z-index: 1050;
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
   }
   
   .mobile-search-div{
