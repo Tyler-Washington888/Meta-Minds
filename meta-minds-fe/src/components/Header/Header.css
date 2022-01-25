@@ -1345,7 +1345,9 @@ border-style: 5px ridge;
     z-index: 2000;
     width: 375px;
     height: 70px;
-    background-color: rgb(255, 255, 255);
+    padding-bottom: 30px;
+    background-color: #03F2F7;
+    box-shadow: 0 0px 4px 0 #000000;
   }
   .exit-out-icon{
     padding-left: 10px;
@@ -1360,7 +1362,7 @@ border-style: 5px ridge;
     max-height: 100%;
     position: relative;
     top: 5px;
-    left: 31px;
+    left: 25px;
     z-index: 1001;
   }
   .ham-meta-logo-person{
@@ -1387,7 +1389,8 @@ border-style: 5px ridge;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start ;
-    background-color: rgb(255, 255, 255);
+    background-color:  #03F2F7;
+    box-shadow: 0 4px 8px 0 #000000;
   }
   .categories-div{
     display: flex;
@@ -1447,7 +1450,7 @@ border-style: 5px ridge;
    border-radius: 12px;
    border-top-left-radius: 0;
    border-top-right-radius: 0;
-    height: 300px;
+    height: 330px;
     width: 100%;
     z-index: 1050;
     position: fixed;
