@@ -19,7 +19,8 @@ function Explore(props) {
     const latestMetaPost = metaPosts.sort((a, b) => {
       return b.id - a.id
     })
-    setMostPopularMetaPost(latestMetaPost[0])
+    const firstLatestMetaPost = latestMetaPost[0]
+    setMostPopularMetaPost(firstLatestMetaPost)
     arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerLoad);
   }, [posts])
