@@ -75,8 +75,6 @@ function CreatePosts(props) {
   };
   if (isUpdated) {
     return <Redirect to={`/`} />;
-
-
   }
 
   return (
