@@ -9,17 +9,17 @@ function Explore(props) {
   const { posts } = props;
   const [allPosts, setAllPosts] = useState([]);
   const [nextPosts, setNextPosts] = useState(6);
+  const [mostPopularMetaPost, setMostPopularMetaPost] = useState('')
   const { DateTime } = require("luxon");
 
-
-  const metaPosts = posts.filter((post) => {
-    return post.category === 'Meta'
-  })
-  const mostPopularMetaPost = metaPosts.filter((post) => {
-    return post.id === 1075
-  })
-
   useEffect(() => {
+    const metaPosts = posts.filter((post) => {
+      return post.category === 'Meta'
+    })
+    const latestMetaPost = metaPosts.sort((a, b) => {
+      return b.id - a.id
+    })
+    setMostPopularMetaPost(latestMetaPost[0])
     arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerLoad);
   }, [posts])
@@ -45,30 +45,29 @@ function Explore(props) {
     <div>
       <img className="explore-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636154827/Meta-Minds/meta_vmqfci.jpg" alt="banner-mage"></img>
       <div className="latest-and-all-posts-main-div">
-
         <div className='mobile-latest-post-div'>
-          <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="moble-latest-post-link"><img className="moble-latest-post-image" src={mostPopularMetaPost[0]?.image} alt={mostPopularMetaPost[0]?.title} ></img></Link>
+          <Link to={`/view-post/${mostPopularMetaPost?.id}`} key={mostPopularMetaPost?.id} className="moble-latest-post-link"><img className="moble-latest-post-image" src={mostPopularMetaPost?.image} alt={mostPopularMetaPost?.title} ></img></Link>
           <div className='mobile-latest-post-details-div'>
             <div className='mobile-latest-post-date-and-category-div'>
-              <div className='mobile-latest-post-date'>{DateTime.fromISO(`${mostPopularMetaPost[0]?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
-              <Link to={`/${mostPopularMetaPost[0]?.category}`} className="single-post-category-link-mobile"><div className='mobile-latest-post-category'>{mostPopularMetaPost[0]?.category}</div></Link>
+              <div className='mobile-latest-post-date'>{DateTime.fromISO(`${mostPopularMetaPost?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
+              <Link to={`/${mostPopularMetaPost?.category}`} className="single-post-category-link-mobile"><div className='mobile-latest-post-category'>{mostPopularMetaPost?.category}</div></Link>
             </div>
-            <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="single-post-title-link-mobile"><div className='mobile-latest-post-title'>{mostPopularMetaPost[0]?.title}</div></Link>
+            <Link to={`/view-post/${mostPopularMetaPost?.id}`} key={mostPopularMetaPost?.id} className="single-post-title-link-mobile"><div className='mobile-latest-post-title'>{mostPopularMetaPost?.title}</div></Link>
           </div>
         </div>
 
         <div className="latest-post-div">
-          <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="single-post-title-link-image"><img className="latest-posts-image" src={mostPopularMetaPost[0]?.image} alt={mostPopularMetaPost[0]?.title} ></img></Link>
+          <Link to={`/view-post/${mostPopularMetaPost?.id}`} key={mostPopularMetaPost?.id} className="single-post-title-link-image"><img className="latest-posts-image" src={mostPopularMetaPost?.image} alt={mostPopularMetaPost?.title} ></img></Link>
           <div className="latest-post-details-div">
             <div className="latest-post-details-background-div"></div>
             <div className="latest-post-details-text-div">
               <div className="latest-post-details-date-and-category-text-div">
-                <h6 className="latest-post-details-date"> {DateTime.fromISO(`${mostPopularMetaPost[0]?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
+                <h6 className="latest-post-details-date"> {DateTime.fromISO(`${mostPopularMetaPost?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
                 <img className="meta-logo" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="Meta-Minds-Logo"></img>
-                <Link to={`/${mostPopularMetaPost[0]?.category}`} className="single-post-category-link"><h1 className="latest-post-details-category">{mostPopularMetaPost[0]?.category}</h1></Link>
+                <Link to={`/${mostPopularMetaPost?.category}`} className="single-post-category-link"><h1 className="latest-post-details-category">{mostPopularMetaPost?.category}</h1></Link>
               </div>
-              <Link to={`/view-post/${mostPopularMetaPost[0]?.id}`} key={mostPopularMetaPost[0]?.id} className="single-post-title-link"><p className="latest-post-details-title">{mostPopularMetaPost[0]?.title}</p></Link>
-              <p className="latest-post-details-subtitle ">{mostPopularMetaPost[0]?.subtitle}</p>
+              <Link to={`/view-post/${mostPopularMetaPost?.id}`} key={mostPopularMetaPost?.id} className="single-post-title-link"><p className="latest-post-details-title">{mostPopularMetaPost?.title}</p></Link>
+              <p className="latest-post-details-subtitle ">{mostPopularMetaPost?.subtitle}</p>
             </div>
           </div>
         </div>
