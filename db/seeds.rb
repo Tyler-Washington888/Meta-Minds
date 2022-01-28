@@ -199,7 +199,7 @@ Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637123958/Meta-Minds/ready_player_one_eol12i.jpg',
   category: 'Film',
   title: 'The Movie That Explains It All',
-  subtitle: 'Ready Player One is a must watch for metaverse newcomers',
+  subtitle: 'Why Ready Player One is a must watch for metaverse newbies',
   content: 'Set in 2045, Ready Player One focuses on the virtual platform of OASIS. While the physical world continues
   to diminish into ruin, an unlikely hero, Wade Watts, is determined in the treasure hunt of OASIS searching for the fortune
   left behind by the deceased creator of OASIS, James Halliday.
@@ -216,7 +216,7 @@ Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637099605/Meta-Minds/roll_whok3u.jpg',
   category: 'Mana',
   title: ' Mining in the WonderZone',
-  subtitle: 'Mining and crafting in the metaverse',
+  subtitle: "An overview of Decentraland's popular theme park",
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
