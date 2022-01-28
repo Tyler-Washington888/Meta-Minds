@@ -76,32 +76,32 @@ function Explore(props) {
         </div>
 
         <div className='all-posts-mobile-div'>
-          {allPosts.map((post) => {
+          {allPosts?.map((post) => {
             return (
-              <div key={post.id} className='each-single-mobile-post'>
-                <Link to={`/view-post/${post.id}`} className="each-single-mobile-post-image-link"><img className="each-single-mobile-post-image" src={post.image} alt={post.tile} /></Link>
+              <div key={post?.id} className='each-single-mobile-post'>
+                <Link to={`/view-post/${post?.id}`} className="each-single-mobile-post-image-link"><img className="each-single-mobile-post-image" src={post?.image} alt={post?.tile} /></Link>
                 <div className='each-single-mobile-post-details-div'>
                   <div className='each-single-mobile-post-details-date-and-category-div'>
                     <div className='each-single-mobile-post-details-date'>{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
-                    <Link to={`/${post.category}`} className="single-post-category-link-mobile"> <div className='each-single-mobile-post-details-category'>{post.category}</div></Link>
+                    <Link to={`/${post?.category}`} className="single-post-category-link-mobile"> <div className='each-single-mobile-post-details-category'>{post?.category}</div></Link>
                   </div>
-                  <Link to={`/view-post/${post.id}`} className='each-single-mobile-post-details-title single-title-category-link-mobile'>{post.title}</Link>
+                  <Link to={`/view-post/${post?.id}`} className='each-single-mobile-post-details-title single-title-category-link-mobile'>{post?.title}</Link>
                 </div>
               </div>
             )
           })}
         </div>
         <div className="all-posts-div">
-          {allPosts.map((post) => {
+          {allPosts?.map((post) => {
             return (
-              <div className="single-post" key={post.id}>
-                <Link to={`/view-post/${post.id}`} className="single-post-title-link"><img className="single-post-image" src={post.image} alt={post.tile} /></Link>
+              <div className="single-post" key={post?.id}>
+                <Link to={`/view-post/${post?.id}`} className="single-post-title-link"><img className="single-post-image" src={post?.image} alt={post?.tile} /></Link>
                 <div className="single-post-detail-div">
                   <div className="single-post-date-and-category-div">
                     <h6 className="single-post-date">{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
-                    <Link to={`/${post.category}`} className="single-post-category-link"><h4 className="single-post-category">{post.category}</h4></Link>
+                    <Link to={`/${post?.category}`} className="single-post-category-link"><h4 className="single-post-category">{post?.category}</h4></Link>
                   </div>
-                  <Link to={`/view-post/${post.id}`} className="single-post-title-link"><h4 className="single-post-title">{post.title}</h4></Link>
+                  <Link to={`/view-post/${post?.id}`} className="single-post-title-link"><h4 className="single-post-title">{post?.title}</h4></Link>
                 </div>
               </div>
             )
