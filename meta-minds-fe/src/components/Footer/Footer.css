@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   background-image: transparent;
-  opacity: 40px;
+  opacity: .4;
   margin-bottom: 0px;
   padding-bottom: 20px;
   height: 250px;
@@ -71,7 +71,7 @@
     justify-content: center;
     align-items: center;
     background-image: transparent;
-    opacity: 40px;
+    opacity: .4;
     margin-bottom: 0px;
     padding-bottom: 20px;
     height: 250px;
@@ -128,7 +128,7 @@
       justify-content: center;    
       align-items: center;
       background-image: transparent;
-      opacity: 40px;
+      opacity: .4;
       margin-bottom: 0px;
       padding-bottom: 20px;
       height: 250px;
@@ -185,7 +185,7 @@
         justify-content: center;
         align-items: center;
         background-image: transparent;
-        opacity: 40px;
+        opacity: .4;
         margin-bottom: 0px;
         padding-bottom: 20px;
         height: 250px;

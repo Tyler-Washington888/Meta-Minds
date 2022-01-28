@@ -17,7 +17,7 @@
     top: 0;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
-    opacity: 30%;  
+    opacity:.3; 
     z-index: 100;
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@
     border-radius: 12px;
     background-color: rgb(187, 11, 11); /* Fallback color */
     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-    opacity: 90%;
+    opacity: .9; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,7 +123,7 @@
       top: 0;
       bottom: 0;
       background-color: rgb(32, 32, 32); 
-      opacity: 30%;  
+      opacity: .3;  
       z-index: 100;
       display: flex;
       align-items: center;
@@ -138,7 +138,7 @@
       border-radius: 12px;
       background-color: rgb(187, 11, 11); /* Fallback color */
       box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-      opacity: 90%;
+      opacity: .9; 
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -318,7 +318,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 10px;
   }
   .view-post-edit-or-delete-option:hover {
-    opacity: 60%;
+    opacity: .6; 
     border-radius: 30px;
   }
 .view-post-created-name{
@@ -351,7 +351,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .edit-post-div:hover {
   background-color:  rgb(177, 174, 174);
-  opacity: 50%;
+  opacity: .5; 
 }
 .edit-post-div-link{
   text-decoration: none;
@@ -388,7 +388,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 .delete-post-div:hover {
   background-color:  rgb(177, 174, 174);
-  opacity: 50%;
+  opacity: .5; 
 }
 
 .delete-post-icon{
@@ -421,7 +421,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 .copy-post-url-div:hover {
   background-color:  rgb(177, 174, 174);
-  opacity: 50%;
+  opacity: .5; 
 }
 
 .copy-link-icon-one {
@@ -481,7 +481,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 .copy-post-url-div-two:hover {
   background-color:  rgb(177, 174, 174);
-  opacity: 50%;
+  opacity: .5; 
 }
 .copy-link-icon{
   height: 25px;
@@ -545,7 +545,7 @@ margin-right: 15px;
   top: 0;
   bottom: 0;
   background-color: rgb(32, 32, 32); 
-  opacity: 30%;  
+  opacity: .3;  
   z-index: 100;
   display: flex;
   align-items: center;
@@ -563,7 +563,7 @@ margin-right: 15px;
   border-radius: 12px;
   background-color: rgb(187, 11, 11); /* Fallback color */
   box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-  opacity: 90%;
+  opacity: .9; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -676,7 +676,7 @@ color: rgb(22, 21, 21);
   justify-content: flex-start;
   align-items: space-between;
   background-color: #0ACCE5;
-  opacity: 90%;
+  opacity: .9; 
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -840,7 +840,7 @@ color: rgb(22, 21, 21);
     margin-bottom: 10px;
     }
     .view-post-edit-or-delete-option:hover {
-      opacity: 60%;
+      opacity: .6; 
       border-radius: 30px;
     }
   .view-post-created-name{
@@ -873,7 +873,7 @@ color: rgb(22, 21, 21);
   }
   .edit-post-div:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   .edit-post-div-link{
     text-decoration: none;
@@ -910,7 +910,7 @@ color: rgb(22, 21, 21);
   
   .delete-post-div:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   
   .delete-post-icon{
@@ -943,7 +943,7 @@ color: rgb(22, 21, 21);
   
   .copy-post-url-div:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity:.5; 
   }
   
   .copy-link-icon-one {
@@ -1003,7 +1003,7 @@ color: rgb(22, 21, 21);
   
   .copy-post-url-div-two:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   .copy-link-icon{
     height: 25px;
@@ -1067,7 +1067,7 @@ color: rgb(22, 21, 21);
     top: 0;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
-    opacity: 30%;  
+    opacity: .3;  
     z-index: 100;
     display: flex;
     align-items: center;
@@ -1085,7 +1085,7 @@ color: rgb(22, 21, 21);
     border-radius: 12px;
     background-color: rgb(187, 11, 11); /* Fallback color */
     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-    opacity: 90%;
+    opacity: .9; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1200,7 +1200,7 @@ color: rgb(22, 21, 21);
     justify-content: flex-start;
     align-items: space-between;
     background-color: #0ACCE5;
-    opacity: 90%;
+    opacity: .9; 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -1363,7 +1363,7 @@ color: rgb(22, 21, 21);
       margin-bottom: 10px;
       }
       .view-post-edit-or-delete-option:hover {
-        opacity: 60%;
+        opacity: .6; 
         border-radius: 30px;
       }
     .view-post-created-name{
@@ -1396,7 +1396,7 @@ color: rgb(22, 21, 21);
     }
     .edit-post-div:hover {
       background-color:  rgb(177, 174, 174);
-      opacity: 50%;
+      opacity: .5; 
     }
     .edit-post-div-link{
       text-decoration: none;
@@ -1433,7 +1433,7 @@ color: rgb(22, 21, 21);
     
     .delete-post-div:hover {
       background-color:  rgb(177, 174, 174);
-      opacity: 50%;
+      opacity: .5; 
     }
     
     .delete-post-icon{
@@ -1466,7 +1466,7 @@ color: rgb(22, 21, 21);
     
     .copy-post-url-div:hover {
       background-color:  rgb(177, 174, 174);
-      opacity: 50%;
+      opacity: .5; 
     }
     
     .copy-link-icon-one {
@@ -1526,7 +1526,7 @@ color: rgb(22, 21, 21);
     
     .copy-post-url-div-two:hover {
       background-color:  rgb(177, 174, 174);
-      opacity: 50%;
+      opacity: .5; 
     }
     .copy-link-icon{
       height: 25px;
@@ -1590,7 +1590,7 @@ color: rgb(22, 21, 21);
       top: 0;
       bottom: 0;
       background-color: rgb(32, 32, 32); 
-      opacity: 30%;  
+      opacity: .3;   
       z-index: 100;
       display: flex;
       align-items: center;
@@ -1608,7 +1608,7 @@ color: rgb(22, 21, 21);
       border-radius: 12px;
       background-color: rgb(187, 11, 11); /* Fallback color */
       box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-      opacity: 90%;
+      opacity: .9; 
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1723,7 +1723,7 @@ color: rgb(22, 21, 21);
       justify-content: flex-start;
       align-items: space-between;
       background-color: #0ACCE5;
-      opacity: 90%;
+      opacity: .9; 
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
       border-bottom-right-radius: 6px;
       border-bottom-left-radius: 6px;
@@ -1886,7 +1886,7 @@ color: rgb(22, 21, 21);
         margin-bottom: 10px;
         }
         .view-post-edit-or-delete-option:hover {
-          opacity: 60%;
+          opacity: .6; 
           border-radius: 30px;
         }
       .view-post-created-name{
@@ -1920,7 +1920,7 @@ color: rgb(22, 21, 21);
       }
       .edit-post-div:hover {
         background-color:  rgb(177, 174, 174);
-        opacity: 50%;
+        opacity: .5; 
       }
       .edit-post-div-link{
         text-decoration: none;
@@ -1957,7 +1957,7 @@ color: rgb(22, 21, 21);
       
       .delete-post-div:hover {
         background-color:  rgb(177, 174, 174);
-        opacity: 50%;
+        opacity: .5; 
       }
       
       .delete-post-icon{
@@ -1990,7 +1990,7 @@ color: rgb(22, 21, 21);
       
       .copy-post-url-div:hover {
         background-color:  rgb(177, 174, 174);
-        opacity: 50%;
+        opacity: .5; 
       }
       
       .copy-link-icon-one {
@@ -2050,7 +2050,7 @@ color: rgb(22, 21, 21);
       
       .copy-post-url-div-two:hover {
         background-color:  rgb(177, 174, 174);
-        opacity: 50%;
+        opacity: .5; 
       }
       .copy-link-icon{
         height: 25px;
@@ -2114,7 +2114,7 @@ color: rgb(22, 21, 21);
         top: 0;
         bottom: 0;
         background-color: rgb(32, 32, 32); 
-        opacity: 30%;  
+        opacity: .3;   
         z-index: 100;
         display: flex;
         align-items: center;
@@ -2132,7 +2132,7 @@ color: rgb(22, 21, 21);
         border-radius: 12px;
         background-color: rgb(187, 11, 11); /* Fallback color */
         box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-        opacity: 90%;
+        opacity: .9; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2248,7 +2248,7 @@ color: rgb(22, 21, 21);
         justify-content: flex-start;
         align-items: space-between;
         background-color: #0ACCE5;
-        opacity: 90%;
+        opacity: .9; 
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
         border-bottom-right-radius: 6px;
         border-bottom-left-radius: 6px;
@@ -2546,7 +2546,7 @@ color: rgb(22, 21, 21);
     }
     .edit-post-div:hover {
       background-color:  rgb(177, 174, 174);
-      opacity: 50%;
+      opacity: .5; 
     }
     .edit-post-div-link{
       text-decoration: none;
@@ -2583,7 +2583,7 @@ color: rgb(22, 21, 21);
     
     .delete-post-div:hover {
       background-color:  rgb(177, 174, 174);
-      opacity: 50%;
+      opacity: .5; 
     }
     
     .delete-post-icon{
@@ -2616,7 +2616,7 @@ color: rgb(22, 21, 21);
     
     .copy-post-url-div:hover {
       background-color:  rgb(177, 174, 174);
-      opacity: 50%;
+      opacity: .5; 
     }
     
     .copy-link-icon-one {
@@ -2686,7 +2686,7 @@ color: rgb(22, 21, 21);
     
     .copy-post-url-div-two:hover {
       background-color:  rgb(177, 174, 174);
-      opacity: 50%;
+      opacity: .5; 
     }
     .copy-link-icon{
       height: 25px;
@@ -2750,7 +2750,7 @@ color: rgb(22, 21, 21);
       top: 0;
       bottom: 0;
       background-color: rgb(32, 32, 32); 
-      opacity: 70%;  
+      opacity: .7;  
       z-index: 6000;
       display: flex;
       align-items: center;
@@ -2768,7 +2768,7 @@ color: rgb(22, 21, 21);
       border-radius: 12px;
       background-color: rgb(187, 11, 11); /* Fallback color */
       box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-      opacity: 95%;
+      opacity: .95; 
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -3102,7 +3102,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
   .edit-post-div:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   .edit-post-div-link{
     text-decoration: none;
@@ -3139,7 +3139,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   
   .delete-post-div:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   
   .delete-post-icon{
@@ -3172,7 +3172,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   
   .copy-post-url-div:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   
   .copy-link-icon-one {
@@ -3234,7 +3234,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   
   .copy-post-url-div-two:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   .copy-link-icon{
     height: 25px;
@@ -3298,7 +3298,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
     top: 0;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
-    opacity: 70%;  
+    opacity: .7;  
     z-index: 6000;
     display: flex;
     align-items: center;
@@ -3316,7 +3316,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 12px;
     background-color: rgb(187, 11, 11); /* Fallback color */
     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-    opacity: 95%;
+    opacity: .95; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3666,7 +3666,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
   .edit-post-div:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   .edit-post-div-link{
     text-decoration: none;
@@ -3703,7 +3703,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   
   .delete-post-div:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   
   .delete-post-icon{
@@ -3736,7 +3736,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   
   .copy-post-url-div:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   
   .copy-link-icon-one {
@@ -3798,7 +3798,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   
   .copy-post-url-div-two:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   .copy-link-icon{
     height: 25px;
@@ -3862,7 +3862,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
     top: 0;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
-    opacity: 70%;  
+    opacity:.7; 
     z-index: 6000;
     display: flex;
     align-items: center;
@@ -3880,7 +3880,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 12px;
     background-color: rgb(187, 11, 11); /* Fallback color */
     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-    opacity: 95%;
+    opacity: .95; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -4230,7 +4230,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
   .edit-post-div:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   .edit-post-div-link{
     text-decoration: none;
@@ -4267,7 +4267,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   
   .delete-post-div:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   
   .delete-post-icon{
@@ -4300,7 +4300,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   
   .copy-post-url-div:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   
   .copy-link-icon-one {
@@ -4362,7 +4362,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   
   .copy-post-url-div-two:hover {
     background-color:  rgb(177, 174, 174);
-    opacity: 50%;
+    opacity: .5; 
   }
   .copy-link-icon{
     height: 25px;
@@ -4426,7 +4426,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
     top: 0;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
-    opacity: 70%;  
+    opacity: .7;  
     z-index: 6000;
     display: flex;
     align-items: center;
@@ -4444,7 +4444,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 12px;
     background-color: rgb(187, 11, 11); /* Fallback color */
     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-    opacity: 95%;
+    opacity: .95; 
     display: flex;
     flex-direction: column;
     align-items: center;

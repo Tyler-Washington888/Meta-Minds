@@ -17,7 +17,7 @@
     top: 0;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
-    opacity: 30%;  
+    opacity: .3;   
     z-index: 100;
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@
     border-radius: 12px;
     background-color: rgb(187, 11, 11); /* Fallback color */
     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-    opacity: 90%;
+    opacity: .9;  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,7 +125,7 @@
       top: 0;
       bottom: 0;
       background-color: rgb(32, 32, 32); 
-      opacity: 30%;  
+      opacity: .3;   
       z-index: 100;
       display: flex;
       align-items: center;
@@ -140,7 +140,7 @@
       border-radius: 12px;
       background-color: rgb(187, 11, 11); /* Fallback color */
       box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
-      opacity: 90%;
+      opacity: .9;  
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -270,7 +270,7 @@
 
 .each-meta-post-inner-div:hover {
   background-color: #57dff1;
-  opacity: 90%;
+  opacity: .9;  
   border-radius: 12px;
   box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.4);
   border-style: hidden;
@@ -318,7 +318,7 @@
   justify-content: center;
   align-items: center;
   background-image: transparent;
-  opacity: 40px;
+  opacity: .4;  
   margin-top: -350px;
  padding-bottom: 20px;
   height: 250px;
@@ -432,7 +432,7 @@
   
   .each-meta-post-inner-div:hover {
     background-color: #57dff1;
-    opacity: 90%;
+    opacity: .9;  
     border-radius: 12px;
     box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.4);
     border-style: hidden;
@@ -485,7 +485,7 @@
     justify-content: center;
     align-items: center;
     background-image: transparent;
-    opacity: 40px;
+    opacity: .4;  
     margin-top: -350px;
    padding-bottom: 20px;
     height: 250px;
@@ -598,7 +598,7 @@
     
     .each-meta-post-inner-div:hover {
       background-color: #57dff1;
-      opacity: 90%;
+      opacity: .9;  
       border-radius: 12px;
       box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.4);
       border-style: hidden;
@@ -651,7 +651,7 @@
       justify-content: center;
       align-items: center;
       background-image: transparent;
-      opacity: 40px;
+      opacity: .4;  
       margin-top: -350px;
      padding-bottom: 20px;
       height: 250px;
@@ -766,7 +766,7 @@
       
       .each-meta-post-inner-div:hover {
         background-color: #57dff1;
-        opacity: 90%;
+        opacity: .9;  
         border-radius: 12px;
         box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.4);
         border-style: hidden;
@@ -819,7 +819,7 @@
         justify-content: center;
         align-items: center;
         background-image: transparent;
-        opacity: 40px;
+        opacity: .4;  
         margin-top: -350px;
        padding-bottom: 20px;
         height: 250px;

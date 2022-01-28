@@ -84,7 +84,7 @@
 }
 .sign-up-button:hover{
   background-color: #0ACCE5;
-  opacity: 80%;
+  opacity: .8;
 }
 
 .link-to-sign-in-div{
@@ -112,7 +112,7 @@
 }
 .link-to-sign-in-button:hover{
   background-color: #0ACCE5;
-  opacity: 80%;
+  opacity: .8;
 }
 
 .sign-up-outer-div-mobile {
@@ -205,7 +205,7 @@
   }
   .sign-up-button:hover{
     background-color: #0ACCE5;
-    opacity: 80%;
+    opacity: .8;
   }
   
   .link-to-sign-in-div{
@@ -233,7 +233,7 @@
   }
   .link-to-sign-in-button:hover{
     background-color: #0ACCE5;
-    opacity: 80%;
+    opacity: .8;
   }
   
   .sign-up-outer-div-mobile {
@@ -325,7 +325,7 @@
     }
     .sign-up-button:hover{
       background-color: #0ACCE5;
-      opacity: 80%;
+      opacity: .8;
     }
     
     .link-to-sign-in-div{
@@ -353,7 +353,7 @@
     }
     .link-to-sign-in-button:hover{
       background-color: #0ACCE5;
-      opacity: 80%;
+      opacity: .8;
     }
     
     .sign-up-outer-div-mobile {
@@ -448,7 +448,7 @@
       }
       .sign-up-button:hover{
         background-color: #0ACCE5;
-        opacity: 80%;
+        opacity: .8;
       }
       
       .link-to-sign-in-div{
@@ -476,7 +476,7 @@
       }
       .link-to-sign-in-button:hover{
         background-color: #0ACCE5;
-        opacity: 80%;
+        opacity: .8;
       }
       
       .sign-up-outer-div-mobile {
