@@ -1,43 +1,312 @@
-
-
-:root {
-  --ck-color-toolbar-background: white;
-  --ck-color-toolbar-border: 	white;
-  --ck-border-radius: 12px;
-  --ck-drop-shadow: 0 1px 2px 1px var(--ck-color-shadow-drop);
-  --ck-color-link-default: #0ACCE5;
-}
-
-.ck-editor__editable_inline {
-  min-height: 350px;
-  max-height: 900px;
-  outline-width: 0;
-}
-
-.--ck-color-link-default{
-  color: #0ACCE5;
-  text-decoration: none;
-}
-
-a {
-  color: #0f45da;
-  text-decoration: none;
-}
-
-.ck-editor{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-  border-radius: 12px;
-  margin-bottom: 120px;
-  position: relative;
-}
-
-.bottom {
-  margin-bottom: 120px;
-  width: 67.9%;
-  position: relative;
-  left: 230px;
-}
-
+@media screen and (min-width: 1440px ) and (max-width: 1599px) {
+  :root {
+    --ck-color-toolbar-background: white;
+    --ck-color-toolbar-border: 	white;
+    --ck-border-radius: 12px;
+    --ck-drop-shadow: 0 1px 2px 1px var(--ck-color-shadow-drop);
+    --ck-color-link-default: #0ACCE5;
+  }
+  
+  .ck-editor__editable_inline {
+    min-height: 350px;
+    max-height: 900px;
+    outline-width: 0;
+  }
+  
+  .--ck-color-link-default{
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  a {
+    color: #2B3F98;
+    text-decoration: underline;
+  }
+  
+  .ck-editor{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    border-radius: 12px;
+    margin-bottom: 120px;
+    position: relative;
+  }
+  
+  .bottom {
+    margin-bottom: 120px;
+    width: 67.9%;
+    position: relative;
+    left: 230px;
+  }
+  }
+  
+  @media screen and (min-width: 1600px ) and (max-width: 1679px) {
+    :root {
+      --ck-color-toolbar-background: white;
+      --ck-color-toolbar-border: 	white;
+      --ck-border-radius: 12px;
+      --ck-drop-shadow: 0 1px 2px 1px var(--ck-color-shadow-drop);
+      --ck-color-link-default: #0ACCE5;
+    }
+    
+    .ck-editor__editable_inline {
+      min-height: 350px;
+      max-height: 900px;
+      outline-width: 0;
+    }
+    
+    .--ck-color-link-default{
+      color: #000000;
+      text-decoration: none;
+    }
+    
+    a {
+      color: #2B3F98;
+      text-decoration: underline;
+    }
+    .ck-editor{
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      border-radius: 12px;
+      margin-bottom: 120px;
+      position: relative;
+    }
+    .bottom {
+      margin-bottom: 120px;
+      width: 60.9%;
+      position: relative;
+      left: 310px;
+    }
+  
+    }
+  
+    @media screen and (min-width: 1680px ) and (max-width: 1919px) {
+      :root {
+        --ck-color-toolbar-background: white;
+        --ck-color-toolbar-border: 	white;
+        --ck-border-radius: 12px;
+        --ck-drop-shadow: 0 1px 2px 1px var(--ck-color-shadow-drop);
+        --ck-color-link-default: #0ACCE5;
+      }
+      
+      .ck-editor__editable_inline {
+        min-height: 350px;
+        max-height: 900px;
+        outline-width: 0;
+      }
+      
+      .--ck-color-link-default{
+        color: #000000;
+        text-decoration: none;
+      }
+      
+      a {
+        color: #2B3F98;
+        text-decoration: underline;
+      }
+      .ck-editor{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        border-radius: 12px;
+        margin-bottom: 120px;
+        position: relative;
+      }
+      .bottom {
+        margin-bottom: 120px;
+        width: 57.9%;
+        position: relative;
+        left: 355px;
+      }
+    
+      }
+  
+      @media screen and (min-width: 1920px ) and (max-width: 2559px) {
+        :root {
+          --ck-color-toolbar-background: white;
+          --ck-color-toolbar-border: 	white;
+          --ck-border-radius: 12px;
+          --ck-drop-shadow: 0 1px 2px 1px var(--ck-color-shadow-drop);
+          --ck-color-link-default: #0ACCE5;
+        }
+        
+        .ck-editor__editable_inline {
+          min-height: 450px;
+          max-height: 900px;
+          outline-width: 0;
+        }
+        
+        .--ck-color-link-default{
+          color: #000000;
+          text-decoration: none;
+        }
+        
+        a {
+          color: #2B3F98;
+          text-decoration: underline;
+        }
+        .ck-editor{
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+          border-radius: 12px;
+          margin-bottom: 120px;
+          position: relative;
+        }
+        .bottom {
+          margin-bottom: 120px;
+          width: 50.3%;
+          position: relative;
+          left: 478px;
+        }
+      
+        }
+  @media screen and (min-width: 375px ) and (max-width: 389px) {
+   
+    :root {
+      --ck-color-toolbar-background: white;
+      --ck-color-toolbar-border: 	white;
+      --ck-border-radius: 12px;
+      --ck-drop-shadow: 0 1px 2px 1px var(--ck-color-shadow-drop);
+      --ck-color-link-default: #0ACCE5;
+    }
+    .ck-editor{
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+       border-radius: 12px;
+       margin-bottom: 0px;
+     }
+  
+     .--ck-color-link-default{
+      color: #000000;
+      text-decoration: none;
+    }
+     a {
+      color: #2B3F98;
+      text-decoration: underline;
+    }
+     .bottom {
+       margin-top: 15px;
+       position: relative;
+       left:0px ;
+       right: 200px;
+       margin-bottom: 100px;
+       width: 100%;
+     }
+     .ck-editor__editable_inline {
+       min-height: 300px;
+       max-height: 600px;
+       outline-width: 0;
+     } 
+   
+   }
+  
+  
+  @media screen and (min-width: 390px ) and (max-width: 413px) {
+    :root {
+      --ck-color-toolbar-background: white;
+      --ck-color-toolbar-border: 	white;
+      --ck-border-radius: 12px;
+      --ck-drop-shadow: 0 1px 2px 1px var(--ck-color-shadow-drop);
+      --ck-color-link-default: #0ACCE5;
+    }
+    .ck-editor{
+      background-color: yellowgreen;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      border-radius: 12px;
+      margin-bottom: 0px;
+    }
+    .bottom {
+      margin-top: 15px;
+      position: relative;
+      left:0px ;
+      right: 200px;
+      margin-bottom: 100px;
+      width: 100%;
+    }
+    .--ck-color-link-default{
+      color: #000000;
+      text-decoration: none;
+    }
+    a {
+      color: #2B3F98;
+      text-decoration: underline;
+    }
+    .ck-editor__editable_inline {
+      min-height: 300px;
+      max-height: 600px;
+      outline-width: 0;
+    } 
+  }
+  @media screen and (min-width: 414px ) and (max-width: 427px){
+    :root {
+      --ck-color-toolbar-background: white;
+      --ck-color-toolbar-border: 	white;
+      --ck-border-radius: 12px;
+      --ck-drop-shadow: 0 1px 2px 1px var(--ck-color-shadow-drop);
+      --ck-color-link-default: #0ACCE5;
+    }
+    .ck-editor{
+       background-color: yellowgreen;
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+       border-radius: 12px;
+       margin-bottom: 0px;
+     }
+     .--ck-color-link-default{
+      color: #000000;
+      text-decoration: none;
+    }
+     a {
+      color: #2B3F98;
+      text-decoration: underline;
+    }
+     .bottom {
+       margin-top: 15px;
+       position: relative;
+       left:0px ;
+       right: 200px;
+       margin-bottom: 100px;
+       width: 100%;
+     }
+     .ck-editor__editable_inline {
+       min-height: 300px;
+       max-height: 600px;
+       outline-width: 0;
+     } 
+   }
+   @media screen and (min-width: 428px ) and (max-width: 430px) {
+    
+    :root {
+      --ck-color-toolbar-background: white;
+      --ck-color-toolbar-border: 	white;
+      --ck-border-radius: 12px;
+      --ck-drop-shadow: 0 1px 2px 1px var(--ck-color-shadow-drop);
+      --ck-color-link-default: #0ACCE5;
+    }
+    .ck-editor{
+       background-color: yellowgreen;
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+       border-radius: 12px;
+       margin-bottom: 0px;
+     }
+     .--ck-color-link-default{
+      color: #000000;
+      text-decoration: none;
+    }
+     a {
+      color: #2B3F98;
+      text-decoration: underline;
+    }
+     .bottom {
+       margin-top: 15px;
+       position: relative;
+       left:0px ;
+       right: 200px;
+       margin-bottom: 100px;
+       width: 100%;
+     }
+     .ck-editor__editable_inline {
+       min-height: 300px;
+       max-height: 600px;
+       outline-width: 0;
+     } 
+   }
+  
+  
+  
+  
 
 
 
