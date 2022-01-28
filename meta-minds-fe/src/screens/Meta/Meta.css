@@ -485,7 +485,7 @@
     justify-content: center;
     align-items: center;
     background-image: transparent;
-    opacity: .4;  
+    padding: 5.5%; 
     margin-top: -350px;
    padding-bottom: 20px;
     height: 250px;
@@ -565,7 +565,8 @@
     .meta-posts-div{
       display: flex;
       flex-direction: column;
-      padding: 5%;
+      padding: 7%;
+      padding-right: 8%;
       background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
       height: calc( 100% + 100px );
       background-repeat: no-repeat;
@@ -731,12 +732,13 @@
       .meta-posts-div{
         display: flex;
         flex-direction: column;
-        padding: 5%;
+        padding: 10%;
+      padding-right: 12%;
         background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1640830027/Meta-Minds/nvkCN6_ktxkat.jpg");
         height: calc( 100% + 100px );
         background-repeat: no-repeat;
         background-size: cover;
-        margin-top: -38px;
+        margin-top: -120px;
         z-index: 1;
       }
       .each-meta-post-outer-div{
@@ -757,7 +759,8 @@
         margin-right: 20px;
         border-style: solid 4px;
         border-color: yellowgreen;
-        box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3)
+        box-shadow: 2px 13px 8px -10px rgba(0, 0, 0, 0.3);
+        margin-bottom: 0px;
       }
       .each-meta-post-inner-div-link {
         text-decoration: none;
