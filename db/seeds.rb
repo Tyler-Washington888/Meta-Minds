@@ -28,22 +28,12 @@ Post.create!(
   There will also be games where the winners will be determined based on a combination of luck and skill",
   user: @admin
 )
-
-# underwater
-Post.create!(
-  image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637099589/Meta-Minds/shark_yshh0e.png',
-  category: 'Mana',
-  title: "Zuckerberg's Strategic Shift",
-  subtitle: 'FB makes name change to take leadership role in Web3',
-  content: Faker::Quote.famous_last_words,
-  user: @admin
-)
 # wreck it ralph
 Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637600762/Meta-Minds/Raplh_iimvxj.jpg',
   category: 'Film',
-  title: "Zuckerberg's Strategic Shift",
-  subtitle: 'FB makes name change to take leadership role in Web3',
+  title: 'Ralph Travels the Internet',
+  subtitle: 'What this movie says about the importance of interconnectedness in the metaverse',
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
@@ -51,8 +41,8 @@ Post.create!(
 Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1636997473/Meta-Minds/Oculus_lswy6o.png',
   category: 'Meta',
-  title: 'Oculus reaches $1B MC',
-  subtitle: 'Quest 2 release results in rapid price appreciation',
+  title: 'Quest 2 Flying Off the Shelves',
+  subtitle: 'Facebook latest headset has outsoled all other products combined',
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
@@ -60,8 +50,8 @@ Post.create!(
 Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637965280/Meta-Minds/what_tqgne4.jpg',
   category: 'Film',
-  title: 'Oculus reaches $1B MC',
-  subtitle: 'Quest 2 release results in rapid price appreciation',
+  title: 'Breaking Down Avatar',
+  subtitle: 'What the box office hits may tell us about the future of the internet',
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
@@ -69,8 +59,8 @@ Post.create!(
 Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637963912/Meta-Minds/soccer_ldkuy1.png',
   category: 'Mana',
-  title: "Zuckerberg's Strategic Shift",
-  subtitle: 'FB makes name change to take leadership role in Web3',
+  title: 'Moonshot World Cup',
+  subtitle: 'Prepare yourself for the virtual sporting event of the year',
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
@@ -78,8 +68,8 @@ Post.create!(
 Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637136569/Meta-Minds/illuuuvium_p2sdfg.jpg',
   category: 'Crypto',
-  title: "Zuckerberg's Strategic Shift",
-  subtitle: 'FB makes name change to take leadership role in Web3',
+  title: 'Everything About Illuvium',
+  subtitle: 'A thorough breakdown of the first AAA game to hit the Ethereum blockchain',
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
@@ -87,17 +77,8 @@ Post.create!(
 Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637137856/Meta-Minds/Atlas_lkrixb.jpg',
   category: 'Crypto',
-  title: "Zuckerberg's Strategic Shift",
-  subtitle: 'FB makes name change to take leadership role in Web3',
-  content: Faker::Quote.famous_last_words,
-  user: @admin
-)
-# summer wars
-Post.create!(
-  image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637960717/Meta-Minds/summar_wars_cixa3e.webp',
-  category: 'Film',
-  title: "Zuckerberg's Strategic Shift",
-  subtitle: 'FB makes name change to take leadership role in Web3',
+  title: 'Galactic Asset Offering',
+  subtitle: 'Meta Platform Star Atlas Launches the Next Generation of NFTs',
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
@@ -105,8 +86,8 @@ Post.create!(
 Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637626776/Meta-Minds/Saaaaaand_usrlxl.jpg',
   category: 'Crypto',
-  title: "Zuckerberg's Strategic Shift",
-  subtitle: 'FB makes name change to take leadership role in Web3',
+  title: "$450K to be Snoop Dogg's Neighbor",
+  subtitle: 'Purchase exemplifies the growing demand for digital real-estate in the Metaverse',
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
@@ -114,8 +95,8 @@ Post.create!(
 Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637714108/Meta-Minds/lebron_james_wh3tbg.jpg',
   category: 'Film',
-  title: "Zuckerberg's Strategic Shift",
-  subtitle: 'FB makes name change to take leadership role in Web3',
+  title: 'LeBron Enters the Server-verse',
+  subtitle: "Warner Bros. sends basketball's 21st century king into the virtual realm",
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
@@ -123,8 +104,8 @@ Post.create!(
 Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637298637/Meta-Minds/Niikkke_uzoqw6.jpg',
   category: 'Crypto',
-  title: "Zuckerberg's Strategic Shift",
-  subtitle: 'FB makes name change to take leadership role in Web3',
+  title: 'Nike Creates NIKELAND on Roblox',
+  subtitle: 'The sneaker & sports apparel giant enters the metaverse.',
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
@@ -132,8 +113,8 @@ Post.create!(
 Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637134577/Meta-Minds/Hand_fq3js7.jpg',
   category: 'Meta',
-  title: '',
-  subtitle: 'Meta to Create Virtual Celebration Spaces .',
+  title: "Meta's Haptic Glove Prototype",
+  subtitle: 'A new sci-fi interface that could change social interactions forever',
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
@@ -141,8 +122,8 @@ Post.create!(
 Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637099573/Meta-Minds/koooooo_sm8zqr.png',
   category: 'Mana',
-  title: 'FB Causes Price Surge',
-  subtitle: "$MANA rises 200% following 'Meta' announcement",
+  title: 'How to Buy Land in Decentraland',
+  subtitle: 'Everything you need to know to purchase digital real-estate in Decentraland',
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
@@ -151,7 +132,7 @@ Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637134484/Meta-Minds/axie_infinity_z8nqbw.jpg',
   category: 'Crypto',
   title: 'Banker Ditches Wallstreet For Lunacia',
-  subtitle: '27-year-old leaves Goldman Sachs to make money playing video games',
+  subtitle: '27-year-old leaves Goldman Sachs to become a crypto capitalist',
   content: "Sam Peurifoy left his job at Goldman Sachs to seek wealth as a crypto capitalist in the video-game world.
   He's a bit of a banker in his new role, too, according to the Oct. 30 story from Bloomberg News titled 'Into the Metav
   e
@@ -234,8 +215,8 @@ Post.create!(
 @first_post = Post.create!(
   image: 'https://res.cloudinary.com/tylerwashington98/image/upload/v1637099605/Meta-Minds/roll_whok3u.jpg',
   category: 'Mana',
-  title: 'Amuzepark Reaches 1000th visitor',
-  subtitle: 'The Mana ',
+  title: ' Mining in the WonderZone',
+  subtitle: 'Mining and crafting in the metaverse',
   content: Faker::Quote.famous_last_words,
   user: @admin
 )
