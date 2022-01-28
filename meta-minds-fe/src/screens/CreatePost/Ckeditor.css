@@ -25,9 +25,9 @@ a {
 
 .ck-editor{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-  border-radius: 12px;
   margin-bottom: 120px;
   position: relative;
+  --ck-border-radius: 12px;
 }
 
 .bottom {
@@ -36,6 +36,9 @@ a {
   position: relative;
   left: 230px;
 }
+
+
+
 }
 
 @media screen and (min-width: 1600px ) and (max-width: 1679px) {
@@ -64,7 +67,7 @@ a {
   }
   .ck-editor{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    border-radius: 12px;
+    --ck-border-radius: 12px;
     margin-bottom: 120px;
     position: relative;
   }

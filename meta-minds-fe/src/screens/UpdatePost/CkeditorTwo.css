@@ -25,7 +25,7 @@
   
   .ck-editor{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    border-radius: 12px;
+    --ck-border-radius: 12px;
     margin-bottom: 120px;
     position: relative;
   }
@@ -64,7 +64,7 @@
     }
     .ck-editor{
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-      border-radius: 12px;
+      --ck-border-radius: 12px;
       margin-bottom: 120px;
       position: relative;
     }
@@ -103,7 +103,7 @@
       }
       .ck-editor{
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-        border-radius: 12px;
+        --ck-border-radius: 12px;
         margin-bottom: 120px;
         position: relative;
       }
@@ -142,7 +142,7 @@
         }
         .ck-editor{
           box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-          border-radius: 12px;
+          --ck-border-radius: 12px;
           margin-bottom: 120px;
           position: relative;
         }
@@ -165,7 +165,7 @@
     }
     .ck-editor{
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-       border-radius: 12px;
+       --ck-border-radius: 12px;
        margin-bottom: 0px;
      }
   
@@ -205,7 +205,7 @@
     .ck-editor{
       background-color: yellowgreen;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-      border-radius: 12px;
+      --ck-border-radius: 12px;
       margin-bottom: 0px;
     }
     .bottom {
@@ -241,7 +241,7 @@
     .ck-editor{
        background-color: yellowgreen;
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-       border-radius: 12px;
+       --ck-border-radius: 12px;
        margin-bottom: 0px;
      }
      .--ck-color-link-default{
@@ -278,7 +278,7 @@
     .ck-editor{
        background-color: yellowgreen;
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-       border-radius: 12px;
+       --ck-border-radius: 12px;
        margin-bottom: 0px;
      }
      .--ck-color-link-default{
