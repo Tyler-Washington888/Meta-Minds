@@ -28,6 +28,8 @@
     --ck-border-radius: 12px;
     margin-bottom: 120px;
     position: relative;
+    --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
   }
   
   .bottom {
@@ -67,6 +69,8 @@
       --ck-border-radius: 12px;
       margin-bottom: 120px;
       position: relative;
+      --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
     }
     .bottom {
       margin-bottom: 120px;
@@ -106,6 +110,8 @@
         --ck-border-radius: 12px;
         margin-bottom: 120px;
         position: relative;
+        --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
       }
       .bottom {
         margin-bottom: 120px;
@@ -145,6 +151,8 @@
           --ck-border-radius: 12px;
           margin-bottom: 120px;
           position: relative;
+          --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
         }
         .bottom {
           margin-bottom: 120px;
@@ -167,6 +175,8 @@
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
        --ck-border-radius: 12px;
        margin-bottom: 0px;
+       --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
      }
   
      .--ck-color-link-default{
@@ -207,6 +217,8 @@
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
       --ck-border-radius: 12px;
       margin-bottom: 0px;
+      --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
     }
     .bottom {
       margin-top: 15px;
@@ -243,6 +255,8 @@
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
        --ck-border-radius: 12px;
        margin-bottom: 0px;
+       --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
      }
      .--ck-color-link-default{
       color: #000000;
@@ -280,6 +294,8 @@
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
        --ck-border-radius: 12px;
        margin-bottom: 0px;
+       --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
      }
      .--ck-color-link-default{
       color: #000000;

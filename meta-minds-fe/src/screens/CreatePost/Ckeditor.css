@@ -28,6 +28,8 @@ a {
   margin-bottom: 120px;
   position: relative;
   --ck-border-radius: 12px;
+  --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
 }
 
 .bottom {
@@ -70,6 +72,8 @@ a {
     --ck-border-radius: 12px;
     margin-bottom: 120px;
     position: relative;
+    --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
   }
   .bottom {
     margin-bottom: 120px;
@@ -168,8 +172,10 @@ a {
   }
   .ck-editor{
      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-     border-radius: 12px;
+     --ck-border-radius: 12px;
      margin-bottom: 0px;
+     --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
    }
 
    .--ck-color-link-default{
@@ -208,8 +214,10 @@ a {
   .ck-editor{
     background-color: yellowgreen;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    border-radius: 12px;
+    --ck-border-radius: 12px;
     margin-bottom: 0px;
+    --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
   }
   .bottom {
     margin-top: 15px;
@@ -244,8 +252,10 @@ a {
   .ck-editor{
      background-color: yellowgreen;
      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-     border-radius: 12px;
+     --ck-border-radius: 12px;
      margin-bottom: 0px;
+     --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
    }
    .--ck-color-link-default{
     color: #000000;
@@ -281,8 +291,10 @@ a {
   .ck-editor{
      background-color: yellowgreen;
      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-     border-radius: 12px;
+     --ck-border-radius: 12px;
      margin-bottom: 0px;
+     --ck-color-toolbar-background: white;
+  --ck-color-toolbar-border: 	white;
    }
    .--ck-color-link-default{
     color: #000000;
