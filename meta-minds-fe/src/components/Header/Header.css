@@ -322,6 +322,7 @@ border-style: 5px ridge;
 .page-overlay-mobile{
   display: none;
 }
+
 }
 @media only screen and (min-width: 1600px ) and (max-width: 1679px ){
   .header-div {

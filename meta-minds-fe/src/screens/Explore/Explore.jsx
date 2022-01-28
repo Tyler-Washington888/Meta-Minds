@@ -12,8 +12,6 @@ function Explore(props) {
   const [mostPopularMetaPost, setMostPopularMetaPost] = useState([])
   const { DateTime } = require("luxon");
 
-
-
   useEffect(async () => {
     const metaPosts = await posts.filter((post) => {
       return post.category === 'Meta'
@@ -22,7 +20,6 @@ function Explore(props) {
       return a.id - b.id
     })
     const firstLatestMetaPost = await latestMetaPost[2]
-    console.log(firstLatestMetaPost)
     setMostPopularMetaPost(firstLatestMetaPost)
     arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerLoad);
@@ -31,7 +28,9 @@ function Explore(props) {
 
 
   const loopWithSlice = (start, end) => {
-    const filteredMetaPosts = posts.filter(post => post.id !== mostPopularMetaPost?.id);
+    const metaPosts = posts.filter(post => post.category == 'Meta');
+    const importantMetaPost = metaPosts[2]
+    const filteredMetaPosts = posts.filter(post => post.id !== importantMetaPost.id);
     const orderedPosts = filteredMetaPosts.sort((b, a) => {
       return b.id - a.id
     })
