@@ -2066,7 +2066,7 @@ border-style: 5px ridge;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     position: sticky;
     top: 0;
-    z-index: 3000;
+    z-index: 1000;
   }
   .single-search-result-div-link{
     text-decoration: none;
@@ -2078,16 +2078,15 @@ border-style: 5px ridge;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
-    position: relative;
-    bottom: 5px;
+    position: sticky;
+    top: 5px;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   .hamburger-menu{
     margin-left: 10px;
     height: 30px;
     width: 30px;
-    z-index: 1001;
   }
   .mobile-logo-div-link{
     text-decoration: none;
@@ -2100,7 +2099,6 @@ border-style: 5px ridge;
     position: relative;
     top: 2px;
     left: 24px;
-    z-index: 1001;
   }
   .meta-logo-person{
     height: 90px;
@@ -2108,7 +2106,6 @@ border-style: 5px ridge;
     position: relative;
     bottom: 0px;
     left: 0px;
-    z-index: 1001;
   }
   .meta-minds-text{
     font-family: 'Press Start 2P';
@@ -2117,7 +2114,6 @@ border-style: 5px ridge;
     top: 40px;
     right: 20px;
     margin-left: 0px;
-    z-index: 1001;
   }
   .mobile-hamburger-div{
     display: flex;
@@ -2129,17 +2125,16 @@ border-style: 5px ridge;
    border-radius: 12px;
     height: 300px;
     width: 95.8%;
-    z-index: 1050;
     position: fixed;
     top: 10px;
     left: 10px;
+    z-index: 1002;
   }
   .exit-out-and-meta-logo-div{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    z-index: 35500;
     width: 100%;
     height: 70px;
   }
@@ -2157,7 +2152,6 @@ border-style: 5px ridge;
     position: relative;
     top: -8px;
     left: 22px;
-    z-index: 1001;
     margin-left: 10px;
   }
   .ham-meta-logo-person{
@@ -2166,7 +2160,6 @@ border-style: 5px ridge;
     position: relative;
     bottom: 0px;
     left: 0px;
-    z-index: 1001;
   }
   .ham-meta-minds-text{
     font-family: 'Press Start 2P';
@@ -2175,7 +2168,6 @@ border-style: 5px ridge;
     top: 40px;
     right: 20px;
     margin-left: 0px;
-    z-index: 1001;
   }
   .hamburger-details-div{
     width: 100%;
@@ -2184,7 +2176,6 @@ border-style: 5px ridge;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start ;
-    z-index: 35500;
   }
   .categories-div{
     display: flex;
@@ -2233,22 +2224,6 @@ border-style: 5px ridge;
     justify-content: flex-start;
     align-items: flex-start;
   }
-
-  .mobile-hamburger-div{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    overflow: hidden;
-    overflow-y: auto;
-   border-radius: 12px;
-    height: 300px;
-    width: 95%;
-    z-index: 35500;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-  }
   
   .mobile-search-div{
     display: flex;
@@ -2259,7 +2234,7 @@ border-style: 5px ridge;
     left: 10px;
     top: 10px;
     height: 450px;
-    z-index: 3000;
+    z-index: 1003;
   }
   .mobile-search-top-div{
     display: flex;
@@ -2268,7 +2243,6 @@ border-style: 5px ridge;
     align-items: center;
     min-height: 12%;
     width: 100%;
-    z-index: 1000;
    background-color: white;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
    border-top-left-radius: 12px;
@@ -2317,7 +2291,6 @@ border-style: 5px ridge;
     border-bottom-right-radius: 12px;
     height: 100%;
     width: 100%;
-    z-index: 1050;
   }
 
   .meta-logo-default-result{
@@ -2337,7 +2310,6 @@ border-style: 5px ridge;
     border-bottom-right-radius: 12px;
     height: 100%;
     width: 100%;
-    z-index: 1050;
   }
   .single-search-result-div-mobile{
     background-color: white;
@@ -2349,7 +2321,6 @@ border-style: 5px ridge;
     align-content: center;
     min-height: 50px;
     margin-bottom: 0px;
-    z-index: 10;
     box-shadow: 0px -4px 0px -4px rgba(0,0,0,0.4);
   }
     .single-search-result-div-mobile:hover {
@@ -2384,7 +2355,7 @@ border-style: 5px ridge;
           border-top-right-radius: 0px;
           border-bottom-left-radius: 12px;
           border-bottom-right-radius: 12px;
-          z-index: 1001;
+      
         }
         .mobile-unsuccessful-search-results-text-divs{
           position: relative;
@@ -2410,7 +2381,6 @@ border-style: 5px ridge;
     height: 30px;
     width: 30px;
     right: -20px;
-    z-index: 1001;
   }
   .page-overlay-mobile-div {
     position: fixed;
@@ -2420,8 +2390,8 @@ border-style: 5px ridge;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
     opacity:.8;
-    z-index: 3000;
     pointer-events:none;
+    z-index: 1001;
   }
   .header-div-user{
     display: none;
