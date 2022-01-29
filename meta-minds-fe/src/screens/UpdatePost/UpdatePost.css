@@ -1240,18 +1240,14 @@ width: 70px;
     z-index: 143;
     border-radius: 12px;
   }  
-  .create-post-label-and-input-div{
-    border-radius: 30px;
-  }
   .update-post-user-input-box{
-    height: 45px;
-    width: 97%;
+    min-height: 40px;
+    width: 96%;
     border-radius: 12px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     border-width: 0;
-    font-size: 15px;
-    padding-left: 10px;
-    outline-width: 0;
+    font-size: 16px;
+    padding-left: 5px;
+    outline-width: 0; 
     margin-bottom: 30px;
   }
   .update-post-label-and-input-div{
@@ -1260,19 +1256,27 @@ width: 70px;
    flex-direction: column;
    align-items: stretch;
    justify-content: stretch;
+   background-color: white;
+   border-radius: 12px;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+   max-height: 45px;
+   margin-bottom: 30px;
   }
   .update-category-div {
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     display: flex;
-    height: 45px;
+    min-height: 45px;
+    min-width: 90.5%;
     top: 30px;
-    background-color: white;
     margin-bottom: 30px;
+    color: black;
    }
    .update-catgegory{
      color: black;
      text-decoration: none;
+     min-height: 45px;
+     min-width: 90.5%;
    }
    .update-button-disabled{
     width: 150px;
