@@ -140,7 +140,7 @@ export default function ViewPost(props) {
             <div className="clipboard-div">
               <img className="task-complete-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638902968/Meta-Minds/icons8-task-completed-48_tteo9y.png"></img>
               <div className="Link-to-text">Link copied to clipboard</div>
-              <a className="href-text" href={`/view-post/${post.id}`}>View Post</a>
+              <a className="href-text" href={`/view-post/${post?.id}`}>View Post</a>
               <img onClick={() => setCopied(false)} className="exit-clipboard-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637356989/Meta-Minds/icons8-xbox-x-30_b6ugfl.png"></img>
             </div>
           )}

@@ -220,7 +220,7 @@ function UpdatePost(props) {
             />
           </label>
           <br />
-          <label className="create-post-label-and-input-div category-div">
+          <label className="update-post-label-and-input-div update-category-div">
             <div className="create-post-input-text"></div>
             {category === "Mana" ? (<select name="category" className="category" onChange={handleChange}>
               <option value="Mana" selected="selected">{category}</option>
@@ -245,10 +245,10 @@ function UpdatePost(props) {
             </select>)))}
           </label>
           <br />
-          <label className="create-post-label-and-input-div">
+          <label className="update-post-label-and-input-div">
             <div className="create-post-input-text"></div>
             <input
-              className="create-post-user-input-box"
+              className="update-post-user-input-box"
               type='text'
               placeholder="Title"
               value={title}
@@ -256,10 +256,10 @@ function UpdatePost(props) {
               onChange={handleChange} />
           </label>
           <br />
-          <label className="create-post-label-and-input-div ">
+          <label className="update-post-label-and-input-div ">
             <div className="create-post-input-text"></div>
             <input
-              className="create-post-user-input-box"
+              className="update-post-user-input-box"
               type='text'
               value={subtitle}
               placeholder="Subtitle"

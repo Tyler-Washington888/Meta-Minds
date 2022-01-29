@@ -2438,6 +2438,7 @@ color: rgb(22, 21, 21);
       display: flex;
       justify-content: left;
       margin-bottom: 20px;
+      margin-top: 40px;
     }
     .sim-posts-mobile-div{
       display: unset;
@@ -2640,7 +2641,7 @@ color: rgb(22, 21, 21);
       font-weight:normal;
       position: relative;
      left: 3px;
-     top: 4px;
+     top:3px;
     }
     .copy-link-text{
       font-size: 15px;
@@ -2649,10 +2650,7 @@ color: rgb(22, 21, 21);
      left: 3px;
      top: 8px;
     }
-    .copy-link-icon-two{
-      position: relative;
-      bottom: 20px;
-    }
+  
 
     .view-post-show-options-dropdown-two-mobile{
       display: flex;
@@ -3387,7 +3385,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 
    .similar-posts-title{
     font-size: 33px;
-    padding-top: 15px;
+    margin-top: 80px;
     margin-bottom: 12px;
     position: relative;
     left: -3px;
@@ -3418,7 +3416,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     font-weight:normal;
     position: relative;
-   left: 3px;
+   left: 10px;
    top: 8px;
   }
 
@@ -3558,6 +3556,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: left;
     margin-bottom: 20px;
+    margin-top: 30px;
   }
   .sim-posts-mobile-div{
     display: unset;
@@ -3951,7 +3950,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 
    .similar-posts-title{
     font-size: 33px;
-    padding-top: 15px;
+    padding-top: 50px;
     margin-bottom: 12px;
     position: relative;
     left: -3px;
@@ -3975,14 +3974,14 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
     width: 25px;
     position: relative;
     top: 6px;
-    right: 3px;
+    right: -10px;
     margin-right: 10px;
   }
   .copy-link-text-two {
     font-size: 15px;
     font-weight:normal;
     position: relative;
-   left: 3px;
+   left: 20px;
    top: 8px;
   }
 
@@ -4515,7 +4514,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 
    .similar-posts-title{
     font-size: 33px;
-    padding-top: 15px;
+    padding-top: 80px;
     margin-bottom: 12px;
     position: relative;
     left: -3px;

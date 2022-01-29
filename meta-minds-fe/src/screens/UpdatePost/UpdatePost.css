@@ -1240,7 +1240,39 @@ width: 70px;
     z-index: 143;
     border-radius: 12px;
   }  
-
+  .create-post-label-and-input-div{
+    border-radius: 30px;
+  }
+  .update-post-user-input-box{
+    height: 45px;
+    width: 97%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    border-width: 0;
+    font-size: 15px;
+    padding-left: 10px;
+    outline-width: 0;
+    margin-bottom: 30px;
+  }
+  .update-post-label-and-input-div{
+    width: 90%;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: stretch;
+  }
+  .update-category-div {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    display: flex;
+    height: 45px;
+    top: 30px;
+    background-color: white;
+    margin-bottom: 30px;
+   }
+   .catgegory{
+     color: black;
+   }
 }
 
 

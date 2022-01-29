@@ -1888,6 +1888,7 @@ border-bottom-right-radius: 0;
   margin-bottom: 170px;
   text-decoration: none;
   color: black;
+  opacity: .6;
 }
   .all-posts-div {
     display: none;
