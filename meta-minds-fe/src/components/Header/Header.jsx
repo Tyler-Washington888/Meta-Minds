@@ -181,19 +181,19 @@ function Header(props) {
                 <h3 className='detail-titles'>Categories</h3>
                 <div className='category-links'>
                   <NavLink exact to="/" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-
+                    color: '#01F4F9'
                   }} className="nav-Links"><div className='links'>Latest</div></NavLink>
                   <NavLink to="/meta" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-
+                    color: '#01F4F9'
                   }} className="nav-Links"><div className='links'>Meta</div></NavLink>
                   <NavLink to="/mana" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-
+                    color: '#01F4F9'
                   }} className="nav-Links"><div className='links'>Mana</div></NavLink>
                   <NavLink to="/crypto" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-
+                    color: '#01F4F9'
                   }} className="nav-Links"><div className='links'>Crypto</div></NavLink>
                   <NavLink to="/film" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-
+                    color: '#01F4F9'
                   }} className="nav-Links"><div className='links'>Film</div></NavLink>
                 </div>
               </div>

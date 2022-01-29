@@ -1341,7 +1341,7 @@ border-style: 5px ridge;
     width: 375px;
     height: 70px;
     padding-bottom: 30px;
-    background-color: #01F4F9;
+    background-color: white;
   }
   .exit-out-icon{
     padding-left: 10px;
@@ -1372,7 +1372,7 @@ border-style: 5px ridge;
     font-size: 14px;
     position: relative;
     top: 40px;
-    right: 20px;
+    right: 20.5px;
     margin-left: 0px;
     z-index: 1001;
   }
@@ -1384,7 +1384,7 @@ border-style: 5px ridge;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start ;
-    background-color: #01F4F9;
+    background-color: white;
     z-index: 2002;
   }
   .categories-div{
@@ -1471,14 +1471,13 @@ border-style: 5px ridge;
     overflow: hidden;
     overflow-y: auto;
    border-radius: 12px;
-   border-top-left-radius: 0;
-   border-top-right-radius: 0;
     height: 310px;
-    width: 100%;
+    width: 95.8%;
     z-index: 1050;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 10px;
+    left: 7px;
+    right: 7px;
   }
 
   .detail-titles{
@@ -1633,7 +1632,7 @@ border-style: 5px ridge;
   }
   .search-bar-icon-mobile{
     position: relative;
-    left: 13px;
+    left: 11px;
     height: 30px;
     width: 30px;
     z-index: 1001;
@@ -1645,7 +1644,7 @@ border-style: 5px ridge;
     top: 0;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
-    opacity:.6;  
+    opacity:.7;  
     z-index: 100;
     pointer-events:none;
   }
@@ -1694,6 +1693,7 @@ border-style: 5px ridge;
     z-index: 1000;
     position: relative;
     bottom: 5px;
+    overflow-x: hidden;
   }
   .hamburger-menu{
     margin-left: 10px;
@@ -1711,7 +1711,7 @@ border-style: 5px ridge;
     max-height: 100%;
     position: relative;
     top: 2px;
-    left: 6px;
+    left: 21px;
     z-index: 1001;
   }
   .meta-logo-person{
@@ -1754,6 +1754,7 @@ border-style: 5px ridge;
     z-index: 2000;
     width: 100%;
     height: 70px;
+    background-color: white;
   }
   .exit-out-icon{
     padding-left: 17px;
@@ -1768,7 +1769,7 @@ border-style: 5px ridge;
     max-height: 100%;
     position: relative;
     top: -8px;
-    left: 17px;
+    left: 19px;
     z-index: 1001;
   }
   .ham-meta-logo-person{
@@ -1795,6 +1796,7 @@ border-style: 5px ridge;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start ;
+    background-color: white;
   }
   .categories-div{
     display: flex;
@@ -1807,8 +1809,14 @@ border-style: 5px ridge;
     margin-top: -5px;
     justify-content: flex-start;
     align-items: flex-start;
+    color: black;
+    text-decoration: none;
   }
   .nav-Links{
+    color: black;
+    text-decoration: none;
+  }
+  .nav-Linkss{
     color: black;
     text-decoration: none;
   }
@@ -1827,6 +1835,8 @@ border-style: 5px ridge;
     margin-top: -5px;
     justify-content: flex-start;
     align-items: flex-start;
+    color: black;
+    text-decoration: none;
   }
   .creator-div{
     display: flex;
@@ -1838,33 +1848,36 @@ border-style: 5px ridge;
     margin-top: -5px;
     justify-content: flex-start;
     align-items: flex-start;
+    color: black;
+    text-decoration: none;
   }
-
-  .mobile-hamburger-div{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    overflow: hidden;
-    overflow-y: auto;
-   border-radius: 12px;
-    height: 300px;
-    width: 95%;
-    z-index: 1050;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-  }
+    .mobile-hamburger-div{
+      display: flex;
+      flex-direction: column;
+      background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      overflow: hidden;
+      overflow-y: auto;
+     border-radius: 12px;
+      height: 310px;
+      width: 96.5%;
+      z-index: 1050;
+      position: fixed;
+      top: 10px;
+      left: 7px;
+      right: 7px;
+    }
   
   .mobile-search-div{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    position: fixed;
+    position: sticky;
     right: 10px;
     left: 10px;
     top: 10px;
     height: 450px;
+    width: 96%;
     z-index: 3000;
   }
   .mobile-search-top-div{
@@ -2011,7 +2024,7 @@ border-style: 5px ridge;
     position: relative;
     height: 30px;
     width: 30px;
-    right: 10px;
+    right: -14px;
     z-index: 1001;
   }
   .page-overlay-mobile-div {
@@ -2021,7 +2034,7 @@ border-style: 5px ridge;
     top: 0;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
-    opacity:.5; 
+    opacity:.8; 
     z-index: 100;
     pointer-events:none;
   }
@@ -2114,7 +2127,7 @@ border-style: 5px ridge;
     overflow-y: auto;
    border-radius: 12px;
     height: 300px;
-    width: 95%;
+    width: 95.8%;
     z-index: 1050;
     position: fixed;
     top: 10px;
