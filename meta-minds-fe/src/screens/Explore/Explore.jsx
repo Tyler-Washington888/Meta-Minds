@@ -55,7 +55,7 @@ function Explore(props) {
               <div className='mobile-latest-post-date'>{DateTime.fromISO(`${mostPopularMetaPost?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
               <Link to={`/${mostPopularMetaPost?.category}`} className="single-post-category-link-mobile"><div className='mobile-latest-post-category'>{mostPopularMetaPost?.category}</div></Link>
             </div>
-            <Link to={`/view-post/${mostPopularMetaPost?.id}`} key={mostPopularMetaPost?.id} className="single-post-title-link-mobile"><div className='mobile-latest-post-title'>{mostPopularMetaPost?.title}</div></Link>
+            <Link to={`/view-post/${mostPopularMetaPost?.id}`} key={mostPopularMetaPost?.id} className="mobile-latest-post-title">{mostPopularMetaPost?.title}</Link>
           </div>
         </div>
 

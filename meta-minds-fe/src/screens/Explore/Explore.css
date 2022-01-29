@@ -1872,6 +1872,9 @@ border-bottom-right-radius: 0;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   background-color: transparent;
   margin-bottom: 170px;
+  text-decoration: none;
+  color: black;
+}
 }
 .load-more-button:hover {
  background-color: #0ACCE5;
@@ -1884,6 +1887,8 @@ border-bottom-right-radius: 0;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   background-color: transparent;
   margin-bottom: 170px;
+  text-decoration: none;
+  color: black;
 }
   .all-posts-div {
     display: none;
