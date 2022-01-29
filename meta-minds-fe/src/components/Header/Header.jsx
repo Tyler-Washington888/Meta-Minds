@@ -163,10 +163,10 @@ function Header(props) {
       {/* mobile version */}
       <div className="mobile-content-div">
         <img className="hamburger-menu" onClick={() => setOpenHamburger(!openHamburger)} src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642295739/Meta-Minds/icons8-menu-50_iyctkp.png" alt="hamburger-menu"></img>
-        <Link className="mobile-logo-div-link" to="/"><div className="mobile-logo-div">
+        <Link className="mobile-logo-div-link mobile-logo-div" to="/">
           <img className="meta-logo-person" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="meta-logo-person"></img>
           <div className="meta-minds-text" alt="meta-minds-text">Meta Minds</div>
-        </div></Link>
+        </Link>
         {openHamburger == true ? (
           <div className="mobile-hamburger-div">
             <div className='exit-out-and-meta-logo-div'>
@@ -181,19 +181,19 @@ function Header(props) {
                 <h3 className='detail-titles'>Categories</h3>
                 <div className='category-links'>
                   <NavLink exact to="/" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    border: '1px solid ', borderRadius: '5px'
+
                   }} className="nav-Links"><div className='links'>Latest</div></NavLink>
                   <NavLink to="/meta" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    border: '1px solid ', borderRadius: '5px'
+
                   }} className="nav-Links"><div className='links'>Meta</div></NavLink>
                   <NavLink to="/mana" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    border: '1px solid ', borderRadius: '5px'
+
                   }} className="nav-Links"><div className='links'>Mana</div></NavLink>
                   <NavLink to="/crypto" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    border: '1px solid ', borderRadius: '5px'
+
                   }} className="nav-Links"><div className='links'>Crypto</div></NavLink>
                   <NavLink to="/film" onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    border: '1px solid ', borderRadius: '5px'
+
                   }} className="nav-Links"><div className='links'>Film</div></NavLink>
                 </div>
               </div>
@@ -201,7 +201,7 @@ function Header(props) {
                 <h3>Personal</h3>
                 {currentUser ? (<div className='creator-links'>
                   <NavLink to={`/user-posts/${currentUser?.id}`} onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
-                    border: '1px solid ', borderRadius: '5px'
+                    color: '#0ACCE5'
                   }} className="nav-Linkss links">User Posts</NavLink>
                   <Link exact to="/" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Linkss links" onClick={handleLogout}>Logout</Link>
                 </div>) : (
