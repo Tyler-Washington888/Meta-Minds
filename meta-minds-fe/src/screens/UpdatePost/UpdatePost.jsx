@@ -222,7 +222,7 @@ function UpdatePost(props) {
           <br />
           <label className="update-post-label-and-input-div update-category-div">
             <div className="create-post-input-text"></div>
-            {category === "Mana" ? (<select name="category" className="category" onChange={handleChange}>
+            {category === "Mana" ? (<select name="category" className="update-category" onChange={handleChange}>
               <option value="Mana" selected="selected">{category}</option>
               <option value="Meta">Meta</option>
               <option value="Crypto">Crypto</option>
@@ -280,8 +280,8 @@ function UpdatePost(props) {
             />
           </label>
           {image.length === 0 || category === "" || title.length === 0 || subtitle.length === 0 || content.length === 0 ? (
-            <button className="submit-button-disabled" disabled={true} >Update</button>) : (
-            <button className="submit-button">Update</button>
+            <button className="update-button-disabled" disabled={true} >Update</button>) : (
+            <button className="update-button">Update</button>
           )}
         </form>
         <Footer />
