@@ -1337,7 +1337,7 @@ border-style: 5px ridge;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    z-index: 2000;
+    z-index: 20000;
     width: 375px;
     height: 70px;
     padding-bottom: 30px;
@@ -1385,7 +1385,7 @@ border-style: 5px ridge;
     justify-content: space-around;
     align-items: flex-start ;
     background-color: white;
-    z-index: 2002;
+    z-index: 20002;
   }
   .categories-div{
     display: flex;
