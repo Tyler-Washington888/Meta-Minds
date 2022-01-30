@@ -492,7 +492,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow-y: hidden;
+      overflow-y: scroll;
       overflow-x: hidden;
       background-repeat: no-repeat;
       background-size: cover;
@@ -518,6 +518,7 @@
       justify-content:flex-start;
       width: 96%;
       height: 98%;
+      overflow-y: scroll;
     }
     .meta-minds-logo-div-sign-up-mobile{
       padding-top: 0px;
@@ -556,7 +557,7 @@
       outline: none;
       box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
       background-color: white;
-      padding-left: 15px;
+      padding-left: 16px;
     }
    .sign-up-button{
      background-color: transparent;
@@ -582,6 +583,12 @@
      margin-top: -40px;
      font-size: 14px;
    }
+   .link-to-sign-in-button:hover {
+    background-color: #0ACCE5;
+  }
+  .sign-up-button:hover {
+    background-color: #0ACCE5;
+  }
   }
 
 @media screen and (min-width: 390px ) and (max-width: 413px ){
@@ -593,7 +600,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
@@ -614,6 +621,7 @@
     justify-content:flex-start;
     width: 96%;
     height: 98%;
+    overflow-y: scroll;
   }
   .input-text-title {
     font-size: 25px;
@@ -657,7 +665,7 @@
     outline: none;
     box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     background-color: white;
-    padding-left: 15px;
+    padding-left: 16px;
   }
  .sign-up-button{
    background-color: transparent;
@@ -683,6 +691,12 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
   margin-top: -40px;
   font-size: 14px;
 }
+.link-to-sign-in-button:hover {
+  background-color: #0ACCE5;
+}
+.sign-up-button:hover {
+  background-color: #0ACCE5;
+}
 }
 @media screen and (min-width:414px ) and (max-width: 427px ) {
   .sign-up-outer-div-desktop{
@@ -693,7 +707,7 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
@@ -712,13 +726,13 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     margin-top: 0px;
   }
   .sign-up-outer-div-mobile{
-    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     width: 96%;
     height: 98%;
+    overflow-y: scroll;
   }
   .meta-minds-logo-div-sign-up-mobile{
     padding-top: 0px;
@@ -757,7 +771,7 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     outline: none;
     box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     background-color: white;
-    padding-left: 15px;
+    padding-left: 16px;
   }
  .sign-up-button{
    background-color: transparent;
@@ -770,6 +784,8 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
   left: 8px;
   top: 10px;
   border-style: hidden;
+  text-decoration: none;
+  color: black;
  }
  .link-to-sign-in-button{
   background-color: transparent;
@@ -778,10 +794,18 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
   width: 78%;
 border-radius: 12px;
 box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+text-decoration: none;
+  color: black;
  }
  .link-to-sign-in-div{
   margin-top: -40px;
   font-size: 14px;
+}
+.link-to-sign-in-button:hover {
+  background-color: #0ACCE5;
+}
+.sign-up-button:hover {
+  background-color: #0ACCE5;
 }
 }
 @media screen and (min-width: 428px ) and (max-width: 599px ) {
@@ -793,7 +817,7 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
@@ -812,13 +836,13 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     margin-top: 0px;
   }
   .sign-up-outer-div-mobile{
-    box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     width: 96%;
     height: 98%;
+    overflow-y: scroll;
   }
   .meta-minds-logo-div-sign-up-mobile{
     padding-top: 0px;
@@ -857,7 +881,7 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     outline: none;
     box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     background-color: white;
-    padding-left: 15px;
+    padding-left: 16px;
   }
  .sign-up-button{
    background-color: transparent;
@@ -879,8 +903,14 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
 border-radius: 12px;
 box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
  }
+ .link-to-sign-in-button:hover {
+  background-color: #0ACCE5;
+}
  .link-to-sign-in-div{
   margin-top: -40px;
   font-size: 14px;
+}
+.sign-up-button:hover {
+  background-color: #0ACCE5;
 }
 }

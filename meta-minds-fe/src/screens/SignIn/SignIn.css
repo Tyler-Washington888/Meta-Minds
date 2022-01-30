@@ -482,7 +482,6 @@
       display: none;
     }
     .outer-div-mobile{
-     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
      border-radius: 12px;
      display: flex;
      flex-direction: column;
@@ -607,7 +606,6 @@
       display: none;
     }
     .outer-div-mobile{
-     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
      border-radius: 12px;
      display: flex;
      flex-direction: column;
@@ -732,7 +730,6 @@
       display: none;
     }
     .outer-div-mobile{
-     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
      border-radius: 12px;
      display: flex;
      flex-direction: column;
@@ -862,7 +859,6 @@
       display: none;
     }
     .outer-div-mobile{
-     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);
      border-radius: 12px;
      display: flex;
      flex-direction: column;
