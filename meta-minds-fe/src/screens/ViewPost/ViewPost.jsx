@@ -84,7 +84,7 @@ export default function ViewPost(props) {
               <div className='options-and-drop-down-mobile-div'>
                 <img className="view-post-edit-or-delete-option-mobile" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638566267/option_nqo2as.png" onClick={() => setIsOpen(!isOpen)} alt="banner-mage"></img>
                 {isOpen && (
-                  (currentUser && currentUser.id === post.user_id ? (
+                  (currentUser && currentUser?.id === post?.user_id ? (
                     <div className="view-post-show-options-dropdown-mobile">
                       <Link className="edit-post-div-link" to={`/update-post/${post?.id}`} key={post?.id}><div className="edit-post-div">
                         <img className="edit-post-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638767523/Meta-Minds/icons8-edit-30_c4n4wb.png"></img>
@@ -114,7 +114,7 @@ export default function ViewPost(props) {
             <div className="view-post-created-name">{user[0]?.username}</div>
           </div>
           {isOpen && (
-            (currentUser && currentUser.id == post.user_id ? (
+            (currentUser && currentUser?.id == post?.user_id ? (
               <div className="view-post-show-options-dropdown">
                 <Link className="edit-post-div-link" to={`/update-post/${post?.id}`} key={post?.id}><div className="edit-post-div">
                   <img className="edit-post-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638767523/Meta-Minds/icons8-edit-30_c4n4wb.png"></img>
@@ -165,7 +165,7 @@ export default function ViewPost(props) {
         <div className="similar-posts-div">
           <div className="similar-posts-title">Similar Posts</div>
           <div className="each-similar-post-div">
-            {firstTwoPosts.map((simPost) => {
+            {firstTwoPosts?.map((simPost) => {
               return (
                 <div className="each-similar-post" key={simPost?.id}>
                   <Link to={`/view-post/${simPost?.id}`} className="single-post-title-link"><img className="each-similar-post-image" src={simPost?.image} alt="similar-post"></img></Link>
@@ -183,16 +183,16 @@ export default function ViewPost(props) {
             })}
           </div>
           <div className='sim-posts-mobile-div'>
-            {firstTwoPosts.map((simPost) => {
+            {firstTwoPosts?.map((simPost) => {
               return (
-                <div className='vp-each-single-mobile-post' key={simPost.id}>
-                  <Link to={`/view-post/${simPost.id}`} className="vp-each-single-mobile-post-image-link"><img className="vp-each-single-mobile-post-image" src={simPost.image} alt={simPost.title} /></Link>
+                <div className='vp-each-single-mobile-post' key={simPost?.id}>
+                  <Link to={`/view-post/${simPost?.id}`} className="vp-each-single-mobile-post-image-link"><img className="vp-each-single-mobile-post-image" src={simPost?.image} alt={simPost?.title} /></Link>
                   <div className='vp-each-single-mobile-post-details-div'>
                     <div className='vp-each-single-mobile-post-details-date-and-category-div'>
                       <div className='vp-each-single-mobile-post-details-date'>{DateTime.fromISO(`${simPost?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
-                      <Link to={`/${simPost.category}`} className="vp-single-post-category-link"> <div className='vp-each-single-mobile-post-details-category'>{simPost.category}</div></Link>
+                      <Link to={`/${simPost?.category}`} className="vp-single-post-category-link"> <div className='vp-each-single-mobile-post-details-category'>{simPost?.category}</div></Link>
                     </div>
-                    <Link to={`/view-post/${simPost.id}`} className='vp-each-single-mobile-post-details-title vp-single-post-category-link'>{simPost.title}</Link>
+                    <Link to={`/view-post/${simPost?.id}`} className='vp-each-single-mobile-post-details-title vp-single-post-category-link'>{simPost?.title}</Link>
                   </div>
                 </div>
               )

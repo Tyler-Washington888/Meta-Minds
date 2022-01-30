@@ -13,15 +13,14 @@ export default function YourPosts(props) {
   const [loading, setLoading] = useState(false)
   const { DateTime } = require("luxon");
 
-
-  useEffect(async () => {
+  const userPosts = posts.filter((post) => {
+    return post.user_id === currentUser?.id
+  })
+  const mostRecentPost = userPosts.sort((b, a) => {
+    return a.id - b.id
+  })
+  useEffect(() => {
     setLoading(true);
-    const userPosts = await posts.filter((post) => {
-      return post.user_id === currentUser?.id
-    })
-    const mostRecentPost = await userPosts.sort((b, a) => {
-      return a.id - b.id
-    })
     setNewestPost(mostRecentPost[0])
     setAllPosts(userPosts)
     setLoading(false);
@@ -40,9 +39,9 @@ export default function YourPosts(props) {
         )
           : (newestPost === [] && loading === true ? (<div>Loading...</div>) : (<div></div>))}
         <div className="user-post-outer-div">
-          {allPosts.map(post => {
+          {allPosts?.map(post => {
             return (
-              <Link to={`/view-post/${post.id}`} key={post.id} className="user-post-inner-div-link"><div className="user-post-inner-div" key={post?.id}>
+              <Link to={`/view-post/${post?.id}`} key={post?.id} className="user-post-inner-div-link"><div className="user-post-inner-div" key={post?.id}>
                 <div className="user-post-date-and-title-div">
                   <h6 className="user-post-date">{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
                   <h4 className="user-post-title">{post?.title}</h4>
@@ -63,14 +62,14 @@ export default function YourPosts(props) {
         )
           : (newestPost === [] && loading === true ? (<div>Loading...</div>) : (<div></div>))}
         <div className='user-posts-mobile-outer-div'>
-          {allPosts.map(post => {
+          {allPosts?.map(post => {
             return (
-              <Link to={`/view-post/${post.id}`} key={post.id} className="user-posts-mobile-inner-div-link"><div className="user-posts-mobile-inner-div" key={post.id}>
+              <Link to={`/view-post/${post?.id}`} key={post?.id} className="user-posts-mobile-inner-div-link"><div className="user-posts-mobile-inner-div" key={post?.id}>
                 <div className='user-posts-posts-date-and-title'>
                   <div className='user-posts-mobile-date'>{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
-                  <div className='user-posts-mobile-title'>{post.title}</div>
+                  <div className='user-posts-mobile-title'>{post?.title}</div>
                 </div>
-                <img className='user-posts-mobile-image' src={post.image} alt={post.tile} />
+                <img className='user-posts-mobile-image' src={post?.image} alt={post?.tile} />
               </div></Link>
             )
           })}

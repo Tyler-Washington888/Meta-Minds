@@ -9,14 +9,13 @@ function Meta(props) {
   const [allPosts, setAllPosts] = useState([]);
   const { DateTime } = require("luxon");
 
-
-  useEffect(async () => {
-    const metaPosts = await posts.filter((post) => {
-      return post.category === 'Meta'
-    });
-    const latestPosts = await metaPosts.sort((b, a) => {
-      return a.id - b.id;
-    });
+  const metaPosts = posts.filter((post) => {
+    return post.category === 'Meta'
+  });
+  const latestPosts = metaPosts.sort((b, a) => {
+    return a.id - b.id;
+  });
+  useEffect(() => {
     setAllPosts(latestPosts);
   }, [posts])
 
@@ -25,14 +24,14 @@ function Meta(props) {
       <img className="meta-banner-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1637542839/Meta-Minds/meta_gvy4ph.png" alt="meta-banner-image"></img>
       <div className="meta-posts-div">
         <div className="each-meta-post-outer-div">
-          {allPosts.map(post => {
+          {allPosts?.map(post => {
             return (
-              <Link to={`/view-post/${post.id}`} key={post.id} className="each-meta-post-inner-div-link"><div className="each-meta-post-inner-div" key={post.id}>
+              <Link to={`/view-post/${post?.id}`} key={post?.id} className="each-meta-post-inner-div-link"><div className="each-meta-post-inner-div" key={post?.id}>
                 <div className="each-meta-post-date-and-title-div">
                   <h6 className="each-meta-post-date">{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</h6>
-                  <h4 className="each-meta-post-title">{post.title}</h4>
+                  <h4 className="each-meta-post-title">{post?.title}</h4>
                 </div>
-                <img className="each-meta-post-image" src={post.image} alt={post.tile} />
+                <img className="each-meta-post-image" src={post?.image} alt={post?.tile} />
               </div></Link>
             )
           })}
@@ -41,14 +40,14 @@ function Meta(props) {
       </div>
       <div className='meta-mobile'>
         <div className='meta-mobile-outer-div'>
-          {allPosts.map(post => {
+          {allPosts?.map(post => {
             return (
-              <Link to={`/view-post/${post.id}`} key={post.id} className="meta-mobile-inner-div-link"><div className="meta-mobile-inner-div" key={post.id}>
+              <Link to={`/view-post/${post?.id}`} key={post?.id} className="meta-mobile-inner-div-link"><div className="meta-mobile-inner-div" key={post?.id}>
                 <div className='meta-posts-date-and-title'>
                   <div className='meta-mobile-date'>{DateTime.fromISO(`${post?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
-                  <div className='meta-mobile-title'>{post.title}</div>
+                  <div className='meta-mobile-title'>{post?.title}</div>
                 </div>
-                <img className='meta-mobile-image' src={post.image} alt={post.tile} />
+                <img className='meta-mobile-image' src={post?.image} alt={post?.tile} />
               </div></Link>
             )
           })}
