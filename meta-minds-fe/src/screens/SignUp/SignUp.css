@@ -568,6 +568,7 @@
     border-style: hidden;
     position: relative;
     left: 5px;
+    font-size: 20px;
    }
    .link-to-sign-in-button{
     height: 50px;
@@ -576,6 +577,7 @@
   box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
   border-style: hidden;
   background-color: transparent;
+  font-size: 20px;
 
    }
    .link-to-sign-in-div{
@@ -676,6 +678,7 @@
   left: 8px;
   top: 10px;
   border-style: hidden;
+  font-size: 20px;
  }
  .link-to-sign-in-button{
    background-color: transparent;
@@ -684,6 +687,7 @@
   width: 78%;
 border-radius: 12px;
 box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+font-size: 20px;
  }
  .link-to-sign-in-div{
   margin-top: -40px;
@@ -784,6 +788,7 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
   border-style: hidden;
   text-decoration: none;
   color: black;
+  font-size: 20px;
  }
  .link-to-sign-in-button{
   background-color: transparent;
@@ -794,6 +799,7 @@ border-radius: 12px;
 box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
 text-decoration: none;
   color: black;
+  font-size: 20px;
  }
  .link-to-sign-in-div{
   margin-top: -40px;
@@ -819,7 +825,7 @@ text-decoration: none;
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100% + 200px);
+    height: calc(100% + 370px);
     z-index: 1;
   }
   .sign-up-copyright-text{
@@ -892,6 +898,7 @@ text-decoration: none;
   left: 8px;
   top: 10px;
   border-style: hidden;
+  font-size: 20px;
  }
  .link-to-sign-in-button{
   background-color: transparent;
@@ -900,6 +907,7 @@ text-decoration: none;
   width: 78%;
 border-radius: 12px;
 box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
+font-size: 20px;
  }
  .link-to-sign-in-button:hover {
   background-color: #0ACCE5;
