@@ -761,6 +761,9 @@
  bottom: 30px;
  margin-bottom: 5px;
 }
+.create-post-button:hover {
+  background-color: #0ACCE5;
+ }
    .user-posts-mobile-outer-div{
      width: 100%;
      display: flex;
@@ -875,7 +878,9 @@
  bottom: -40px;
  margin-bottom: 25px;
 }
-
+.create-post-button:hover {
+  background-color: #0ACCE5;
+ }
 .create-post-button-link{
   text-decoration: none;
   color: black;
@@ -993,7 +998,9 @@
  bottom: -40px;
  margin-bottom: 25px;
 }
-
+.create-post-button:hover {
+  background-color: #0ACCE5;
+ }
 
  .create-post-button-link{
   text-decoration: none;
@@ -1119,9 +1126,12 @@
  position: relative;
  bottom: -40px;
  margin-bottom: 25px;
+ text-decoration: none;
+  color: black;
 }
-
-
+.create-post-button:hover {
+  background-color: #0ACCE5;
+ }
  .create-post-button-link{
   text-decoration: none;
   color: black;

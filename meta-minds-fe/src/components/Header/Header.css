@@ -1661,7 +1661,7 @@ border-style: 5px ridge;
   .header-div-content-margin-right {
     display: none;
   }
-  
+  a:link { -webkit-tap-highlight-color: rgba(0,0,0,0); }
 }
 
 
@@ -2050,7 +2050,7 @@ border-style: 5px ridge;
   .header-div-content-margin-right {
     display: none;
   }
-  
+  a:link { -webkit-tap-highlight-color: rgba(0,0,0,0); }
 
 }
 
@@ -2099,7 +2099,11 @@ border-style: 5px ridge;
     position: relative;
     top: 2px;
     left: 24px;
+    text-decoration: none;
+    color: black;
+    -webkit-touch-callout: none;               
   }
+  a:link { -webkit-tap-highlight-color: rgba(0,0,0,0); }
   .meta-logo-person{
     height: 90px;
     width: 90px;
@@ -2561,6 +2565,7 @@ border-style: 5px ridge;
     justify-content: flex-start;
     align-items: flex-start;
   }
+  a:link { -webkit-tap-highlight-color: rgba(0,0,0,0); }
   .nav-Links{
     color: black;
     text-decoration: none;

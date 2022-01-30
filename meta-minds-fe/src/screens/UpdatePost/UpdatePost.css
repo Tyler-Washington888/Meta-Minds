@@ -1168,6 +1168,9 @@ color: black;
     text-decoration: none;
     color: black;
   }
+  .update-button:hover {
+    background-color: #0ACCE5;
+   }
   *:focus{
     color: black;
     outline: none;
@@ -1315,6 +1318,9 @@ color: black;
     text-decoration: none;
     color: black;
   }
+  .update-button:hover {
+    background-color: #0ACCE5;
+   }
   *:focus{
     color: black;
     outline: none;
@@ -1462,6 +1468,9 @@ color: black;
     text-decoration: none;
     color: black;
   }
+  .update-button:hover {
+    background-color: #0ACCE5;
+   }
   *:focus{
     color: black;
     outline: none;
@@ -1610,6 +1619,9 @@ color: black;
     text-decoration: none;
     color: black;
   }
+  .update-button:hover {
+    background-color: #0ACCE5;
+   }
   *:focus{
     color: black;
     outline: none;
