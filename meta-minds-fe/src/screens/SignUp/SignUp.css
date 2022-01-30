@@ -711,7 +711,7 @@ box-shadow: 0 4px 8px 0px rgba(0,4,4,0.4);
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100% + 200px);
+    height: calc(100% + 300px);
     z-index: 1;
   }
   .sign-up-copyright-text{
