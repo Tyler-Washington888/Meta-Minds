@@ -587,6 +587,10 @@
       .mobile-link-to-sign-up-button:hover{
         background-color: #0ACCE5;
       }
+      input:-webkit-autofill {
+        box-shadow: white;
+        -webkit-box-shadow: inset 0 0 0px 9999px white;
+      }
   }
   @media screen and (min-width: 390px ) and (max-width: 413px) {
     .sign-in-div{
@@ -710,6 +714,10 @@
       }
       .mobile-link-to-sign-up-button:hover{
         background-color: #0ACCE5;
+      }
+      input:-webkit-autofill {
+        box-shadow: white;
+        -webkit-box-shadow: inset 0 0 0px 9999px white;
       }
   }
   @media screen and (min-width: 414px ) and (max-width: 427px ) {
@@ -839,6 +847,10 @@
       .mobile-link-to-sign-up-button:hover{
         background-color: #0ACCE5;
       }
+      input:-webkit-autofill {
+        box-shadow: white;
+        -webkit-box-shadow: inset 0 0 0px 9999px white;
+      }
 
   }
   @media screen and (min-width: 428px ) and (max-width: 599px ) {
@@ -963,5 +975,9 @@
       }
       .mobile-link-to-sign-up-button:hover{
         background-color: #0ACCE5;
+      }
+      input:-webkit-autofill {
+        box-shadow: white;
+        -webkit-box-shadow: inset 0 0 0px 9999px white;
       }
   }
