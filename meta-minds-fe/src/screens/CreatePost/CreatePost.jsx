@@ -192,8 +192,7 @@ function CreatePosts(props) {
             />
           </label>
           <br />
-          <label className="create-post-label-and-input-div category-div">
-            <div className="create-post-input-text"></div>
+          <label className="create-post-label-and-input-divs category-div">
             <select name="category" className="category" onChange={handleChange}>
               <option value="">Category</option>
               <option value="Meta">Meta</option>
@@ -203,8 +202,7 @@ function CreatePosts(props) {
             </select>
           </label>
           <br />
-          <label className="create-post-label-and-input-div">
-            <div className="create-post-input-text"></div>
+          <label className="create-post-label-and-input-divs">
             <input
               className="create-post-user-input-box"
               type='text'
@@ -214,8 +212,7 @@ function CreatePosts(props) {
               onChange={handleChange} />
           </label>
           <br />
-          <label className="create-post-label-and-input-div ">
-            <div className="create-post-input-text"></div>
+          <label className="create-post-label-and-input-divs ">
             <input
               className="create-post-user-input-box"
               type='text'
@@ -225,7 +222,6 @@ function CreatePosts(props) {
               onChange={handleChange} />
           </label>
           <label className="create-post-label-and-input-div bottom">
-            <div className="create-post-input-text"></div>
             <CKEditor
               config={{ placeholder: "Content...", }}
               className="ck-editor"

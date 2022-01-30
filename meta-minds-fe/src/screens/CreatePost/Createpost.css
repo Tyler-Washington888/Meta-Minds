@@ -1338,14 +1338,15 @@ z-index: 12;
   z-index: 12;
   }
  .category-div {
-   width: 100%;
-   border-radius: 12px;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-   display: flex;
-   height: 45px;
-   top: 30px;
-   margin-bottom: 30px;
-   background-color: white;
+  border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 45px;
+    width: 91.5%;
+    margin-bottom: 40px;
+    color: black;
   }
   .create-post-label-and-input-div{
     width: 90%;
@@ -1354,17 +1355,29 @@ z-index: 12;
    align-items: stretch;
    justify-content: stretch;
   }
-  .create-post-user-input-box{
-   height: 45px;
-   width: 97%;
+
+  .create-post-label-and-input-divs{
+    width: 91.5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: white;
    border-radius: 12px;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-   border-width: 0;
-   font-size: 15px;
-   padding-left: 10px;
-   margin-bottom: 30px;
-   outline-width: 0;
- }
+   max-height: 45px;
+   margin-bottom: 40px;
+  }
+  .create-post-user-input-box{
+    min-height: 40px;
+    width: 96%;
+    border-radius: 12px;
+    border-width: 0;
+    font-size: 16px;
+    padding-left: 8px;
+    position: relative;
+    outline-width: 0; 
+    background-color: transparent;
+  }
  .submit-button{
    width: 150px;
    height: 50px;
@@ -1379,7 +1392,7 @@ z-index: 12;
  }
  
  .category{
-   background-color: rgb(205, 181, 102);
+  background-color: white;
    position: relative;
    bottom: 0px;
    height: 45px;
@@ -1388,9 +1401,15 @@ z-index: 12;
    border-width: 0;
    padding-left: 5px;
    font-size: 15px;
-   background-color: transparent;
    outline-width: 0;
+   text-decoration: none;
+color: black;
  }
+
+ *:focus{
+  color: black;
+  outline: none;
+}
  
  .submit-button-disabled{
    width: 150px;
@@ -1413,6 +1432,18 @@ z-index: 12;
    z-index: 114;
    border-radius: 12px;
  }  
+ select{
+  border-color: transparent;
+  font-size: 15px;
+  padding-left: 2px;
+  border-radius: 12px;
+  display: flex;
+  min-height: 45px;
+  width: 372px;
+  color: black;
+  background-color: white;
+  appearance: none;
+}
  }
 
  @media only screen and (min-width: 428px ) and (max-width: 599px )  {
