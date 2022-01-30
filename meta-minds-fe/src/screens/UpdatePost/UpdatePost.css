@@ -1248,17 +1248,14 @@ width: 70px;
     font-size: 16px;
     padding-left: 8px;
     position: relative;
-    top: 3px;
     outline-width: 0; 
-    margin-bottom: 30px;
     background-color: transparent;
   }
   .update-post-label-and-input-div{
     width: 91.5%;
    display: flex;
    flex-direction: column;
-   align-items: stretch;
-   justify-content: stretch;
+   justify-content: center;
    background-color: white;
    border-radius: 12px;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
@@ -1269,9 +1266,10 @@ width: 70px;
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 45px;
     width: 91.5%;
-    top: 30px;
     margin-bottom: 40px;
     color: black;
    }
@@ -1315,13 +1313,11 @@ color: black;
   select{
     border-color: transparent;
     font-size: 15px;
-    position: relative;
     padding-left: 2px;
     border-radius: 12px;
     display: flex;
     min-height: 45px;
     width: 372px;
-    margin-bottom: 40px;
     color: black;
     background-color: white;
   }

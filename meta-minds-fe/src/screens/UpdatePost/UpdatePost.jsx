@@ -221,7 +221,6 @@ function UpdatePost(props) {
           </label>
           <br />
           <label className="update-post-label-and-input-div update-category-div">
-            <div className="create-post-input-text"></div>
             {category === "Mana" ? (<select name="category" className="update-category" onChange={handleChange}>
               <option value="Mana" selected="selected">{category}</option>
               <option value="Meta">Meta</option>
