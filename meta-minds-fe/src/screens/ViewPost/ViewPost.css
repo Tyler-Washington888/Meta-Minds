@@ -2836,7 +2836,7 @@ color: rgb(22, 21, 21);
      }
      .similar-posts-title{
       font-size: 33px;
-      padding-top: 15px;
+      padding-top: 0px;
       margin-bottom: 12px;
       position: relative;
       left: -11px;
@@ -3385,7 +3385,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 
    .similar-posts-title{
     font-size: 33px;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 12px;
     position: relative;
     left: -3px;
@@ -3950,8 +3950,8 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 
    .similar-posts-title{
     font-size: 33px;
-    padding-top: 50px;
-    margin-bottom: 12px;
+    padding-top: 10px;
+    margin-bottom: 5px;
     position: relative;
     left: -3px;
     width: 85%;
@@ -4514,7 +4514,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 
    .similar-posts-title{
     font-size: 33px;
-    padding-top: 80px;
+    padding-top: 40px;
     margin-bottom: 12px;
     position: relative;
     left: -3px;
