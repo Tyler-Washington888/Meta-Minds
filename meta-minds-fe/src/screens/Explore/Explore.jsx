@@ -30,7 +30,10 @@ function Explore(props) {
 
   const loopWithSlice = (start, end) => {
     const metaPosts = posts.filter(post => post.category == 'Meta');
-    const importantMetaPost = metaPosts[2]
+    const latestMetaPost = metaPosts.sort((a, b) => {
+      return a.id - b.id
+    })
+    const importantMetaPost = latestMetaPost[2]
     const filteredMetaPosts = posts.filter(post => post.id !== importantMetaPost.id);
     const orderedPosts = filteredMetaPosts.sort((b, a) => {
       return b.id - a.id
