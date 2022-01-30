@@ -1278,428 +1278,34 @@ border-style: 5px ridge;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
     height: 100px;
     width: 100%;
     margin-bottom: 40px;
-    box-shadow: 0 4px 8px 0 #000000;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     position: sticky;
     top: 0;
-    z-index: 3000;
+    z-index: 1000;
   }
-
   .single-search-result-div-link{
     text-decoration: none;
     color:black;
   }
   .mobile-content-div{
-    width: 96%;
+    width: 100%;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
-    position: relative;
-    right: 8px;
-  }
-  .hamburger-menu{
-    height: 30px;
-    width: 30px;
-    z-index: 1001;
-    margin-right: 28px;
-  }
-  .mobile-logo-div-link{
-    text-decoration: none;
-    color: black;
-  }
-  .mobile-logo-div{
-    display: flex;
-    flex-direction: row;
-    max-height: 100%;
-    z-index: 1001;
-  }
-  .meta-logo-person{
-    height: 90px;
-    width: 90px;
-    z-index: 1001;
-  }
-  .meta-minds-text{
-    font-family: 'Press Start 2P';
-    font-size: 14px;
-    position: relative;
-    top: 40px;
-    right: 20px;
-    z-index: 1001;
-  }
-  .exit-out-and-meta-logo-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 20000;
-    width: 375px;
-    height: 70px;
-    padding-bottom: 30px;
-    background-color: white;
-  }
-  .exit-out-icon{
-    padding-left: 10px;
-    position: relative;
-    top: 16px;
-    height: 30px;
-    width: 30px;
-  }
-  .ham-mobile-logo-div{
-    display: flex;
-    flex-direction: row;
-    max-height: 100%;
-    position: relative;
+    position: sticky;
     top: 5px;
-    left:36px;
-    z-index: 1001;
-  }
-  .ham-meta-logo-person{
-    height: 90px;
-    width: 90px;
-    position: relative;
-    bottom: 0px;
-    left: 0px;
-    z-index: 1001;
-  }
-  .ham-meta-minds-text{
-    font-family: 'Press Start 2P';
-    font-size: 14px;
-    position: relative;
-    top: 40px;
-    right: 20.5px;
-    margin-left: 0px;
-    z-index: 1001;
-  }
-  .hamburger-details-div{
-    margin-top: -20px;
-    width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start ;
-    background-color: white;
-    z-index: 20002;
-  }
-  .categories-div{
-    display: flex;
-    flex-direction: column;
-    margin-left: -8px;
-    margin-right: 20px;
-  }
-  .category-links{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: -5px;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .nav-Links{
-    display: flex;
-    padding-top: 15px;
-    padding-left: 2px;
-    padding-right: 2px;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    text-decoration: none;
-    height: 15px;
-    margin-top: 4px;
-  }
-  .nav-Linkss{
-    display: flex;
-    padding-left: 2px;
-    padding-right: 2px;
-    color: black;
-    text-decoration: none;
-    height: 20px;
-  }
-  .links{
-    margin-bottom: 15px;
-    font-weight: 500;
-    font-weight: normal;
-  }
-  .linkss{
-    margin-bottom: 25px;
-    font-weight: 500;
-    font-weight: normal;
-  }
-  .personal-div{
-    display: flex;
-    flex-direction: column;
-    margin-left: -20px;
-    margin-right: 20px;
-  }
-  .personal-links{
-     display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .creator-div{
-    display: flex;
-    flex-direction: column;
-  }
-  .creator-divs{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    right: 15px;
-  }
-
-  .creator-links{
-    display: flex;
-    flex-direction: column;
-    margin-top: -5px;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .mobile-hamburger-div{
-    display: flex;
-    flex-direction: column;
-    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    overflow: hidden;
-    overflow-y: auto;
-   border-radius: 12px;
-    height: 310px;
-    width: 95.8%;
-    z-index: 35500;
-    position: fixed;
-    top: 10px;
-    left: 7px;
-    right: 7px;
-  }
-
-  .detail-titles{
-    margin-bottom: 10px;
-  }
-  
-  .mobile-search-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: fixed;
-    right: 10px;
-    left: 10px;
-    top: 10px;
-    height: 450px;
-    z-index: 3000;
-  }
-  .mobile-search-top-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 12%;
-    width: 100%;
-    z-index: 1000;
-   background-color: white;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-   border-top-left-radius: 12px;
-   border-top-right-radius: 12px;
-   border-width: 0px;
-   border-bottom: #ECECED 1px solid;
-  }
-  .close-search-bar-icon {
-    height: 30px;
-    width: 30px;
-   position: fixed;
-   right: 16px;
-   top: 20px;
-  }
-  .mobile-search-input-div{
-  }
-  .mobile-search-input {
-    margin-left: 2%;
-    height: 60%;
-    width: 70%;
-    border-width: 0px;
-    position: relative;
-    right:50px;
-    border-bottom: #ECECED 0px solid;
-    border-right-style: none;
-    border-left-style: none;
-    border-top-style: none;
-    border-style:solid;
-    font-size: 16px;
-    outline-width: 0;
-  }
-  .mobile-search-bar-default-result{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    height: 100%;
-    width: 100%;
-    z-index: 1050;
-  }
-  .meta-logo-default-result{
-    position: relative;
-    bottom: 20px;
-    height: 240px;
-    width: 240px;
-  }
-  .mobile-search-bar-successful-result {
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    overflow: hidden;
-    overflow-y: auto;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    height: 100%;
-    width: 100%;
-    z-index: 1050;
-  }
-  .single-search-result-div-mobile{
-    background-color: white;
-    padding: 60px 30px 0px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: center;
-    min-height: 50px;
-    margin-bottom: 0px;
-    z-index: 10;
-    box-shadow: 0px -4px 0px -4px rgba(0,0,0,0.4);
-  }
-    .single-search-result-div-mobile:hover {
-      background-color: #D8D8D8;
-      opacity: .8;
-    }
-    .search-result-title-mobile{
-      font-size: 20px;
-      position: relative;
-      top: -40px;
-      left: -10px;
-      font-weight: bold;
-      text-align: left;
-      margin-bottom: 3px;
-      }
-      .search-result-subtitle-mobile {
-        font-size: 19px;
-        position: relative;
-        top: -40px;
-        left: -10px;
-        text-align: left;
-        }
-  .mobile-search-bar-unsuccessful-result {
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    z-index: 1001;
-  }
-  .mobile-unsuccessful-search-results-text-divs{
-    position: relative;
-    bottom: 20px;
-  }
-  .mobile-unsuccessful-search-result-icon{
-    margin-top: 60px;
-    height: 120px;
-    width: 120px;
-    margin-bottom: 10px;
-  }
-  .mobile-sorry-text{
-    margin-bottom: -10px;
-  }
-  .mobile-try-again-text {
-    font-weight:lighter;
-  }
-  .search-bar-icon-mobile{
-    position: relative;
-    left: 11px;
-    height: 30px;
-    width: 30px;
-    z-index: 1001;
-  }
-  .page-overlay-mobile-div {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgb(32, 32, 32); 
-    opacity:.7;  
-    z-index: 100;
-    pointer-events:none;
-  }
-  
-  .header-div-user{
-    display: none;
-  }
-  .header-div-non-user{
-    display: none;
-  }
-  .header-div-content-margin-left {
-    display: none;
-  }
-  .header-div-content-margin-right {
-    display: none;
-  }
-  a:link { -webkit-tap-highlight-color: rgba(0,0,0,0); }
-}
-
-
-@media only screen and (min-width: 390px ) and (max-width:413px ) {
-  .header-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
-    height: 100px;
-    width: 100%;
-    margin-bottom: 40px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    position: sticky;
-    top: 0;
-    z-index: 3000;
-  }
-
-  .single-search-result-div-link{
-    text-decoration: none;
-    color:black;
-  }
-  .mobile-content-div{
-    width: 100%;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    position: relative;
-    bottom: 5px;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   .hamburger-menu{
     margin-left: 10px;
     height: 30px;
     width: 30px;
-    z-index: 1001;
   }
   .mobile-logo-div-link{
     text-decoration: none;
@@ -1711,16 +1317,18 @@ border-style: 5px ridge;
     max-height: 100%;
     position: relative;
     top: 2px;
-    left: 21px;
-    z-index: 1001;
+    left: 16.5px;
+    text-decoration: none;
+    color: black;
+    -webkit-touch-callout: none;               
   }
+  a:link { -webkit-tap-highlight-color: rgba(0,0,0,0); }
   .meta-logo-person{
     height: 90px;
     width: 90px;
     position: relative;
     bottom: 0px;
     left: 0px;
-    z-index: 1001;
   }
   .meta-minds-text{
     font-family: 'Press Start 2P';
@@ -1729,7 +1337,6 @@ border-style: 5px ridge;
     top: 40px;
     right: 20px;
     margin-left: 0px;
-    z-index: 1001;
   }
   .mobile-hamburger-div{
     display: flex;
@@ -1741,25 +1348,23 @@ border-style: 5px ridge;
    border-radius: 12px;
     height: 300px;
     width: 95%;
-    z-index: 1050;
     position: fixed;
     top: 10px;
     left: 10px;
+    z-index: 1002;
   }
   .exit-out-and-meta-logo-div{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    z-index: 2000;
     width: 100%;
     height: 70px;
-    background-color: white;
   }
   .exit-out-icon{
-    padding-left: 17px;
+    padding-left: 12px;
     position: relative;
-    top: 5px;
+    top: 12px;
     height: 30px;
     width: 30px;
   }
@@ -1768,9 +1373,9 @@ border-style: 5px ridge;
     flex-direction: row;
     max-height: 100%;
     position: relative;
-    top: -8px;
-    left: 19px;
-    z-index: 1001;
+    top: -3px;
+    left: 13px;
+    margin-left: 10px;
   }
   .ham-meta-logo-person{
     height: 90px;
@@ -1778,16 +1383,14 @@ border-style: 5px ridge;
     position: relative;
     bottom: 0px;
     left: 0px;
-    z-index: 1001;
   }
   .ham-meta-minds-text{
     font-family: 'Press Start 2P';
     font-size: 14px;
     position: relative;
-    top: 40px;
-    right: 20px;
+    top: 39.5px;
+    right: 19.5px;
     margin-left: 0px;
-    z-index: 1001;
   }
   .hamburger-details-div{
     width: 100%;
@@ -1796,11 +1399,12 @@ border-style: 5px ridge;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start ;
-    background-color: white;
   }
   .categories-div{
     display: flex;
     flex-direction: column;
+    position: relative;
+    right: 6px;
   }
   .category-links{
     display: flex;
@@ -1809,14 +1413,12 @@ border-style: 5px ridge;
     margin-top: -5px;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+  .nav-Linkss{
     color: black;
     text-decoration: none;
   }
   .nav-Links{
-    color: black;
-    text-decoration: none;
-  }
-  .nav-Linkss{
     color: black;
     text-decoration: none;
   }
@@ -1835,12 +1437,18 @@ border-style: 5px ridge;
     margin-top: -5px;
     justify-content: flex-start;
     align-items: flex-start;
-    color: black;
-    text-decoration: none;
   }
   .creator-div{
     display: flex;
     flex-direction: column;
+    position: relative;
+    right: 5px;
+  }
+  .creator-divs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 13px;
   }
   .creator-links{
     display: flex;
@@ -1848,37 +1456,18 @@ border-style: 5px ridge;
     margin-top: -5px;
     justify-content: flex-start;
     align-items: flex-start;
-    color: black;
-    text-decoration: none;
   }
-    .mobile-hamburger-div{
-      display: flex;
-      flex-direction: column;
-      background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-      overflow: hidden;
-      overflow-y: auto;
-     border-radius: 12px;
-      height: 310px;
-      width: 96.5%;
-      z-index: 35500;
-      position: fixed;
-      top: 10px;
-      left: 7px;
-      right: 7px;
-    }
   
   .mobile-search-div{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    position: sticky;
+    position: fixed;
     right: 10px;
     left: 10px;
     top: 10px;
     height: 450px;
-    width: 96%;
-    z-index: 3000;
+    z-index: 1003;
   }
   .mobile-search-top-div{
     display: flex;
@@ -1887,7 +1476,6 @@ border-style: 5px ridge;
     align-items: center;
     min-height: 12%;
     width: 100%;
-    z-index: 1000;
    background-color: white;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
    border-top-left-radius: 12px;
@@ -1912,17 +1500,20 @@ border-style: 5px ridge;
   .mobile-search-input {
     margin-left: 2%;
     height: 60%;
-    width: 72%;
+    width: 70%;
     border-width: 0px;
     position: relative;
-    right:48px;
+    right:58px;
     border-bottom: #ECECED 0px solid;
     border-right-style: none;
     border-left-style: none;
     border-top-style: none;
     border-style:solid;
     font-size: 16px;
-    outline-width: 0;
+    outline: 0px;
+  }
+  input:focus{
+    outline: none !important;
   }
   .mobile-search-bar-default-result{
     display: flex;
@@ -1936,13 +1527,13 @@ border-style: 5px ridge;
     border-bottom-right-radius: 12px;
     height: 100%;
     width: 100%;
-    z-index: 1050;
   }
+
   .meta-logo-default-result{
     position: relative;
     bottom: 20px;
-    height: 250px;
-    width: 250px;
+    height: 260px;
+    width: 260px;
   }
   .mobile-search-bar-successful-result {
     background-color: white;
@@ -1955,7 +1546,6 @@ border-style: 5px ridge;
     border-bottom-right-radius: 12px;
     height: 100%;
     width: 100%;
-    z-index: 1050;
   }
   .single-search-result-div-mobile{
     background-color: white;
@@ -1967,7 +1557,6 @@ border-style: 5px ridge;
     align-content: center;
     min-height: 50px;
     margin-bottom: 0px;
-    z-index: 10;
     box-shadow: 0px -4px 0px -4px rgba(0,0,0,0.4);
   }
     .single-search-result-div-mobile:hover {
@@ -1990,42 +1579,44 @@ border-style: 5px ridge;
         left: -10px;
         text-align: left;
         }
-  .mobile-search-bar-unsuccessful-result {
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    z-index: 1001;
-  }
-  .mobile-unsuccessful-search-results-text-divs{
-    position: relative;
-    bottom: 20px;
-  }
-  .mobile-unsuccessful-search-result-icon{
-    margin-top: 60px;
-    height: 120px;
-    width: 120px;
-    margin-bottom: 10px;
-  }
-  .mobile-sorry-text{
-    margin-bottom: -10px;
-  }
-  .mobile-try-again-text {
-    font-weight:lighter;
+        .mobile-search-bar-unsuccessful-result {
+          height: 100%;
+          width: 100%;
+          background-color: white;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+          border-bottom-left-radius: 12px;
+          border-bottom-right-radius: 12px;
+      
+        }
+        .mobile-unsuccessful-search-results-text-divs{
+          position: relative;
+          bottom: 20px;
+        }
+        .mobile-unsuccessful-search-result-icon{
+          margin-top: 60px;
+          height: 120px;
+          width: 120px;
+          margin-bottom: 10px;
+        }
+        .mobile-sorry-text{
+          margin-bottom: -10px;
+        }
+        .mobile-try-again-text {
+          font-weight:lighter;
+        }
+  .unsuccessful-search-results-text-divs{
+ 
   }
   .search-bar-icon-mobile{
     position: relative;
     height: 30px;
     width: 30px;
-    right: -14px;
-    z-index: 1001;
+    right: -12px;
   }
   .page-overlay-mobile-div {
     position: fixed;
@@ -2034,15 +1625,15 @@ border-style: 5px ridge;
     top: 0;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
-    opacity:.8; 
-    z-index: 100;
+    opacity:.8;
     pointer-events:none;
+    z-index: 1001;
   }
   .header-div-user{
     display: none;
   }
   .header-div-non-user{
-    display:none;
+    display: none;
   }
   .header-div-content-margin-left {
     display: none;
@@ -2050,7 +1641,378 @@ border-style: 5px ridge;
   .header-div-content-margin-right {
     display: none;
   }
+
+}
+
+
+@media only screen and (min-width: 390px ) and (max-width:413px ) {
+  .header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("https://res.cloudinary.com/tylerwashington98/image/upload/v1638761510/Meta-Minds/nvkCN6_ktxkat.jpg");
+    height: 100px;
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .single-search-result-div-link{
+    text-decoration: none;
+    color:black;
+  }
+  .mobile-content-div{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .hamburger-menu{
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+  }
+  .mobile-logo-div-link{
+    text-decoration: none;
+    color: black;
+  }
+  .mobile-logo-div{
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+    position: relative;
+    top: 2px;
+    left: 23px;
+    text-decoration: none;
+    color: black;
+    -webkit-touch-callout: none;               
+  }
   a:link { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+  .meta-logo-person{
+    height: 90px;
+    width: 90px;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+  }
+  .meta-minds-text{
+    font-family: 'Press Start 2P';
+    font-size: 14px;
+    position: relative;
+    top: 40px;
+    right: 20px;
+    margin-left: 0px;
+  }
+  .mobile-hamburger-div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    overflow: hidden;
+    overflow-y: auto;
+   border-radius: 12px;
+    height: 300px;
+    width: 95%;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1002;
+  }
+  .exit-out-and-meta-logo-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+  }
+  .exit-out-icon{
+    padding-left: 14px;
+    position: relative;
+    top: 12px;
+    height: 30px;
+    width: 30px;
+  }
+  .ham-mobile-logo-div{
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+    position: relative;
+    top: -3px;
+    left: 22px;
+    margin-left: 10px;
+  }
+  .ham-meta-logo-person{
+    height: 90px;
+    width: 90px;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+  }
+  .ham-meta-minds-text{
+    font-family: 'Press Start 2P';
+    font-size: 14px;
+    position: relative;
+    top: 40px;
+    right: 20.5px;
+    margin-left: 0px;
+  }
+  .hamburger-details-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start ;
+  }
+  .categories-div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 6px;
+  }
+  .category-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .nav-Linkss{
+    color: black;
+    text-decoration: none;
+  }
+  .nav-Links{
+    color: black;
+    text-decoration: none;
+  }
+  .links{
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-weight: normal;
+  }
+  .personal-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .personal-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .creator-div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 5px;
+  }
+  .creator-divs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 13px;
+  }
+  .creator-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .mobile-search-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    right: 10px;
+    left: 10px;
+    top: 10px;
+    height: 450px;
+    z-index: 1003;
+  }
+  .mobile-search-top-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12%;
+    width: 100%;
+   background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+   border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
+   border-width: 0px;
+   border-bottom: #ECECED 1px solid;
+  }
+  .search-bar-icon{
+   height: 30px;
+   width: 30px;
+   padding-left: 2%;
+  }
+  .close-search-bar-icon {
+    height: 30px;
+    width: 30px;
+   position: fixed;
+   right: 16px;
+   top: 20px;
+  }
+  .mobile-search-input-div{
+  }
+  .mobile-search-input {
+    margin-left: 2%;
+    height: 60%;
+    width: 70%;
+    border-width: 0px;
+    position: relative;
+    right:58px;
+    border-bottom: #ECECED 0px solid;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+    border-style:solid;
+    font-size: 16px;
+    outline: 0px;
+  }
+  input:focus{
+    outline: none !important;
+  }
+  .mobile-search-bar-default-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .meta-logo-default-result{
+    position: relative;
+    bottom: 20px;
+    height: 260px;
+    width: 260px;
+  }
+  .mobile-search-bar-successful-result {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    overflow: hidden;
+    overflow-y: auto;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 100%;
+    width: 100%;
+  }
+  .single-search-result-div-mobile{
+    background-color: white;
+    padding: 60px 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    min-height: 50px;
+    margin-bottom: 0px;
+    box-shadow: 0px -4px 0px -4px rgba(0,0,0,0.4);
+  }
+    .single-search-result-div-mobile:hover {
+      background-color: #D8D8D8;
+      opacity: .8;
+    }
+    .search-result-title-mobile{
+      font-size: 20px;
+      position: relative;
+      top: -40px;
+      left: -10px;
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 3px;
+      }
+      .search-result-subtitle-mobile {
+        font-size: 19px;
+        position: relative;
+        top: -40px;
+        left: -10px;
+        text-align: left;
+        }
+        .mobile-search-bar-unsuccessful-result {
+          height: 100%;
+          width: 100%;
+          background-color: white;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+          border-bottom-left-radius: 12px;
+          border-bottom-right-radius: 12px;
+      
+        }
+        .mobile-unsuccessful-search-results-text-divs{
+          position: relative;
+          bottom: 20px;
+        }
+        .mobile-unsuccessful-search-result-icon{
+          margin-top: 60px;
+          height: 120px;
+          width: 120px;
+          margin-bottom: 10px;
+        }
+        .mobile-sorry-text{
+          margin-bottom: -10px;
+        }
+        .mobile-try-again-text {
+          font-weight:lighter;
+        }
+  .unsuccessful-search-results-text-divs{
+ 
+  }
+  .search-bar-icon-mobile{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    right: -16px;
+  }
+  .page-overlay-mobile-div {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(32, 32, 32); 
+    opacity:.8;
+    pointer-events:none;
+    z-index: 1001;
+  }
+  .header-div-user{
+    display: none;
+  }
+  .header-div-non-user{
+    display: none;
+  }
+  .header-div-content-margin-left {
+    display: none;
+  }
+  .header-div-content-margin-right {
+    display: none;
+  }
 
 }
 
@@ -2436,7 +2398,7 @@ border-style: 5px ridge;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     position: sticky;
     top: 0;
-    z-index: 3000;
+    z-index: 1000;
   }
   .single-search-result-div-link{
     text-decoration: none;
@@ -2448,15 +2410,15 @@ border-style: 5px ridge;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
-    position: relative;
-    bottom: 5px;
+    position: sticky;
+    top: 5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   .hamburger-menu{
     margin-left: 10px;
     height: 30px;
     width: 30px;
-    z-index: 1001;
   }
   .mobile-logo-div-link{
     text-decoration: none;
@@ -2468,16 +2430,18 @@ border-style: 5px ridge;
     max-height: 100%;
     position: relative;
     top: 2px;
-    left: 6px;
-    z-index: 1001;
+    left: 29px;
+    text-decoration: none;
+    color: black;
+    -webkit-touch-callout: none;               
   }
+  a:link { -webkit-tap-highlight-color: rgba(0,0,0,0); }
   .meta-logo-person{
-    height: 90px;
-    width: 90px;
+    height: 93px;
+    width: 93px;
     position: relative;
     bottom: 0px;
     left: 0px;
-    z-index: 1001;
   }
   .meta-minds-text{
     font-family: 'Press Start 2P';
@@ -2486,7 +2450,6 @@ border-style: 5px ridge;
     top: 40px;
     right: 20px;
     margin-left: 0px;
-    z-index: 1001;
   }
   .mobile-hamburger-div{
     display: flex;
@@ -2498,24 +2461,23 @@ border-style: 5px ridge;
    border-radius: 12px;
     height: 300px;
     width: 95%;
-    z-index: 1050;
     position: fixed;
     top: 10px;
     left: 10px;
+    z-index: 1002;
   }
   .exit-out-and-meta-logo-div{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    z-index: 2000;
     width: 100%;
     height: 70px;
   }
   .exit-out-icon{
-    padding-left: 17px;
+    padding-left: 20px;
     position: relative;
-    top: 5px;
+    top: 12px;
     height: 30px;
     width: 30px;
   }
@@ -2524,26 +2486,24 @@ border-style: 5px ridge;
     flex-direction: row;
     max-height: 100%;
     position: relative;
-    top: -8px;
-    left: 32px;
-    z-index: 1001;
+    top: -4px;
+    left: 31px;
+    margin-left: 10px;
   }
   .ham-meta-logo-person{
-    height: 90px;
-    width: 90px;
+    height: 93px;
+    width: 93px;
     position: relative;
-    bottom: 0px;
-    left: 0px;
-    z-index: 1001;
+    bottom: 0.3px;
+    left: -1.5px;
   }
   .ham-meta-minds-text{
     font-family: 'Press Start 2P';
     font-size: 14px;
     position: relative;
     top: 40px;
-    right: 20px;
+    right: 20.5px;
     margin-left: 0px;
-    z-index: 1001;
   }
   .hamburger-details-div{
     width: 100%;
@@ -2556,6 +2516,8 @@ border-style: 5px ridge;
   .categories-div{
     display: flex;
     flex-direction: column;
+    position: relative;
+    right: 6px;
   }
   .category-links{
     display: flex;
@@ -2565,7 +2527,10 @@ border-style: 5px ridge;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  a:link { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+  .nav-Linkss{
+    color: black;
+    text-decoration: none;
+  }
   .nav-Links{
     color: black;
     text-decoration: none;
@@ -2589,6 +2554,14 @@ border-style: 5px ridge;
   .creator-div{
     display: flex;
     flex-direction: column;
+    position: relative;
+    right: 5px;
+  }
+  .creator-divs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 13px;
   }
   .creator-links{
     display: flex;
@@ -2596,22 +2569,6 @@ border-style: 5px ridge;
     margin-top: -5px;
     justify-content: flex-start;
     align-items: flex-start;
-  }
-
-  .mobile-hamburger-div{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    overflow: hidden;
-    overflow-y: auto;
-   border-radius: 12px;
-    height: 300px;
-    width: 95%;
-    z-index: 35501;
-    position: fixed;
-    top: 10px;
-    left: 10px;
   }
   
   .mobile-search-div{
@@ -2623,7 +2580,7 @@ border-style: 5px ridge;
     left: 10px;
     top: 10px;
     height: 450px;
-    z-index: 3000;
+    z-index: 1003;
   }
   .mobile-search-top-div{
     display: flex;
@@ -2632,7 +2589,6 @@ border-style: 5px ridge;
     align-items: center;
     min-height: 12%;
     width: 100%;
-    z-index: 1000;
    background-color: white;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
    border-top-left-radius: 12px;
@@ -2660,14 +2616,17 @@ border-style: 5px ridge;
     width: 70%;
     border-width: 0px;
     position: relative;
-    right:65px;
+    right:58px;
     border-bottom: #ECECED 0px solid;
     border-right-style: none;
     border-left-style: none;
     border-top-style: none;
     border-style:solid;
     font-size: 16px;
-    outline-width: 0;
+    outline: 0px;
+  }
+  input:focus{
+    outline: none !important;
   }
   .mobile-search-bar-default-result{
     display: flex;
@@ -2681,8 +2640,8 @@ border-style: 5px ridge;
     border-bottom-right-radius: 12px;
     height: 100%;
     width: 100%;
-    z-index: 1050;
   }
+
   .meta-logo-default-result{
     position: relative;
     bottom: 20px;
@@ -2700,7 +2659,6 @@ border-style: 5px ridge;
     border-bottom-right-radius: 12px;
     height: 100%;
     width: 100%;
-    z-index: 1050;
   }
   .single-search-result-div-mobile{
     background-color: white;
@@ -2712,7 +2670,6 @@ border-style: 5px ridge;
     align-content: center;
     min-height: 50px;
     margin-bottom: 0px;
-    z-index: 10;
     box-shadow: 0px -4px 0px -4px rgba(0,0,0,0.4);
   }
     .single-search-result-div-mobile:hover {
@@ -2747,7 +2704,7 @@ border-style: 5px ridge;
           border-top-right-radius: 0px;
           border-bottom-left-radius: 12px;
           border-bottom-right-radius: 12px;
-          z-index: 1001;
+      
         }
         .mobile-unsuccessful-search-results-text-divs{
           position: relative;
@@ -2761,6 +2718,8 @@ border-style: 5px ridge;
         }
         .mobile-sorry-text{
           margin-bottom: -10px;
+          width: 95%;
+          padding-left: 10px;
         }
         .mobile-try-again-text {
           font-weight:lighter;
@@ -2772,8 +2731,7 @@ border-style: 5px ridge;
     position: relative;
     height: 30px;
     width: 30px;
-    right: 10px;
-    z-index: 1001;
+    right: -25px;
   }
   .page-overlay-mobile-div {
     position: fixed;
@@ -2782,11 +2740,10 @@ border-style: 5px ridge;
     top: 0;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
-    opacity:.6; 
-    z-index: 100;
+    opacity:.8;
     pointer-events:none;
+    z-index: 1001;
   }
-  
   .header-div-user{
     display: none;
   }

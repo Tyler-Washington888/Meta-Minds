@@ -26,8 +26,6 @@ function Explore(props) {
     loopWithSlice(0, postsPerLoad);
   }, [posts])
 
-
-
   const loopWithSlice = (start, end) => {
     const metaPosts = posts.filter(post => post.category == 'Meta');
     const latestMetaPost = metaPosts.sort((a, b) => {
