@@ -1246,12 +1246,14 @@ width: 70px;
     border-radius: 12px;
     border-width: 0;
     font-size: 16px;
-    padding-left: 5px;
+    padding-left: 10px;
+    position: relative;
+    top: 3px;
     outline-width: 0; 
     margin-bottom: 30px;
   }
   .update-post-label-and-input-div{
-    width: 90%;
+    width: 91.5%;
    display: flex;
    flex-direction: column;
    align-items: stretch;
@@ -1260,16 +1262,16 @@ width: 70px;
    border-radius: 12px;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
    max-height: 45px;
-   margin-bottom: 30px;
+   margin-bottom: 40px;
   }
   .update-category-div {
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     display: flex;
     min-height: 45px;
-    min-width: 90.5%;
+    width: 91.5%;
     top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: black;
    }
    .update-catgegory{
@@ -1310,6 +1312,9 @@ width: 70px;
   *:focus{
     color: black;
     outline: none;
+  }
+  select{
+    color: black;
   }
 }
 

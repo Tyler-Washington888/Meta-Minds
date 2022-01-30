@@ -256,7 +256,7 @@ function UpdatePost(props) {
               onChange={handleChange} />
           </label>
           <br />
-          <label className="update-post-label-and-input-div ">
+          <label className="update-post-label-and-input-div">
             <div className="create-post-input-text"></div>
             <input
               className="update-post-user-input-box"
