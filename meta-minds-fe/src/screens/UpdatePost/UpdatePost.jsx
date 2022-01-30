@@ -246,7 +246,6 @@ function UpdatePost(props) {
           </label>
           <br />
           <label className="update-post-label-and-input-div">
-            <div className="create-post-input-text"></div>
             <input
               className="update-post-user-input-box"
               type='text'
@@ -257,7 +256,6 @@ function UpdatePost(props) {
           </label>
           <br />
           <label className="update-post-label-and-input-div">
-            <div className="create-post-input-text"></div>
             <input
               className="update-post-user-input-box"
               type='text'
@@ -267,7 +265,6 @@ function UpdatePost(props) {
               onChange={handleChange} />
           </label>
           <label className="create-post-label-and-input-div bottom">
-            <div className="create-post-input-text"></div>
             <CKEditor
               data={content}
               config={{ placeholder: "Content..." }}

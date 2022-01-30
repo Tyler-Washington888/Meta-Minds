@@ -1276,10 +1276,8 @@ width: 70px;
     color: black;
    }
    .update-catgegory{
-     color: black;
-     text-decoration: none;
-     min-height: 45px;
-     min-width: 90.5%;
+text-decoration: none;
+color: black;
    }
    .update-button-disabled{
     width: 150px;
@@ -1315,8 +1313,17 @@ width: 70px;
     outline: none;
   }
   select{
+    border-color: transparent;
+    font-size: 15px;
+    position: relative;
+    padding-left: 2px;
+    border-radius: 12px;
+    display: flex;
+    min-height: 45px;
+    width: 372px;
+    margin-bottom: 40px;
     color: black;
-    background-color: transparent;
+    background-color: white;
   }
 }
 
