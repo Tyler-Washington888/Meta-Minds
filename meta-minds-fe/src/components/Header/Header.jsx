@@ -202,12 +202,12 @@ function Header(props) {
                 {currentUser ? (<div className='creator-links'>
                   <NavLink to={`/user-posts/${currentUser?.id}`} onClick={() => setOpenHamburger(!openHamburger)} activeStyle={{
                     color: '#0ACCE5'
-                  }} className="nav-Linkss links">User Posts</NavLink>
+                  }} className="nav-Linkss links">Your Posts</NavLink>
                   <Link exact to="/" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Linkss links" onClick={handleLogout}>Logout</Link>
                 </div>) : (
                   <div className='personal-links'>
                     <Link to="/sign-in" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Linkss links">Sign In</Link>
-                    <Link to="/sign-up" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Linkss links">Sing Up</Link>
+                    <Link to="/sign-up" onClick={() => setOpenHamburger(!openHamburger)} className="nav-Linkss links">Sign Up</Link>
                   </div>)}
               </div>
               <div className='creator-div'>
