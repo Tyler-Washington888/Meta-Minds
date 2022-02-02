@@ -1320,7 +1320,7 @@ transition: .5s ease;
     bottom: 40px;
     height: 180px;
     width: 100%;
-    z-index: 2;
+    z-index: 100;
     box-shadow: 0 4px 8px 4px rgba(0,4,4,0.4);;
   }
   .latest-and-all-posts-main-div{
@@ -1352,6 +1352,8 @@ transition: .5s ease;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-style: hidden;
+  border-color: transparent;
   }
   .mobile-latest-post-details-div{
     display: flex;
@@ -1493,6 +1495,15 @@ border-bottom-right-radius: 12px;
 }
 
 @media screen and (min-width: 375px ) and (max-width: 389px) {
+  .loadingScreen{
+    background-color:red;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000000;
+  }
   .badscreen{
     display: none;
   }

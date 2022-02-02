@@ -45,22 +45,20 @@ function Explore(props) {
     loopWithSlice(nextPosts, nextPosts + postsPerLoad);
     setNextPosts(nextPosts + postsPerLoad);
   };
-
   return (
     <div>
       <img className="explore-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636154827/Meta-Minds/meta_vmqfci.jpg" alt="banner-mage"></img>
       <div className="latest-and-all-posts-main-div">
         <div className='mobile-latest-post-div'>
-          <Link to={`/view-post/${mostPopularMetaPost?.id}`} key={mostPopularMetaPost?.id} className="moble-latest-post-link"><img className="moble-latest-post-image" src={mostPopularMetaPost?.image} alt={mostPopularMetaPost?.title} ></img></Link>
+          {mostPopularMetaPost?.created_at ? (<Link to={`/view-post/${mostPopularMetaPost?.id}`} key={mostPopularMetaPost?.id} className="moble-latest-post-link"><img className="moble-latest-post-image" src={mostPopularMetaPost?.image} alt={mostPopularMetaPost?.title} ></img></Link>) : (<img className="moble-latest-post-image" src={'data:image/png;base64,R0lGODlhFAAUAIAAAP///wAAACH5BAEAAAAALAAAAAAUABQAAAIRhI+py+0Po5y02ouz3rz7rxUAOw=='} ></img>)}
           <div className='mobile-latest-post-details-div'>
             <div className='mobile-latest-post-date-and-category-div'>
-              {mostPopularMetaPost != {} ? (<div className='mobile-latest-post-date'>{DateTime.fromISO(`${mostPopularMetaPost?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>) : (<div></div>)}
+              {mostPopularMetaPost?.created_at ? (<div className='mobile-latest-post-date'>{DateTime.fromISO(`${mostPopularMetaPost?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>) : (<div></div>)}
               <Link to={`/${mostPopularMetaPost?.category}`} className="single-post-category-link-mobile"><div className='mobile-latest-post-category'>{mostPopularMetaPost?.category}</div></Link>
             </div>
             <Link to={`/view-post/${mostPopularMetaPost?.id}`} key={mostPopularMetaPost?.id} className="mobile-latest-post-title">{mostPopularMetaPost?.title}</Link>
           </div>
         </div>
-
         <div className="latest-post-div">
           <Link to={`/view-post/${mostPopularMetaPost?.id}`} key={mostPopularMetaPost?.id} className="single-post-title-link-image"><img className="latest-posts-image" src={mostPopularMetaPost?.image} alt={mostPopularMetaPost?.title} ></img></Link>
           <div className="latest-post-details-div">
