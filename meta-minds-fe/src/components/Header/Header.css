@@ -1626,7 +1626,6 @@ border-style: 5px ridge;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
     opacity:.8;
-    pointer-events:none;
     z-index: 1001;
   }
   .header-div-user{
@@ -1998,7 +1997,6 @@ border-style: 5px ridge;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
     opacity:.8;
-    pointer-events:none;
     z-index: 1001;
   }
   .header-div-user{
@@ -2369,7 +2367,6 @@ border-style: 5px ridge;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
     opacity:.8;
-    pointer-events:none;
     z-index: 1001;
   }
   .header-div-user{
@@ -2741,7 +2738,6 @@ border-style: 5px ridge;
     bottom: 0;
     background-color: rgb(32, 32, 32); 
     opacity:.8;
-    pointer-events:none;
     z-index: 1001;
   }
   .header-div-user{

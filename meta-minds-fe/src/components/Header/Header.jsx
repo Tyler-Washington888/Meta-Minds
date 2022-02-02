@@ -162,7 +162,7 @@ function Header(props) {
 
       {/* mobile version */}
       <div className="mobile-content-div">
-        <img className="hamburger-menu" onClick={() => setOpenHamburger(!openHamburger)} src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642295739/Meta-Minds/icons8-menu-50_iyctkp.png" alt="hamburger-menu"></img>
+        {openHamburger == false ? (<img className="hamburger-menu" onClick={() => setOpenHamburger(!openHamburger)} src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642295739/Meta-Minds/icons8-menu-50_iyctkp.png" alt="hamburger-menu"></img>) : (<div></div>)}
         <Link className="mobile-logo-div-link mobile-logo-div" to="/">
           <img className="meta-logo-person" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636143053/Meta-Minds/2d4b6fe46ee740998e2e0f51bbbd3496_esrod4.png" alt="meta-logo-person"></img>
           <div className="meta-minds-text" alt="meta-minds-text">Meta Minds</div>
@@ -214,7 +214,7 @@ function Header(props) {
                 <h3 >Creator</h3>
                 <div className='creator-links'>
                   <a href=" https://www.linkedin.com/in/tyler-washington-4a8429176" className='nav-Linkss links'>LinkedIn</a>
-                  <a href="https://github.com/Tyler-Washington888" className=' nav-Linkss links' >Github</a>
+                  <a href="https://github.com/Tyler-Washington888" className=' nav-Linkss links' >GitHub</a>
                 </div>
               </div>
             </div>
