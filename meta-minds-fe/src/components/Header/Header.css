@@ -2731,7 +2731,7 @@ border-style: 5px ridge;
     right: -25px;
   }
   .page-overlay-mobile-div {
-    position: fixed;
+    position:fixed;
     left: 0;
     right: 0;
     top: 0;
