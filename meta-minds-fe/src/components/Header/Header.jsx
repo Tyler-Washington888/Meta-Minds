@@ -53,15 +53,6 @@ function Header(props) {
     setMobileSearch(!mobileSearch)
   }
 
-  const someFunc = () => {
-    if (openHamburger == true) {
-      setOpenHamburger(false)
-    }
-    if (mobileSearch == true) {
-      setMobileSearch(false)
-    }
-  }
-
   return (
     //  desktop version
     <div className="header-div">
@@ -276,7 +267,7 @@ function Header(props) {
           : (<img onClick={() => setMobileSearch(!mobileSearch)} className="search-bar-icon-mobile" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1642296024/Meta-Minds/icons8-search-50_uspsar.png" alt="search-bar-icon-mobile"></img>)}
         {
           mobileSearch != false || openHamburger != false ? (
-            <div onClick={() => someFunc()} className="page-overlay-mobile-div"></div>
+            <div className="page-overlay-mobile-div"></div>
           ) : (<div></div>)
         }
       </div>
