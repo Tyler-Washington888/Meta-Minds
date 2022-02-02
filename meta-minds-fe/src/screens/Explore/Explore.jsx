@@ -54,7 +54,7 @@ function Explore(props) {
           <Link to={`/view-post/${mostPopularMetaPost?.id}`} key={mostPopularMetaPost?.id} className="moble-latest-post-link"><img className="moble-latest-post-image" src={mostPopularMetaPost?.image} alt={mostPopularMetaPost?.title} ></img></Link>
           <div className='mobile-latest-post-details-div'>
             <div className='mobile-latest-post-date-and-category-div'>
-              <div className='mobile-latest-post-date'>{DateTime.fromISO(`${mostPopularMetaPost?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>
+              {mostPopularMetaPost != {} ? (<div className='mobile-latest-post-date'>{DateTime.fromISO(`${mostPopularMetaPost?.created_at}`).toLocaleString(DateTime.DATE_MED)}</div>) : (<div></div>)}
               <Link to={`/${mostPopularMetaPost?.category}`} className="single-post-category-link-mobile"><div className='mobile-latest-post-category'>{mostPopularMetaPost?.category}</div></Link>
             </div>
             <Link to={`/view-post/${mostPopularMetaPost?.id}`} key={mostPopularMetaPost?.id} className="mobile-latest-post-title">{mostPopularMetaPost?.title}</Link>
