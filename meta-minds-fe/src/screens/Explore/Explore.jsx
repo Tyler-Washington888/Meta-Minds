@@ -31,7 +31,7 @@ function Explore(props) {
       setMostPopularMetaPost(firstLatestMetaPost)
       arrayForHoldingPosts = [];
       loopWithSlice(0, postsPerLoad);
-    }, 200);
+    }, 10);
   }, [posts])
 
   const loopWithSlice = (start, end) => {
