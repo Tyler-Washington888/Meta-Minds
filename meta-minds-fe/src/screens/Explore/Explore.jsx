@@ -24,11 +24,9 @@ function Explore(props) {
   const firstLatestMetaPost = latestMetaPost[2]
 
   useEffect(() => {
-    setLoadContent(!loadContent)
     setMostPopularMetaPost(firstLatestMetaPost)
     arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerLoad);
-    setLoadContent(!loadContent)
   }, [posts])
 
   const loopWithSlice = (start, end) => {
@@ -131,11 +129,6 @@ function Explore(props) {
           </div>
         </div>
       </div>
-      {loadContent == true ? (
-        <div className='loadingContentScreen'>
-          <ReactLoading type="spokes" color="white" height={100} width={50} />
-        </div>
-      ) : (<div></div>)}
     </div >
   )
 }
