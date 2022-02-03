@@ -28,7 +28,6 @@ function Explore(props) {
     setMostPopularMetaPost(firstLatestMetaPost)
     arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerLoad);
-    setDone(true)
   }, [posts])
 
   const loopWithSlice = (start, end) => {
@@ -131,11 +130,6 @@ function Explore(props) {
           </div>
         </div>
       </div>
-      {done ? (
-        <div></div>
-      ) : (<div className='loadingContentScreen'>
-        <ReactLoading type="spokes" color="white" height={100} width={50} />
-      </div>)}
     </div >
   )
 }
