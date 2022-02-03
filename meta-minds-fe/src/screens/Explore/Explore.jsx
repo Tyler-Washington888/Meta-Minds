@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
+import ReactLoading from "react-loading";
 import { Link } from "react-router-dom";
 import "./Explore.css";
 const postsPerLoad = 6;
 let arrayForHoldingPosts = [];
 
 function Explore(props) {
-  const { posts } = props;
+  const { posts, loadContent, setLoadContent } = props;
   const [allPosts, setAllPosts] = useState([]);
   const [nextPosts, setNextPosts] = useState(6);
   const [mostPopularMetaPost, setMostPopularMetaPost] = useState([])
   const { DateTime } = require("luxon");
 
+
+  console.log(loadContent)
   const metaPosts = posts.filter((post) => {
     return post.category === 'Meta'
   })
@@ -21,9 +24,11 @@ function Explore(props) {
   const firstLatestMetaPost = latestMetaPost[2]
 
   useEffect(() => {
+    setLoadContent(!loadContent)
     setMostPopularMetaPost(firstLatestMetaPost)
     arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerLoad);
+    setLoadContent(!loadContent)
   }, [posts])
 
   const loopWithSlice = (start, end) => {
@@ -45,6 +50,7 @@ function Explore(props) {
     loopWithSlice(nextPosts, nextPosts + postsPerLoad);
     setNextPosts(nextPosts + postsPerLoad);
   };
+
   return (
     <div>
       <img className="explore-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1636154827/Meta-Minds/meta_vmqfci.jpg" alt="banner-mage"></img>
@@ -125,6 +131,11 @@ function Explore(props) {
           </div>
         </div>
       </div>
+      {loadContent == true ? (
+        <div className='loadingContentScreen'>
+          <ReactLoading type="spokes" color="white" height={100} width={50} />
+        </div>
+      ) : (<div></div>)}
     </div >
   )
 }

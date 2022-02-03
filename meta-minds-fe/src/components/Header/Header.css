@@ -1628,6 +1628,7 @@ border-style: 5px ridge;
     opacity:.8;
     z-index: 1001;
     overflow-y: scroll;
+    height: 100%;
   }
   .header-div-user{
     display: none;
@@ -2000,6 +2001,7 @@ border-style: 5px ridge;
     opacity:.8;
     z-index: 1001;
     overflow-y: scroll;
+    height: 100%;
   }
   .header-div-user{
     display: none;
@@ -2371,6 +2373,7 @@ border-style: 5px ridge;
     opacity:.8;
     z-index: 1001;
     overflow-y: scroll;
+    height: 100%;
   }
   .header-div-user{
     display: none;
@@ -2739,6 +2742,7 @@ border-style: 5px ridge;
     right: 0;
     top: 0;
     bottom: 0;
+    height: 100%;
     background-color: rgb(32, 32, 32); 
     opacity:.8;
     z-index: 1001;

@@ -1492,18 +1492,39 @@ border-bottom-right-radius: 12px;
     border-radius: 12px;
     color: #292929;
   }
+  .loadingContentScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 1001;
+    height: 100%;
+  }
+
 }
 
 @media screen and (min-width: 375px ) and (max-width: 389px) {
-  .loadingScreen{
-    background-color:red;
+  .loadingContentScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    top: 100px;
-    bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1000000;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 1001;
+    height: 100%;
   }
+
   .badscreen{
     display: none;
   }
@@ -1710,6 +1731,20 @@ border-bottom-right-radius: 12px;
 }
 
 @media screen and (min-width: 414px ) and (max-width: 427px) {
+  .loadingContentScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 1001;
+    height: 100%;
+  }
   .badscreen{
     display: none;
   }
@@ -1919,6 +1954,20 @@ border-bottom-right-radius: 12px;
   }
 }
 @media screen and (min-width: 428px ) and (max-width: 599px) {
+  .loadingContentScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 1001;
+    height: 100%;
+  }
   .badscreen{
     display: none;
   }
