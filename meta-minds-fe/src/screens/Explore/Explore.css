@@ -1733,7 +1733,7 @@ border-bottom-right-radius: 12px;
 @media screen and (min-width: 414px ) and (max-width: 427px) {
   .loadicon{
     position: relative;
-    top: 40px;
+    top: 70px;
   }
   .loadingContentScreen{
     display: flex;
