@@ -24,10 +24,14 @@ function Explore(props) {
   })
   const firstLatestMetaPost = latestMetaPost[2]
 
-  useEffect(() => {
-    setMostPopularMetaPost(firstLatestMetaPost)
-    arrayForHoldingPosts = [];
-    loopWithSlice(0, postsPerLoad);
+  useEffect(async () => {
+    setTimeout(() => setDone(true), 700);
+
+    setTimeout(() => {
+      setMostPopularMetaPost(firstLatestMetaPost)
+      arrayForHoldingPosts = [];
+      loopWithSlice(0, postsPerLoad);
+    }, 200);
   }, [posts])
 
   const loopWithSlice = (start, end) => {
@@ -130,6 +134,11 @@ function Explore(props) {
           </div>
         </div>
       </div>
+      {done ? (
+        <div></div>
+      ) : (<div className='loadingContentScreen'>
+        <ReactLoading type="spokes" color="white" height={100} width={50} />
+      </div>)}
     </div >
   )
 }
