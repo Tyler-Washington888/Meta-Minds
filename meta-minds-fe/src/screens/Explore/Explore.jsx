@@ -11,11 +11,11 @@ function Explore(props) {
   const [allPosts, setAllPosts] = useState([]);
   const [nextPosts, setNextPosts] = useState(6);
   const [mostPopularMetaPost, setMostPopularMetaPost] = useState([])
-  const [loadContent, setLoadContent] = useState(false)
+  const [done, setDone] = useState(false)
   const { DateTime } = require("luxon");
 
 
-  console.log(loadContent)
+  console.log(done)
   const metaPosts = posts.filter((post) => {
     return post.category === 'Meta'
   })
@@ -25,11 +25,10 @@ function Explore(props) {
   const firstLatestMetaPost = latestMetaPost[2]
 
   useEffect(() => {
-    setLoadContent(true)
     setMostPopularMetaPost(firstLatestMetaPost)
     arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerLoad);
-    setLoadContent(false)
+    setDone(true)
   }, [posts])
 
   const loopWithSlice = (start, end) => {
@@ -132,6 +131,11 @@ function Explore(props) {
           </div>
         </div>
       </div>
+      {done ? (
+        <div></div>
+      ) : (<div className='loadingContentScreen'>
+        <ReactLoading type="spokes" color="white" height={100} width={50} />
+      </div>)}
     </div >
   )
 }
