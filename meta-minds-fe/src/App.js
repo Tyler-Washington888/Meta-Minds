@@ -28,7 +28,6 @@ function App() {
   const [refresh, setRefresh] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
   const [openHamburger, setOpenHamburger] = useState(false)
-  const [loadContent, setLoadContent] = useState(false)
   const history = useHistory();
 
   useEffect(() => {
@@ -87,56 +86,56 @@ function App() {
         <Route exact path='/create-post'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout} openHamburger={openHamburger} setOpenHamburger={setOpenHamburger}>
-            <CreatePost setRefresh={setRefresh} currentUser={currentUser} loadContent={loadContent} setLoadContent={setLoadContent} />
+            <CreatePost setRefresh={setRefresh} currentUser={currentUser} />
           </Layout>
         </Route>
 
         <Route exact path='/update-post/:post_id'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout} openHamburger={openHamburger} setOpenHamburger={setOpenHamburger}>
-            <UpdatePost setRefresh={setRefresh} users={users} currentUser={currentUser} loadContent={loadContent} setLoadContent={setLoadContent} />
+            <UpdatePost setRefresh={setRefresh} users={users} currentUser={currentUser} />
           </Layout>
         </Route>
 
         <Route exact path='/view-post/:post_id'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout} openHamburger={openHamburger} setOpenHamburger={setOpenHamburger}>
-            <ViewPost setRefresh={setRefresh} users={users} currentUser={currentUser} posts={posts} loadContent={loadContent} setLoadContent={setLoadContent} />
+            <ViewPost setRefresh={setRefresh} users={users} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
 
         <Route exact path='/user-posts/:id'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout} openHamburger={openHamburger} setOpenHamburger={setOpenHamburger}>
-            <UserPosts setRefresh={setRefresh} currentUser={currentUser} posts={posts} loadContent={loadContent} setLoadContent={setLoadContent} />
+            <UserPosts setRefresh={setRefresh} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
 
         <Route path='/meta'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout} openHamburger={openHamburger} setOpenHamburger={setOpenHamburger}>
-            <Meta setRefresh={setRefresh} currentUser={currentUser} posts={posts} loadContent={loadContent} setLoadContent={setLoadContent} />
+            <Meta setRefresh={setRefresh} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
 
         <Route path='/mana'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout} openHamburger={openHamburger} setOpenHamburger={setOpenHamburger}>
-            <Mana setRefresh={setRefresh} currentUser={currentUser} posts={posts} loadContent={loadContent} setLoadContent={setLoadContent} />
+            <Mana setRefresh={setRefresh} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
 
         <Route path='/crypto'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout} openHamburger={openHamburger} setOpenHamburger={setOpenHamburger}>
-            <Crypto setRefresh={setRefresh} currentUser={currentUser} posts={posts} loadContent={loadContent} setLoadContent={setLoadContent} />
+            <Crypto setRefresh={setRefresh} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
 
         <Route exact path='/film'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout} openHamburger={openHamburger} setOpenHamburger={setOpenHamburger}>
-            <Film setRefresh={setRefresh} currentUser={currentUser} posts={posts} loadContent={loadContent} setLoadContent={setLoadContent} />
+            <Film setRefresh={setRefresh} currentUser={currentUser} posts={posts} />
           </Layout>
         </Route>
 
@@ -151,7 +150,7 @@ function App() {
         <Route exact path='/'>
           <ScrollToTop />
           <Layout currentUser={currentUser} posts={posts} handleLogout={handleLogout} openHamburger={openHamburger} setOpenHamburger={setOpenHamburger}>
-            <Explore refresh={refresh} posts={posts} loadContent={loadContent} setLoadContent={setLoadContent} />
+            <Explore refresh={refresh} posts={posts} />
           </Layout >
         </Route>
 
