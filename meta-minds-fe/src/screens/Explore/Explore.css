@@ -1732,7 +1732,7 @@ border-bottom-right-radius: 12px;
 
 @media screen and (min-width: 414px ) and (max-width: 427px) {
   .loadicon{
-    padding-top: 100px;
+    padding-top: 20px;
   }
   .loadingContentScreen{
     display: flex;
@@ -1958,7 +1958,7 @@ border-bottom-right-radius: 12px;
 }
 @media screen and (min-width: 428px ) and (max-width: 599px) {
   .loadicon{
-    padding-top: 100px;
+    padding-top: 50px;
   }
   .loadingContentScreen{
     display: flex;

@@ -3,6 +3,7 @@ import Footer from '../../components/Footer/Footer';
 import ReactLoading from "react-loading";
 import { Link } from "react-router-dom";
 import "./Explore.css";
+import { set } from 'lodash';
 const postsPerLoad = 6;
 let arrayForHoldingPosts = [];
 
@@ -25,13 +26,10 @@ function Explore(props) {
   const firstLatestMetaPost = latestMetaPost[2]
 
   useEffect(async () => {
-    setTimeout(() => setDone(true), 700);
-
-    setTimeout(() => {
-      setMostPopularMetaPost(firstLatestMetaPost)
-      arrayForHoldingPosts = [];
-      loopWithSlice(0, postsPerLoad);
-    }, 10);
+    setMostPopularMetaPost(firstLatestMetaPost)
+    arrayForHoldingPosts = [];
+    loopWithSlice(0, postsPerLoad);
+    setDone(true)
   }, [posts])
 
   const loopWithSlice = (start, end) => {
@@ -134,7 +132,7 @@ function Explore(props) {
           </div>
         </div>
       </div>
-      {done ? (
+      {done && mostPopularMetaPost?.created_at ? (
         <div></div>
       ) : (<div className='loadingContentScreen'>
         <ReactLoading type="spokes" color="white" className="loadicon" height={100} width={50} />
