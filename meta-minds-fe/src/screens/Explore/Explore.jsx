@@ -137,7 +137,7 @@ function Explore(props) {
       {done ? (
         <div></div>
       ) : (<div className='loadingContentScreen'>
-        <ReactLoading type="spokes" color="white" height={100} width={50} />
+        <ReactLoading type="spokes" color="white" className="loadicon" height={100} width={50} />
       </div>)}
     </div >
   )
