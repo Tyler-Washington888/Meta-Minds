@@ -1506,10 +1506,17 @@ border-bottom-right-radius: 12px;
     z-index: 1001;
     height: 100%;
   }
-
+  .loadicon{
+    position: relative;
+    top: 76px;
+  }
 }
 
 @media screen and (min-width: 375px ) and (max-width: 389px) {
+  .loadicon{
+    position: relative;
+    top: 61px;
+  }
   .loadingContentScreen{
     display: flex;
     flex-direction: column;
@@ -1959,7 +1966,8 @@ border-bottom-right-radius: 12px;
 }
 @media screen and (min-width: 428px ) and (max-width: 599px) {
   .loadicon{
-    padding-top: 50px;
+    position: relative;
+    top: 114px;
   }
   .loadingContentScreen{
     display: flex;
