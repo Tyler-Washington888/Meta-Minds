@@ -18,6 +18,8 @@
 
 ## Project Overview
 
+[Live Site](https://meta-minds.netlify.app/)
+
 **Meta-Minds** is a blog app that allows users to create and discover ideas about the metaverse. Users begin on the home page where they are provided a preview of all the latest posts. From there, they can click on a post to view it in detail, or navigate to other screens where they can view posts by category and create posts. The first two categories users can navigate to are called 'Meta' and 'Mana'. Meta allows users to read about the company formerly known as Facebook, while Mana allows users to stay up-to-date with one of the BIGGEST metaverse platforms, Decentraland. In addition to these two options, users can also explore the 'Cyrpto' and 'Film' categories. The Crypto category is for users wanting to read about other incredible metaverse platforms, not named Decentraland, and the Film category is for the Sci-Fi/Dystopian enthusiasts who love to dissect movies that incorporate virtual reality and other emerging technologies into their production. 
 
 <br>
