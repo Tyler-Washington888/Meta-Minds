@@ -1,4 +1,4 @@
-import api from "./Api_config"
+import api from "./Api_config";
 
 export const createPost = async (input) => {
   try {
@@ -36,7 +36,6 @@ export const updatePost = async (id, updated) => {
   }
 };
 
-
 export const deletePost = async (id) => {
   try {
     const res = await api.delete(`/posts/${id}`);
@@ -44,7 +43,4 @@ export const deletePost = async (id) => {
   } catch (e) {
     throw e;
   }
-}
-
-
-
+};

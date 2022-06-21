@@ -1,41 +1,39 @@
-import { useState } from 'react';
-import { Redirect } from 'react-router-dom';
-import { createPost } from '../../j/Posts.js'
-import { CKEditor } from '@ckeditor/ckeditor5-react'
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
-import Footer from '../../components/Footer/Footer';
+import { useState } from "react";
+import { Redirect } from "react-router-dom";
+import { createPost } from "../../services/Posts.js";
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import Footer from "../../components/Footer/Footer";
 import "./Ckeditor.css";
 import "./Createpost.css";
-import { config } from './editorConfig'
+import { config } from "./editorConfig";
 
 function CreatePosts(props) {
   const { currentUser, setRefresh } = props;
-  const [loading, setLoading] = useState(false)
-  const [image, setImage] = useState('')
-  const [category, setCategory] = useState('')
-  const [title, setTitle] = useState('')
-  const [subtitle, setSubtitle] = useState('')
-  const [content, setContent] = useState('')
+  const [loading, setLoading] = useState(false);
+  const [image, setImage] = useState("");
+  const [category, setCategory] = useState("");
+  const [title, setTitle] = useState("");
+  const [subtitle, setSubtitle] = useState("");
+  const [content, setContent] = useState("");
   const [isUpdated, setUpdated] = useState(false);
 
-  ClassicEditor.defaultConfig = config
+  ClassicEditor.defaultConfig = config;
 
   const handleChange = (e) => {
     const { value, name } = e.target;
     switch (name) {
-      case 'category':
-        setCategory(value)
-        break
-      case 'title':
-        setTitle(value)
-        break
+      case "category":
+        setCategory(value);
+        break;
+      case "title":
+        setTitle(value);
+        break;
       case "subtitle":
-        setSubtitle(value)
-        break
+        setSubtitle(value);
+        break;
     }
   };
-
-
 
   const uploadImage = async (e) => {
     const files = e.target.files;
@@ -49,16 +47,15 @@ function CreatePosts(props) {
         method: "Post",
         body: data,
       }
-    )
+    );
     const file = await res.json();
     if (file.secure_url === undefined) {
-      setImage('');
+      setImage("");
     } else {
       setImage(file.secure_url);
     }
     setLoading(false);
-  }
-
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -68,9 +65,9 @@ function CreatePosts(props) {
       title: title,
       subtitle: subtitle,
       content: content,
-      user_id: currentUser.id
-    })
-    setRefresh(prevState => !prevState)
+      user_id: currentUser.id,
+    });
+    setRefresh((prevState) => !prevState);
     setUpdated(updated);
   };
   if (isUpdated) {
@@ -80,18 +77,33 @@ function CreatePosts(props) {
   return (
     <div>
       {/* desktop version */}
-      <img className="create-post-image" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg" alt="Create-Post-Banner"></img>
+      <img
+        className="create-post-image"
+        src="https://res.cloudinary.com/tylerwashington98/image/upload/v1638051076/Meta-Minds/decentraland_naqec7.jpg"
+        alt="Create-Post-Banner"
+      ></img>
       <div className="create-post-page">
-        {image !== "" ? (<img className="close-icon-mobile-create" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div className="close-icon-mobile-create"></div>)}
-        <form className="create-post-form"
-          onSubmit={handleSubmit}
-        >
+        {image !== "" ? (
+          <img
+            className="close-icon-mobile-create"
+            src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png"
+            alt="close-icon"
+            onClick={() => setImage("")}
+          ></img>
+        ) : (
+          <div className="close-icon-mobile-create"></div>
+        )}
+        <form className="create-post-form" onSubmit={handleSubmit}>
           <h1 className="create-post-header-text">Create Post</h1>
           <div className="post-details-top-div">
             <div className="post-details-top-left">
               <label className="create-post-label-and-input-div category-div">
                 <div className="create-post-input-text"></div>
-                <select name="category" className="category" onChange={handleChange}>
+                <select
+                  name="category"
+                  className="category"
+                  onChange={handleChange}
+                >
                   <option value="">Category</option>
                   <option value="Meta">Meta</option>
                   <option value="Mana">Mana</option>
@@ -104,41 +116,58 @@ function CreatePosts(props) {
                 <div className="create-post-input-text"></div>
                 <input
                   className="create-post-user-input-box"
-                  type='text'
+                  type="text"
                   placeholder="Title"
                   value={title}
-                  name={'title'}
-                  onChange={handleChange} />
+                  name={"title"}
+                  onChange={handleChange}
+                />
               </label>
               <br />
               <label className="create-post-label-and-input-div ">
                 <div className="create-post-input-text"></div>
                 <input
                   className="create-post-user-input-box"
-                  type='text'
+                  type="text"
                   value={subtitle}
                   placeholder="Subtitle"
-                  name={'subtitle'}
-                  onChange={handleChange} />
+                  name={"subtitle"}
+                  onChange={handleChange}
+                />
               </label>
             </div>
             <div className="image-upload-div">
               <label className="create-post-label-and-input-div image-div">
                 <div>
                   {loading ? (
-                    <h5 className="update-loading-image-text">Loading Image...</h5>
-                  ) : (image === '' ? (
+                    <h5 className="update-loading-image-text">
+                      Loading Image...
+                    </h5>
+                  ) : image === "" ? (
                     <div></div>
-                  ) : (<img className="uploaded-image" src={image} alt="new-post" />)
+                  ) : (
+                    <img
+                      className="uploaded-image"
+                      src={image}
+                      alt="new-post"
+                    />
                   )}
                 </div>
                 <label htmlFor="file-inputs">
-                  {((loading && image === '') || image !== '') ? (<div></div>) : (<img className="image-upload-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" alt="upload-icon" />)}
+                  {(loading && image === "") || image !== "" ? (
+                    <div></div>
+                  ) : (
+                    <img
+                      className="image-upload-icon"
+                      src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png"
+                      alt="upload-icon"
+                    />
+                  )}
                 </label>
                 <input
                   id="file-inputs"
-                  type='file'
-                  accept='image/*'
+                  type="file"
+                  accept="image/*"
                   onChange={uploadImage}
                 />
               </label>
@@ -149,51 +178,82 @@ function CreatePosts(props) {
           <label className="create-post-label-and-input-div bottom">
             <div className="create-post-input-text"></div>
             <CKEditor
-              config={{ placeholder: "Content...", }}
+              config={{ placeholder: "Content..." }}
               className="ck-editor"
               editor={ClassicEditor}
               onChange={(event, editor) => {
-                const data = editor.getData()
-                setContent(data)
+                const data = editor.getData();
+                setContent(data);
               }}
             />
           </label>
-          {image.length === 0 || category === "" || title.length === 0 || subtitle.length === 0 || content.length === 0 ? (
-            <button className="submit-button-disabled" disabled='true'>Submit</button>) : (
+          {image.length === 0 ||
+          category === "" ||
+          title.length === 0 ||
+          subtitle.length === 0 ||
+          content.length === 0 ? (
+            <button className="submit-button-disabled" disabled="true">
+              Submit
+            </button>
+          ) : (
             <button className="submit-button">Submit</button>
           )}
         </form>
         <Footer />
       </div>
       {/* mobile version */}
-      <div className='create-posts-mobile'>
-        {image !== "" ? (<img className="close-icon-mobile-create" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png" alt="close-icon" onClick={() => setImage('')}></img>) : (<div className="close-icon-mobile-create"></div>)}
-        <form className="create-post-form"
-          onSubmit={handleSubmit}
-        >
+      <div className="create-posts-mobile">
+        {image !== "" ? (
+          <img
+            className="close-icon-mobile-create"
+            src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639678942/Meta-Minds/icons8-remove-image-30_1_zythir.png"
+            alt="close-icon"
+            onClick={() => setImage("")}
+          ></img>
+        ) : (
+          <div className="close-icon-mobile-create"></div>
+        )}
+        <form className="create-post-form" onSubmit={handleSubmit}>
           <h1 className="create-post-header-text">Create Post</h1>
           <label className="create-post-label-and-input-div image-div">
-            <div >
+            <div>
               {loading ? (
                 <h5 className="update-loading-image-text">Loading Image...</h5>
-              ) : (image === '' ? (
+              ) : image === "" ? (
                 <div></div>
-              ) : (<img className="uploaded-image-mobile" src={image} alt="new-post" />)
+              ) : (
+                <img
+                  className="uploaded-image-mobile"
+                  src={image}
+                  alt="new-post"
+                />
               )}
             </div>
             <label htmlFor="file-inputs">
-              {((loading && image === '') || image !== '') ? (<div></div>) : (<img className="image-upload-icon" src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png" alt='upload-icon' />)}
+              {(loading && image === "") || image !== "" ? (
+                <div></div>
+              ) : (
+                <img
+                  className="image-upload-icon"
+                  src="https://res.cloudinary.com/tylerwashington98/image/upload/v1639674458/Meta-Minds/icons8-add-image-80_dcxfk2.png"
+                  alt="upload-icon"
+                />
+              )}
             </label>
             <input
               id="file-inputs"
-              type='file'
-              accept='image/*'
+              type="file"
+              accept="image/*"
               onChange={uploadImage}
             />
           </label>
           <br />
           <label className="create-post-label-and-input-divs category-div">
-            <select name="category" className="category" onChange={handleChange}>
+            <select
+              name="category"
+              className="category"
+              onChange={handleChange}
+            >
               <option value="">Category</option>
               <option value="Meta">Meta</option>
               <option value="Mana">Mana</option>
@@ -205,54 +265,72 @@ function CreatePosts(props) {
           <label className="create-post-label-and-input-divs">
             <input
               className="create-post-user-input-box"
-              type='text'
+              type="text"
               placeholder="Title"
               value={title}
-              name={'title'}
-              onChange={handleChange} />
+              name={"title"}
+              onChange={handleChange}
+            />
           </label>
           <br />
           <label className="create-post-label-and-input-divs ">
             <input
               className="create-post-user-input-box"
-              type='text'
+              type="text"
               value={subtitle}
               placeholder="Subtitle"
-              name={'subtitle'}
-              onChange={handleChange} />
+              name={"subtitle"}
+              onChange={handleChange}
+            />
           </label>
           <label className="create-post-label-and-input-div bottom">
             <CKEditor
-              config={{ placeholder: "Content...", }}
+              config={{ placeholder: "Content..." }}
               className="ck-editor"
               editor={ClassicEditor}
               onChange={(event, editor) => {
-                const data = editor.getData()
-                setContent(data)
+                const data = editor.getData();
+                setContent(data);
               }}
             />
           </label>
-          {image.length === 0 || category === "" || title.length === 0 || subtitle.length === 0 || content.length === 0 ? (
-            <button className="submit-button-disabled" disabled={true}>Submit</button>) : (
+          {image.length === 0 ||
+          category === "" ||
+          title.length === 0 ||
+          subtitle.length === 0 ||
+          content.length === 0 ? (
+            <button className="submit-button-disabled" disabled={true}>
+              Submit
+            </button>
+          ) : (
             <button className="submit-button">Submit</button>
           )}
         </form>
         <Footer />
       </div>
-      <div className='badscreen'>
+      <div className="badscreen">
         <div className="modal-page"></div>
         <div className="modal-div">
           <div className="modal-title-div">
-            <div className="modal-title-text-warning" >We're Sorry</div>
-            <div className="modal-title-text">Meta Minds is not yet compatible with this screen size</div>
-            <div className="modal-title-text-view-read-me">View Readme for more details</div>
+            <div className="modal-title-text-warning">We're Sorry</div>
+            <div className="modal-title-text">
+              Meta Minds is not yet compatible with this screen size
+            </div>
+            <div className="modal-title-text-view-read-me">
+              View Readme for more details
+            </div>
           </div>
           <div className="modal-decision-divs">
-            <a className="modal-cancel-buttons" href="https://github.com/Tyler-Washington888/Meta-Minds">Readme</a>
+            <a
+              className="modal-cancel-buttons"
+              href="https://github.com/Tyler-Washington888/Meta-Minds"
+            >
+              Readme
+            </a>
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 }
 
