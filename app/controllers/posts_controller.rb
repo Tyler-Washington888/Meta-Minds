@@ -9,7 +9,7 @@ class PostsController < ApplicationController
     render json: @posts
   end
 
-  # GET /posts/12
+  # GET /posts/1
   def show
     render json: @post, include: [:comments]
   end
